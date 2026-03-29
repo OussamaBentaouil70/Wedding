@@ -1,0 +1,117 @@
+@import './components.css';
+@import './pages.css';
+
+:root {
+  /* Luxury Color Palette */
+  --color-primary: #C5A880; /* Rich Gold */
+  --color-primary-dark: #A68B64;
+  --color-secondary: #2C3E50; /* Deep Navy/Charcoal */
+  --color-background: #FAFAFA; /* Off-white luxury */
+  --color-surface: #FFFFFF;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-white: #FFFFFF;
+  --color-black: #111111;
+  --color-border: #EAEAEA;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-subheading: 'Cinzel', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Transitions */
+  --transition-fast: 0.3s ease;
+  --transition-normal: 0.5s ease-in-out;
+  --transition-slow: 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Luxury Form Elements */
+input, textarea, select {
+  font-family: var(--font-body);
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--color-primary);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn var(--transition-slow) forwards;
+}
+
+/* Helper Classes */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 14px 32px;
+  font-family: var(--font-subheading);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}

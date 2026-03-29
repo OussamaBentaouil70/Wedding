@@ -1,0 +1,624 @@
+/* Global imports */
+@import './components.css';
+
+/* Home About Section - Custom TravelQuest Style */
+.about-section {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  margin: 0;
+  max-width: none;
+  background-image: url('https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  padding: 80px 5%;
+  color: var(--color-white);
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 100%);
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-left-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-pill {
+  display: inline-block;
+  border: 1px solid rgba(255,255,255,0.5);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  align-self: flex-start;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(4px);
+}
+
+.about-left-col h2 {
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+
+.about-left-col p {
+  font-family: var(--font-subheading);
+  font-size: 1.1rem;
+  color: var(--color-white);
+  letter-spacing: 1px;
+}
+
+.about-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-main-text {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  line-height: 1.4;
+  color: var(--color-white);
+}
+
+.about-sub-content {
+  max-width: 600px;
+}
+
+.about-sub-title {
+  font-family: var(--font-subheading);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: var(--color-white);
+}
+
+.about-sub-desc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-left-col h2 { font-size: 4rem; }
+  .about-main-text { font-size: 1.8rem; }
+}
+
+/* Seamless Journey Dark Section */
+.journey-dark-section {
+  background-color: #0a0b0d;
+  background-image: 
+    linear-gradient(rgba(10, 11, 13, 0.9), rgba(10, 11, 13, 0.9)),
+    url('data:image/svg+xml;utf8,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><path d="M30 0l3 27 27 3-27 3-3 27-3-27-27-3 27-3z" fill="rgba(255,255,255,0.03)"/></svg>');
+  padding: 100px 5%;
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+.journey-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.process-pill {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+  padding: 8px 24px;
+  border-radius: 30px;
+  font-family: var(--font-subheading);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.process-pill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-white);
+}
+
+.journey-header-right h2 {
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  line-height: 1.1;
+  color: var(--color-white);
+  max-width: 600px;
+  text-align: left;
+}
+
+.journey-dark-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: stretch;
+}
+
+.journey-dark-card {
+  background: #151617;
+  border: 1px solid rgba(255,255,255,0.03);
+  padding: 50px 40px;
+  border-radius: 12px;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.step-number {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding-bottom: 15px;
+}
+
+.journey-dark-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--color-white);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.journey-dark-card p {
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.journey-dark-card:hover {
+  border-color: rgba(255,255,255,0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 900px) {
+  .journey-header {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .journey-header-right h2 {
+    font-size: 2.8rem;
+  }
+  .journey-dark-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Common Grids */
+.styles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.style-card {
+  height: 400px;
+  background-color: var(--color-border);
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  transition: transform var(--transition-normal);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.style-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+}
+
+.style-card h3 {
+  color: var(--color-white);
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+
+.style-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Contact Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.contact-form-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Gallery Masonry */
+.gallery-masonry {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  transition: transform var(--transition-normal);
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+  .gallery-masonry { column-count: 2; }
+}
+@media (max-width: 600px) {
+  .gallery-masonry { column-count: 1; }
+}
+
+/* Reservation Form */
+.reservation-form-container {
+  background: var(--color-surface);
+  padding: 40px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.reservation-form-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.reservation-form-container p {
+  color: var(--color-text-light);
+  margin-bottom: 24px;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background: var(--color-surface);
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px; right: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--color-text-light);
+  transition: color var(--transition-fast);
+}
+
+.modal-close:hover {
+  color: var(--color-primary);
+}
+
+.modal-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Detail View */
+.detail-content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.detail-hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.detail-text {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .detail-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Home Page Specific Features */
+.feature-split {
+  display: flex;
+  min-height: 600px;
+}
+
+.feature-slider {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-slider-img {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.feature-slider-img.active {
+  opacity: 1;
+}
+
+.feature-menu {
+  flex: 1;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-menu-item {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: color var(--transition-fast), padding-left var(--transition-fast);
+}
+
+.feature-menu-item:hover {
+  color: var(--color-primary);
+  padding-left: 20px;
+}
+
+/* Experience Banner */
+.experience-banner {
+  height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.experience-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.experience-content {
+  position: relative;
+  z-index: 1;
+  color: var(--color-white);
+  max-width: 800px;
+  padding: 40px;
+}
+
+.experience-content h2 {
+  color: var(--color-white);
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Destinations/Packages Grid - Hover to Expand */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.destination-card {
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.destination-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.destination-card:hover .destination-img {
+  transform: scale(1.1);
+}
+
+.destination-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  transition: background 0.4s ease;
+}
+
+.destination-card:hover .destination-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2));
+}
+
+.destination-title {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+.destination-subtitle {
+  color: var(--color-primary);
+  font-family: var(--font-subheading);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.destination-card:hover .destination-title {
+  transform: translateY(0);
+}
+
+.destination-card:hover .destination-subtitle {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+/* Gallery Process Section */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.process-card {
+  text-align: center;
+  padding: 30px;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  transition: transform var(--transition-normal);
+}
+
+.process-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-color: var(--color-primary);
+}
+
+.process-icon {
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.process-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.process-text {
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* Themes Gallery */
+.themes-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.theme-card {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.theme-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.theme-card:hover .theme-img {
+  transform: scale(1.08);
+}
+
+.theme-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.4s ease;
+}
+
+.theme-card:hover .theme-overlay {
+  background: rgba(0,0,0,0.6);
+}
+
+.theme-title {
+  color: var(--color-white);
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
