@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
+import logo from '../assets/images/logo.png';
+
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,7 +29,8 @@ const Navbar: React.FC = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          Marrakech Weddings
+          <img src={logo} alt="Marrakech Weddings Logo" className="logo-img" />
+          <span>Marrakech Weddings</span>
         </Link>
         <div className="navbar-links-desktop">
           {navLinks.map((link) => (

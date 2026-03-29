@@ -14,9 +14,8 @@ interface FormValues {
 
 export const submitForm = async (values: FormValues) => {
   try {
-    // Send data to our PHP script (relative to your domain)
-    // When deploying, this file should be in the root or public folder.
-    const response = await fetch('/send_email.php', {
+    // Send data to our PHP script through the Vite proxy
+    const response = await fetch('/api/send_email.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

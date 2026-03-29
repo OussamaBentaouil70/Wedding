@@ -6,6 +6,8 @@ import Modal from '../components/Modal';
 // Form Integration
 import { submitForm } from '../utils/formHandler';
 
+import logo from '../assets/images/logo.png';
+
 // Imports
 import homeHero from '../assets/video/wedding-hero.mp4';
 import slider1 from '../assets/images/wedding/traditional.jpg';
@@ -101,6 +103,9 @@ const Home: React.FC = () => {
         <div className="about-content reveal container">
           
           <div className="about-left-col">
+            <div className="about-logo-wrapper">
+              <img src={logo} alt="Marrakech Weddings Logo" className="about-logo" />
+            </div>
             <div className="about-pill">• Who We Are</div>
             <h2>25+<br/>Years</h2>
             <p>Designing Bespoke Journeys</p>
