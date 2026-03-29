@@ -2,6 +2,14 @@ import React from 'react';
 import HeaderVideo from '../components/HeaderVideo';
 import { MessageCircle, FileText, CheckCircle, Calendar, Gift, Users } from 'lucide-react';
 
+// Imports
+import galleryHero from '../assets/video/wedding-hero.mp4';
+import bridesmaidImg from '../assets/images/wedding/modern.jpg';
+import medinaImg from '../assets/images/gallery/imperial-city.jpg';
+import saharaImg from '../assets/images/gallery/sahara.jpg';
+import poolImg from '../assets/images/gallery/atlantic-coast.jpg';
+import desertNightImg from '../assets/images/wedding/bohemian.jpg';
+
 const Gallery: React.FC = () => {
   const processSteps = [
     { icon: <MessageCircle size={32} />, title: 'Consultation', text: 'Initial meeting to determine your unique wedding style and fundamental desires.' },
@@ -13,17 +21,17 @@ const Gallery: React.FC = () => {
   ];
 
   const themes = [
-    { title: 'Bridesmaid & Groomsman', img: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80' },
-    { title: 'Elopement à la Médina', img: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80' },
-    { title: 'Mariage dans le Sahara', img: 'https://images.unsplash.com/photo-1547395027-6f02c6b412bf?auto=format&fit=crop&w=600&q=80' },
-    { title: 'Pool Party', img: 'https://images.unsplash.com/photo-1579560410091-c11dfc2e5058?auto=format&fit=crop&w=600&q=80' },
-    { title: 'Soirée de Veille dans le Désert', img: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=600&q=80' }
+    { title: 'Bridesmaid & Groomsman', img: bridesmaidImg },
+    { title: 'Elopement à la Médina', img: medinaImg },
+    { title: 'Mariage dans le Sahara', img: saharaImg },
+    { title: 'Pool Party', img: poolImg },
+    { title: 'Soirée de Veille dans le Désert', img: desertNightImg }
   ];
 
   return (
     <div className="page-gallery">
       <HeaderVideo 
-        videoUrl="https://assets.mixkit.co/videos/preview/mixkit-wedding-couple-in-a-forest-4796-large.mp4"
+        videoUrl={galleryHero}
         title="L'Expérience" 
         subtitle="De A à Z... Marrakech est la destination pour célébrer le plus beau moment de votre vie." 
       />

@@ -3,16 +3,42 @@ import { useNavigate } from 'react-router-dom';
 import HeaderVideo from '../components/HeaderVideo';
 import Modal from '../components/Modal';
 
+// Form Integration
+import { submitForm } from '../utils/formHandler';
+
+// Imports
+import homeHero from '../assets/video/wedding-hero.mp4';
+import slider1 from '../assets/images/wedding/traditional.jpg';
+import slider2 from '../assets/images/wedding/modern.jpg';
+import slider3 from '../assets/images/wedding/bohemian.jpg';
+import desertImg from '../assets/images/gallery/sahara.jpg';
+import cityImg from '../assets/images/gallery/imperial-city.jpg';
+import coastImg from '../assets/images/gallery/atlantic-coast.jpg';
+import gastronomyImg from '../assets/images/gallery/gastronomy.jpg';
+import wellnessImg from '../assets/images/gallery/wellness.jpg';
+import artImg from '../assets/images/gallery/art-design.jpg';
+
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const [activeImgIndex, setActiveImgIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState({title: '', text: ''});
 
+  // Contact Form State
+  const [formData, setFormData] = useState({
+    contact_name: '',
+    contact_email: '',
+    contact_phone: '',
+    service_type: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
   const sliderImages = [
-    'https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80'
+    slider1,
+    slider2,
+    slider3
   ];
 
   const menuItems = [
@@ -22,12 +48,12 @@ const Home: React.FC = () => {
   ];
 
   const destinations = [
-    { title: 'Sahara Desert', subtitle: 'Signature Journey', path: '/details/desert', img: 'https://images.unsplash.com/photo-1547395027-6f02c6b412bf?auto=format&fit=crop&q=80' },
-    { title: 'Imperial Cities', subtitle: 'Cultural Escape', path: '/details/city', img: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&q=80' },
-    { title: 'Atlantic Coast', subtitle: 'Slow Travel', path: '/details/coast', img: 'https://images.unsplash.com/photo-1579560410091-c11dfc2e5058?auto=format&fit=crop&q=80' },
-    { title: 'Gastronomy', subtitle: 'Culinary Experience', path: '/details/gastronomy', img: 'https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&q=80' },
-    { title: 'Wellness', subtitle: 'Rejuvenation', path: '/details/wellness', img: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80' },
-    { title: 'Art & Design', subtitle: 'Creative Journey', path: '/details/art', img: 'https://images.unsplash.com/photo-1544070014-998f41da0204?auto=format&fit=crop&q=80' }
+    { title: 'Sahara Desert', subtitle: 'Signature Journey', path: '/details/desert', img: desertImg },
+    { title: 'Imperial Cities', subtitle: 'Cultural Escape', path: '/details/city', img: cityImg },
+    { title: 'Atlantic Coast', subtitle: 'Slow Travel', path: '/details/coast', img: coastImg },
+    { title: 'Gastronomy', subtitle: 'Culinary Experience', path: '/details/gastronomy', img: gastronomyImg },
+    { title: 'Wellness', subtitle: 'Rejuvenation', path: '/details/wellness', img: wellnessImg },
+    { title: 'Art & Design', subtitle: 'Creative Journey', path: '/details/art', img: artImg }
   ];
 
   useEffect(() => {
@@ -42,10 +68,30 @@ const Home: React.FC = () => {
     setIsModalOpen(true);
   };
 
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleContactSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    const result = await submitForm(formData);
+    setIsSubmitting(false);
+    
+    if (result.success) {
+      setSubmitStatus('success');
+      setFormData({ contact_name: '', contact_email: '', contact_phone: '', service_type: '', message: '' });
+      setTimeout(() => setSubmitStatus('idle'), 5000);
+    } else {
+      setSubmitStatus('error');
+    }
+  };
+
   return (
     <div className="page-home">
       <HeaderVideo 
-        videoUrl="https://assets.mixkit.co/videos/preview/mixkit-wedding-couple-in-a-forest-4796-large.mp4" 
+        videoUrl={homeHero} 
         title="Marrakech Weddings" 
         subtitle="A Seamless Journey, From Vision to Reality" 
       />
@@ -134,7 +180,7 @@ const Home: React.FC = () => {
       </Modal>
 
       {/* Experience Banner */}
-      <section className="experience-banner" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80)'}}>
+      <section className="experience-banner" style={{backgroundImage: `url(${slider1})`}}>
         <div className="experience-content reveal">
           <h2>An Unforgettable Experience</h2>
           <p style={{fontSize: '1.2rem'}}>Our clients continuously praise our dedication to perfection, turning their grandest visions into seamless realities.</p>
@@ -157,6 +203,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+
       {/* Partners section Placeholder */}
       <section className="section-padding container reveal" style={{textAlign: 'center'}}>
          <h2>Our Prestige Partners</h2>
@@ -165,6 +212,106 @@ const Home: React.FC = () => {
             <h3>Ritz-Carlton</h3>
             <h3>Four Seasons</h3>
          </div>
+      </section>
+
+      {/* Contact Us Section - Moved to End */}
+      <section className="section-padding home-contact-section">
+        <div className="container">
+          <div className="contact-grid reveal">
+            <div className="contact-image-col">
+              <img src={cityImg} alt="Marrakech Medina" className="home-contact-img" />
+              <div className="contact-image-overlay">
+                <span className="contact-pill">Get in Touch</span>
+                <h3>Start Your Journey In Marrakech</h3>
+                <p>From the heart of the Medina to the silence of the Sahara, let us craft your story.</p>
+              </div>
+            </div>
+            <div className="contact-form-col">
+              <div className="contact-form-header">
+                <h2>Contact Us</h2>
+                <p>Tell us about your upcoming celebration.</p>
+              </div>
+
+              {submitStatus === 'success' ? (
+                <div className="form-success-message" style={{textAlign: 'center', padding: '40px 0'}}>
+                   <h3 style={{color: 'var(--color-primary)', marginBottom: '10px'}}>Message Sent!</h3>
+                   <p>Thank you, Oussama. We will contact you shortly.</p>
+                </div>
+              ) : (
+                <form className="contact-form" onSubmit={handleContactSubmit}>
+                  <div className="form-row">
+                    <div className="form-group">
+                      <label>Full Name</label>
+                      <input 
+                        type="text" 
+                        name="contact_name"
+                        placeholder="Your Name" 
+                        required 
+                        value={formData.contact_name}
+                        onChange={handleInputChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label>Email Address</label>
+                      <input 
+                        type="email" 
+                        name="contact_email"
+                        placeholder="email@example.com" 
+                        required 
+                        value={formData.contact_email}
+                        onChange={handleInputChange}
+                      />
+                    </div>
+                  </div>
+                  <div className="form-group">
+                    <label>Phone Number</label>
+                    <input 
+                      type="tel" 
+                      name="contact_phone"
+                      placeholder="+1 (555) 000-0000" 
+                      value={formData.contact_phone}
+                      onChange={handleInputChange}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>Service Interested In</label>
+                    <select 
+                      name="service_type"
+                      value={formData.service_type}
+                      onChange={handleInputChange}
+                      required
+                    >
+                      <option value="" disabled>Select a service</option>
+                      <option value="Wedding Planning">Wedding Planning</option>
+                      <option value="Corporate Events">Corporate Events</option>
+                      <option value="Private Celebration">Private Celebration</option>
+                      <option value="Editorial & Influencers">Editorial & Influencers</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <label>Your Vision</label>
+                    <textarea 
+                      name="message"
+                      placeholder="Tell us more about your ideas..." 
+                      rows={4}
+                      value={formData.message}
+                      onChange={handleInputChange}
+                    ></textarea>
+                  </div>
+                  {submitStatus === 'error' && <p style={{color: 'red', fontSize: '0.8rem'}}>Something went wrong. Please try again.</p>}
+                  <button 
+                    type="submit" 
+                    className="btn-primary" 
+                    style={{width: '100%'}}
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                  </button>
+                </form>
+              )}
+            </div>
+          </div>
+        </div>
       </section>
 
     </div>

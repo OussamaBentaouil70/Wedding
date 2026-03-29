@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import HeaderVideo from '../components/HeaderVideo';
 import Modal from '../components/Modal';
 
+// Imports
+import weddingHero from '../assets/video/wedding-hero.mp4';
+import traditionalImg from '../assets/images/wedding/traditional.jpg';
+import modernImg from '../assets/images/wedding/modern.jpg';
+import bohemianImg from '../assets/images/wedding/bohemian.jpg';
+
 const Wedding: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState({ title: '', text: '' });
@@ -9,17 +15,17 @@ const Wedding: React.FC = () => {
   const weddingStyles = [
     {
       title: 'Traditional Moroccan',
-      img: 'https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&q=80',
+      img: traditionalImg,
       text: 'Experience the magic of authentic Moroccan traditions. From the intricate zellige tiles to vibrant fabrics, mesmerizing Ahwash performers, and the traditional Amariya entrance. We handle every detail, ensuring your celebration is culturally rich, awe-inspiring, and effortlessly elegant.'
     },
     {
       title: 'Modern Luxury',
-      img: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80',
+      img: modernImg,
       text: 'Sleek, sophisticated, and absolutely breathtaking. Our Modern Luxury weddings merge contemporary design with Morocco’s beautiful landscapes. Expect minimalist chic decor, crystal-clear marquees under the stars, premium international entertainment, and a dining experience curated by world-class chefs.'
     },
     {
       title: 'Desert Bohemian',
-      img: 'https://images.unsplash.com/photo-1547395027-6f02c6b412bf?auto=format&fit=crop&q=80',
+      img: bohemianImg,
       text: 'Escape to the breathtaking Agafay desert or the deep Sahara. Our Desert Bohemian weddings offer a romantic, starry backdrop with luxury glamping, rustic-chic decor, acoustic desert bands, and an atmosphere of pure freedom and romance that cannot be replicated anywhere else.'
     }
   ];
@@ -37,7 +43,7 @@ const Wedding: React.FC = () => {
   return (
     <div className="page-wedding">
       <HeaderVideo 
-        videoUrl="https://assets.mixkit.co/videos/preview/mixkit-wedding-couple-in-a-forest-4796-large.mp4" 
+        videoUrl={weddingHero} 
         title="Our Weddings" 
         subtitle="From Traditional Moroccan to Modern Elegance" 
       />

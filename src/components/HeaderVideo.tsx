@@ -6,10 +6,10 @@ interface HeaderVideoProps {
   subtitle?: string;
 }
 
-const HeaderVideo: React.FC<HeaderVideoProps> = ({ 
-  videoUrl = "https://assets.mixkit.co/videos/preview/mixkit-wedding-couple-in-a-forest-4796-large.mp4", 
-  title, 
-  subtitle 
+const HeaderVideo: React.FC<HeaderVideoProps> = ({
+  videoUrl = "https://videos.pexels.com/video-files/4954871/4954871-uhd_2560_1440_30fps.mp4",
+  title,
+  subtitle
 }) => {
   return (
     <header className="header-video-container">
