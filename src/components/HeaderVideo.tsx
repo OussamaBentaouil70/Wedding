@@ -14,8 +14,14 @@ const HeaderVideo: React.FC<HeaderVideoProps> = ({
   return (
     <header className="header-video-container">
       <div className="video-overlay"></div>
-      <video className="background-video" autoPlay loop muted playsInline>
-        <source src={videoUrl} type="video/mp4" />
+      <video 
+        className="background-video" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline
+        src={videoUrl}
+      >
         Your browser does not support the video tag.
       </video>
       <div className="header-content fade-in">

@@ -1,0 +1,168 @@
+import React, { useState } from 'react';
+import { ArrowRight, Check } from 'lucide-react';
+import { submitForm } from '../utils/formHandler';
+
+interface PageHeroProps {
+  /** Array of image URLs that fade in sequence */
+  images: string[];
+  label?: string;
+  title: string;
+  subtitle: string;
+  /** Which service type to pre-select in the form */
+  defaultService?: string;
+}
+
+const PageHero: React.FC<PageHeroProps> = ({
+  images,
+  label,
+  title,
+  subtitle,
+  defaultService = '',
+}) => {
+  const [bgIdx, setBgIdx] = useState(0);
+  const [formData, setFormData] = useState({
+    contact_name: '',
+    contact_email: '',
+    contact_phone: '',
+    preferred_date: '',
+    service_type: defaultService,
+    message: '',
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  // Cycle background images every 5 seconds
+  React.useEffect(() => {
+    if (images.length < 2) return;
+    const t = setInterval(() => setBgIdx(i => (i + 1) % images.length), 5000);
+    return () => clearInterval(t);
+  }, [images.length]);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    const result = await submitForm(formData);
+    setIsSubmitting(false);
+    if (result.success) setSubmitted(true);
+  };
+
+  return (
+    <header className="page-hero">
+      {/* Fading background images */}
+      {images.map((src, i) => (
+        <div
+          key={i}
+          className={`page-hero-bg ${i === bgIdx ? 'active' : ''}`}
+          style={{ backgroundImage: `url(${src})` }}
+        />
+      ))}
+      <div className="page-hero-overlay" />
+
+      {/* Two-column content */}
+      <div className="container page-hero-inner">
+        {/* LEFT – headline */}
+        <div className="page-hero-left fade-in">
+          {label && <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>{label}</span>}
+          <span className="gold-line gold-line-left" style={{ background: 'rgba(184,154,106,0.6)', marginTop: '6px' }} />
+          <h1 className="page-hero-title">{title}</h1>
+          <p className="page-hero-subtitle">{subtitle}</p>
+        </div>
+
+        {/* RIGHT – inline reservation form */}
+        <div className="page-hero-form-wrap fade-in">
+          {submitted ? (
+            <div className="page-hero-form-success">
+              <Check size={34} />
+              <h3>Request Received!</h3>
+              <p>We'll be in touch within 24 hours to begin planning your event.</p>
+            </div>
+          ) : (
+            <form className="page-hero-form" onSubmit={handleSubmit}>
+              <h3>Start Planning</h3>
+              <p>Tell us about your vision — we'll handle everything from here.</p>
+
+              <div className="phf-group">
+                <input
+                  name="contact_name"
+                  placeholder="Full Name"
+                  value={formData.contact_name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="phf-row">
+                <div className="phf-group">
+                  <input
+                    name="contact_email"
+                    type="email"
+                    placeholder="Email Address"
+                    value={formData.contact_email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="phf-group">
+                  <input
+                    name="contact_phone"
+                    type="tel"
+                    placeholder="Phone / WhatsApp"
+                    value={formData.contact_phone}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+              <div className="phf-row">
+                <div className="phf-group">
+                  <select
+                    name="service_type"
+                    value={formData.service_type}
+                    onChange={handleChange}
+                    required
+                  >
+                    <option value="" disabled>Type of Event</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Corporate Event">Corporate Event</option>
+                    <option value="Private Celebration">Private Celebration</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div className="phf-group">
+                  <input
+                    name="preferred_date"
+                    type="date"
+                    placeholder="Preferred Date"
+                    value={formData.preferred_date}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+              <div className="phf-group">
+                <textarea
+                  name="message"
+                  placeholder="Tell us about your vision…"
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows={3}
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="btn-primary phf-submit"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Sending…' : <>Send Inquiry <ArrowRight size={14} /></>}
+              </button>
+            </form>
+          )}
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default PageHero;

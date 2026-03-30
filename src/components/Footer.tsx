@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo2.png';
 
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-brand">
-          <img src={logo} alt="Marrakech Weddings Logo" className="footer-logo" />
-          <h2>Marrakech Weddings</h2>
+          <img src={logo} alt="Wedding Planner Morocco Logo" className="footer-logo-img" />
           <p>Crafting luxurious and unforgettable experiences in the heart of Morocco.</p>
           <div className="social-links">
             <a href="#" aria-label="Instagram">IG</a>

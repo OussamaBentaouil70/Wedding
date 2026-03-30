@@ -1,434 +1,153 @@
-import React, { useState, useEffect } from 'react';
-import HeaderVideo from '../components/HeaderVideo';
-import { X } from 'lucide-react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
+import PageHero from '../components/PageHero';
 
-// Form Integration
-import { submitForm } from '../utils/formHandler';
+// Local event images
+import corporateImg  from '../assets/images/events/corporate.jpg';
+import birthdayImg   from '../assets/images/events/birthday.jpg';
+import bachelorImg   from '../assets/images/events/bachelor.jpg';
+import editorialImg  from '../assets/images/events/editorial.jpg';
+import festivalsImg  from '../assets/images/events/festivals.jpg';
+import retreatsImg   from '../assets/images/events/retreats.jpg';
+import sahara        from '../assets/images/gallery/sahara.jpg';
+import imperialCity  from '../assets/images/gallery/imperial-city.jpg';
+import atlanticCoast from '../assets/images/gallery/atlantic-coast.jpg';
 
-// Imports
-import eventsHero from '../assets/video/wedding-hero.mp4';
-import corporateImg from '../assets/images/events/corporate.jpg';
-import festivalsImg from '../assets/images/events/festivals.jpg';
-import birthdayImg from '../assets/images/events/birthday.jpg';
-import bachelorImg from '../assets/images/events/bachelor.jpg';
-import editorialImg from '../assets/images/events/editorial.jpg';
-import retreatsImg from '../assets/images/events/retreats.jpg';
+// Hero background images (fading)
+const heroImages = [corporateImg, festivalsImg, birthdayImg, retreatsImg];
 
-// ─── Data ───────────────────────────────────────────────────────────────────
+// ── Data ──────────────────────────────────────────────────
+const categories = [
+  { title: 'Engagement Parties',              desc: 'Celebrating your first steps into forever with intimate candlelit settings and bespoke Moroccan charm.', img: bachelorImg },
+  { title: 'Bridal Showers & Welcome Dinners',desc: 'Elegant pre-wedding gatherings that set the tone for an unforgettable celebration ahead.', img: editorialImg },
+  { title: 'Anniversaries & Private Celebrations', desc: 'Meaningful milestones marked with personalised design, exclusive venues, and heartfelt details.', img: retreatsImg },
+  { title: 'Luxury Birthdays',                desc: 'From lavish rooftop parties to intimate desert dinners — milestones deserve a statement.', img: birthdayImg },
+  { title: 'Brand Experiences',               desc: 'Immersive brand activations and editorial productions set against Morocco\'s most stunning backdrops.', img: editorialImg },
+  { title: 'Corporate Gatherings',            desc: 'Prestigious corporate events, executive retreats, and galas delivered with precision and sophistication.', img: corporateImg },
+];
 
-interface EventItem {
-  id: string;
-  title: string;
-  subtitle: string;
-  img: string;
-  description: string;
-  highlights: string[];
-}
-
-const eventsData: EventItem[] = [
+const promises = [
   {
-    id: 'corporate',
-    title: 'Corporate Events',
-    subtitle: 'Prestigious Gatherings & Galas',
-    img: corporateImg,
-    description:
-      'Elevate your brand with meticulously planned corporate events in the heart of Marrakech. From high-profile product launches and executive retreats to team-building galas and award ceremonies, we secure the most prestigious venues and deliver flawless execution that leaves a lasting impression on your guests and stakeholders.',
-    highlights: ['Luxury venue sourcing', 'AV & technical support', 'Catering & fine dining', 'Team-building experiences'],
+    icon: '◈',
+    title: 'Strategic Planning',
+    desc: 'From concept and budgeting to logistics and timeline — every detail is mapped out with precision before a single vendor is booked.',
   },
   {
-    id: 'festivals',
-    title: 'Festivals',
-    subtitle: 'Large-Scale Cultural Celebrations',
-    img: festivalsImg,
-    description:
-      'Bring a vision to life at scale. Whether it is a cultural festival, a music gathering, or a brand-activation event, we handle everything from stage design and artist coordination to crowd management and on-site logistics — creating an unforgettable atmosphere for hundreds or thousands of guests.',
-    highlights: ['Stage & production design', 'Artist & performer booking', 'Security & crowd management', 'Full logistical coordination'],
+    icon: '✦',
+    title: 'Elevated Design',
+    desc: 'Editorial-quality styling, bespoke florals, atmospheric lighting, and curated entertainment that transforms any space.',
   },
   {
-    id: 'birthday',
-    title: 'Birthday & Private Events',
-    subtitle: 'Intimate Celebrations Done Right',
-    img: birthdayImg,
-    description:
-      'Your milestone deserves a celebration as unique as you are. Whether you are marking a milestone birthday or hosting an intimate private gathering, we craft personalised themes, curate exclusive entertainment, and create an atmosphere of refined elegance — all tailored to your personality and vision.',
-    highlights: ['Bespoke theming & décor', 'Custom entertainment', 'Personalised menus', 'Hidden venue access'],
-  },
-  {
-    id: 'bachelor',
-    title: 'Bachelor Party',
-    subtitle: 'The Ultimate Pre-Wedding Experience',
-    img: bachelorImg,
-    description:
-      'Send off the groom (or bride) in style. Marrakech offers a thrilling playground for the ultimate bachelor or bachelorette experience. From exclusive rooftop parties and desert adventures to private hammam rituals and VIP nightlife, we design an unforgettable final chapter before the big day.',
-    highlights: ['VIP nightlife access', 'Desert adventures', 'Private hammam rituals', 'Exclusive rooftop parties'],
-  },
-  {
-    id: 'editorial',
-    title: 'Editorial & Influencers',
-    subtitle: 'Content-Ready Luxury Experiences',
-    img: editorialImg,
-    description:
-      'Partner with us to create visually stunning, content-rich experiences that tell your story. From luxury influencer retreats and editorial photo shoots to brand campaigns set against the breathtaking backdrop of Marrakech, we provide production support, exclusive locations, and on-ground logistics so your content is nothing short of spectacular.',
-    highlights: ['Exclusive location scouting', 'Production support', 'Brand partnerships', 'Influencer retreats'],
-  },
-  {
-    id: 'retreats',
-    title: 'Retreats',
-    subtitle: 'Restorative & Transformative Escapes',
-    img: retreatsImg,
-    description:
-      'Reconnect, recharge, and rediscover. Our wellness and leadership retreats combine the mystical energy of Morocco with world-class amenities. From sunrise yoga in a private riad to guided meditation in the Atlas Mountains, each retreat is thoughtfully curated to foster personal growth, team cohesion, and deep relaxation.',
-    highlights: ['Wellness & yoga programmes', 'Leadership workshops', 'Atlas Mountain excursions', 'Private riad settings'],
+    icon: '◎',
+    title: 'Seamless Guest Experience',
+    desc: 'Arrival management, hospitality programming, and on-the-day coordination so your guests experience nothing but joy.',
   },
 ];
 
-const eventSubOptions: Record<string, string[]> = {
-  Wedding: ['Traditional Ceremony', 'Destination Wedding', 'Intimate Wedding', 'Grand Celebration'],
-  Events: [
-    'Corporate Events',
-    'Festivals',
-    'Birthday & Private Events',
-    'Bachelor Party',
-    'Editorial & Influencers',
-    'Retreats',
-  ],
-};
+const formats = [
+  { title: 'Rooftop Dinners in Marrakech', img: imperialCity,  tag: 'Signature Format' },
+  { title: 'Garden Soirées',              img: retreatsImg,    tag: 'Signature Format' },
+  { title: 'Desert Experiences',          img: sahara,         tag: 'Signature Format' },
+  { title: 'Intimate Private Receptions', img: bachelorImg,    tag: 'Signature Format' },
+  { title: 'Brand & Executive Dinners',   img: corporateImg,   tag: 'Signature Format' },
+  { title: 'Coastal Celebrations',        img: atlanticCoast,  tag: 'Signature Format' },
+];
 
-// ─── Reservation Modal ───────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────
+const Events: React.FC = () => (
+  <div className="page-events">
 
-interface ReservationModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  preselectedEvent: string;
-}
+    {/* ══════════ HERO ══════════ */}
+    <PageHero
+      images={heroImages}
+      label="Events in Morocco"
+      title="Refined Events, Beautifully Managed"
+      subtitle="We design elegant private and corporate events across Morocco with the same precision, style, and hospitality that define our weddings."
+      defaultService="Corporate Event"
+    />
 
-const ReservationModal: React.FC<ReservationModalProps> = ({ isOpen, onClose, preselectedEvent }) => {
-  const [category, setCategory] = useState<'Wedding' | 'Events'>('Events');
-  const [subOption, setSubOption] = useState(preselectedEvent);
-  const [formData, setFormData] = useState({
-    contact_name: '',
-    contact_email: '',
-    contact_phone: '',
-    preferred_date: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-
-  useEffect(() => {
-    if (isOpen) {
-      setCategory('Events');
-      setSubOption(preselectedEvent);
-      setSubmitStatus('idle');
-      setFormData({ contact_name: '', contact_email: '', contact_phone: '', preferred_date: '', message: '' });
-    }
-  }, [isOpen, preselectedEvent]);
-
-  if (!isOpen) return null;
-
-  const handleCategoryChange = (val: 'Wedding' | 'Events') => {
-    setCategory(val);
-    setSubOption(eventSubOptions[val][0]);
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    const submissionData = {
-      ...formData,
-      service_type: `${category}: ${subOption}`
-    };
-    
-    const result = await submitForm(submissionData);
-    setIsSubmitting(false);
-    
-    if (result.success) {
-      setSubmitStatus('success');
-      setTimeout(() => {
-        onClose();
-        setSubmitStatus('idle');
-      }, 3000);
-    } else {
-      setSubmitStatus('error');
-    }
-  };
-
-  return (
-    <div className="events-modal-overlay" onClick={onClose}>
-      <div className="events-reservation-modal" onClick={e => e.stopPropagation()}>
-        <button className="events-modal-close" onClick={onClose} aria-label="Close">
-          <X size={22} />
-        </button>
-
-        {submitStatus === 'success' ? (
-          <div className="events-success-state">
-            <div className="events-success-icon">✓</div>
-            <h3>Request Received!</h3>
-            <p>Thank you, Oussama. Our team will contact you within 24 hours to confirm your {category.toLowerCase()} details.</p>
-            <button className="events-btn-primary" onClick={onClose}>Close</button>
-          </div>
-        ) : (
-          <>
-            <div className="events-res-header">
-              <span className="events-res-pill">Book Your Event</span>
-              <h2>Make a Reservation</h2>
-              <p>Fill in your details and we'll get back to you shortly.</p>
+    {/* ══════════ EVENT CATEGORIES ══════════ */}
+    <section className="section-padding container reveal">
+      <div className="wedding-section-header">
+        <span className="section-label">What We Offer</span>
+        <span className="gold-line" />
+        <h2>Every Occasion, Elevated</h2>
+        <p>A full spectrum of luxury events — each one curated with intention and executed with excellence.</p>
+      </div>
+      <div className="ev-categories-grid">
+        {categories.map((cat, i) => (
+          <div key={i} className="ev-category-card reveal" style={{ transitionDelay: `${i * 80}ms` }}>
+            <div className="ev-category-img-wrap">
+              <img src={cat.img} alt={cat.title} />
             </div>
-
-            <form className="events-res-form" onSubmit={handleSubmit}>
-              <div className="events-form-row">
-                <div className="events-form-group">
-                  <label>Full Name</label>
-                  <input 
-                    type="text" 
-                    name="contact_name"
-                    placeholder="Your Name" 
-                    required 
-                    value={formData.contact_name}
-                    onChange={handleInputChange}
-                  />
-                </div>
-                <div className="events-form-group">
-                  <label>Email Address</label>
-                  <input 
-                    type="email" 
-                    name="contact_email"
-                    placeholder="email@example.com" 
-                    required 
-                    value={formData.contact_email}
-                    onChange={handleInputChange}
-                  />
-                </div>
-              </div>
-
-              <div className="events-form-row">
-                <div className="events-form-group">
-                  <label>Phone Number</label>
-                  <input 
-                    type="tel" 
-                    name="contact_phone"
-                    placeholder="+1 (555) 000-0000" 
-                    required 
-                    value={formData.contact_phone}
-                    onChange={handleInputChange}
-                  />
-                </div>
-                <div className="events-form-group">
-                  <label>Preferred Date</label>
-                  <input 
-                    type="date" 
-                    name="preferred_date"
-                    required
-                    value={formData.preferred_date}
-                    onChange={handleInputChange}
-                  />
-                </div>
-              </div>
-
-              <div className="events-form-group">
-                <label>Service Type</label>
-                <select
-                  value={category}
-                  onChange={e => handleCategoryChange(e.target.value as 'Wedding' | 'Events')}
-                >
-                  <option value="Wedding">Wedding</option>
-                  <option value="Events">Events</option>
-                </select>
-              </div>
-
-              <div className="events-form-group">
-                <label>{category === 'Wedding' ? 'Wedding Type' : 'Event Type'}</label>
-                <select value={subOption} onChange={e => setSubOption(e.target.value)}>
-                  {eventSubOptions[category].map(opt => (
-                    <option key={opt} value={opt}>{opt}</option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="events-form-group">
-                <label>Additional Notes</label>
-                <textarea 
-                  name="message"
-                  placeholder="Tell us more about your event vision..." 
-                  rows={3} 
-                  value={formData.message}
-                  onChange={handleInputChange}
-                />
-              </div>
-
-              {submitStatus === 'error' && <p style={{color: 'red', fontSize: '0.8rem', marginBottom: '10px'}}>Error sending request. Please try again.</p>}
-              
-              <button 
-                type="submit" 
-                className="events-btn-primary events-btn-full"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? 'Sending Request...' : 'Send Reservation Request'}
-              </button>
-            </form>
-          </>
-        )}
-      </div>
-    </div>
-  );
-};
-
-// ─── Event Detail Modal ──────────────────────────────────────────────────────
-
-interface EventDetailModalProps {
-  event: EventItem | null;
-  onClose: () => void;
-  onReserve: (eventTitle: string) => void;
-}
-
-const EventDetailModal: React.FC<EventDetailModalProps> = ({ event, onClose, onReserve }) => {
-  if (!event) return null;
-
-  return (
-    <div className="events-modal-overlay" onClick={onClose}>
-      <div className="events-detail-modal" onClick={e => e.stopPropagation()}>
-        <button className="events-modal-close" onClick={onClose} aria-label="Close">
-          <X size={22} />
-        </button>
-
-        <div className="events-detail-img-wrap">
-          <img src={event.img} alt={event.title} className="events-detail-img" />
-          <div className="events-detail-img-overlay">
-            <span className="events-res-pill">{event.subtitle}</span>
-            <h2>{event.title}</h2>
+            <div className="ev-category-body">
+              <h3>{cat.title}</h3>
+              <p>{cat.desc}</p>
+            </div>
           </div>
-        </div>
-
-        <div className="events-detail-body">
-          <p className="events-detail-desc">{event.description}</p>
-
-          <div className="events-highlights">
-            <h4>What's Included</h4>
-            <ul className="events-highlights-list">
-              {event.highlights.map(h => (
-                <li key={h}>
-                  <span className="events-check">✦</span> {h}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <button
-            className="events-btn-primary events-btn-full"
-            onClick={() => onReserve(event.title)}
-          >
-            Reserve This Event
-          </button>
-        </div>
+        ))}
       </div>
-    </div>
-  );
-};
+    </section>
 
-// ─── Main Events Page ────────────────────────────────────────────────────────
-
-const Events: React.FC = () => {
-  const [detailEvent, setDetailEvent] = useState<EventItem | null>(null);
-  const [reservationOpen, setReservationOpen] = useState(false);
-  const [preselectedEvent, setPreselectedEvent] = useState('Corporate Events');
-
-  const handleReserve = (eventTitle: string) => {
-    setDetailEvent(null);
-    setPreselectedEvent(eventTitle);
-    setReservationOpen(true);
-  };
-
-  return (
-    <div className="page-events">
-      <HeaderVideo
-        videoUrl={eventsHero}
-        title="Our Events"
-        subtitle="Crafting Extraordinary Experiences Across Every Occasion"
-      />
-
-      {/* Intro */}
-      <section className="events-intro section-padding">
-        <div className="container">
-          <span className="events-section-pill">What We Offer</span>
-          <h2 className="events-intro-title">Six Pillars of Excellence</h2>
-          <p className="events-intro-sub">
-            From intimate private gatherings to large-scale festivals, our team brings an unmatched
-            level of creativity, precision, and luxury to every event we curate in Marrakech and beyond.
+    {/* ══════════ EVENT PROMISE ══════════ */}
+    <section className="ev-promise-section">
+      <div className="ev-promise-bg" />
+      <div className="container ev-promise-inner">
+        <div className="wedding-section-header reveal">
+          <h2 style={{ color: '#fff' }}>Our Event Promise</h2>
+          <p style={{ color: 'rgba(255,255,255,0.6)' }}>
+            Three pillars that underpin every event we create in Morocco.
           </p>
         </div>
-      </section>
-
-      {/* Event Sections */}
-      <section className="events-sections-wrapper">
-        {eventsData.map((evt, idx) => (
-          <div
-            key={evt.id}
-            className={`events-section-row ${idx % 2 !== 0 ? 'events-section-row--reverse' : ''}`}
-            onClick={() => setDetailEvent(evt)}
-          >
-            {/* Image Side */}
-            <div className="events-section-img-side">
-              <div className="events-section-img-wrap">
-                <img src={evt.img} alt={evt.title} className="events-section-img" />
-                <div className="events-section-img-overlay" />
-                <span className="events-section-number">0{idx + 1}</span>
-              </div>
+        <div className="ev-promise-grid">
+          {promises.map((p, i) => (
+            <div key={i} className={`ev-promise-card reveal delay-${(i + 1) * 100}`}>
+              <span className="ev-promise-icon">{p.icon}</span>
+              <h3>{p.title}</h3>
+              <p>{p.desc}</p>
             </div>
+          ))}
+        </div>
+      </div>
+    </section>
 
-            {/* Content Side */}
-            <div className="events-section-content-side">
-              <div className="events-section-content">
-                <span className="events-section-tag">{evt.subtitle}</span>
-                <h3 className="events-section-title">{evt.title}</h3>
-                <p className="events-section-desc">{evt.description.slice(0, 180)}…</p>
-                <ul className="events-section-highlights">
-                  {evt.highlights.map(h => (
-                    <li key={h}><span className="events-check">✦</span> {h}</li>
-                  ))}
-                </ul>
-                <button
-                  className="events-btn-outline"
-                  onClick={e => { e.stopPropagation(); setDetailEvent(evt); }}
-                >
-                  Discover More
-                  <span className="events-btn-arrow">→</span>
-                </button>
+    {/* ══════════ FEATURED FORMATS ══════════ */}
+    <section className="section-padding container reveal">
+      <div className="wedding-section-header">
+        <span className="section-label">Signature Experiences</span>
+        <span className="gold-line" />
+        <h2>Featured Event Formats</h2>
+        <p>Our most-requested event settings — each one a world unto itself.</p>
+      </div>
+      <div className="ev-formats-grid">
+        {formats.map((fmt, i) => (
+          <div key={i} className="ev-format-card reveal" style={{ transitionDelay: `${i * 80}ms` }}>
+            <div className="ev-format-img-wrap">
+              <img src={fmt.img} alt={fmt.title} />
+              <div className="ev-format-overlay">
+                <span className="ev-format-tag">{fmt.tag}</span>
+                <h3>{fmt.title}</h3>
               </div>
             </div>
           </div>
         ))}
-      </section>
+      </div>
+    </section>
 
-      {/* CTA Banner */}
-      <section className="events-cta-banner">
-        <div className="events-cta-content">
-          <h2>Ready to Create Something Extraordinary?</h2>
-          <p>Let's bring your vision to life. Contact our team today.</p>
-          <button className="events-btn-primary" onClick={() => { setPreselectedEvent('Corporate Events'); setReservationOpen(true); }}>
-            Book a Consultation
-          </button>
-        </div>
-      </section>
+    {/* ══════════ CTA ══════════ */}
+    <section className="wedding-cta-final">
+      <div className="container">
+        <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>Let's Create</span>
+        <h2>Plan Your Event</h2>
+        <p>Tell us about your occasion — we'll take care of everything else.</p>
+        <Link to="/contact" className="btn-primary">
+          Plan Your Event <ArrowRight size={15} />
+        </Link>
+      </div>
+    </section>
 
-      {/* Modals */}
-      <EventDetailModal
-        event={detailEvent}
-        onClose={() => setDetailEvent(null)}
-        onReserve={handleReserve}
-      />
-      <ReservationModal
-        isOpen={reservationOpen}
-        onClose={() => setReservationOpen(false)}
-        preselectedEvent={preselectedEvent}
-      />
-    </div>
-  );
-};
+  </div>
+);
 
 export default Events;
