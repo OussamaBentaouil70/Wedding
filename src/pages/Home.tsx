@@ -31,7 +31,7 @@ const promises = [
 
 const weddingPreviews = [
   {
-    img: 'https://images.unsplash.com/photo-1519225495810-753b551f3c8c?auto=format&fit=crop&w=900&q=80',
+    img: 'https://100lclive.s3.amazonaws.com/img/ideas/blog-full/211127.jpg',
     category: 'Signature Wedding',
     title: 'Marrakech Weddings',
     location: 'Riads, gardens, rooftops',
@@ -40,7 +40,7 @@ const weddingPreviews = [
     highlights: ['Riad courtyards, rooftops, palaces', 'Design + styling direction', 'Guest journey + on-the-day orchestration'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=900&q=80',
+    img: 'https://dianacoulter.com/wp-content/uploads/2024/04/The_Oberoi_Marrakech_Morocco_Luxury_Wedding_Venue_by_Diana_Coulter-1.jpg',
     category: 'Signature Wedding',
     title: 'Desert Weddings',
     location: 'Agafay & the Sahara',
@@ -49,7 +49,7 @@ const weddingPreviews = [
     highlights: ['Sunset ceremonies + stargazing dinners', 'Logistics + transport planning', 'Entertainment, lighting, and timing'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80',
+    img: 'https://beyondweddings.com/wp-content/uploads/2025/09/AdelaideJeroen-686-1-1024x683.jpg.webp',
     category: 'Signature Wedding',
     title: 'Coastal & Estate Weddings',
     location: 'Essaouira & private estates',
