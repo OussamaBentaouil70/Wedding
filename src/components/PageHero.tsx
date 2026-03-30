@@ -8,6 +8,8 @@ interface PageHeroProps {
   label?: string;
   title: string;
   subtitle: string;
+  /** Layout variant (default keeps current behavior) */
+  variant?: 'background' | 'split';
   /** Which service type to pre-select in the form */
   defaultService?: string;
 }
@@ -17,6 +19,7 @@ const PageHero: React.FC<PageHeroProps> = ({
   label,
   title,
   subtitle,
+  variant = 'background',
   defaultService = '',
 }) => {
   const [bgIdx, setBgIdx] = useState(0);
@@ -51,29 +54,55 @@ const PageHero: React.FC<PageHeroProps> = ({
   };
 
   return (
-    <header className="page-hero">
-      {/* Fading background images */}
-      {images.map((src, i) => (
-        <div
-          key={i}
-          className={`page-hero-bg ${i === bgIdx ? 'active' : ''}`}
-          style={{ backgroundImage: `url(${src})` }}
-        />
-      ))}
-      <div className="page-hero-overlay" />
+    <header className={`page-hero ${variant === 'split' ? 'page-hero--split' : ''}`}>
+      {variant === 'background' ? (
+        <>
+          {/* Fading background images */}
+          {images.map((src, i) => (
+            <div
+              key={i}
+              className={`page-hero-bg ${i === bgIdx ? 'active' : ''}`}
+              style={{ backgroundImage: `url(${src})` }}
+            />
+          ))}
+          <div className="page-hero-overlay" />
+          <div className="page-hero-fade-left" aria-hidden="true" />
+        </>
+      ) : (
+        <>
+          {/* Split hero: left media panel with fading images */}
+          <div className="page-hero-media" aria-hidden="true">
+            {images.map((src, i) => (
+              <div
+                key={i}
+                className={`page-hero-media-img ${i === bgIdx ? 'active' : ''}`}
+                style={{ backgroundImage: `url(${src})` }}
+              />
+            ))}
+            <div className="page-hero-media-overlay" />
+            <div className="page-hero-media-fade-left" />
+            <div className="page-hero-media-fade-right" />
+          </div>
+          <div className="page-hero-split-bg" aria-hidden="true" />
+        </>
+      )}
 
-      {/* Two-column content */}
       <div className="container page-hero-inner">
-        {/* LEFT – headline */}
         <div className="page-hero-left fade-in">
-          {label && <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>{label}</span>}
-          <span className="gold-line gold-line-left" style={{ background: 'rgba(184,154,106,0.6)', marginTop: '6px' }} />
+          {label && (
+            <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>
+              {label}
+            </span>
+          )}
+          <span
+            className="gold-line gold-line-left"
+            style={{ background: 'rgba(184,154,106,0.6)', marginTop: '6px' }}
+          />
           <h1 className="page-hero-title">{title}</h1>
           <p className="page-hero-subtitle">{subtitle}</p>
         </div>
 
-        {/* RIGHT – inline reservation form */}
-        <div className="page-hero-form-wrap fade-in">
+        <div className="page-hero-form-wrap fade-in" id="reservation-form">
           {submitted ? (
             <div className="page-hero-form-success">
               <Check size={34} />
@@ -94,6 +123,7 @@ const PageHero: React.FC<PageHeroProps> = ({
                   required
                 />
               </div>
+
               <div className="phf-row">
                 <div className="phf-group">
                   <input
@@ -115,6 +145,7 @@ const PageHero: React.FC<PageHeroProps> = ({
                   />
                 </div>
               </div>
+
               <div className="phf-row">
                 <div className="phf-group">
                   <select
@@ -123,7 +154,9 @@ const PageHero: React.FC<PageHeroProps> = ({
                     onChange={handleChange}
                     required
                   >
-                    <option value="" disabled>Type of Event</option>
+                    <option value="" disabled>
+                      Type of Event
+                    </option>
                     <option value="Wedding">Wedding</option>
                     <option value="Corporate Event">Corporate Event</option>
                     <option value="Private Celebration">Private Celebration</option>
@@ -140,6 +173,7 @@ const PageHero: React.FC<PageHeroProps> = ({
                   />
                 </div>
               </div>
+
               <div className="phf-group">
                 <textarea
                   name="message"
@@ -150,12 +184,14 @@ const PageHero: React.FC<PageHeroProps> = ({
                 />
               </div>
 
-              <button
-                type="submit"
-                className="btn-primary phf-submit"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? 'Sending…' : <>Send Inquiry <ArrowRight size={14} /></>}
+              <button type="submit" className="btn-primary phf-submit" disabled={isSubmitting}>
+                {isSubmitting ? (
+                  'Sending…'
+                ) : (
+                  <>
+                    Send Inquiry <ArrowRight size={14} />
+                  </>
+                )}
               </button>
             </form>
           )}

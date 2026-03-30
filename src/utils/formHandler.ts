@@ -7,8 +7,11 @@ interface FormValues {
   contact_name: string;
   contact_email: string;
   contact_phone?: string;
-  service_type: string;
-  preferred_date?: string;
+  service_type: string; // used as "Event Type" across the site
+  preferred_date?: string; // used as "Estimated Date" across the site
+  number_of_guests?: string;
+  preferred_location?: string;
+  estimated_budget?: string;
   message: string;
 }
 

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Plus, Check, ArrowRight } from 'lucide-react';
+import { Plus, Check, ArrowRight, X } from 'lucide-react';
 import PageHero from '../components/PageHero';
 
 // Hero background images (fading)
@@ -21,12 +21,37 @@ const services = [
 ];
 
 const venues = [
-  { title: 'Luxury Riads',          img: 'https://images.unsplash.com/photo-1544256718-3bcf237f3974?auto=format&fit=crop&w=800&q=80' },
-  { title: 'Private Villas & Estates', img: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80' },
-  { title: 'Palaces & Gardens',     img: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=800&q=80' },
-  { title: 'Desert Camps',          img: 'https://images.unsplash.com/photo-1516544975463-bf7b9a527af3?auto=format&fit=crop&w=800&q=80' },
-  { title: 'Beachfront Venues',     img: 'https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=800&q=80' },
-];
+  {
+    title: 'Luxury Riads',
+    img: 'https://images.unsplash.com/photo-1544256718-3bcf237f3974?auto=format&fit=crop&w=1200&q=80',
+    desc: 'Hidden behind carved doors, Marrakech riads offer intimate courtyards, candlelit dinners, and a sense of cinematic privacy.',
+    highlights: ['Medina courtyards & rooftop moments', 'Ideal for intimate to mid-size celebrations', 'Perfect for welcome dinners & brunches'],
+  },
+  {
+    title: 'Private Villas & Estates',
+    img: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80',
+    desc: 'A private residence feel with elevated hospitality — space for multi-day hosting, poolside gatherings, and relaxed luxury.',
+    highlights: ['Multi-day wedding weekends', 'On-site accommodation for guests', 'Flexible layouts for ceremony + reception'],
+  },
+  {
+    title: 'Palaces & Gardens',
+    img: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80',
+    desc: 'Grand architecture, heritage details, and lush gardens for couples who want a statement-making, regal celebration.',
+    highlights: ['High-impact ceremony backdrops', 'Large guest capacity options', 'Ideal for formal receptions & live entertainment'],
+  },
+  {
+    title: 'Desert Camps',
+    img: 'https://images.unsplash.com/photo-1516544975463-bf7b9a527af3?auto=format&fit=crop&w=1200&q=80',
+    desc: 'A sunset ceremony, lantern-lit dining, and music under the stars — the Sahara is Morocco at its most unforgettable.',
+    highlights: ['Sunset ceremonies & stargazing dinners', 'Immersive guest experience', 'Perfect for elopements or bold weekend events'],
+  },
+  {
+    title: 'Beachfront Venues',
+    img: 'https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1200&q=80',
+    desc: 'Ocean air, golden light, and relaxed sophistication — coastal venues bring effortless romance with refined styling.',
+    highlights: ['Golden-hour ceremonies', 'Laid-back luxury atmosphere', 'Great for guest excursions & seaside brunches'],
+  },
+] as const;
 
 const themes = [
   { title: 'Moroccan Royal Elegance',    img: 'https://images.unsplash.com/photo-1519225495810-753b551f3c8c?auto=format&fit=crop&w=800&q=80' },
@@ -58,6 +83,25 @@ const faqs = [
 // ─────────────────────────────────────────────────────────
 const Wedding: React.FC = () => {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
+  const [activeVenueIdx, setActiveVenueIdx] = useState<number | null>(null);
+  const activeVenue = useMemo(() => (activeVenueIdx === null ? null : venues[activeVenueIdx]), [activeVenueIdx]);
+
+  useEffect(() => {
+    if (activeVenueIdx === null) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setActiveVenueIdx(null);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [activeVenueIdx]);
+
+  const scrollToReservation = () => {
+    const el = document.getElementById('reservation-form');
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const firstInput = el.querySelector('input, select, textarea, button') as HTMLElement | null;
+    firstInput?.focus?.();
+  };
 
   return (
     <div className="page-wedding">
@@ -99,15 +143,78 @@ const Wedding: React.FC = () => {
         </div>
         <div className="venue-experience-grid">
           {venues.map((v, i) => (
-            <div key={i} className="venue-card">
+            <button
+              key={v.title}
+              type="button"
+              className="venue-card venue-card--button"
+              onClick={() => setActiveVenueIdx(i)}
+              aria-haspopup="dialog"
+              aria-expanded={activeVenueIdx === i}
+            >
               <img src={v.img} alt={v.title} className="venue-card-img" />
               <div className="venue-card-overlay">
                 <h3>{v.title}</h3>
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </section>
+
+      {/* ══════════ VENUE MODAL ══════════ */}
+      {activeVenue && (
+        <div
+          className="wedding-modal-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${activeVenue.title} details`}
+          onMouseDown={(e) => {
+            if (e.target === e.currentTarget) setActiveVenueIdx(null);
+          }}
+        >
+          <div className="wedding-modal">
+            <button
+              type="button"
+              className="wedding-modal-close"
+              onClick={() => setActiveVenueIdx(null)}
+              aria-label="Close"
+            >
+              <X size={20} />
+            </button>
+
+            <div className="wedding-modal-grid">
+              <div className="wedding-modal-img-wrap">
+                <img src={activeVenue.img} alt={activeVenue.title} className="wedding-modal-img" />
+                <div className="wedding-modal-img-overlay" />
+                <div className="wedding-modal-img-title">
+                  <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>Venue Experience</span>
+                  <h3>{activeVenue.title}</h3>
+                </div>
+              </div>
+
+              <div className="wedding-modal-body">
+                <p className="wedding-modal-desc">{activeVenue.desc}</p>
+                <ul className="wedding-modal-highlights">
+                  {activeVenue.highlights.map((h) => (
+                    <li key={h}>
+                      <span className="wedding-modal-bullet">✦</span>
+                      <span>{h}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="wedding-modal-cta">
+                  <button type="button" className="btn-primary" onClick={() => { setActiveVenueIdx(null); scrollToReservation(); }}>
+                    Start Planning <ArrowRight size={15} />
+                  </button>
+                  <button type="button" className="btn-outline" onClick={() => setActiveVenueIdx(null)}>
+                    Continue Browsing
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ══════════ DESIGN PHILOSOPHY ══════════ */}
       <section className="section-padding container reveal">

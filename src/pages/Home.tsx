@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Star, Check, MessageCircle } from 'lucide-react';
 
@@ -9,9 +9,7 @@ import weddingModern   from '../assets/images/wedding/modern.jpg';
 import weddingBohemian from '../assets/images/wedding/bohemian.jpg';
 import sahara          from '../assets/images/gallery/sahara.jpg';
 import imperialCity    from '../assets/images/gallery/imperial-city.jpg';
-import atlanticCoast   from '../assets/images/gallery/atlantic-coast.jpg';
 import gastronomy      from '../assets/images/gallery/gastronomy.jpg';
-import wellness        from '../assets/images/gallery/wellness.jpg';
 import artDesign       from '../assets/images/gallery/art-design.jpg';
 
 const HERO_VIDEO = 'https://videos.pexels.com/video-files/4954871/4954871-uhd_2560_1440_30fps.mp4';
@@ -32,19 +30,69 @@ const promises = [
 ];
 
 const weddingPreviews = [
-  { img: 'https://images.unsplash.com/photo-1519225495810-753b551f3c8c?auto=format&fit=crop&w=900&q=80', category: 'Riad Wedding', title: 'Sofia & James', location: 'Medina, Marrakech' },
-  { img: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80', category: 'Desert Ceremony', title: 'Amina & Luca', location: 'Sahara, Merzouga' },
-  { img: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=900&q=80', category: 'Palace Reception', title: 'Emma & Karim', location: 'Fez El Bali' },
-];
+  {
+    img: 'https://images.unsplash.com/photo-1519225495810-753b551f3c8c?auto=format&fit=crop&w=900&q=80',
+    category: 'Signature Wedding',
+    title: 'Marrakech Weddings',
+    location: 'Riads, gardens, rooftops',
+    detail:
+      'From hidden riads to palace gardens, Marrakech weddings are cinematic, intimate, and rich in atmosphere — designed with editorial polish and flawless coordination.',
+    highlights: ['Riad courtyards, rooftops, palaces', 'Design + styling direction', 'Guest journey + on-the-day orchestration'],
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=900&q=80',
+    category: 'Signature Wedding',
+    title: 'Desert Weddings',
+    location: 'Agafay & the Sahara',
+    detail:
+      'A sunset ceremony, lantern-lit dining, and music under the stars — desert weddings are immersive destination experiences with effortless luxury.',
+    highlights: ['Sunset ceremonies + stargazing dinners', 'Logistics + transport planning', 'Entertainment, lighting, and timing'],
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80',
+    category: 'Signature Wedding',
+    title: 'Coastal & Estate Weddings',
+    location: 'Essaouira & private estates',
+    detail:
+      'Coastal light, sea air, and relaxed sophistication — from seaside celebrations to private estates designed for multi-day hosting.',
+    highlights: ['Coastal ceremonies + golden hour', 'Estate weekends + guest hosting', 'Vendor curation + hospitality'],
+  },
+] as const;
 
 const eventPreviews = [
-  { img: sahara,       title: 'Desert Gala',          tag: 'Corporate Retreat' },
-  { img: imperialCity, title: 'Imperial Dinner',      tag: 'Private Celebration' },
-  { img: atlanticCoast,title: 'Coastal Soirée',       tag: 'Milestone Birthday' },
-  { img: gastronomy,   title: 'Gastronomic Journey',  tag: 'Brand Activation' },
-  { img: wellness,     title: 'Wellness Retreat',     tag: 'Executive Escape' },
-  { img: artDesign,    title: 'Art & Culture Evening', tag: 'Cultural Experience' },
-];
+  {
+    img: imperialCity,
+    title: 'Welcome Dinners',
+    tag: 'Private Events',
+    detail:
+      'The first gathering sets the tone — refined dining, warm hosting, and a beautifully paced evening for your guests.',
+    highlights: ['Venue + chef/caterer curation', 'Tablescapes + lighting', 'Run-of-show + coordination'],
+  },
+  {
+    img: gastronomy,
+    title: 'Engagement Celebrations',
+    tag: 'Pre-Wedding',
+    detail:
+      'An engagement celebration that feels like an editorial moment — intimate, intentional, and flawlessly managed.',
+    highlights: ['Concept + styling', 'Vendor curation', 'Guest experience + timing'],
+  },
+  {
+    img: artDesign,
+    title: 'Private Parties',
+    tag: 'Celebrations',
+    detail:
+      'Birthdays, anniversaries, private dinners — elevated celebrations that feel effortless and unforgettable.',
+    highlights: ['Atmosphere + entertainment', 'Hospitality details', 'On-site team management'],
+  },
+  {
+    img: sahara,
+    title: 'Corporate & Brand Events',
+    tag: 'Business',
+    detail:
+      'Premium gatherings for brands and corporate teams — creative direction, logistics, and execution handled with precision.',
+    highlights: ['Planning + production partners', 'AV, staging, and timelines', 'Discreet hosting + coordination'],
+  },
+] as const;
 
 const processSteps = [
   { num: '01', title: 'Discovery Call',      desc: 'We begin by understanding your vision, values, and dreams for your celebration.' },
@@ -67,11 +115,34 @@ const Home: React.FC = () => {
   const [testiIdx, setTestiIdx]   = useState(0);
   const [form, setForm]           = useState<InquiryForm>({ name: '', email: '', service: '', message: '' });
   const [formSent, setFormSent]   = useState(false);
+  const [activeWeddingPreviewIdx, setActiveWeddingPreviewIdx] = useState<number | null>(null);
+  const [activeEventPreviewIdx, setActiveEventPreviewIdx] = useState<number | null>(null);
+
+  const activeWeddingPreview = useMemo(
+    () => (activeWeddingPreviewIdx === null ? null : weddingPreviews[activeWeddingPreviewIdx]),
+    [activeWeddingPreviewIdx]
+  );
+  const activeEventPreview = useMemo(
+    () => (activeEventPreviewIdx === null ? null : eventPreviews[activeEventPreviewIdx]),
+    [activeEventPreviewIdx]
+  );
 
   useEffect(() => {
     const t = setInterval(() => setTestiIdx(i => (i + 1) % testimonials.length), 5500);
     return () => clearInterval(t);
   }, []);
+
+  useEffect(() => {
+    if (activeWeddingPreviewIdx === null && activeEventPreviewIdx === null) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setActiveWeddingPreviewIdx(null);
+        setActiveEventPreviewIdx(null);
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [activeWeddingPreviewIdx, activeEventPreviewIdx]);
 
   const handleForm = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) =>
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -215,30 +286,41 @@ const Home: React.FC = () => {
             <div>
               <span className="section-label">Featured Work</span>
               <span className="gold-line gold-line-left" />
-              <h2>Real Weddings,<br /><em>Real Love</em></h2>
+              <h2>Signature weddings across Morocco</h2>
             </div>
-            <Link to="/wedding" className="btn-outline section-header-cta">All Weddings <ArrowRight size={15} /></Link>
+            <Link to="/wedding" className="btn-outline section-header-cta">Explore Weddings <ArrowRight size={15} /></Link>
           </div>
 
-          <div className="wedding-preview-grid">
+          <div className="home-preview-grid home-preview-grid--weddings">
             {weddingPreviews.map((w, i) => (
-              <div key={i} className={`wedding-preview-card reveal delay-${(i + 1) * 100}`}>
-                <div className="wedding-preview-img-wrap">
+              <button
+                key={w.title}
+                type="button"
+                className={`home-preview-card reveal delay-${(i + 1) * 100}`}
+                onClick={() => {
+                  setActiveEventPreviewIdx(null);
+                  setActiveWeddingPreviewIdx(i);
+                }}
+                aria-haspopup="dialog"
+                aria-expanded={activeWeddingPreviewIdx === i}
+              >
+                <div className="home-preview-img-wrap">
                   <img src={w.img} alt={w.title} />
-                  <div className="wedding-preview-overlay">
-                    <span className="wedding-preview-tag">{w.category}</span>
-                    <div className="wedding-preview-info">
+                  <div className="home-preview-overlay">
+                    <span className="home-preview-tag">{w.category}</span>
+                    <div className="home-preview-info">
                       <h3>{w.title}</h3>
                       <p>{w.location}</p>
                     </div>
+                    <span className="home-preview-hint">View details</span>
                   </div>
                 </div>
-              </div>
+              </button>
             ))}
           </div>
 
           <div className="section-cta-row reveal">
-            <Link to="/contact" className="btn-primary">Plan Your Wedding <ArrowRight size={15} /></Link>
+            <Link to="/wedding" className="btn-primary">Explore Weddings <ArrowRight size={15} /></Link>
           </div>
         </div>
       </section>
@@ -250,22 +332,40 @@ const Home: React.FC = () => {
         <div className="events-preview-head container reveal">
           <span className="section-label">Beyond Weddings</span>
           <span className="gold-line gold-line-left" />
-          <h2>Luxury Events<br /><em>Across Morocco</em></h2>
+          <h2>Elegant events beyond the wedding day</h2>
           <p className="events-preview-sub">
             Corporate retreats, milestone celebrations, brand activations and private dinners —
             each one an experience worth remembering.
           </p>
         </div>
-        <div className="events-preview-grid">
+        <div className="container">
+          <div className="home-preview-grid home-preview-grid--events">
           {eventPreviews.map((ev, i) => (
-            <div key={i} className={`events-preview-card reveal delay-${(i % 3 + 1) * 100}`}>
-              <img src={ev.img} alt={ev.title} />
-              <div className="events-preview-card-overlay">
-                <span className="events-preview-tag">{ev.tag}</span>
-                <h3>{ev.title}</h3>
+            <button
+              key={ev.title}
+              type="button"
+              className={`home-preview-card reveal delay-${(i % 3 + 1) * 100}`}
+              onClick={() => {
+                setActiveWeddingPreviewIdx(null);
+                setActiveEventPreviewIdx(i);
+              }}
+              aria-haspopup="dialog"
+              aria-expanded={activeEventPreviewIdx === i}
+            >
+              <div className="home-preview-img-wrap">
+                <img src={ev.img} alt={ev.title} />
+                <div className="home-preview-overlay">
+                  <span className="home-preview-tag">{ev.tag}</span>
+                  <div className="home-preview-info">
+                    <h3>{ev.title}</h3>
+                    <p>Across Morocco</p>
+                  </div>
+                  <span className="home-preview-hint">View details</span>
+                </div>
               </div>
-            </div>
+            </button>
           ))}
+          </div>
         </div>
         <div className="container">
           <div className="section-cta-row reveal" style={{ paddingTop: '60px' }}>
@@ -273,6 +373,133 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* ══════════════════════════════════════
+          HOME PREVIEW MODAL (Weddings/Events)
+      ══════════════════════════════════════ */}
+      {activeWeddingPreview && (
+        <div
+          className="home-modal-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${activeWeddingPreview.title} details`}
+          onMouseDown={(e) => {
+            if (e.target === e.currentTarget) setActiveWeddingPreviewIdx(null);
+          }}
+        >
+          <div className="home-modal">
+            <button
+              type="button"
+              className="home-modal-close"
+              onClick={() => setActiveWeddingPreviewIdx(null)}
+              aria-label="Close"
+            >
+              ×
+            </button>
+
+            <div className="home-modal-grid">
+              <div className="home-modal-img-wrap">
+                <img src={activeWeddingPreview.img} alt={activeWeddingPreview.title} className="home-modal-img" />
+                <div className="home-modal-img-overlay" />
+                <div className="home-modal-img-title">
+                  <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>Featured Weddings</span>
+                  <h3>{activeWeddingPreview.title}</h3>
+                </div>
+              </div>
+
+              <div className="home-modal-body">
+                <p className="home-modal-desc">{activeWeddingPreview.detail}</p>
+                <ul className="home-modal-highlights">
+                  {activeWeddingPreview.highlights.map((h) => (
+                    <li key={h}>
+                      <span className="home-modal-bullet">✦</span>
+                      <span>{h}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="home-modal-cta">
+                  <button
+                    type="button"
+                    className="btn-primary"
+                    onClick={() => {
+                      setActiveWeddingPreviewIdx(null);
+                      navigate('/wedding');
+                    }}
+                  >
+                    Explore Weddings <ArrowRight size={15} />
+                  </button>
+                  <button type="button" className="btn-outline" onClick={() => setActiveWeddingPreviewIdx(null)}>
+                    Continue Browsing
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {activeEventPreview && (
+        <div
+          className="home-modal-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${activeEventPreview.title} details`}
+          onMouseDown={(e) => {
+            if (e.target === e.currentTarget) setActiveEventPreviewIdx(null);
+          }}
+        >
+          <div className="home-modal">
+            <button
+              type="button"
+              className="home-modal-close"
+              onClick={() => setActiveEventPreviewIdx(null)}
+              aria-label="Close"
+            >
+              ×
+            </button>
+
+            <div className="home-modal-grid">
+              <div className="home-modal-img-wrap">
+                <img src={activeEventPreview.img} alt={activeEventPreview.title} className="home-modal-img" />
+                <div className="home-modal-img-overlay" />
+                <div className="home-modal-img-title">
+                  <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>Events Preview</span>
+                  <h3>{activeEventPreview.title}</h3>
+                </div>
+              </div>
+
+              <div className="home-modal-body">
+                <p className="home-modal-desc">{activeEventPreview.detail}</p>
+                <ul className="home-modal-highlights">
+                  {activeEventPreview.highlights.map((h) => (
+                    <li key={h}>
+                      <span className="home-modal-bullet">✦</span>
+                      <span>{h}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="home-modal-cta">
+                  <button
+                    type="button"
+                    className="btn-primary"
+                    onClick={() => {
+                      setActiveEventPreviewIdx(null);
+                      navigate('/events');
+                    }}
+                  >
+                    Explore Events <ArrowRight size={15} />
+                  </button>
+                  <button type="button" className="btn-outline" onClick={() => setActiveEventPreviewIdx(null)}>
+                    Continue Browsing
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ══════════════════════════════════════
           7. PROCESS
