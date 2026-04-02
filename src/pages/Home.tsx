@@ -2,6 +2,9 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Star, Check, MessageCircle } from 'lucide-react';
 
+// Form Integration
+import { submitForm } from '../utils/formHandler';
+
 // ── Assets ────────────────────────────────────────────────
 import logo            from '../assets/images/logo2.png';
 import weddingHero     from '../assets/images/wedding/traditional.jpg';
@@ -23,10 +26,10 @@ const trustStats = [
 ];
 
 const promises = [
-  { icon: '✦', title: 'Undivided Attention',   desc: 'Every couple receives a dedicated planner — your single point of contact, always available.' },
-  { icon: '◈', title: 'Local Mastery',         desc: "Two decades of relationships with Morocco's finest vendors, venues, and artisans." },
-  { icon: '◎', title: 'Transparent Investment',desc: 'Clear, honest pricing. No surprises. Every dirham accounted for.' },
-  { icon: '❋', title: 'Cultural Fluency',      desc: 'Seamlessly blending traditions from around the world with Moroccan soul.' },
+  { icon: '✦', title: 'Bespoke Design',       desc: 'Every celebration is tailored to your vision, style, culture, and guest experience.' },
+  { icon: '◈', title: 'Local Expertise',      desc: 'Exclusive access to Morocco’s finest venues, artisans, and trusted vendors.' },
+  { icon: '◎', title: 'Seamless Coordination',desc: 'Planning, production, logistics, and guest flow handled from start to finish.' },
+  { icon: '❋', title: 'Luxury with Soul',      desc: 'Elegant experiences rooted in beauty, hospitality, and authentic Moroccan atmosphere.' },
 ];
 
 const weddingPreviews = [
@@ -95,10 +98,10 @@ const eventPreviews = [
 ] as const;
 
 const processSteps = [
-  { num: '01', title: 'Discovery Call',      desc: 'We begin by understanding your vision, values, and dreams for your celebration.' },
-  { num: '02', title: 'Bespoke Proposal',    desc: 'A tailored concept, venue shortlist, and investment framework presented to you.' },
-  { num: '03', title: 'Design & Curation',  desc: 'Moodboards, vendor selection, floral direction, and full visual storytelling.' },
-  { num: '04', title: 'Flawless Execution', desc: 'On-the-day orchestration so you experience every moment, fully present.' },
+  { num: '01', title: 'Discover',    desc: 'Consultation, aesthetic direction, scope, budget, priorities' },
+  { num: '02', title: 'Design',      desc: 'Venue sourcing, creative concept, vendor curation, guest experience' },
+  { num: '03', title: 'Orchestrate', desc: 'Production planning, timeline, logistics, approvals, coordination' },
+  { num: '04', title: 'Celebrate',   desc: 'On-site execution with calm, discreet, high-level management' },
 ];
 
 const testimonials = [
@@ -114,6 +117,7 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
   const [testiIdx, setTestiIdx]   = useState(0);
   const [form, setForm]           = useState<InquiryForm>({ name: '', email: '', service: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formSent, setFormSent]   = useState(false);
   const [activeWeddingPreviewIdx, setActiveWeddingPreviewIdx] = useState<number | null>(null);
   const [activeEventPreviewIdx, setActiveEventPreviewIdx] = useState<number | null>(null);
@@ -147,7 +151,24 @@ const Home: React.FC = () => {
   const handleForm = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) =>
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => { e.preventDefault(); setFormSent(true); };
+  const handleSubmit = async (e: React.FormEvent) => { 
+    e.preventDefault(); 
+    setIsSubmitting(true);
+    
+    const result = await submitForm({
+      contact_name: form.name,
+      contact_email: form.email,
+      service_type: form.service,
+      message: form.message
+    });
+
+    setIsSubmitting(false);
+    if (result.success) {
+      setFormSent(true);
+    } else {
+      alert("Error: " + result.error);
+    }
+  };
 
   return (
     <div className="page-home">
@@ -177,11 +198,14 @@ const Home: React.FC = () => {
             designed with intention, executed with precision.
           </p>
           <div className="home-hero-actions">
-            <button className="btn-primary" onClick={() => navigate('/contact')}>
-              Begin Your Journey <ArrowRight size={15} />
+            <button 
+              className="btn-primary" 
+              onClick={() => document.getElementById('reservation-form')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Book Reservation <ArrowRight size={15} />
             </button>
             <button className="btn-ghost" onClick={() => navigate('/wedding')}>
-              View Our Work
+              Plan Your Celebration
             </button>
           </div>
         </div>
@@ -565,7 +589,7 @@ const Home: React.FC = () => {
       {/* ══════════════════════════════════════
           9. FINAL CTA
       ══════════════════════════════════════ */}
-      <section className="home-final-cta">
+      <section className="home-final-cta" id="reservation-form">
         <div className="home-final-cta-bg" style={{ backgroundImage: `url(${weddingBohemian})` }} />
         <div className="home-final-cta-overlay" />
         <div className="container home-final-cta-content reveal">
@@ -605,8 +629,8 @@ const Home: React.FC = () => {
                   </select>
                 </div>
                 <textarea name="message" placeholder="Tell us about your vision…" value={form.message} onChange={handleForm} rows={3} />
-                <button type="submit" className="btn-primary cta-form-submit">
-                  Send Inquiry <ArrowRight size={15} />
+                <button type="submit" className="btn-primary cta-form-submit" disabled={isSubmitting}>
+                  {isSubmitting ? 'Sending…' : (<>Send Inquiry <ArrowRight size={15} /></>)}
                 </button>
               </form>
             )}
