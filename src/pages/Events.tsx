@@ -4,8 +4,9 @@ import { ArrowRight, X } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import eventsData from '../data/events.json';
 import { resolveEventsImage } from '../data/eventsAssets';
+import { eventsHeroImages } from '../data/imageCollections';
 
-const heroImages = eventsData.heroImageKeys.map(resolveEventsImage);
+const heroImages = eventsHeroImages.length > 0 ? eventsHeroImages : eventsData.heroImageKeys.map(resolveEventsImage);
 
 const categories = eventsData.categories.map(({ imgKey, ...rest }) => ({
   ...rest,

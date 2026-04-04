@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { Plus, Check, ArrowRight, X } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import weddingData from '../data/wedding.json';
+import { weddingImages } from '../data/imageCollections';
 
 const {
-  heroImages,
   hero,
   servicesSection,
   services,
@@ -21,11 +21,25 @@ const {
   ctaSection,
 } = weddingData;
 
+const heroImages = weddingImages.slice(0, 3);
+
+const venuesWithImages = venues.map((venue, index) => ({
+  ...venue,
+  img: weddingImages[3 + index] ?? weddingImages[index] ?? '',
+}));
+
+const editorialImage = weddingImages[8] ?? weddingImages[0] ?? '';
+
+const themesWithImages = themes.map((theme, index) => ({
+  ...theme,
+  img: weddingImages[9 + index] ?? weddingImages[index] ?? '',
+}));
+
 // ─────────────────────────────────────────────────────────
 const Wedding: React.FC = () => {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [activeVenueIdx, setActiveVenueIdx] = useState<number | null>(null);
-  const activeVenue = useMemo(() => (activeVenueIdx === null ? null : venues[activeVenueIdx]), [activeVenueIdx]);
+  const activeVenue = useMemo(() => (activeVenueIdx === null ? null : venuesWithImages[activeVenueIdx]), [activeVenueIdx]);
 
   useEffect(() => {
     if (activeVenueIdx === null) return;
@@ -83,7 +97,7 @@ const Wedding: React.FC = () => {
           <p>{venuesSection.subtitle}</p>
         </div>
         <div className="venue-experience-grid">
-          {venues.map((v, i) => (
+          {venuesWithImages.map((v, i) => (
             <button
               key={v.title}
               type="button"
@@ -161,11 +175,7 @@ const Wedding: React.FC = () => {
       <section className="section-padding container reveal">
         <div className="editorial-container">
           <div className="editorial-img-side">
-            <img
-              src={editorial.imageUrl}
-              alt={editorial.imageAlt}
-              className="editorial-img-main"
-            />
+              <img src={editorialImage} alt={editorial.imageAlt} className="editorial-img-main" />
           </div>
           <div className="editorial-text-side">
             <span className="section-label">{editorial.label}</span>
@@ -190,7 +200,7 @@ const Wedding: React.FC = () => {
           <p>{themesSection.subtitle}</p>
         </div>
         <div className="themes-inspiration-grid">
-          {themes.map((t, i) => (
+          {themesWithImages.map((t, i) => (
             <div key={i} className="theme-inspiration-card reveal" style={{ transitionDelay: `${i * 80}ms` }}>
               <img src={t.img} alt={t.title} className="theme-inspiration-img" />
               <div className="theme-inspiration-overlay">

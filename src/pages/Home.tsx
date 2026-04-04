@@ -7,8 +7,8 @@ import { submitForm } from '../utils/formHandler';
 
 // ── Assets ────────────────────────────────────────────────
 import logo            from '../assets/images/logo2.png';
-import weddingHero     from '../assets/images/wedding/traditional.jpg';
-import weddingModern   from '../assets/images/wedding/modern.jpg';
+import weddingHero     from '../assets/images/Weddings/8.jpg';
+import weddingModern   from '../assets/images/Weddings/11.jpg';
 import weddingBohemian from '../assets/images/wedding/bohemian.jpg';
 import sahara          from '../assets/images/gallery/sahara.jpg';
 import imperialCity    from '../assets/images/gallery/imperial-city.jpg';
