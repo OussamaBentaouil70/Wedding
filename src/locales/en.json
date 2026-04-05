@@ -107,9 +107,9 @@
   },
   "wedding_page": {
     "heroImages": [
-      "https://sumptuous-events.com/wp-content/uploads/2016/07/marrakech-wedding-planner.jpg",
-      "https://images.squarespace-cdn.com/content/v1/5e7cc650dbbd2c25c70e2fa8/de705cf0-8c99-46ff-860a-c7a6d212f1a4/el-fenn-wedding-planner",
-      "https://images.squarespace-cdn.com/content/v1/5f8ea32d7c05b54f63b91afa/b1b14475-66cb-44f1-83b0-8c5fcf1be2dd/mariarao_mamouniaweddings_-309.jpg"
+      "src/assets/images/Weddings/1.jpg",
+      "src/assets/images/Weddings/2.jpg",
+      "src/assets/images/Weddings/3.jpg"
     ],
     "hero": {
       "label": "Weddings in Morocco",
@@ -156,7 +156,7 @@
     "venues": [
       {
         "title": "Luxury Riads",
-        "img": "https://images.pexels.com/photos/15531325/pexels-photo-15531325.jpeg",
+        "img": "src/assets/images/Weddings/8.jpg",
         "desc": "Hidden behind carved doors, Marrakech riads offer intimate courtyards, candlelit dinners, and a sense of cinematic privacy.",
         "highlights": [
           "Medina courtyards & rooftop moments",
@@ -166,7 +166,7 @@
       },
       {
         "title": "Private Villas & Estates",
-        "img": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
+        "img": "src/assets/images/Weddings/22.jpg",
         "desc": "A private residence feel with elevated hospitality — space for multi-day hosting, poolside gatherings, and relaxed luxury.",
         "highlights": [
           "Multi-day wedding weekends",
@@ -176,7 +176,7 @@
       },
       {
         "title": "Palaces & Gardens",
-        "img": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+        "img": "src/assets/images/Weddings/31.jpg",
         "desc": "Grand architecture, heritage details, and lush gardens for couples who want a statement-making, regal celebration.",
         "highlights": [
           "High-impact ceremony backdrops",
@@ -186,7 +186,7 @@
       },
       {
         "title": "Desert Camps",
-        "img": "https://images.pexels.com/photos/35901289/pexels-photo-35901289.jpeg",
+        "img": "src/assets/images/Weddings/4.jpg",
         "desc": "A sunset ceremony, lantern-lit dining, and music under the stars — the Sahara is Morocco at its most unforgettable.",
         "highlights": [
           "Sunset ceremonies & stargazing dinners",
@@ -196,7 +196,7 @@
       },
       {
         "title": "Beachfront Venues",
-        "img": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1200&q=80",
+        "img": "src/assets/images/Weddings/21.jpg",
         "desc": "Ocean air, golden light, and relaxed sophistication — coastal venues bring effortless romance with refined styling.",
         "highlights": [
           "Golden-hour ceremonies",
@@ -206,7 +206,7 @@
       }
     ],
     "editorial": {
-      "imageUrl": "https://images.pexels.com/photos/35279305/pexels-photo-35279305.jpeg",
+      "imageUrl": "src/assets/images/Weddings/9.jpg",
       "imageAlt": "Wedding design philosophy",
       "label": "Our Philosophy",
       "title": "Artistry In Every Detail",
@@ -228,27 +228,27 @@
     "themes": [
       {
         "title": "Moroccan Royal Elegance",
-        "img": "https://www.royalmansour.com/wp-content/uploads/2024/06/RM-GRAND-RIAD-1-new.jpg"
+        "img": "src/assets/images/Weddings/10.jpg"
       },
       {
         "title": "Modern Minimal Romance",
-        "img": "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80"
+        "img": "src/assets/images/Weddings/11.jpg"
       },
       {
         "title": "Desert Sunset Celebration",
-        "img": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80"
+        "img": "src/assets/images/Weddings/12.jpg"
       },
       {
         "title": "Garden Wedding in Bloom",
-        "img": "https://amelie.wedding/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fdym6pos1%2Fproduction%2Fa5d9db8c245e55bc012aae143688ede8c32c9c35-1600x1066.webp%3Frect%3D90%2C0%2C1421%2C1066%26w%3D600%26h%3D450&w=3840&q=75"
+        "img": "src/assets/images/Weddings/13.jpg"
       },
       {
         "title": "White & Gold Sophistication",
-        "img": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80"
+        "img": "src/assets/images/Weddings/14.jpg"
       },
       {
         "title": "Beldi Chic Reimagined",
-        "img": "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=800&q=80"
+        "img": "src/assets/images/Weddings/15.jpg"
       }
     ],
     "includedSection": {
@@ -326,11 +326,11 @@
     }
   },
   "events_page": {
-    "heroImageKeys": [
-      "corporate",
-      "festivals",
-      "birthday",
-      "retreats"
+    "heroImages": [
+      "src/assets/images/Festivals/1.jpg",
+      "src/assets/images/Corporate Events/4.jpg",
+      "src/assets/images/Birthday & Private events/1.jpg",
+      "src/assets/images/Retreats/1.jpeg"
     ],
     "hero": {
       "label": "Events in Morocco",
@@ -347,7 +347,7 @@
       {
         "title": "Engagement Parties",
         "desc": "Celebrating your first steps into forever with intimate candlelit settings and bespoke Moroccan charm.",
-        "imgKey": "bachelor",
+        "img": "src/assets/images/EVJF - Bachelor Party/3.jpg",
         "detail": "A beautifully hosted engagement celebration that sets the tone for everything to come — designed like an editorial moment, managed like a production.",
         "highlights": [
           "Concept + moodboard direction",
@@ -358,7 +358,7 @@
       {
         "title": "Bridal Showers & Welcome Dinners",
         "desc": "Elegant pre-wedding gatherings that set the tone for an unforgettable celebration ahead.",
-        "imgKey": "editorial",
+        "img": "src/assets/images/EVJF - Bachelor Party/1.jpg",
         "detail": "From refined bridal showers to welcome dinners in the Medina, we create warm, elevated moments that feel effortless for you and unforgettable for your guests.",
         "highlights": [
           "Tablescapes, florals, lighting",
@@ -369,7 +369,7 @@
       {
         "title": "Anniversaries & Private Celebrations",
         "desc": "Meaningful milestones marked with personalised design, exclusive venues, and heartfelt details.",
-        "imgKey": "retreats",
+        "img": "src/assets/images/EVJF - Bachelor Party/8.jpg",
         "detail": "Anniversaries, proposals, private dinners, and milestone moments — crafted with intimacy, beauty, and seamless execution across Morocco.",
         "highlights": [
           "Private venues and intimate set-ups",
@@ -380,7 +380,7 @@
       {
         "title": "Luxury Birthdays",
         "desc": "From lavish rooftop parties to intimate desert dinners — milestones deserve a statement.",
-        "imgKey": "birthday",
+        "img": "src/assets/images/Birthday & Private events/4.jpg",
         "detail": "A luxury birthday should feel like a world of its own — whether it's a rooftop soirée, a villa party, or a desert celebration under the stars.",
         "highlights": [
           "Immersive entertainment curation",
@@ -391,7 +391,7 @@
       {
         "title": "Brand Experiences",
         "desc": "Immersive brand activations and editorial productions set against Morocco's most stunning backdrops.",
-        "imgKey": "editorial",
+        "img": "src/assets/images/Corporate Events/2.jpg",
         "detail": "Premium brand activations, launches, dinners, and editorial productions — delivered with creative direction, technical precision, and impeccable guest experience.",
         "highlights": [
           "Creative direction + production",
@@ -402,7 +402,7 @@
       {
         "title": "Corporate Gatherings",
         "desc": "Prestigious corporate events, executive retreats, and galas delivered with precision and sophistication.",
-        "imgKey": "corporate",
+        "img": "src/assets/images/Corporate Events/4.jpg",
         "detail": "Corporate gatherings across Morocco — executive dinners, retreats, incentive experiences, and galas — planned with discretion, clarity, and polish.",
         "highlights": [
           "Budget + logistics planning",
@@ -440,7 +440,7 @@
     "formats": [
       {
         "title": "Rooftop Dinners in Marrakech",
-        "imgKey": "imperialCity",
+        "img": "src/assets/images/gallery/rooftop-garden.jpg",
         "tag": "Featured Format",
         "detail": "Golden hour, lantern light, and a skyline dinner — elevated hospitality with an editorial Moroccan atmosphere.",
         "highlights": [
@@ -451,7 +451,7 @@
       },
       {
         "title": "Garden Soirées",
-        "imgKey": "retreats",
+        "img": "src/assets/images/Retreats/1.jpeg",
         "tag": "Featured Format",
         "detail": "Lush greenery, layered florals, and refined dining — perfect for celebrations that feel romantic and timeless.",
         "highlights": [
@@ -462,7 +462,7 @@
       },
       {
         "title": "Desert Experiences",
-        "imgKey": "sahara",
+        "img": "src/assets/images/EVJF - Bachelor Party/2.jpg",
         "tag": "Featured Format",
         "detail": "A destination experience that becomes the story — sunset arrivals, luxury dining, and music under the stars.",
         "highlights": [
@@ -473,7 +473,7 @@
       },
       {
         "title": "Intimate Private Receptions",
-        "imgKey": "bachelor",
+        "img": "src/assets/images/Retreats/9.jpg",
         "tag": "Featured Format",
         "detail": "A private celebration, perfectly choreographed — for smaller guest counts with exceptional design detail.",
         "highlights": [
@@ -484,7 +484,7 @@
       },
       {
         "title": "Brand or Executive Dinners",
-        "imgKey": "corporate",
+        "img": "src/assets/images/Corporate Events/1.jpg",
         "tag": "Featured Format",
         "detail": "High-level dinners for brands and executives — discreet, premium, and built around impeccable hospitality.",
         "highlights": [

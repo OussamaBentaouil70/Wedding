@@ -3,36 +3,23 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import PageHero from '../components/PageHero';
-import { resolveEventsImage } from '../data/eventsAssets';
-import { eventsHeroImages } from '../data/imageCollections';
+import { resolveJsonImageSrc } from '../utils/imageResolver';
 
 // ─────────────────────────────────────────────────────────
 const Events: React.FC = () => {
   const { t } = useTranslation();
   const eventsData: any = t('events_page', { returnObjects: true });
 
-  const heroImages = useMemo(
-    () => (eventsHeroImages.length > 0 ? eventsHeroImages : eventsData.heroImageKeys.map(resolveEventsImage)),
-    [eventsData.heroImageKeys]
-  );
-
-  const categories = useMemo(
-    () => eventsData.categories.map(({ imgKey, ...rest }: any) => ({
-      ...rest,
-      img: resolveEventsImage(imgKey),
-    })),
-    [eventsData.categories]
-  );
-
+  const heroImages: string[] = (eventsData.heroImages ?? []).map(resolveJsonImageSrc);
+  const categories: any[] = (eventsData.categories ?? []).map((category: any) => ({
+    ...category,
+    img: resolveJsonImageSrc(category.img),
+  }));
   const promises: any[] = eventsData.promises ?? [];
-
-  const formats = useMemo(
-    () => eventsData.formats.map(({ imgKey, ...rest }: any) => ({
-      ...rest,
-      img: resolveEventsImage(imgKey),
-    })),
-    [eventsData.formats]
-  );
+  const formats: any[] = (eventsData.formats ?? []).map((format: any) => ({
+    ...format,
+    img: resolveJsonImageSrc(format.img),
+  }));
 
   const [activeCategoryIdx, setActiveCategoryIdx] = useState<number | null>(null);
   const [activeFormatIdx, setActiveFormatIdx] = useState<number | null>(null);

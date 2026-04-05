@@ -2,8 +2,8 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Plus, Check, ArrowRight, X } from 'lucide-react';
 import PageHero from '../components/PageHero';
-import { weddingImages } from '../data/imageCollections';
 import { useTranslation } from 'react-i18next';
+import { resolveJsonImageSrc } from '../utils/imageResolver';
 
 // ─────────────────────────────────────────────────────────
 const Wedding: React.FC = () => {
@@ -26,19 +26,16 @@ const Wedding: React.FC = () => {
     ctaSection,
   } = weddingDataLocal;
 
-  const heroImages = useMemo(() => weddingImages.slice(0, 3), []);
-
-  const venuesWithImages = useMemo(() => venues.map((venue: any, index: number) => ({
+  const heroImages: string[] = (weddingDataLocal.heroImages ?? []).map(resolveJsonImageSrc);
+  const venuesWithImages: any[] = (venues ?? []).map((venue: any) => ({
     ...venue,
-    img: weddingImages[3 + index] ?? weddingImages[index] ?? '',
-  })), [venues]);
-
-  const editorialImage = weddingImages[8] ?? weddingImages[0] ?? '';
-
-  const themesWithImages = useMemo(() => themes.map((theme: any, index: number) => ({
+    img: resolveJsonImageSrc(venue.img),
+  }));
+  const editorialImage: string = resolveJsonImageSrc(editorial.imageUrl ?? '');
+  const themesWithImages: any[] = (themes ?? []).map((theme: any) => ({
     ...theme,
-    img: weddingImages[9 + index] ?? weddingImages[index] ?? '',
-  })), [themes]);
+    img: resolveJsonImageSrc(theme.img),
+  }));
 
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [activeVenueIdx, setActiveVenueIdx] = useState<number | null>(null);

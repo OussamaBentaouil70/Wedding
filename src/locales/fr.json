@@ -313,11 +313,11 @@
     }
   },
   "events_page": {
-    "heroImageKeys": [
-      "corporate",
-      "festivals",
-      "birthday",
-      "retreats"
+    "heroImages": [
+      "src/assets/images/Festivals/1.jpg",
+      "src/assets/images/Corporate Events/4.jpg",
+      "src/assets/images/Birthday & Private events/1.jpg",
+      "src/assets/images/Retreats/1.jpeg"
     ],
     "hero": {
       "label": "Événements au Maroc",
@@ -334,7 +334,7 @@
       {
         "title": "Fêtes de Fiançailles",
         "desc": "Célébrez vos premiers pas vers le grand jour dans des ambiances intimistes et élégantes.",
-        "imgKey": "bachelor",
+        "img": "src/assets/images/EVJF - Bachelor Party/3.jpg",
         "detail": "Une célébration de fiançailles pensée comme un moment éditorial — chaleureuse, fluide et parfaitement orchestrée.",
         "highlights": [
           "Concept + direction moodboard",
@@ -345,7 +345,7 @@
       {
         "title": "Bridal Showers & Dîners de Bienvenue",
         "desc": "Des rassemblements pré-mariage élégants qui donnent le ton d'une célébration inoubliable.",
-        "imgKey": "editorial",
+        "img": "src/assets/images/EVJF - Bachelor Party/1.jpg",
         "detail": "Du bridal shower raffiné au dîner de bienvenue dans la Médina, nous créons des instants chaleureux et haut de gamme.",
         "highlights": [
           "Tables, fleurs et éclairage",
@@ -356,7 +356,7 @@
       {
         "title": "Anniversaires & Célébrations Privées",
         "desc": "Des moments forts sublimés par un design personnalisé, des lieux exclusifs et des détails sensibles.",
-        "imgKey": "retreats",
+        "img": "src/assets/images/EVJF - Bachelor Party/8.jpg",
         "detail": "Anniversaires, demandes en mariage, dîners privés et étapes de vie — conçus avec intimité, beauté et exécution sans faille.",
         "highlights": [
           "Lieux privés et configurations intimistes",
@@ -367,7 +367,7 @@
       {
         "title": "Anniversaires de Luxe",
         "desc": "Des rooftops spectaculaires aux dîners dans le désert — chaque anniversaire mérite une signature.",
-        "imgKey": "birthday",
+        "img": "src/assets/images/Birthday & Private events/4.jpg",
         "detail": "Un anniversaire de luxe crée son propre univers — rooftop, villa privée ou célébration sous les étoiles.",
         "highlights": [
           "Curation d'animations immersives",
@@ -378,7 +378,7 @@
       {
         "title": "Expériences de Marque",
         "desc": "Des activations immersives et productions éditoriales dans les plus beaux décors du Maroc.",
-        "imgKey": "editorial",
+        "img": "src/assets/images/Corporate Events/2.jpg",
         "detail": "Activations premium, lancements, dîners et productions éditoriales — livrés avec direction créative et excellence opérationnelle.",
         "highlights": [
           "Direction créative + production",
@@ -389,7 +389,7 @@
       {
         "title": "Événements Corporate",
         "desc": "Retraites exécutives, dîners et galas orchestrés avec précision et sophistication.",
-        "imgKey": "corporate",
+        "img": "src/assets/images/Corporate Events/4.jpg",
         "detail": "Événements corporate au Maroc — dîners exécutifs, retraites et expériences incentive — planifiés avec clarté et discrétion.",
         "highlights": [
           "Planification budget + logistique",
@@ -427,7 +427,7 @@
     "formats": [
       {
         "title": "Dîners Rooftop à Marrakech",
-        "imgKey": "imperialCity",
+        "img": "src/assets/images/gallery/rooftop-garden.jpg",
         "tag": "Format Vedette",
         "detail": "Heure dorée, lanternes et skyline — une hospitalité élevée dans une atmosphère marocaine éditoriale.",
         "highlights": [
@@ -438,7 +438,7 @@
       },
       {
         "title": "Soirées dans les Jardins",
-        "imgKey": "retreats",
+        "img": "src/assets/images/Retreats/1.jpeg",
         "tag": "Format Vedette",
         "detail": "Verdure luxuriante, fleurs généreuses et dining raffiné — idéal pour des célébrations romantiques et intemporelles.",
         "highlights": [
@@ -449,7 +449,7 @@
       },
       {
         "title": "Expériences dans le Désert",
-        "imgKey": "sahara",
+        "img": "src/assets/images/EVJF - Bachelor Party/2.jpg",
         "tag": "Format Vedette",
         "detail": "Une expérience destination qui devient le récit — arrivées au coucher du soleil, dîner de luxe et musique sous les étoiles.",
         "highlights": [
@@ -460,7 +460,7 @@
       },
       {
         "title": "Réceptions Privées Intimistes",
-        "imgKey": "bachelor",
+        "img": "src/assets/images/Retreats/9.jpg",
         "tag": "Format Vedette",
         "detail": "Une célébration privée parfaitement chorégraphiée — pour des groupes réduits et une exigence du détail.",
         "highlights": [
@@ -471,7 +471,7 @@
       },
       {
         "title": "Dîners de Marque ou Exécutifs",
-        "imgKey": "corporate",
+        "img": "src/assets/images/Corporate Events/1.jpg",
         "tag": "Format Vedette",
         "detail": "Des dîners premium pour marques et décideurs — discrets, élégants et centrés sur l'hospitalité.",
         "highlights": [

@@ -31,31 +31,31 @@
   "venues": [
     {
       "title": "Luxury Riads",
-      "img": "https://images.pexels.com/photos/15531325/pexels-photo-15531325.jpeg",
+      "img": "src/assets/images/Weddings/46.jpg",
       "desc": "Hidden behind carved doors, Marrakech riads offer intimate courtyards, candlelit dinners, and a sense of cinematic privacy.",
       "highlights": ["Medina courtyards & rooftop moments", "Ideal for intimate to mid-size celebrations", "Perfect for welcome dinners & brunches"]
     },
     {
       "title": "Private Villas & Estates",
-      "img": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
+      "img": "src/assets/images/Weddings/7.jpg",
       "desc": "A private residence feel with elevated hospitality — space for multi-day hosting, poolside gatherings, and relaxed luxury.",
       "highlights": ["Multi-day wedding weekends", "On-site accommodation for guests", "Flexible layouts for ceremony + reception"]
     },
     {
       "title": "Palaces & Gardens",
-      "img": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=80",
+      "img": "src/assets/images/Weddings/39.jpg",
       "desc": "Grand architecture, heritage details, and lush gardens for couples who want a statement-making, regal celebration.",
       "highlights": ["High-impact ceremony backdrops", "Large guest capacity options", "Ideal for formal receptions & live entertainment"]
     },
     {
       "title": "Desert Camps",
-      "img": "https://images.pexels.com/photos/35901289/pexels-photo-35901289.jpeg",
+      "img": "src/assets/images/Weddings/4.jpg",
       "desc": "A sunset ceremony, lantern-lit dining, and music under the stars — the Sahara is Morocco at its most unforgettable.",
       "highlights": ["Sunset ceremonies & stargazing dinners", "Immersive guest experience", "Perfect for elopements or bold weekend events"]
     },
     {
       "title": "Beachfront Venues",
-      "img": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1200&q=80",
+      "img": "src/assets/images/Weddings/46.jpg",
       "desc": "Ocean air, golden light, and relaxed sophistication — coastal venues bring effortless romance with refined styling.",
       "highlights": ["Golden-hour ceremonies", "Laid-back luxury atmosphere", "Great for guest excursions & seaside brunches"]
     }
