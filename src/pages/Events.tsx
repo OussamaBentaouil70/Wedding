@@ -1,27 +1,39 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import PageHero from '../components/PageHero';
-import eventsData from '../data/events.json';
 import { resolveEventsImage } from '../data/eventsAssets';
 import { eventsHeroImages } from '../data/imageCollections';
 
-const heroImages = eventsHeroImages.length > 0 ? eventsHeroImages : eventsData.heroImageKeys.map(resolveEventsImage);
-
-const categories = eventsData.categories.map(({ imgKey, ...rest }) => ({
-  ...rest,
-  img: resolveEventsImage(imgKey),
-}));
-
-const promises = eventsData.promises;
-
-const formats = eventsData.formats.map(({ imgKey, ...rest }) => ({
-  ...rest,
-  img: resolveEventsImage(imgKey),
-}));
-
 // ─────────────────────────────────────────────────────────
 const Events: React.FC = () => {
+  const { t } = useTranslation();
+  const eventsData: any = t('events_page', { returnObjects: true });
+
+  const heroImages = useMemo(
+    () => (eventsHeroImages.length > 0 ? eventsHeroImages : eventsData.heroImageKeys.map(resolveEventsImage)),
+    [eventsData.heroImageKeys]
+  );
+
+  const categories = useMemo(
+    () => eventsData.categories.map(({ imgKey, ...rest }: any) => ({
+      ...rest,
+      img: resolveEventsImage(imgKey),
+    })),
+    [eventsData.categories]
+  );
+
+  const promises: any[] = eventsData.promises ?? [];
+
+  const formats = useMemo(
+    () => eventsData.formats.map(({ imgKey, ...rest }: any) => ({
+      ...rest,
+      img: resolveEventsImage(imgKey),
+    })),
+    [eventsData.formats]
+  );
+
   const [activeCategoryIdx, setActiveCategoryIdx] = useState<number | null>(null);
   const [activeFormatIdx, setActiveFormatIdx] = useState<number | null>(null);
 
@@ -77,7 +89,7 @@ const Events: React.FC = () => {
         <p>{eventsData.categoriesSection.subtitle}</p>
       </div>
       <div className="ev-categories-grid">
-        {categories.map((cat, i) => (
+        {categories.map((cat: any, i: number) => (
           <button
             key={cat.title}
             type="button"
@@ -113,7 +125,7 @@ const Events: React.FC = () => {
           </p>
         </div>
         <div className="ev-promise-grid">
-          {promises.map((p, i) => (
+          {promises.map((p: any, i: number) => (
             <div key={i} className={`ev-promise-card reveal delay-${(i + 1) * 100}`}>
               <span className="ev-promise-icon">{p.icon}</span>
               <h3>{p.title}</h3>
@@ -133,7 +145,7 @@ const Events: React.FC = () => {
         <p>{eventsData.formatsSection.subtitle}</p>
       </div>
       <div className="ev-formats-grid">
-        {formats.map((fmt, i) => (
+        {formats.map((fmt: any, i: number) => (
           <button
             key={fmt.title}
             type="button"
@@ -164,13 +176,13 @@ const Events: React.FC = () => {
         className="ev-modal-overlay"
         role="dialog"
         aria-modal="true"
-        aria-label={`${activeCategory.title} details`}
+        aria-label={`${activeCategory.title} ${t('events_page.ui.details')}`}
         onMouseDown={(e) => {
           if (e.target === e.currentTarget) closeAllModals();
         }}
       >
         <div className="ev-modal">
-          <button type="button" className="ev-modal-close" onClick={closeAllModals} aria-label="Close">
+          <button type="button" className="ev-modal-close" onClick={closeAllModals} aria-label={t('events_page.ui.close')}>
             <X size={20} />
           </button>
 
@@ -179,7 +191,7 @@ const Events: React.FC = () => {
               <img src={activeCategory.img} alt={activeCategory.title} className="ev-modal-img" />
               <div className="ev-modal-img-overlay" />
               <div className="ev-modal-img-title">
-                <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>Event Category</span>
+                <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>{t('events_page.ui.event_category')}</span>
                 <h3>{activeCategory.title}</h3>
               </div>
             </div>
@@ -187,7 +199,7 @@ const Events: React.FC = () => {
             <div className="ev-modal-body">
               <p className="ev-modal-desc">{activeCategory.detail}</p>
               <ul className="ev-modal-highlights">
-                {activeCategory.highlights.map((h) => (
+                {activeCategory.highlights.map((h: string) => (
                   <li key={h}>
                     <span className="ev-modal-bullet">✦</span>
                     <span>{h}</span>
@@ -204,10 +216,10 @@ const Events: React.FC = () => {
                     scrollToReservation();
                   }}
                 >
-                  Reserve / Inquire <ArrowRight size={15} />
+                  {t('events_page.ui.reserve')} <ArrowRight size={15} />
                 </button>
                 <button type="button" className="btn-outline" onClick={closeAllModals}>
-                  Continue Browsing
+                  {t('events_page.ui.continue')}
                 </button>
               </div>
             </div>
@@ -222,13 +234,13 @@ const Events: React.FC = () => {
         className="ev-modal-overlay"
         role="dialog"
         aria-modal="true"
-        aria-label={`${activeFormat.title} details`}
+        aria-label={`${activeFormat.title} ${t('events_page.ui.details')}`}
         onMouseDown={(e) => {
           if (e.target === e.currentTarget) closeAllModals();
         }}
       >
         <div className="ev-modal">
-          <button type="button" className="ev-modal-close" onClick={closeAllModals} aria-label="Close">
+          <button type="button" className="ev-modal-close" onClick={closeAllModals} aria-label={t('events_page.ui.close')}>
             <X size={20} />
           </button>
 
@@ -237,7 +249,7 @@ const Events: React.FC = () => {
               <img src={activeFormat.img} alt={activeFormat.title} className="ev-modal-img" />
               <div className="ev-modal-img-overlay" />
               <div className="ev-modal-img-title">
-                <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>Featured Format</span>
+                <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>{t('events_page.formatsSection.label')}</span>
                 <h3>{activeFormat.title}</h3>
               </div>
             </div>
@@ -245,7 +257,7 @@ const Events: React.FC = () => {
             <div className="ev-modal-body">
               <p className="ev-modal-desc">{activeFormat.detail}</p>
               <ul className="ev-modal-highlights">
-                {activeFormat.highlights.map((h) => (
+                {activeFormat.highlights.map((h: string) => (
                   <li key={h}>
                     <span className="ev-modal-bullet">✦</span>
                     <span>{h}</span>
@@ -262,10 +274,10 @@ const Events: React.FC = () => {
                     scrollToReservation();
                   }}
                 >
-                  Reserve / Inquire <ArrowRight size={15} />
+                  {t('events_page.ui.reserve')} <ArrowRight size={15} />
                 </button>
                 <button type="button" className="btn-outline" onClick={closeAllModals}>
-                  Continue Browsing
+                  {t('events_page.ui.continue')}
                 </button>
               </div>
             </div>
@@ -281,7 +293,7 @@ const Events: React.FC = () => {
         <h2>{eventsData.ctaSection.title}</h2>
         <p>{eventsData.ctaSection.subtitle}</p>
         <Link to="/contact" className="btn-primary">
-          Plan Your Event <ArrowRight size={15} />
+          {t('events_page.ui.plan_event')} <ArrowRight size={15} />
         </Link>
       </div>
     </section>

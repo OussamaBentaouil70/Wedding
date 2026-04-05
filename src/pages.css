@@ -36,7 +36,7 @@
 ═══════════════════════════════════════════════════════ */
 .home-hero {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   min-height: 640px;
   overflow: hidden;
@@ -1752,7 +1752,7 @@
 /* Modal */
 .modal-overlay {
   position: fixed;
-  top: 0; left: 0; width: 100vw; height: 100vh;
+  top: 0; left: 0; width: 100%; height: 100vh;
   background: rgba(0,0,0,0.6);
   display: flex;
   justify-content: center;
@@ -3179,16 +3179,37 @@
 @media (max-width: 900px) {
   .ev-categories-grid { grid-template-columns: 1fr 1fr; }
   .ev-promise-grid { grid-template-columns: 1fr; }
-  .ev-formats-grid { grid-template-columns: 1fr 1fr; }
-  .ev-format-card { height: 360px; }
+  .ev-formats-grid { grid-template-columns: 1fr; }
+  .ev-format-card { height: 360px; overflow: hidden; }
+  .ev-format-overlay { overflow-wrap: break-word; word-wrap: break-word; padding: 24px 15px; }
+  .ev-format-overlay h3 { word-wrap: break-word; font-size: 1.25rem; }
 }
 
 @media (max-width: 600px) {
   .ev-categories-grid { grid-template-columns: 1fr; }
   .ev-formats-grid { grid-template-columns: 1fr; }
+  .ev-format-overlay { overflow-wrap: break-word; word-wrap: break-word; padding: 20px 15px; }
+  .ev-format-overlay h3 { word-wrap: break-word; overflow-wrap: break-word; white-space: normal; font-size: 1.15rem; }
+  .ev-format-tag { word-wrap: break-word; overflow-wrap: break-word; white-space: normal; }
+  .wedding-services-grid { grid-template-columns: 1fr; }
+  .venue-experience-grid { grid-template-columns: 1fr; }
+  .themes-inspiration-grid { grid-template-columns: 1fr; }
+  .wedding-section-header { padding: 0 10px; width: 100%; box-sizing: border-box; }
+  .wedding-section-header h2 { font-size: clamp(1.6rem, 7vw, 2rem); overflow-wrap: break-word; word-wrap: break-word; hyphens: auto; white-space: normal; line-height: 1.3; }
+  .wedding-section-header p { overflow-wrap: break-word; word-wrap: break-word; padding: 0; }
+  .editorial-text-side h2 { font-size: clamp(1.6rem, 7vw, 2rem); overflow-wrap: break-word; word-wrap: break-word; white-space: normal; }
+  .editorial-text-side p { text-align: left; margin-right: 15px; overflow-wrap: break-word; word-wrap: break-word; }
+  .editorial-details-list { grid-template-columns: 1fr; gap: 12px; }
+  .editorial-container { padding: 40px 0; overflow-x: hidden; }
+  .editorial-img-main { width: calc(100% - 15px); box-shadow: 15px 15px 0 rgba(197, 168, 128, 0.1); }
+  
+  /* FAQ responsive fixes */
+  .wedding-faq { padding: 0 15px; box-sizing: border-box; overflow-wrap: break-word; word-wrap: break-word; overflow: hidden; }
+  .faq-question { gap: 15px; align-items: flex-start; }
+  .faq-question h3 { font-size: 1.15rem; line-height: 1.4; padding-right: 10px; word-wrap: break-word; overflow-wrap: break-word; }
+  .faq-icon { flex-shrink: 0; margin-top: 2px; }
+  .faq-answer { font-size: 1rem; padding-right: 15px; word-wrap: break-word; overflow-wrap: break-word; }
 }
-
-/* Events modals */
 .ev-modal-overlay {
   position: fixed;
   inset: 0;
@@ -3346,7 +3367,7 @@
    ======================================================== */
 .page-hero {
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -4169,16 +4190,32 @@
 
 @media (max-width: 900px) {
   .wedding-services-grid { grid-template-columns: 1fr 1fr; }
-  .editorial-container { flex-direction: column; gap: 40px; }
+  .venue-experience-grid { grid-template-columns: 1fr 1fr; }
+  .editorial-container { flex-direction: column; gap: 40px; padding: 60px 0; overflow: hidden; }
+  .editorial-img-main { height: 400px; width: calc(100% - 20px); box-shadow: 20px 20px 0 rgba(197, 168, 128, 0.1); }
+  .editorial-text-side { padding: 0 20px; width: 100%; box-sizing: border-box; overflow-wrap: break-word; word-wrap: break-word; }
+  .editorial-details-list { grid-template-columns: 1fr 1fr; }
   .themes-inspiration-grid { grid-template-columns: 1fr 1fr; }
   .wedding-cta-final h2 { font-size: 3rem; }
 }
 
 @media (max-width: 600px) {
   .wedding-services-grid { grid-template-columns: 1fr; }
-  .venue-experience-grid { grid-template-columns: 1fr 1fr; }
+  .venue-experience-grid { grid-template-columns: 1fr; }
   .themes-inspiration-grid { grid-template-columns: 1fr; }
   .wedding-section-header h2 { font-size: 2.5rem; }
+  .editorial-text-side h2 { font-size: 2.2rem; }
+  .editorial-text-side p { text-align: left; margin-right: 15px; } /* Fix flush-right text */
+  .editorial-details-list { grid-template-columns: 1fr; gap: 12px; }
+  .editorial-container { padding: 40px 0; }
+  .editorial-img-main { width: calc(100% - 15px); box-shadow: 15px 15px 0 rgba(197, 168, 128, 0.1); }
+  
+  /* FAQ responsive fixes */
+  .wedding-faq { padding: 0 15px; box-sizing: border-box; overflow-wrap: break-word; word-wrap: break-word; overflow: hidden; }
+  .faq-question { gap: 15px; align-items: flex-start; }
+  .faq-question h3 { font-size: 1.15rem; line-height: 1.4; padding-right: 10px; }
+  .faq-icon { flex-shrink: 0; margin-top: 2px; }
+  .faq-answer { font-size: 1rem; padding-right: 15px; }
 }
 
 /* What's Included Grid (8 items) */

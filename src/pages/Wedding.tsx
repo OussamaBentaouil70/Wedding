@@ -2,44 +2,47 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Plus, Check, ArrowRight, X } from 'lucide-react';
 import PageHero from '../components/PageHero';
-import weddingData from '../data/wedding.json';
 import { weddingImages } from '../data/imageCollections';
-
-const {
-  hero,
-  servicesSection,
-  services,
-  venuesSection,
-  venues,
-  editorial,
-  themesSection,
-  themes,
-  includedSection,
-  included,
-  faqSection,
-  faqs,
-  ctaSection,
-} = weddingData;
-
-const heroImages = weddingImages.slice(0, 3);
-
-const venuesWithImages = venues.map((venue, index) => ({
-  ...venue,
-  img: weddingImages[3 + index] ?? weddingImages[index] ?? '',
-}));
-
-const editorialImage = weddingImages[8] ?? weddingImages[0] ?? '';
-
-const themesWithImages = themes.map((theme, index) => ({
-  ...theme,
-  img: weddingImages[9 + index] ?? weddingImages[index] ?? '',
-}));
+import { useTranslation } from 'react-i18next';
 
 // ─────────────────────────────────────────────────────────
 const Wedding: React.FC = () => {
+  const { t } = useTranslation();
+  const weddingDataLocal: any = t('wedding_page', { returnObjects: true });
+
+  const {
+    hero,
+    servicesSection,
+    services,
+    venuesSection,
+    venues,
+    editorial,
+    themesSection,
+    themes,
+    includedSection,
+    included,
+    faqSection,
+    faqs,
+    ctaSection,
+  } = weddingDataLocal;
+
+  const heroImages = useMemo(() => weddingImages.slice(0, 3), []);
+
+  const venuesWithImages = useMemo(() => venues.map((venue: any, index: number) => ({
+    ...venue,
+    img: weddingImages[3 + index] ?? weddingImages[index] ?? '',
+  })), [venues]);
+
+  const editorialImage = weddingImages[8] ?? weddingImages[0] ?? '';
+
+  const themesWithImages = useMemo(() => themes.map((theme: any, index: number) => ({
+    ...theme,
+    img: weddingImages[9 + index] ?? weddingImages[index] ?? '',
+  })), [themes]);
+
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [activeVenueIdx, setActiveVenueIdx] = useState<number | null>(null);
-  const activeVenue = useMemo(() => (activeVenueIdx === null ? null : venuesWithImages[activeVenueIdx]), [activeVenueIdx]);
+  const activeVenue = useMemo(() => (activeVenueIdx === null ? null : venuesWithImages[activeVenueIdx]), [activeVenueIdx, venuesWithImages]);
 
   useEffect(() => {
     if (activeVenueIdx === null) return;
@@ -79,7 +82,7 @@ const Wedding: React.FC = () => {
           <p>{servicesSection.subtitle}</p>
         </div>
         <div className="wedding-services-grid">
-          {services.map((s, i) => (
+          {services.map((s: any, i: number) => (
             <div key={i} className="wedding-service-card reveal" style={{ transitionDelay: `${i * 80}ms` }}>
               <h3>{s.title}</h3>
               <p>{s.desc}</p>
@@ -97,7 +100,7 @@ const Wedding: React.FC = () => {
           <p>{venuesSection.subtitle}</p>
         </div>
         <div className="venue-experience-grid">
-          {venuesWithImages.map((v, i) => (
+          {venuesWithImages.map((v: any, i: number) => (
             <button
               key={v.title}
               type="button"
@@ -121,7 +124,7 @@ const Wedding: React.FC = () => {
           className="wedding-modal-overlay"
           role="dialog"
           aria-modal="true"
-          aria-label={`${activeVenue.title} details`}
+          aria-label={`${activeVenue.title} ${t('wedding_page.ui.details')}`}
           onMouseDown={(e) => {
             if (e.target === e.currentTarget) setActiveVenueIdx(null);
           }}
@@ -131,7 +134,7 @@ const Wedding: React.FC = () => {
               type="button"
               className="wedding-modal-close"
               onClick={() => setActiveVenueIdx(null)}
-              aria-label="Close"
+              aria-label={t('wedding_page.ui.close')}
             >
               <X size={20} />
             </button>
@@ -141,7 +144,7 @@ const Wedding: React.FC = () => {
                 <img src={activeVenue.img} alt={activeVenue.title} className="wedding-modal-img" />
                 <div className="wedding-modal-img-overlay" />
                 <div className="wedding-modal-img-title">
-                  <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>Venue Experience</span>
+                  <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>{t('wedding_page.ui.venue_experience')}</span>
                   <h3>{activeVenue.title}</h3>
                 </div>
               </div>
@@ -149,7 +152,7 @@ const Wedding: React.FC = () => {
               <div className="wedding-modal-body">
                 <p className="wedding-modal-desc">{activeVenue.desc}</p>
                 <ul className="wedding-modal-highlights">
-                  {activeVenue.highlights.map((h) => (
+                  {activeVenue.highlights.map((h: string) => (
                     <li key={h}>
                       <span className="wedding-modal-bullet">✦</span>
                       <span>{h}</span>
@@ -159,10 +162,10 @@ const Wedding: React.FC = () => {
 
                 <div className="wedding-modal-cta">
                   <button type="button" className="btn-primary" onClick={() => { setActiveVenueIdx(null); scrollToReservation(); }}>
-                    Start Planning <ArrowRight size={15} />
+                    {t('wedding_page.ui.start_planning')} <ArrowRight size={15} />
                   </button>
                   <button type="button" className="btn-outline" onClick={() => setActiveVenueIdx(null)}>
-                    Continue Browsing
+                    {t('wedding_page.ui.continue')}
                   </button>
                 </div>
               </div>
@@ -183,7 +186,7 @@ const Wedding: React.FC = () => {
             <h2>{editorial.title}</h2>
             <p>{editorial.body}</p>
             <ul className="editorial-details-list">
-              {editorial.details.map((d) => (
+              {editorial.details.map((d: string) => (
                 <li key={d}>{d}</li>
               ))}
             </ul>
@@ -200,7 +203,7 @@ const Wedding: React.FC = () => {
           <p>{themesSection.subtitle}</p>
         </div>
         <div className="themes-inspiration-grid">
-          {themesWithImages.map((t, i) => (
+          {themesWithImages.map((t: any, i: number) => (
             <div key={i} className="theme-inspiration-card reveal" style={{ transitionDelay: `${i * 80}ms` }}>
               <img src={t.img} alt={t.title} className="theme-inspiration-img" />
               <div className="theme-inspiration-overlay">
@@ -219,7 +222,7 @@ const Wedding: React.FC = () => {
             <p style={{ color: 'rgba(255,255,255,0.6)' }}>{includedSection.subtitle}</p>
           </div>
           <div className="included-grid">
-            {included.map((item, idx) => (
+            {included.map((item: any, idx: number) => (
               <div key={idx} className="included-card reveal" style={{ transitionDelay: `${idx * 60}ms` }}>
                 <div className="included-card-icon">
                   <Check size={18} />
@@ -240,7 +243,7 @@ const Wedding: React.FC = () => {
             <span className="gold-line" />
             <h2>{faqSection.title}</h2>
           </div>
-          {faqs.map((faq, idx) => (
+          {faqs.map((faq: any, idx: number) => (
             <div key={idx} className={`faq-item ${activeFaq === idx ? 'active' : ''}`}>
               <div className="faq-question" onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}>
                 <h3>{faq.q}</h3>
@@ -261,7 +264,7 @@ const Wedding: React.FC = () => {
           <h2>{ctaSection.title}</h2>
           <p>{ctaSection.subtitle}</p>
           <Link to="/contact" className="btn-primary">
-            Plan Your Wedding <ArrowRight size={15} />
+            {t('wedding_page.ui.plan_wedding')} <ArrowRight size={15} />
           </Link>
         </div>
       </section>

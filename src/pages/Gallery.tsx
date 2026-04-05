@@ -1,12 +1,14 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import HeaderVideo from '../components/HeaderVideo';
 import { ChevronLeft, ChevronRight, MessageCircle, FileText, CheckCircle, Calendar, Gift, Users, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { galleryCollections } from '../data/imageCollections';
 
 // Imports
 import galleryHero from '../assets/video/wedding-hero.mp4';
 
 const Gallery: React.FC = () => {
+  const { t } = useTranslation();
   const [activeCollectionIndex, setActiveCollectionIndex] = useState<number | null>(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
@@ -46,37 +48,54 @@ const Gallery: React.FC = () => {
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [activeCollectionIndex, activeImages.length]);
 
-  const processSteps = [
-    { icon: <MessageCircle size={32} />, title: 'Consultation', text: 'Initial meeting to determine your unique wedding style and fundamental desires.' },
-    { icon: <FileText size={32} />, title: 'Étude', text: 'Venue search based on your criteria including capacity, location, and precise budget.' },
-    { icon: <CheckCircle size={32} />, title: 'Sélection', text: 'Choosing the absolute best vendors—from catering and photographers to florists and negafas.' },
-    { icon: <Calendar size={32} />, title: 'Organisation', text: 'Scouting weekends, venue visits, menu tastings, and comprehensive vendor meetings.' },
-    { icon: <Gift size={32} />, title: 'Création & Cadeaux', text: 'Design of Save the Dates, bespoke invitations, table plans, and personalized guest gifts.' },
-    { icon: <Users size={32} />, title: 'Coordination', text: 'Full management and discrete coordination of all vendors on your magical D-Day.' }
-  ];
+  const processTextSteps = t('gallery_page.process.steps', { returnObjects: true }) as Array<{ title: string; text: string }>;
+  const processIcons = [MessageCircle, FileText, CheckCircle, Calendar, Gift, Users];
+  const processSteps = processTextSteps.map((step, idx) => {
+    const Icon = processIcons[idx] ?? MessageCircle;
+    return {
+      ...step,
+      icon: <Icon size={32} />,
+    };
+  });
+
+  const collectionKeyByTitle: Record<string, string> = {
+    'Birthday & Private Events': 'birthday_private',
+    'EVJF - Bachelor Party': 'evjf',
+    'Festivals': 'festivals',
+    'Retreats': 'retreats',
+    'Corporate Events': 'corporate',
+    'Weddings': 'weddings',
+  };
+
+  const getCollectionSubtitle = (title: string, fallback: string) => {
+    const key = collectionKeyByTitle[title];
+    if (!key) return fallback;
+    const translated = t(`gallery_page.collections.${key}.subtitle`);
+    return translated === `gallery_page.collections.${key}.subtitle` ? fallback : translated;
+  };
 
   return (
     <div className="page-gallery">
       <HeaderVideo 
         videoUrl={galleryHero}
-        title="L'Expérience" 
-        subtitle="De A à Z... Marrakech est la destination pour célébrer le plus beau moment de votre vie." 
+        title={t('gallery_page.hero.title')} 
+        subtitle={t('gallery_page.hero.subtitle')} 
       />
       
       {/* De A à Z Section */}
       <section className="section-padding container text-center" style={{ maxWidth: '900px' }}>
-        <h2 style={{ fontSize: '3rem', marginBottom: '24px' }}>De A à Z...</h2>
-        <p style={{ fontSize: '1.2rem', color: 'var(--color-text-light)', lineHeight: '1.8' }}>
-          Marrakech Weddings s’occupe de tout. Nous construisons avec vous un budget prévisionnel poste par poste. 
-          Nous gérons également le planning des invités (transferts, accueil aéroport, hôtels) pour vous épauler dans la 
-          réalisation de votre rêve. Quel que soit votre budget, s’unir à Marrakech c’est la garantie d’avoir le plus beau des mariages.
-        </p>
+        <div className="wedding-section-header" style={{ marginBottom: 0 }}>
+          <h2>{t('gallery_page.intro.title')}</h2>
+          <p>
+            {t('gallery_page.intro.text')}
+          </p>
+        </div>
       </section>
 
       {/* 6-Step Process */}
       <section className="process-section section-padding" style={{ backgroundColor: 'var(--color-white)' }}>
         <div className="container">
-          <h2 style={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: '60px' }}>Notre Processus</h2>
+          <h2 style={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: '60px' }}>{t('gallery_page.process.title')}</h2>
           <div className="process-grid">
             {processSteps.map((step, idx) => (
               <div key={idx} className="process-card fade-in">
@@ -92,10 +111,10 @@ const Gallery: React.FC = () => {
       {/* Category Galleries */}
       <section className="section-padding container">
         <div className="wedding-section-header">
-          <span className="section-label">Gallery</span>
+          <span className="section-label">{t('gallery_page.gallery.label')}</span>
           <span className="gold-line" />
-          <h2>Collections by Category</h2>
-          <p>Every folder is grouped so the visual archive stays easy to browse.</p>
+          <h2>{t('gallery_page.gallery.title')}</h2>
+          <p>{t('gallery_page.gallery.subtitle')}</p>
         </div>
 
         {galleryCollections.map((collection) => (
@@ -104,7 +123,7 @@ const Gallery: React.FC = () => {
               <span className="section-label">{collection.title}</span>
               <span className="gold-line" />
               <h2>{collection.title}</h2>
-              <p>{collection.subtitle}</p>
+              <p>{getCollectionSubtitle(collection.title, collection.subtitle)}</p>
             </div>
             <div className="themes-gallery">
               {collection.images.map((img, idx) => (
@@ -114,7 +133,7 @@ const Gallery: React.FC = () => {
                   className="theme-card theme-card--button"
                   onClick={() => openCollectionImage(galleryCollections.findIndex((item) => item.title === collection.title), idx)}
                   aria-haspopup="dialog"
-                  aria-label={`Open ${collection.title} image ${idx + 1}`}
+                  aria-label={t('gallery_page.modal.open_image', { title: collection.title, index: idx + 1 })}
                 >
                   <img src={img} alt={`${collection.title} ${idx + 1}`} className="theme-img" loading="lazy" />
                   <div className="theme-overlay">
@@ -132,22 +151,22 @@ const Gallery: React.FC = () => {
           className="gallery-zoom-overlay"
           role="dialog"
           aria-modal="true"
-          aria-label={`${activeCollection.title} image viewer`}
+          aria-label={t('gallery_page.modal.image_viewer', { title: activeCollection.title })}
           onMouseDown={(event) => {
             if (event.target === event.currentTarget) closeModal();
           }}
         >
           <div className="gallery-zoom-modal fade-in">
-            <button type="button" className="gallery-zoom-close" onClick={closeModal} aria-label="Close image viewer">
+            <button type="button" className="gallery-zoom-close" onClick={closeModal} aria-label={t('gallery_page.modal.close')}>
               <X size={20} />
             </button>
 
             <div className="gallery-zoom-media">
-              <button type="button" className="gallery-zoom-nav gallery-zoom-nav--left" onClick={() => goToImage(-1)} aria-label="Previous image">
+              <button type="button" className="gallery-zoom-nav gallery-zoom-nav--left" onClick={() => goToImage(-1)} aria-label={t('gallery_page.modal.previous')}>
                 <ChevronLeft size={22} />
               </button>
               <img src={activeImage} alt={`${activeCollection.title} ${activeImageIndex + 1}`} className="gallery-zoom-image" />
-              <button type="button" className="gallery-zoom-nav gallery-zoom-nav--right" onClick={() => goToImage(1)} aria-label="Next image">
+              <button type="button" className="gallery-zoom-nav gallery-zoom-nav--right" onClick={() => goToImage(1)} aria-label={t('gallery_page.modal.next')}>
                 <ChevronRight size={22} />
               </button>
             </div>
@@ -156,7 +175,7 @@ const Gallery: React.FC = () => {
               <span className="section-label">{activeCollection.title}</span>
               <h3>{activeCollection.subtitle}</h3>
               <p>
-                Image {activeImageIndex + 1} of {activeImages.length}
+                {t('gallery_page.modal.counter', { current: activeImageIndex + 1, total: activeImages.length })}
               </p>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Star, Check, MessageCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 // Form Integration
 import { submitForm } from '../utils/formHandler';
@@ -10,27 +11,15 @@ import logo            from '../assets/images/logo2.png';
 import weddingHero     from '../assets/images/Weddings/8.jpg';
 import weddingModern   from '../assets/images/Weddings/11.jpg';
 import weddingBohemian from '../assets/images/wedding/bohemian.jpg';
-import sahara          from '../assets/images/gallery/sahara.jpg';
-import imperialCity    from '../assets/images/gallery/imperial-city.jpg';
-import gastronomy      from '../assets/images/gallery/gastronomy.jpg';
-import artDesign       from '../assets/images/gallery/art-design.jpg';
+
+import privateEventsImg from '../assets/images/Corporate Events/13.jpg';
+import privatePartiesImg from '../assets/images/EVJF - Bachelor Party/8.jpg';
+import corporateEventsImg from '../assets/images/Corporate Events/4.jpg';
 
 const HERO_VIDEO = 'https://videos.pexels.com/video-files/4954871/4954871-uhd_2560_1440_30fps.mp4';
 
 // ── Data ──────────────────────────────────────────────────
-const trustStats = [
-  { value: '200+', label: 'Weddings Curated' },
-  { value: '18',   label: 'Years of Expertise' },
-  { value: '40+',  label: 'Destination Countries' },
-  { value: '100%', label: 'Client Satisfaction' },
-];
-
-const promises = [
-  { icon: '✦', title: 'Bespoke Design',       desc: 'Every celebration is tailored to your vision, style, culture, and guest experience.' },
-  { icon: '◈', title: 'Local Expertise',      desc: 'Exclusive access to Morocco’s finest venues, artisans, and trusted vendors.' },
-  { icon: '◎', title: 'Seamless Coordination',desc: 'Planning, production, logistics, and guest flow handled from start to finish.' },
-  { icon: '❋', title: 'Luxury with Soul',      desc: 'Elegant experiences rooted in beauty, hospitality, and authentic Moroccan atmosphere.' },
-];
+// Data moved inside component for i18n support
 
 const weddingPreviews = [
   {
@@ -64,7 +53,7 @@ const weddingPreviews = [
 
 const eventPreviews = [
   {
-    img: imperialCity,
+    img: privateEventsImg,
     title: 'Welcome Dinners',
     tag: 'Private Events',
     detail:
@@ -72,7 +61,7 @@ const eventPreviews = [
     highlights: ['Venue + chef/caterer curation', 'Tablescapes + lighting', 'Run-of-show + coordination'],
   },
   {
-    img: gastronomy,
+    img: weddingModern,
     title: 'Engagement Celebrations',
     tag: 'Pre-Wedding',
     detail:
@@ -80,7 +69,7 @@ const eventPreviews = [
     highlights: ['Concept + styling', 'Vendor curation', 'Guest experience + timing'],
   },
   {
-    img: artDesign,
+    img: privatePartiesImg,
     title: 'Private Parties',
     tag: 'Celebrations',
     detail:
@@ -88,7 +77,7 @@ const eventPreviews = [
     highlights: ['Atmosphere + entertainment', 'Hospitality details', 'On-site team management'],
   },
   {
-    img: sahara,
+    img: corporateEventsImg,
     title: 'Corporate & Brand Events',
     tag: 'Business',
     detail:
@@ -96,13 +85,6 @@ const eventPreviews = [
     highlights: ['Planning + production partners', 'AV, staging, and timelines', 'Discreet hosting + coordination'],
   },
 ] as const;
-
-const processSteps = [
-  { num: '01', title: 'Discover',    desc: 'Consultation, aesthetic direction, scope, budget, priorities' },
-  { num: '02', title: 'Design',      desc: 'Venue sourcing, creative concept, vendor curation, guest experience' },
-  { num: '03', title: 'Orchestrate', desc: 'Production planning, timeline, logistics, approvals, coordination' },
-  { num: '04', title: 'Celebrate',   desc: 'On-site execution with calm, discreet, high-level management' },
-];
 
 const testimonials = [
   { text: "Working with the team felt like having an artistic director and a best friend rolled into one. Our Marrakech wedding was beyond anything we could have imagined.", author: 'Charlotte & Rémi', origin: 'Paris, France', img: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=150&q=80' },
@@ -115,6 +97,7 @@ interface InquiryForm { name: string; email: string; service: string; message: s
 // ─────────────────────────────────────────────────────────
 const Home: React.FC = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [testiIdx, setTestiIdx]   = useState(0);
   const [form, setForm]           = useState<InquiryForm>({ name: '', email: '', service: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -130,6 +113,13 @@ const Home: React.FC = () => {
     () => (activeEventPreviewIdx === null ? null : eventPreviews[activeEventPreviewIdx]),
     [activeEventPreviewIdx]
   );
+
+  const trustStats = useMemo(() => [
+    { value: '200+', label: t('home.trust.weddings') },
+    { value: '18',   label: t('home.trust.years') },
+    { value: '40+',  label: t('home.trust.countries') },
+    { value: '100%', label: t('home.trust.satisfaction') },
+  ], [t]);
 
   useEffect(() => {
     const t = setInterval(() => setTestiIdx(i => (i + 1) % testimonials.length), 5500);
@@ -188,31 +178,30 @@ const Home: React.FC = () => {
         <div className="home-hero-overlay" />
 
         <div className="home-hero-content container fade-in">
-          <span className="section-label">Destination Wedding Planning</span>
+          <span className="section-label">{t('home.hero.tagline')}</span>
           <h1 className="home-hero-title">
-            Bespoke Celebrations<br />
-            <em>In the Heart of Morocco</em>
+            {t('home.hero.title_1')}<br />
+            <em>{t('home.hero.title_2')}</em>
           </h1>
           <p className="home-hero-subtitle">
-            Where love stories unfold against Morocco's most extraordinary backdrops — 
-            designed with intention, executed with precision.
+            {t('home.hero.subtitle')}
           </p>
           <div className="home-hero-actions">
             <button 
               className="btn-primary" 
               onClick={() => document.getElementById('reservation-form')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Book Reservation <ArrowRight size={15} />
+              {t('home.hero.book')} <ArrowRight size={15} />
             </button>
             <button className="btn-ghost" onClick={() => navigate('/wedding')}>
-              Plan Your Celebration
+              {t('home.hero.plan')}
             </button>
           </div>
         </div>
 
         <div className="hero-scroll-hint">
           <span className="hero-scroll-line" />
-          <span className="hero-scroll-text">Scroll</span>
+          <span className="hero-scroll-text">{t('home.hero.scroll')}</span>
         </div>
       </section>
 
@@ -252,26 +241,22 @@ const Home: React.FC = () => {
             </div>
 
             <div className="home-about-text reveal delay-100">
-              <span className="section-label">Who We Are</span>
+              <span className="section-label">{t('home.about.tagline')}</span>
               <span className="gold-line gold-line-left" />
               <h2 className="about-headline">
-                Morocco's Premier<br />
-                <em>Luxury Wedding</em><br />
-                & Event Studio
+                {t('home.about.title_1')}<br />
+                <em>{t('home.about.title_2')}</em><br />
+                {t('home.about.title_3')}
               </h2>
               <p className="about-body">
-                We are a boutique planning studio rooted in Marrakech, crafting celebrations that
-                feel effortlessly beautiful and deeply personal. With nearly two decades of local
-                expertise and a portfolio spanning 40+ countries, we bring international precision
-                to Morocco's most extraordinary settings.
+                {t('home.about.p1')}
               </p>
               <p className="about-body">
-                Every event we create is guided by one principle: <strong>your story deserves
-                to be told with intention</strong>.
+                {t('home.about.p2')} <strong>{t('home.about.p2_strong')}</strong>.
               </p>
               <div className="about-actions">
-                <Link to="/wedding" className="btn-primary">Our Weddings <ArrowRight size={15} /></Link>
-                <Link to="/events"  className="btn-outline">Our Events</Link>
+                <Link to="/wedding" className="btn-primary">{t('home.about.weddings_btn')} <ArrowRight size={15} /></Link>
+                <Link to="/events"  className="btn-outline">{t('home.about.events_btn')}</Link>
               </div>
             </div>
           </div>
@@ -285,12 +270,17 @@ const Home: React.FC = () => {
         <div className="promises-bg" />
         <div className="container promises-inner">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '70px' }}>
-            <span className="section-label" style={{ color: 'rgba(212,185,138,0.9)' }}>Our Commitment</span>
+            <span className="section-label" style={{ color: 'rgba(212,185,138,0.9)' }}>{t('home.promises.tagline')}</span>
             <span className="gold-line" style={{ background: 'rgba(184,154,106,0.5)' }} />
-            <h2 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3.2rem)' }}>The Marrakech Weddings Promise</h2>
+            <h2 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3.2rem)' }}>{t('home.promises.title')}</h2>
           </div>
           <div className="promises-grid">
-            {promises.map((p, i) => (
+            {[
+              { icon: '✦', title: t('home.promises.p1_title'), desc: t('home.promises.p1_desc') },
+              { icon: '◈', title: t('home.promises.p2_title'), desc: t('home.promises.p2_desc') },
+              { icon: '◎', title: t('home.promises.p3_title'), desc: t('home.promises.p3_desc') },
+              { icon: '❋', title: t('home.promises.p4_title'), desc: t('home.promises.p4_desc') },
+            ].map((p, i) => (
               <div key={i} className={`promise-card reveal delay-${(i + 1) * 100}`}>
                 <span className="promise-icon">{p.icon}</span>
                 <h3>{p.title}</h3>
@@ -308,11 +298,11 @@ const Home: React.FC = () => {
         <div className="container">
           <div className="section-header reveal">
             <div>
-              <span className="section-label">Featured Work</span>
+              <span className="section-label">{t('home.weddings.tagline')}</span>
               <span className="gold-line gold-line-left" />
-              <h2>Signature weddings across Morocco</h2>
+              <h2>{t('home.weddings.title')}</h2>
             </div>
-            <Link to="/wedding" className="btn-outline section-header-cta">Explore Weddings <ArrowRight size={15} /></Link>
+            <Link to="/wedding" className="btn-outline section-header-cta">{t('home.weddings.btn')} <ArrowRight size={15} /></Link>
           </div>
 
           <div className="home-preview-grid home-preview-grid--weddings">
@@ -344,7 +334,7 @@ const Home: React.FC = () => {
           </div>
 
           <div className="section-cta-row reveal">
-            <Link to="/wedding" className="btn-primary">Explore Weddings <ArrowRight size={15} /></Link>
+            <Link to="/wedding" className="btn-primary">{t('home.weddings.btn')} <ArrowRight size={15} /></Link>
           </div>
         </div>
       </section>
@@ -354,12 +344,11 @@ const Home: React.FC = () => {
       ══════════════════════════════════════ */}
       <section className="home-events-preview">
         <div className="events-preview-head container reveal">
-          <span className="section-label">Beyond Weddings</span>
+          <span className="section-label">{t('home.events.tagline')}</span>
           <span className="gold-line gold-line-left" />
-          <h2>Elegant events beyond the wedding day</h2>
+          <h2>{t('home.events.title')}</h2>
           <p className="events-preview-sub">
-            Corporate retreats, milestone celebrations, brand activations and private dinners —
-            each one an experience worth remembering.
+            {t('home.events.subtitle')}
           </p>
         </div>
         <div className="container">
@@ -393,7 +382,7 @@ const Home: React.FC = () => {
         </div>
         <div className="container">
           <div className="section-cta-row reveal" style={{ paddingTop: '60px' }}>
-            <Link to="/events" className="btn-primary">Explore Events <ArrowRight size={15} /></Link>
+            <Link to="/events" className="btn-primary">{t('home.events.btn')} <ArrowRight size={15} /></Link>
           </div>
         </div>
       </section>
@@ -531,12 +520,17 @@ const Home: React.FC = () => {
       <section className="home-process section-padding">
         <div className="container">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '80px' }}>
-            <span className="section-label">How It Works</span>
+            <span className="section-label">{t('home.process.tagline')}</span>
             <span className="gold-line" />
-            <h2>A Seamless Journey<br /><em>From Vision to Reality</em></h2>
+            <h2>{t('home.process.title_1')}<br /><em>{t('home.process.title_2')}</em></h2>
           </div>
           <div className="process-steps-grid">
-            {processSteps.map((step, i) => (
+            {[
+              { num: '01', title: t('home.process.s1_title'), desc: t('home.process.s1_desc') },
+              { num: '02', title: t('home.process.s2_title'), desc: t('home.process.s2_desc') },
+              { num: '03', title: t('home.process.s3_title'), desc: t('home.process.s3_desc') },
+              { num: '04', title: t('home.process.s4_title'), desc: t('home.process.s4_desc') },
+            ].map((step, i) => (
               <div key={i} className={`process-step reveal delay-${(i + 1) * 100}`}>
                 <span className="process-step-num">{step.num}</span>
                 <div className="process-step-line" />
@@ -546,7 +540,7 @@ const Home: React.FC = () => {
             ))}
           </div>
           <div className="section-cta-row reveal delay-500">
-            <Link to="/contact" className="btn-primary">Start Planning <ArrowRight size={15} /></Link>
+            <Link to="/contact" className="btn-primary">{t('home.process.btn')} <ArrowRight size={15} /></Link>
           </div>
         </div>
       </section>
@@ -558,9 +552,9 @@ const Home: React.FC = () => {
         <div className="testimonials-bg" />
         <div className="container testimonials-inner">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <span className="section-label" style={{ color: 'rgba(212,185,138,0.9)' }}>Client Stories</span>
+            <span className="section-label" style={{ color: 'rgba(212,185,138,0.9)' }}>{t('home.testimonials.tagline')}</span>
             <span className="gold-line" style={{ background: 'rgba(184,154,106,0.5)' }} />
-            <h2 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3rem)' }}>Words from Our Couples</h2>
+            <h2 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3rem)' }}>{t('home.testimonials.title')}</h2>
           </div>
 
           <div className="testimonial-slider">
@@ -593,18 +587,18 @@ const Home: React.FC = () => {
         <div className="home-final-cta-bg" style={{ backgroundImage: `url(${weddingBohemian})` }} />
         <div className="home-final-cta-overlay" />
         <div className="container home-final-cta-content reveal">
-          <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>Ready to Begin?</span>
+          <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>{t('home.cta.tagline')}</span>
           <span className="gold-line" style={{ background: 'rgba(184,154,106,0.6)' }} />
           <h2 style={{ color: '#fff', fontSize: 'clamp(2.4rem, 5vw, 4rem)', maxWidth: '700px', margin: '0 auto 24px' }}>
-            Let's Create Something<br /><em>Unforgettable Together</em>
+            {t('home.cta.title_1')}<br /><em>{t('home.cta.title_2')}</em>
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '1.15rem', marginBottom: '44px', maxWidth: '560px', margin: '0 auto 44px' }}>
-            Tell us about your vision. We'll take care of everything else.
+            {t('home.cta.subtitle')}
           </p>
           <div className="home-final-cta-actions">
-            <Link to="/contact" className="btn-primary">Plan Your Event <ArrowRight size={15} /></Link>
+            <Link to="/contact" className="btn-primary">{t('home.cta.btn_plan')} <ArrowRight size={15} /></Link>
             <a href="https://wa.me/212600000000?text=Hello%2C%20I%27d%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="btn-ghost">
-              <MessageCircle size={16} /> WhatsApp Us
+              <MessageCircle size={16} /> {t('home.cta.btn_wa')}
             </a>
           </div>
 
@@ -612,25 +606,25 @@ const Home: React.FC = () => {
             {formSent ? (
               <div className="cta-form-success">
                 <Check size={28} />
-                <p>Thank you! We'll be in touch within 24 hours.</p>
+                <p>{t('home.cta.form_success')}</p>
               </div>
             ) : (
               <form className="cta-form" onSubmit={handleSubmit}>
-                <h3>Quick Inquiry</h3>
+                <h3>{t('home.cta.form_title')}</h3>
                 <div className="cta-form-row">
-                  <input name="name" placeholder="Your Name" value={form.name} onChange={handleForm} required />
-                  <input name="email" type="email" placeholder="Email Address" value={form.email} onChange={handleForm} required />
+                  <input name="name" placeholder={t('home.cta.form_name')} value={form.name} onChange={handleForm} required />
+                  <input name="email" type="email" placeholder={t('home.cta.form_email')} value={form.email} onChange={handleForm} required />
                   <select name="service" value={form.service} onChange={handleForm} required>
-                    <option value="" disabled>Type of Event</option>
-                    <option value="wedding">Wedding</option>
-                    <option value="corporate">Corporate Event</option>
-                    <option value="celebration">Private Celebration</option>
-                    <option value="other">Other</option>
+                    <option value="" disabled>{t('home.cta.form_service')}</option>
+                    <option value="wedding">{t('home.cta.form_service_wedding')}</option>
+                    <option value="corporate">{t('home.cta.form_service_corporate')}</option>
+                    <option value="celebration">{t('home.cta.form_service_celebration')}</option>
+                    <option value="other">{t('home.cta.form_service_other')}</option>
                   </select>
                 </div>
-                <textarea name="message" placeholder="Tell us about your vision…" value={form.message} onChange={handleForm} rows={3} />
+                <textarea name="message" placeholder={t('home.cta.form_msg')} value={form.message} onChange={handleForm} rows={3} />
                 <button type="submit" className="btn-primary cta-form-submit" disabled={isSubmitting}>
-                  {isSubmitting ? 'Sending…' : (<>Send Inquiry <ArrowRight size={15} /></>)}
+                  {isSubmitting ? t('home.cta.form_sending') : (<>{t('home.cta.form_send')} <ArrowRight size={15} /></>)}
                 </button>
               </form>
             )}

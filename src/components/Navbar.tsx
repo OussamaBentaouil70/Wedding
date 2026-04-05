@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import logo from '../assets/images/logo2.png';
 
 const Navbar: React.FC = () => {
+  const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -17,11 +20,17 @@ const Navbar: React.FC = () => {
   // Close mobile menu on route change
   useEffect(() => { setIsMobileMenuOpen(false); }, [location.pathname]);
 
+  const currentLang = i18n.resolvedLanguage?.startsWith('fr') ? 'fr' : 'en';
+
+  const onLanguageChange = (lang: string) => {
+    i18n.changeLanguage(lang);
+  };
+
   const navLinks = [
-    { name: 'Home',    path: '/' },
-    { name: 'Wedding', path: '/wedding' },
-    { name: 'Events',  path: '/events' },
-    { name: 'Gallery', path: '/gallery' },
+    { name: t('nav.home'),    path: '/' },
+    { name: t('nav.wedding'), path: '/wedding' },
+    { name: t('nav.events'),  path: '/events' },
+    { name: t('nav.gallery'), path: '/gallery' },
   ];
 
   return (
@@ -49,8 +58,39 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="navbar-right">
-            <Link to="/contact" className="navbar-cta btn-primary">
-              Plan Your Event
+            <div className="navbar-lang-menu">
+              <button
+                className="navbar-lang-btn"
+                onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+                aria-label={t('nav.language_label')}
+              >
+                <Globe size={16} />
+              </button>
+              {isLangMenuOpen && (
+                <div className="navbar-lang-dropdown">
+                  <button
+                    className={`lang-option ${currentLang === 'en' ? 'active' : ''}`}
+                    onClick={() => {
+                      onLanguageChange('en');
+                      setIsLangMenuOpen(false);
+                    }}
+                  >
+                    {t('nav.lang_en')}
+                  </button>
+                  <button
+                    className={`lang-option ${currentLang === 'fr' ? 'active' : ''}`}
+                    onClick={() => {
+                      onLanguageChange('fr');
+                      setIsLangMenuOpen(false);
+                    }}
+                  >
+                    {t('nav.lang_fr')}
+                  </button>
+                </div>
+              )}
+            </div>
+            <Link to="/contact" className="navbar-cta navbar-cta-desktop btn-primary">
+              {t('nav.contact')}
             </Link>
             <button
               className="navbar-mobile-toggle"
@@ -88,8 +128,39 @@ const Navbar: React.FC = () => {
               className="btn-primary mobile-nav-cta"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Plan Your Event
+              {t('nav.contact')}
             </Link>
+            <div className="mobile-nav-lang-menu">
+              <button
+                className="mobile-nav-lang-btn"
+                onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+                aria-label={t('nav.language_label')}
+              >
+                <Globe size={20} />
+              </button>
+              {isLangMenuOpen && (
+                <div className="mobile-nav-lang-dropdown">
+                  <button
+                    className={`lang-option ${currentLang === 'en' ? 'active' : ''}`}
+                    onClick={() => {
+                      onLanguageChange('en');
+                      setIsLangMenuOpen(false);
+                    }}
+                  >
+                    {t('nav.lang_en')}
+                  </button>
+                  <button
+                    className={`lang-option ${currentLang === 'fr' ? 'active' : ''}`}
+                    onClick={() => {
+                      onLanguageChange('fr');
+                      setIsLangMenuOpen(false);
+                    }}
+                  >
+                    {t('nav.lang_fr')}
+                  </button>
+                </div>
+              )}
+            </div>
           </nav>
         </div>
       )}

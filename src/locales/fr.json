@@ -1,0 +1,686 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "wedding": "Mariages",
+    "events": "Événements",
+    "gallery": "Galerie",
+    "contact": "Organiser votre événement",
+    "language_label": "Choisir la langue",
+    "lang_en": "EN",
+    "lang_fr": "FR"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Organisation de Mariages d'Exception",
+      "title_1": "Des Célébrations Sur Mesure",
+      "title_2": "Au Cœur du Maroc",
+      "subtitle": "Là où vos histoires d'amour prennent vie dans les décors les plus extraordinaires du Maroc — conçues avec intention, exécutées avec précision.",
+      "book": "Réserver",
+      "plan": "Organiser votre célébration",
+      "scroll": "Défiler"
+    },
+    "trust": {
+      "weddings": "Mariages Organisés",
+      "years": "Années d'Expertise",
+      "countries": "Pays de Destination",
+      "satisfaction": "Satisfaction Client"
+    },
+    "about": {
+      "tagline": "Qui Sommes-Nous",
+      "title_1": "Le Premier Studio de",
+      "title_2": "Mariage et Événements",
+      "title_3": "de Luxe au Maroc",
+      "p1": "Nous sommes un studio d'organisation boutique basé à Marrakech, concevant des célébrations à la fois merveilleusement élégantes et profondément personnelles. Forts de près de deux décennies d'expertise locale et d'un portfolio couvrant plus de 40 pays, nous apportons une précision internationale aux décors les plus majestueux du Maroc.",
+      "p2": "Chaque événement que nous créons est guidé par un seul principe :",
+      "p2_strong": "votre histoire mérite d'être racontée avec intention",
+      "weddings_btn": "Nos Mariages",
+      "events_btn": "Nos Événements"
+    },
+    "promises": {
+      "tagline": "Notre Engagement",
+      "title": "La Promesse Marrakech Weddings",
+      "p1_title": "Design Sur Mesure",
+      "p1_desc": "Chaque célébration est adaptée à votre vision, votre style, votre culture et l'expérience de vos invités.",
+      "p2_title": "Expertise Locale",
+      "p2_desc": "Un accès exclusif aux plus beaux lieux, artisans et prestataires de confiance du Maroc.",
+      "p3_title": "Coordination Parfaite",
+      "p3_desc": "La planification, la production, la logistique et l'accueil des invités gérés de bout en bout.",
+      "p4_title": "Un Luxe avec une Âme",
+      "p4_desc": "Des expériences élégantes ancrées dans la beauté, l'hospitalité et l'atmosphère marocaine."
+    },
+    "weddings": {
+      "tagline": "Nos Réalisations",
+      "title": "Mariages signatures à travers le Maroc",
+      "btn": "Explorer nos Mariages",
+      "view_details": "Voir les détails"
+    },
+    "events": {
+      "tagline": "Au-delà des Mariages",
+      "title": "Événements élégants pour toutes les occasions",
+      "subtitle": "Retraites d'entreprise, célébrations marquantes, activations de marques et dîners privés — chacun devenant une expérience inoubliable.",
+      "btn": "Explorer nos Événements"
+    },
+    "process": {
+      "tagline": "Comment Ça Marche",
+      "title_1": "Un Voyage Sans Souci",
+      "title_2": "De la Vision à la Réalité",
+      "btn": "Commencer l'Organisation",
+      "s1_title": "Découverte",
+      "s1_desc": "Consultation, direction esthétique, budget, priorités",
+      "s2_title": "Design",
+      "s2_desc": "Recherche de lieux, concept créatif, sélection de prestataires, expérience globale",
+      "s3_title": "Orchestration",
+      "s3_desc": "Planification de la production, timeline, logistique, validations, coordination",
+      "s4_title": "Célébration",
+      "s4_desc": "Exécution sur place avec une gestion calme, discrète et de haut niveau"
+    },
+    "testimonials": {
+      "tagline": "Témoignages de Clients",
+      "title": "Mots de Nos Couples"
+    },
+    "cta": {
+      "tagline": "Prêt à Commencer ?",
+      "title_1": "Créons Quelque Chose",
+      "title_2": "D'Inoubliable Ensemble",
+      "subtitle": "Parlez-nous de votre vision. Nous nous occupons du reste.",
+      "btn_plan": "Organiser votre Événement",
+      "btn_wa": "WhatsApp",
+      "form_success": "Merci ! Nous vous contacterons dans les prochaines 24 heures.",
+      "form_title": "Demande Rapide",
+      "form_name": "Votre Nom",
+      "form_email": "Adresse Email",
+      "form_service": "Type d'Événement",
+      "form_service_wedding": "Mariage",
+      "form_service_corporate": "Événement d'Entreprise",
+      "form_service_celebration": "Célébration Privée",
+      "form_service_other": "Autre",
+      "form_msg": "Parlez-nous de votre projet...",
+      "form_sending": "Envoi en cours...",
+      "form_send": "Envoyer la Demande"
+    }
+  },
+  "footer": {
+    "desc": "Créer des expériences luxueuses et inoubliables au cœur du Maroc.",
+    "links_title": "Liens Rapides",
+    "contact_title": "Nous Contacter",
+    "rights": "Marrakech Weddings. Tous droits réservés."
+  },
+  "wedding_page": {
+    "heroImages": [
+      "https://sumptuous-events.com/wp-content/uploads/2016/07/marrakech-wedding-planner.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5e7cc650dbbd2c25c70e2fa8/de705cf0-8c99-46ff-860a-c7a6d212f1a4/el-fenn-wedding-planner",
+      "https://images.squarespace-cdn.com/content/v1/5f8ea32d7c05b54f63b91afa/b1b14475-66cb-44f1-83b0-8c5fcf1be2dd/mariarao_mamouniaweddings_-309.jpg"
+    ],
+    "hero": {
+      "label": "Mariages au Maroc",
+      "title": "Des Mariages Sur Mesure au Maroc",
+      "subtitle": "Des cérémonies intimes aux célébrations sur plusieurs jours, nous concevons des mariages alliant beauté, émotion et coordination parfaite.",
+      "defaultService": "Mariage"
+    },
+    "servicesSection": {
+      "label": "Ce Que Nous Offrons",
+      "title": "Nos Services de Mariage",
+      "subtitle": "L'excellence sur mesure pour chaque étape de votre voyage."
+    },
+    "services": [
+      {
+        "title": "Organisation Complète de Mariage",
+        "desc": "Une gestion intégrale, du concept jusqu'à la dernière danse, garantissant que chaque détail soit parfaitement réalisé."
+      },
+      {
+        "title": "Design & Stylisme de Mariage",
+        "desc": "La création d'un récit visuel cohérent à travers le design floral, l'éclairage et une décoration sur mesure."
+      },
+      {
+        "title": "Coordination de Mariage à Destination",
+        "desc": "Une logistique experte pour les couples voyageant au Maroc, gérant les déplacements, les lieux et les prestataires locaux."
+      },
+      {
+        "title": "Élopements & Mariages Intimes",
+        "desc": "La curation de cérémonies profondément personnelles et époustouflantes pour des célébrations plus petites et privées."
+      },
+      {
+        "title": "Week-ends de Mariage sur Plusieurs Jours",
+        "desc": "La conception d'un voyage complet pour vos invités, du dîner de bienvenue au brunch d'adieu."
+      },
+      {
+        "title": "Mariages Culturels & Fusion",
+        "desc": "Le mélange respectueux des traditions et des cultures dans une célébration unique et harmonieuse."
+      }
+    ],
+    "venuesSection": {
+      "label": "Où Nous Célébrons",
+      "title": "Célébrez dans les Décors Purs et Extraordinaires du Maroc",
+      "subtitle": "Des riads cachés de la Médina jusqu'aux vastes étendues majestueuses du Sahara."
+    },
+    "venues": [
+      {
+        "title": "Riads de Luxe",
+        "desc": "Cachés derrière des portes sculptées, les riads de Marrakech offrent des cours intimes, des dîners aux chandelles et un sentiment d'intimité cinématographique.",
+        "highlights": [
+          "Cours de la Médina & moments sur les toits",
+          "Idéal pour des célébrations intimes à moyennes",
+          "Parfait pour les dîners de bienvenue & brunchs"
+        ]
+      },
+      {
+        "title": "Villas & Domaines Privés",
+        "desc": "L'ambiance d'une résidence privée avec une hospitalité haut de gamme — de l'espace pour organiser sur plusieurs jours, des rassemblements autour de la piscine et un luxe détendu.",
+        "highlights": [
+          "Week-ends de mariage sur plusieurs jours",
+          "Hébergement sur place pour les invités",
+          "Agencements flexibles pour cérémonie + réception"
+        ]
+      },
+      {
+        "title": "Palais & Jardins",
+        "desc": "Une architecture grandiose, des détails patrimoniaaux et des jardins luxuriants pour les couples qui souhaitent une célébration royale et percutante.",
+        "highlights": [
+          "Des toiles de fond de cérémonie à fort impact",
+          "Options pour grande capacité d'invités",
+          "Idéal pour réceptions formelles & musique live"
+        ]
+      },
+      {
+        "title": "Camps dans le Désert",
+        "desc": "Une cérémonie au coucher du soleil, un dîner éclairé aux lanternes et de la musique sous les étoiles — le Sahara révèle un Maroc inoubliable.",
+        "highlights": [
+          "Cérémonies au coucher du soleil & dîners sous les étoiles",
+          "Expérience d'invité immersive",
+          "Parfait pour les élopements ou événements audacieux de week-end"
+        ]
+      },
+      {
+        "title": "Lieux en Bord de Mer",
+        "desc": "Air de l'océan, lumière dorée et une sophistication décontractée — les lieux côtiers apportent un romantisme sans effort avec un stylisme raffiné.",
+        "highlights": [
+          "Cérémonies à l'heure dorée",
+          "Ambiance de luxe décontracté",
+          "Idéal pour des excursions d'invités & brunchs bord de mer"
+        ]
+      }
+    ],
+    "editorial": {
+      "label": "Notre Philosophie",
+      "title": "L'Art dans Chaque Détail",
+      "body": "Nous croyons qu'un mariage doit être une expérience sensorielle. Notre approche éditoriale du design garantit que chaque élément — du parfum des fleurs à la transition de la lumière — contribue à un récit cohérent et à couper le souffle. Nous organisons tout le voyage des invités en mettant l'accent sur un divertissement haut de gamme et des tables immersives.",
+      "details": [
+        "Fleurs Sur Mesure",
+        "Éclairage d'Ambiance",
+        "Tables Uniques",
+        "Divertissement Sélectif",
+        "Gestion du Voyage Invité",
+        "Stylisme de Cérémonie"
+      ]
+    },
+    "themesSection": {
+      "label": "Inspiration",
+      "title": "Thèmes de Mariage & Inspiration",
+      "subtitle": "Découvrez des thèmes qui résonnent avec l'âme du Maroc et votre style personnel."
+    },
+    "themes": [
+      {
+        "title": "Élégance Royale Marocaine"
+      },
+      {
+        "title": "Romance Moderne Minimaliste"
+      },
+      {
+        "title": "Célébration au Coucher de Soleil"
+      },
+      {
+        "title": "Mariage de Jardin en Fleurs"
+      },
+      {
+        "title": "Sophistication Blanc & Or"
+      },
+      {
+        "title": "Beldi Chic Réinventé"
+      }
+    ],
+    "includedSection": {
+      "title": "L'Envergure Globale",
+      "subtitle": "Une approche holistique pour votre célébration."
+    },
+    "included": [
+      {
+        "title": "Développement du Concept",
+        "desc": "Développer un concept visuel et expérientiel qui raconte votre histoire."
+      },
+      {
+        "title": "Recherche de Lieux",
+        "desc": "La sélection parmi les endroits les plus extraordinaires du Maroc pour votre réception."
+      },
+      {
+        "title": "Gestion du Budget",
+        "desc": "Une planification stratégique et une gestion transparente de l'investissement pour votre mariage."
+      },
+      {
+        "title": "Sélection & Gestion des Prestataires",
+        "desc": "Vous mettre en relation avec les partenaires créatifs locaux et internationaux les plus talentueux."
+      },
+      {
+        "title": "Direction Artistique & Moodboards",
+        "desc": "La création de planches de tendances détaillées pour chaque élément visuel."
+      },
+      {
+        "title": "Logistique des Invités & Hospitalité",
+        "desc": "Gérer l'hébergement, les déplacements et les expériences de vos invités."
+      },
+      {
+        "title": "Fluidité Cérémonie et Réception",
+        "desc": "Agencer la choraleographie parfaite entre toutes les étapes de la journée."
+      },
+      {
+        "title": "Coordination le Jour J",
+        "desc": "Une sérénité absolue tandis que nous gérons chaque seconde de votre événement."
+      }
+    ],
+    "faqSection": {
+      "label": "FAQ",
+      "title": "Questions Fréquemment Posées"
+    },
+    "faqs": [
+      {
+        "q": "Combien de temps à l'avance devrions-nous commencer ?",
+        "a": "Pour les mariages à destination au Maroc, nous recommandons de commencer entre 10 et 12 mois à l'avance pour réserver votre lieu privilégié et les meilleurs prestataires."
+      },
+      {
+        "q": "Travaillez-vous avec des couples internationaux ?",
+        "a": "Oui, la majorité de nos clients sont des couples internationaux. Nous sommes des experts dans la gestion de l'organisation à distance et de la logistique des invités."
+      },
+      {
+        "q": "Pouvez-vous organiser des cérémonies multiculturelles ou symboliques ?",
+        "a": "Absolument. Nous sommes spécialisés dans les mariages fusion et pouvons vous assister pour trouver des célébrants pour des cérémonies symboliques, laïques ou religieuses."
+      },
+      {
+        "q": "Aidez-vous pour les expériences et l'hébergement des invités ?",
+        "a": "Oui, nous fournissons une gestion complète de l'hospitalité comprenant la réservation d'hébergement, les visites locales et les transports pour vos invités."
+      }
+    ],
+    "ctaSection": {
+      "label": "Prêt(e) ?",
+      "title": "Organisez Votre Mariage",
+      "subtitle": "Commençons aujourd'hui à créer votre célébration extraordinaire au Maroc."
+    },
+    "ui": {
+      "details": "détails",
+      "close": "Fermer",
+      "venue_experience": "Expérience du Lieu",
+      "start_planning": "Commencer l'Organisation",
+      "continue": "Continuer à Explorer",
+      "plan_wedding": "Organisez Votre Mariage"
+    }
+  },
+  "events_page": {
+    "heroImageKeys": [
+      "corporate",
+      "festivals",
+      "birthday",
+      "retreats"
+    ],
+    "hero": {
+      "label": "Événements au Maroc",
+      "title": "Des Événements Raffinés, Maîtrisés avec Élégance",
+      "subtitle": "Nous créons des événements privés et corporate au Maroc avec la même précision, le même style et le même sens de l'hospitalité que pour nos mariages.",
+      "defaultService": "Événement Corporate"
+    },
+    "categoriesSection": {
+      "label": "Ce Que Nous Proposons",
+      "title": "Catégories d'Événements",
+      "subtitle": "Au-delà du mariage — conçus avec la même exigence, créativité et hospitalité."
+    },
+    "categories": [
+      {
+        "title": "Fêtes de Fiançailles",
+        "desc": "Célébrez vos premiers pas vers le grand jour dans des ambiances intimistes et élégantes.",
+        "imgKey": "bachelor",
+        "detail": "Une célébration de fiançailles pensée comme un moment éditorial — chaleureuse, fluide et parfaitement orchestrée.",
+        "highlights": [
+          "Concept + direction moodboard",
+          "Sélection du lieu + prestataires",
+          "Flux invités, timing et coordination sur place"
+        ]
+      },
+      {
+        "title": "Bridal Showers & Dîners de Bienvenue",
+        "desc": "Des rassemblements pré-mariage élégants qui donnent le ton d'une célébration inoubliable.",
+        "imgKey": "editorial",
+        "detail": "Du bridal shower raffiné au dîner de bienvenue dans la Médina, nous créons des instants chaleureux et haut de gamme.",
+        "highlights": [
+          "Tables, fleurs et éclairage",
+          "Menus, musique et animation",
+          "Hospitalité et stylisme"
+        ]
+      },
+      {
+        "title": "Anniversaires & Célébrations Privées",
+        "desc": "Des moments forts sublimés par un design personnalisé, des lieux exclusifs et des détails sensibles.",
+        "imgKey": "retreats",
+        "detail": "Anniversaires, demandes en mariage, dîners privés et étapes de vie — conçus avec intimité, beauté et exécution sans faille.",
+        "highlights": [
+          "Lieux privés et configurations intimistes",
+          "Direction créative narrative",
+          "Coordination discrète et premium"
+        ]
+      },
+      {
+        "title": "Anniversaires de Luxe",
+        "desc": "Des rooftops spectaculaires aux dîners dans le désert — chaque anniversaire mérite une signature.",
+        "imgKey": "birthday",
+        "detail": "Un anniversaire de luxe crée son propre univers — rooftop, villa privée ou célébration sous les étoiles.",
+        "highlights": [
+          "Curation d'animations immersives",
+          "Moments cocktails + dining signature",
+          "Timeline + gestion prestataires"
+        ]
+      },
+      {
+        "title": "Expériences de Marque",
+        "desc": "Des activations immersives et productions éditoriales dans les plus beaux décors du Maroc.",
+        "imgKey": "editorial",
+        "detail": "Activations premium, lancements, dîners et productions éditoriales — livrés avec direction créative et excellence opérationnelle.",
+        "highlights": [
+          "Direction créative + production",
+          "Repérage lieux et appui autorisations",
+          "Run-of-show + équipe sur site"
+        ]
+      },
+      {
+        "title": "Événements Corporate",
+        "desc": "Retraites exécutives, dîners et galas orchestrés avec précision et sophistication.",
+        "imgKey": "corporate",
+        "detail": "Événements corporate au Maroc — dîners exécutifs, retraites et expériences incentive — planifiés avec clarté et discrétion.",
+        "highlights": [
+          "Planification budget + logistique",
+          "AV, scénographie et production",
+          "Expérience invités et coordination terrain"
+        ]
+      }
+    ],
+    "promiseSection": {
+      "title": "Notre Promesse Événementielle",
+      "subtitle": "Trois piliers qui soutiennent chaque événement que nous créons au Maroc."
+    },
+    "promises": [
+      {
+        "icon": "◈",
+        "title": "Planification Stratégique",
+        "desc": "Du concept au budget, de la logistique au timing — chaque détail est défini avant la réservation du moindre prestataire."
+      },
+      {
+        "icon": "✦",
+        "title": "Design Élevé",
+        "desc": "Stylisme éditorial, compositions florales sur mesure, éclairages d'ambiance et divertissement soigneusement sélectionné."
+      },
+      {
+        "icon": "◎",
+        "title": "Expérience Invités Fluide",
+        "desc": "Gestion des arrivées, hospitalité et coordination jour J pour une expérience sans friction."
+      }
+    ],
+    "formatsSection": {
+      "label": "Formats Vedettes",
+      "title": "Formats d'Événements Vedettes",
+      "subtitle": "Nos formats les plus demandés — chacun avec son univers."
+    },
+    "formats": [
+      {
+        "title": "Dîners Rooftop à Marrakech",
+        "imgKey": "imperialCity",
+        "tag": "Format Vedette",
+        "detail": "Heure dorée, lanternes et skyline — une hospitalité élevée dans une atmosphère marocaine éditoriale.",
+        "highlights": [
+          "Menu + accords boissons sur mesure",
+          "Éclairage + stylisme d'ambiance",
+          "Musique + timing sunset"
+        ]
+      },
+      {
+        "title": "Soirées dans les Jardins",
+        "imgKey": "retreats",
+        "tag": "Format Vedette",
+        "detail": "Verdure luxuriante, fleurs généreuses et dining raffiné — idéal pour des célébrations romantiques et intemporelles.",
+        "highlights": [
+          "Direction florale forte",
+          "Configurations flexibles du flux invités",
+          "Temps forts animation + lumière"
+        ]
+      },
+      {
+        "title": "Expériences dans le Désert",
+        "imgKey": "sahara",
+        "tag": "Format Vedette",
+        "detail": "Une expérience destination qui devient le récit — arrivées au coucher du soleil, dîner de luxe et musique sous les étoiles.",
+        "highlights": [
+          "Coordination transport + logistique",
+          "Stylisme camp de luxe + dining",
+          "Divertissement immersif"
+        ]
+      },
+      {
+        "title": "Réceptions Privées Intimistes",
+        "imgKey": "bachelor",
+        "tag": "Format Vedette",
+        "detail": "Une célébration privée parfaitement chorégraphiée — pour des groupes réduits et une exigence du détail.",
+        "highlights": [
+          "Tablescapes haute finition",
+          "Touchpoints invités personnalisés",
+          "Run-of-show fluide"
+        ]
+      },
+      {
+        "title": "Dîners de Marque ou Exécutifs",
+        "imgKey": "corporate",
+        "tag": "Format Vedette",
+        "detail": "Des dîners premium pour marques et décideurs — discrets, élégants et centrés sur l'hospitalité.",
+        "highlights": [
+          "Sélection lieu + chef/caterer",
+          "Timing prêt pour AV + production",
+          "Arrivée invités + accueil"
+        ]
+      }
+    ],
+    "ctaSection": {
+      "label": "Créons Ensemble",
+      "title": "Organisez Votre Événement",
+      "subtitle": "Partagez votre occasion — nous nous occupons de tout le reste."
+    },
+    "ui": {
+      "details": "détails",
+      "close": "Fermer",
+      "event_category": "Catégorie d'Événement",
+      "reserve": "Réserver / Demander",
+      "continue": "Continuer à Explorer",
+      "plan_event": "Organiser Votre Événement"
+    }
+  },
+  "gallery_page": {
+    "hero": {
+      "title": "L'Expérience",
+      "subtitle": "De A à Z... Marrakech est la destination pour célébrer le plus beau moment de votre vie."
+    },
+    "intro": {
+      "title": "De A à Z...",
+      "text": "Marrakech Weddings s'occupe de tout. Nous construisons avec vous un budget prévisionnel poste par poste. Nous gérons également le planning des invités (transferts, accueil aéroport, hôtels) pour donner vie à votre projet. Quel que soit votre budget, s'unir à Marrakech garantit un mariage inoubliable."
+    },
+    "process": {
+      "title": "Notre Processus",
+      "steps": [
+        {
+          "title": "Consultation",
+          "text": "Premier échange pour définir votre style unique et vos priorités essentielles."
+        },
+        {
+          "title": "Étude",
+          "text": "Recherche de lieux selon la capacité, l'emplacement et votre budget cible."
+        },
+        {
+          "title": "Sélection",
+          "text": "Choix des meilleurs partenaires — traiteur, photo, fleurs, beauté et plus encore."
+        },
+        {
+          "title": "Organisation",
+          "text": "Repérages, dégustations, planning détaillé et alignement complet des prestataires."
+        },
+        {
+          "title": "Création & Cadeaux",
+          "text": "Design des save-the-dates, invitations, plans de table et attentions personnalisées."
+        },
+        {
+          "title": "Coordination",
+          "text": "Gestion complète et coordination discrète de votre journée de célébration."
+        }
+      ]
+    },
+    "gallery": {
+      "label": "Galerie",
+      "title": "Collections par Catégorie",
+      "subtitle": "Chaque dossier est organisé pour parcourir facilement l'archive visuelle."
+    },
+    "collections": {
+      "birthday_private": {
+        "subtitle": "Moments marquants, dîners intimistes et célébrations privées."
+      },
+      "evjf": {
+        "subtitle": "Célébrations pré-mariage avec une énergie festive et soignée."
+      },
+      "festivals": {
+        "subtitle": "Ambiances vibrantes, émotions live et célébrations pleines d'énergie."
+      },
+      "retreats": {
+        "subtitle": "Bien-être, évasion et expériences de luxe au rythme apaisé."
+      },
+      "corporate": {
+        "subtitle": "Rencontres exécutives, lancements et expériences de marque."
+      },
+      "weddings": {
+        "subtitle": "Cérémonies, réceptions et visuels éditoriaux de mariage."
+      }
+    },
+    "modal": {
+      "open_image": "Ouvrir l'image {{index}} de {{title}}",
+      "image_viewer": "Visionneuse d'images {{title}}",
+      "close": "Fermer la visionneuse",
+      "previous": "Image précédente",
+      "next": "Image suivante",
+      "counter": "Image {{current}} sur {{total}}"
+    }
+  },
+  "contact_page": {
+    "hero": {
+      "label": "Contact",
+      "title": "Commencez Votre Célébration",
+      "subtitle": "Parlez-nous de votre vision, de votre date et de l'expérience que vous souhaitez créer."
+    },
+    "form": {
+      "label": "Demande",
+      "title": "Parlez-nous de votre événement",
+      "intro": "Nous répondons avec discrétion, attention et personnalisation.",
+      "success_title": "Demande reçue",
+      "success_text": "Merci. Nous vous contacterons dans les 24 heures.",
+      "full_name": "Nom complet",
+      "email": "Email",
+      "email_placeholder": "Adresse email",
+      "phone": "Téléphone / WhatsApp",
+      "event_type": "Type d'événement",
+      "select_event_type": "Sélectionnez un type d'événement",
+      "option_wedding": "Mariage",
+      "option_engagement": "Fête de fiançailles",
+      "option_welcome_dinner": "Dîner de bienvenue",
+      "option_anniversary": "Anniversaire / Célébration privée",
+      "option_luxury_birthday": "Anniversaire de luxe",
+      "option_brand": "Expérience de marque",
+      "option_corporate": "Événement corporate",
+      "option_other": "Autre",
+      "estimated_date": "Date estimée",
+      "guests": "Nombre d'invités",
+      "guests_placeholder": "ex. 60",
+      "location": "Lieu souhaité au Maroc",
+      "location_placeholder": "ex. Marrakech, Agafay, Essaouira...",
+      "budget": "Budget estimé",
+      "budget_placeholder": "ex. 25 000 €",
+      "message": "Message",
+      "message_placeholder": "Parlez-nous de votre vision…",
+      "error": "Erreur lors de l'envoi du message. Veuillez réessayer.",
+      "sending": "Envoi…",
+      "send": "Envoyer la Demande"
+    },
+    "details": {
+      "label": "Contact",
+      "email": "Email",
+      "tel": "Tél",
+      "office": "Bureau",
+      "office_value": "Bureau de Marrakech"
+    },
+    "scheduler": {
+      "label": "Consultation",
+      "title": "Réserver une consultation",
+      "subtitle": "Choisissez un créneau qui vous convient.",
+      "iframe_title": "Calendrier de réservation de consultation"
+    }
+  },
+  "reservation_form": {
+    "title": "Réservez Votre Consultation",
+    "subtitle": "Commencez votre parcours en toute sérénité avec nous.",
+    "success_title": "Consultation Demandée !",
+    "success_text": "Oussama vous contactera sous 24 heures.",
+    "full_name": "Nom complet",
+    "email": "Adresse email",
+    "phone": "Numéro de téléphone",
+    "select_event": "Sélectionnez un type d'événement",
+    "option_wedding": "Mariage",
+    "option_corporate": "Événement corporate",
+    "option_private": "Célébration privée",
+    "error": "Erreur lors de la demande de consultation.",
+    "requesting": "Demande en cours...",
+    "request": "Demander une Consultation"
+  },
+  "detail_page": {
+    "cases": {
+      "desert": {
+        "title": "Expédition de Luxe dans le Désert du Sahara",
+        "subtitle": "Voyage Signature"
+      },
+      "city": {
+        "title": "Villes Impériales & Riads Cachés",
+        "subtitle": "Échappée Culturelle"
+      },
+      "coast": {
+        "title": "Côte Atlantique du Maroc",
+        "subtitle": "Slow Travel & Retraites en Bord de Mer"
+      },
+      "gastronomy": {
+        "title": "Découverte Gastronomique Marocaine",
+        "subtitle": "Expérience Culinaire"
+      },
+      "wellness": {
+        "title": "Retraites Bien-Être & Évasions Hammam",
+        "subtitle": "Régénération"
+      },
+      "art": {
+        "title": "Art, Design & Patrimoine Artisanal",
+        "subtitle": "Voyage Créatif"
+      },
+      "traditional": {
+        "title": "Mariages Traditionnels Marocains",
+        "subtitle": "Culturel et Authentique"
+      },
+      "modern": {
+        "title": "Élégance de Luxe Moderne",
+        "subtitle": "Sophistiqué et Chic"
+      },
+      "default": {
+        "title": "Détails de l'Expérience",
+        "subtitle": "Un Voyage Sur Mesure"
+      }
+    },
+    "body": {
+      "p1": "Plongez dans notre expérience {{title}}. Chaque détail est minutieusement pensé pour offrir un moment spectaculaire et fluide. Notre équipe d'experts travaille avec exigence pour concrétiser votre vision, en alliant l'authenticité marocaine aux standards du luxe international.",
+      "p2": "De la sélection du lieu à la direction culinaire, en passant par l'esthétique et la gestion des invités, notre approche globale garantit un événement remarquable. Contactez-nous pour sécuriser vos dates et découvrir les formules disponibles."
+    }
+  },
+  "layout": {
+    "whatsapp_label": "Discuter sur WhatsApp"
+  }
+}
