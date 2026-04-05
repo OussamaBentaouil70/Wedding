@@ -83,7 +83,7 @@ const Gallery: React.FC = () => {
       />
       
       {/* De A à Z Section */}
-      <section className="section-padding container text-center" style={{ maxWidth: '900px' }}>
+      <section id="gallery-intro" className="section-padding container text-center" style={{ maxWidth: '900px' }}>
         <div className="wedding-section-header" style={{ marginBottom: 0 }}>
           <h2>{t('gallery_page.intro.title')}</h2>
           <p>
@@ -93,7 +93,7 @@ const Gallery: React.FC = () => {
       </section>
 
       {/* 6-Step Process */}
-      <section className="process-section section-padding" style={{ backgroundColor: 'var(--color-white)' }}>
+      <section id="gallery-process" className="process-section section-padding" style={{ backgroundColor: 'var(--color-white)' }}>
         <div className="container">
           <h2 style={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: '60px' }}>{t('gallery_page.process.title')}</h2>
           <div className="process-grid">
@@ -109,7 +109,7 @@ const Gallery: React.FC = () => {
       </section>
 
       {/* Category Galleries */}
-      <section className="section-padding container">
+      <section id="gallery-collections" className="section-padding container">
         <div className="wedding-section-header">
           <span className="section-label">{t('gallery_page.gallery.label')}</span>
           <span className="gold-line" />

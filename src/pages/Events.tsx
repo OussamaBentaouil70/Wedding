@@ -68,7 +68,7 @@ const Events: React.FC = () => {
     />
 
     {/* ══════════ EVENT CATEGORIES ══════════ */}
-    <section className="section-padding container reveal">
+    <section id="events-categories" className="section-padding container reveal">
       <div className="wedding-section-header">
         <span className="section-label">{eventsData.categoriesSection.label}</span>
         <span className="gold-line" />
@@ -102,7 +102,7 @@ const Events: React.FC = () => {
     </section>
 
     {/* ══════════ EVENT PROMISE ══════════ */}
-    <section className="ev-promise-section">
+    <section id="events-promise" className="ev-promise-section">
       <div className="ev-promise-bg" />
       <div className="container ev-promise-inner">
         <div className="wedding-section-header reveal">
@@ -124,7 +124,7 @@ const Events: React.FC = () => {
     </section>
 
     {/* ══════════ FEATURED FORMATS ══════════ */}
-    <section className="section-padding container reveal">
+    <section id="events-formats" className="section-padding container reveal">
       <div className="wedding-section-header">
         <span className="section-label">{eventsData.formatsSection.label}</span>
         <span className="gold-line" />
@@ -274,7 +274,7 @@ const Events: React.FC = () => {
     )}
 
     {/* ══════════ CTA ══════════ */}
-    <section className="wedding-cta-final">
+    <section id="events-cta" className="wedding-cta-final">
       <div className="container">
         <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>{eventsData.ctaSection.label}</span>
         <h2>{eventsData.ctaSection.title}</h2>

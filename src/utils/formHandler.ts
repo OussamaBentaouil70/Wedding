@@ -17,8 +17,11 @@ interface FormValues {
 
 export const submitForm = async (values: FormValues) => {
   try {
-    // Send data to our PHP script through the Vite proxy
-    const response = await fetch('/api/send_email.php', {
+    const endpoint = import.meta.env.VITE_FORM_ENDPOINT
+      || (import.meta.env.PROD ? '/send_email.php' : '/api/send_email.php');
+
+    // In production use real PHP endpoint, in dev use Vite proxy fallback
+    const response = await fetch(endpoint, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -35,6 +38,9 @@ export const submitForm = async (values: FormValues) => {
     }
   } catch (error) {
     console.error('PHP Submission Error:', error);
-    return { success: false, error: "Oussama, the email could not be sent. Check your hosting/PHP." };
+    const errorMessage = error instanceof Error
+      ? error.message
+      : "Oussama, the email could not be sent. Check your hosting/PHP.";
+    return { success: false, error: errorMessage };
   }
 };

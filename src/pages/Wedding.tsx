@@ -71,7 +71,7 @@ const Wedding: React.FC = () => {
       />
 
       {/* ══════════ SERVICE CATEGORIES ══════════ */}
-      <section className="section-padding container reveal">
+      <section id="wedding-services" className="section-padding container reveal">
         <div className="wedding-section-header">
           <span className="section-label">{servicesSection.label}</span>
           <span className="gold-line" />
@@ -89,7 +89,7 @@ const Wedding: React.FC = () => {
       </section>
 
       {/* ══════════ VENUE EXPERIENCE ══════════ */}
-      <section className="reveal">
+      <section id="wedding-venues" className="reveal">
         <div className="wedding-section-header container">
           <span className="section-label">{venuesSection.label}</span>
           <span className="gold-line" />
@@ -172,7 +172,7 @@ const Wedding: React.FC = () => {
       )}
 
       {/* ══════════ DESIGN PHILOSOPHY ══════════ */}
-      <section className="section-padding container reveal">
+      <section id="wedding-editorial" className="section-padding container reveal">
         <div className="editorial-container">
           <div className="editorial-img-side">
               <img src={editorialImage} alt={editorial.imageAlt} className="editorial-img-main" />
@@ -192,7 +192,7 @@ const Wedding: React.FC = () => {
       </section>
 
       {/* ══════════ WEDDING THEMES ══════════ */}
-      <section className="section-padding container reveal">
+      <section id="wedding-themes" className="section-padding container reveal">
         <div className="wedding-section-header">
           <span className="section-label">{themesSection.label}</span>
           <span className="gold-line" />
@@ -212,7 +212,7 @@ const Wedding: React.FC = () => {
       </section>
 
       {/* ══════════ WHAT'S INCLUDED ══════════ */}
-      <section className="journey-dark-section reveal">
+      <section id="wedding-included" className="journey-dark-section reveal">
         <div className="container">
           <div className="wedding-section-header">
             <h2 style={{ color: '#fff' }}>{includedSection.title}</h2>
@@ -233,7 +233,7 @@ const Wedding: React.FC = () => {
       </section>
 
       {/* ══════════ FAQ ══════════ */}
-      <section className="section-padding container reveal">
+      <section id="wedding-faq" className="section-padding container reveal">
         <div className="wedding-faq">
           <div className="wedding-section-header">
             <span className="section-label">{faqSection.label}</span>
@@ -255,7 +255,7 @@ const Wedding: React.FC = () => {
       </section>
 
       {/* ══════════ CTA ══════════ */}
-      <section className="wedding-cta-final">
+      <section id="wedding-cta" className="wedding-cta-final">
         <div className="container">
           <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>{ctaSection.label}</span>
           <h2>{ctaSection.title}</h2>

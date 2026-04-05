@@ -32,7 +32,7 @@ const weddingPreviews = [
     highlights: ['Riad courtyards, rooftops, palaces', 'Design + styling direction', 'Guest journey + on-the-day orchestration'],
   },
   {
-    img: 'https://dianacoulter.com/wp-content/uploads/2024/04/The_Oberoi_Marrakech_Morocco_Luxury_Wedding_Venue_by_Diana_Coulter-1.jpg',
+    img: 'src/assets/images/Weddings/6.jpg',
     category: 'Signature Wedding',
     title: 'Desert Weddings',
     location: 'Agafay & the Sahara',
@@ -166,7 +166,7 @@ const Home: React.FC = () => {
       {/* ══════════════════════════════════════
           1. HERO – full-bleed video
       ══════════════════════════════════════ */}
-      <section className="home-hero home-hero--video">
+      <section id="home-hero" className="home-hero home-hero--video">
         <video
           className="home-hero-video"
           src={HERO_VIDEO}
@@ -208,7 +208,7 @@ const Home: React.FC = () => {
       {/* ══════════════════════════════════════
           2. TRUST BAR
       ══════════════════════════════════════ */}
-      <section className="trust-bar">
+      <section id="home-trust" className="trust-bar">
         <div className="container">
           <div className="trust-bar-inner">
             {trustStats.map((stat, i) => (
@@ -224,7 +224,7 @@ const Home: React.FC = () => {
       {/* ══════════════════════════════════════
           3. ABOUT
       ══════════════════════════════════════ */}
-      <section className="home-about section-padding">
+      <section id="home-about" className="home-about section-padding">
         <div className="container">
           <div className="home-about-grid">
             <div className="home-about-images reveal">
@@ -266,7 +266,7 @@ const Home: React.FC = () => {
       {/* ══════════════════════════════════════
           4. SIGNATURE PROMISES
       ══════════════════════════════════════ */}
-      <section className="home-promises">
+      <section id="home-promises" className="home-promises">
         <div className="promises-bg" />
         <div className="container promises-inner">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '70px' }}>
@@ -294,7 +294,7 @@ const Home: React.FC = () => {
       {/* ══════════════════════════════════════
           5. WEDDINGS PREVIEW
       ══════════════════════════════════════ */}
-      <section className="section-padding home-weddings-preview">
+      <section id="home-weddings" className="section-padding home-weddings-preview">
         <div className="container">
           <div className="section-header reveal">
             <div>
@@ -342,7 +342,7 @@ const Home: React.FC = () => {
       {/* ══════════════════════════════════════
           6. EVENTS PREVIEW
       ══════════════════════════════════════ */}
-      <section className="home-events-preview">
+      <section id="home-events" className="home-events-preview">
         <div className="events-preview-head container reveal">
           <span className="section-label">{t('home.events.tagline')}</span>
           <span className="gold-line gold-line-left" />
@@ -517,7 +517,7 @@ const Home: React.FC = () => {
       {/* ══════════════════════════════════════
           7. PROCESS
       ══════════════════════════════════════ */}
-      <section className="home-process section-padding">
+      <section id="home-process" className="home-process section-padding">
         <div className="container">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '80px' }}>
             <span className="section-label">{t('home.process.tagline')}</span>
@@ -548,7 +548,7 @@ const Home: React.FC = () => {
       {/* ══════════════════════════════════════
           8. TESTIMONIALS
       ══════════════════════════════════════ */}
-      <section className="home-testimonials">
+      <section id="home-testimonials" className="home-testimonials">
         <div className="testimonials-bg" />
         <div className="container testimonials-inner">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '60px' }}>

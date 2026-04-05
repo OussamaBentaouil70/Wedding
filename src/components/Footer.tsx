@@ -29,10 +29,9 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-contact">
           <h3>{t('footer.contact_title')}</h3>
-          <p>123 Luxury Avenue, Medina</p>
-          <p>Marrakech, Morocco</p>
-          <p>Email: contact@marrakechweddings.com</p>
-          <p>Phone: +212 5XX-XXXXXX</p>
+          <p>+212699728058</p>
+          <p>Marrakech Office</p>
+          <p>email : contact@weddingsplannermorocco.com</p>
         </div>
       </div>
       <div className="footer-bottom">

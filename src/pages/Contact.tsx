@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
   };
   return (
     <div className="page-contact">
-      <section className="home-hero home-hero--video contact-hero">
+      <section id="contact-hero" className="home-hero home-hero--video contact-hero">
         <video
           className="home-hero-video"
           src={HERO_VIDEO}
@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
           </p>
         </div>
       </section>
-      <section className="section-padding container contact-section">
+      <section id="contact-form-section" className="section-padding container contact-section">
         <div className="contact-page-grid">
           <div className="contact-form-container">
             <span className="section-label">{t('contact_page.form.label')}</span>
