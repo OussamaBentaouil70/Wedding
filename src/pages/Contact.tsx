@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Flatpickr from 'react-flatpickr';
+import weddingVideo from '../assets/video/Wedding.mp4';
 
 // Form Integration
 import { submitForm } from '../utils/formHandler';
 
-const HERO_VIDEO = 'https://videos.pexels.com/video-files/4954871/4954871-uhd_2560_1440_30fps.mp4';
+const HERO_VIDEO = weddingVideo;
+
+const formatDateToYMD = (date: Date) => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -23,6 +32,7 @@ const Contact: React.FC = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [dateRange, setDateRange] = useState<Date[]>([]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -60,6 +70,7 @@ const Contact: React.FC = () => {
         currency: 'USD',
         message: '',
       });
+      setDateRange([]);
       setTimeout(() => setSubmitStatus('idle'), 5000);
     } else {
       setSubmitStatus('error');
@@ -167,24 +178,26 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="arrival_date">{t('contact_page.form.arrival_date')}</label>
-                    <input
-                      id="arrival_date"
-                      type="date"
-                      name="arrival_date"
-                      value={formData.arrival_date}
-                      onChange={handleInputChange}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="departure_date">{t('contact_page.form.departure_date')}</label>
-                    <input
-                      id="departure_date"
-                      type="date"
-                      name="departure_date"
-                      value={formData.departure_date}
-                      onChange={handleInputChange}
+                  <div className="form-group" style={{ gridColumn: '1 / -1' }}>
+                    <label htmlFor="event_dates">
+                      {t('contact_page.form.arrival_date')} / {t('contact_page.form.departure_date')}
+                    </label>
+                    <Flatpickr
+                      value={dateRange}
+                      options={{
+                        mode: 'range',
+                        dateFormat: 'Y-m-d',
+                      }}
+                      onChange={(selectedDates: Date[]) => {
+                        setDateRange(selectedDates);
+                        setFormData(prev => ({
+                          ...prev,
+                          arrival_date: selectedDates[0] ? formatDateToYMD(selectedDates[0]) : '',
+                          departure_date: selectedDates[1] ? formatDateToYMD(selectedDates[1]) : '',
+                        }));
+                      }}
+                      className="date-range-input"
+                      placeholder="Select arrival and departure dates"
                     />
                   </div>
                 </div>

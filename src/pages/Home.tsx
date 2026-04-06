@@ -11,12 +11,13 @@ import logo            from '../assets/images/logo2.png';
 import weddingHero     from '../assets/images/Weddings/8.jpg';
 import weddingModern   from '../assets/images/Weddings/11.jpg';
 import weddingBohemian from '../assets/images/wedding/bohemian.jpg';
+import weddingVideo    from '../assets/video/Wedding.mp4';
 
 import privateEventsImg from '../assets/images/Corporate Events/13.jpg';
 import privatePartiesImg from '../assets/images/EVJF - Bachelor Party/8.jpg';
 import corporateEventsImg from '../assets/images/Corporate Events/50.jpg';
 
-const HERO_VIDEO = 'https://videos.pexels.com/video-files/4954871/4954871-uhd_2560_1440_30fps.mp4';
+const HERO_VIDEO = weddingVideo;
 
 // ── Data ──────────────────────────────────────────────────
 // Data moved inside component for i18n support

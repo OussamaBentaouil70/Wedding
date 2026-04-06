@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import { ArrowRight, Check } from 'lucide-react';
+import Flatpickr from 'react-flatpickr';
 import { submitForm } from '../utils/formHandler';
+
+const formatDateToYMD = (date: Date) => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
 
 interface PageHeroProps {
   /** Array of image URLs that fade in sequence */
@@ -27,12 +35,18 @@ const PageHero: React.FC<PageHeroProps> = ({
     contact_name: '',
     contact_email: '',
     contact_phone: '',
-    preferred_date: '',
     service_type: defaultService,
+    arrival_date: '',
+    departure_date: '',
+    number_of_guests: '',
+    destinations_in_mind: '',
+    estimated_budget: '',
+    currency: 'USD',
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [dateRange, setDateRange] = useState<Date[]>([]);
 
   // Cycle background images every 5 seconds
   React.useEffect(() => {
@@ -164,13 +178,68 @@ const PageHero: React.FC<PageHeroProps> = ({
                   </select>
                 </div>
                 <div className="phf-group">
+                  <Flatpickr
+                    value={dateRange}
+                    options={{
+                      mode: 'range',
+                      dateFormat: 'Y-m-d',
+                    }}
+                    onChange={(selectedDates: Date[]) => {
+                      setDateRange(selectedDates);
+                      setFormData(prev => ({
+                        ...prev,
+                        arrival_date: selectedDates[0] ? formatDateToYMD(selectedDates[0]) : '',
+                        departure_date: selectedDates[1] ? formatDateToYMD(selectedDates[1]) : '',
+                      }));
+                    }}
+                    className="date-range-input"
+                    placeholder="Arrival & Departure Dates"
+                  />
+                </div>
+              </div>
+
+              <div className="phf-row">
+                <div className="phf-group">
                   <input
-                    name="preferred_date"
-                    type="date"
-                    placeholder="Preferred Date"
-                    value={formData.preferred_date}
+                    name="number_of_guests"
+                    type="text"
+                    placeholder="Number of Guests"
+                    value={formData.number_of_guests}
                     onChange={handleChange}
                   />
+                </div>
+                <div className="phf-group">
+                  <input
+                    name="destinations_in_mind"
+                    type="text"
+                    placeholder="Destinations in Mind"
+                    value={formData.destinations_in_mind}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+
+              <div className="phf-row">
+                <div className="phf-group">
+                  <input
+                    name="estimated_budget"
+                    type="text"
+                    placeholder="Estimated Budget"
+                    value={formData.estimated_budget}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="phf-group">
+                  <select
+                    name="currency"
+                    value={formData.currency}
+                    onChange={handleChange}
+                  >
+                    <option value="USD">USD ($)</option>
+                    <option value="EUR">EUR (€)</option>
+                    <option value="GBP">GBP (£)</option>
+                    <option value="MAD">MAD (د.م.)</option>
+                  </select>
                 </div>
               </div>
 

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faPhone, faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import logo from '../assets/images/logo2.png';
 
 const Footer: React.FC = () => {
@@ -55,9 +56,18 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-contact">
           <h3>{t('footer.contact_title')}</h3>
-          <p>+212699728058</p>
-          <p>Marrakech Office</p>
-          <p>email : contact@weddingsplannermorocco.com</p>
+          <p className="footer-contact-item">
+            <FontAwesomeIcon icon={faPhone} className="footer-contact-icon" aria-hidden="true" />
+            <a href="tel:+212699728058">+212699728058</a>
+          </p>
+          <p className="footer-contact-item">
+            <FontAwesomeIcon icon={faLocationDot} className="footer-contact-icon" aria-hidden="true" />
+            <span>55 Derb Ben Zina, LaKasbah, Marrakech 40040, Morocco</span>
+          </p>
+          <p className="footer-contact-item">
+            <FontAwesomeIcon icon={faEnvelope} className="footer-contact-icon" aria-hidden="true" />
+            <a href="mailto:contact@weddingsplannermorocco.com">contact@weddingsplannermorocco.com</a>
+          </p>
         </div>
       </div>
       <div className="footer-bottom">

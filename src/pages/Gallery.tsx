@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { galleryCollections } from '../data/imageCollections';
 
 // Imports
-import galleryHero from '../assets/video/wedding-hero.mp4';
+import galleryHero from '../assets/video/Wedding.mp4';
 
 const Gallery: React.FC = () => {
   const { t } = useTranslation();
