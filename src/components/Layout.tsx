@@ -9,13 +9,13 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const location = useLocation();
 
   // Scroll to top on route change
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
-  }, [location.pathname]);
+  }, [location.pathname, i18n.language]);
 
   // Scroll-reveal observer
   useEffect(() => {
@@ -30,15 +30,25 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       { threshold: 0.08, rootMargin: '0px 0px -60px 0px' }
     );
 
-    const timer = setTimeout(() => {
+    const observeRevealElements = () => {
       document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    };
+
+    const timer = setTimeout(() => {
+      observeRevealElements();
     }, 100);
+
+    const mutationObserver = new MutationObserver(() => {
+      observeRevealElements();
+    });
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
 
     return () => {
       clearTimeout(timer);
+      mutationObserver.disconnect();
       observer.disconnect();
     };
-  }, [location.pathname]);
+  }, [location.pathname, i18n.language]);
 
   return (
     <div className="layout">
@@ -48,7 +58,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
       {/* WhatsApp Floating Action Button */}
       <a
-        href="https://wa.me/212600000000?text=Hello%2C%20I%27d%20like%20to%20inquire%20about%20your%20services."
+        href="https://wa.me/212699728058?text=Hello%2C%20I%27d%20like%20to%20inquire%20about%20your%20services."
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-fab"

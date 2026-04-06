@@ -445,6 +445,10 @@
   color: var(--color-gold);
 }
 
+.social-icon {
+  font-size: 1.2rem !important;
+}
+
 .footer-links ul li {
   margin-bottom: 14px;
 }

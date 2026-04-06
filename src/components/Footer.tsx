@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import logo from '../assets/images/logo2.png';
 
 const Footer: React.FC = () => {
@@ -13,9 +15,33 @@ const Footer: React.FC = () => {
           <img src={logo} alt="Wedding Planner Morocco Logo" className="footer-logo-img" />
           <p>{t('footer.desc')}</p>
           <div className="social-links">
-            <a href="#" aria-label="Instagram">IG</a>
-            <a href="#" aria-label="Facebook">FB</a>
-            <a href="#" aria-label="Twitter">TW</a>
+            <a 
+              href="https://www.instagram.com/weddingsplannermorocco/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="Instagram"
+              className="social-icon"
+            >
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a 
+              href="https://www.facebook.com/profile.php?id=61576790920930" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="Facebook"
+              className="social-icon"
+            >
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+            <a 
+              href="https://www.linkedin.com/company/wedding-planner-morocco/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="LinkedIn"
+              className="social-icon"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
           </div>
         </div>
         <div className="footer-links">

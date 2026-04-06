@@ -7,7 +7,7 @@ import { resolveJsonImageSrc } from '../utils/imageResolver';
 
 // ─────────────────────────────────────────────────────────
 const Events: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const eventsData: any = t('events_page', { returnObjects: true });
 
   const heroImages: string[] = (eventsData.heroImages ?? []).map(resolveJsonImageSrc);
@@ -20,15 +20,25 @@ const Events: React.FC = () => {
     ...format,
     img: resolveJsonImageSrc(format.img),
   }));
+  const safeHeroImages = heroImages.filter(Boolean);
+  const safeCategories = categories.filter((category: any) => Boolean(category.img));
+  const safeFormats = formats.filter((format: any) => Boolean(format.img));
 
   const [activeCategoryIdx, setActiveCategoryIdx] = useState<number | null>(null);
   const [activeFormatIdx, setActiveFormatIdx] = useState<number | null>(null);
 
   const activeCategory = useMemo(
-    () => (activeCategoryIdx === null ? null : categories[activeCategoryIdx]),
-    [activeCategoryIdx]
+    () => (activeCategoryIdx === null ? null : safeCategories[activeCategoryIdx]),
+    [activeCategoryIdx, safeCategories]
   );
-  const activeFormat = useMemo(() => (activeFormatIdx === null ? null : formats[activeFormatIdx]), [activeFormatIdx]);
+  const activeFormat = useMemo(
+    () => (activeFormatIdx === null ? null : safeFormats[activeFormatIdx]),
+    [activeFormatIdx, safeFormats]
+  );
+
+  useEffect(() => {
+    closeAllModals();
+  }, [i18n.language]);
 
   useEffect(() => {
     if (activeCategoryIdx === null && activeFormatIdx === null) return;
@@ -60,7 +70,7 @@ const Events: React.FC = () => {
 
     {/* ══════════ HERO ══════════ */}
     <PageHero
-      images={heroImages}
+      images={safeHeroImages}
       label={eventsData.hero.label}
       title={eventsData.hero.title}
       subtitle={eventsData.hero.subtitle}
@@ -76,7 +86,7 @@ const Events: React.FC = () => {
         <p>{eventsData.categoriesSection.subtitle}</p>
       </div>
       <div className="ev-categories-grid">
-        {categories.map((cat: any, i: number) => (
+        {safeCategories.map((cat: any, i: number) => (
           <button
             key={cat.title}
             type="button"
@@ -90,7 +100,7 @@ const Events: React.FC = () => {
             aria-expanded={activeCategoryIdx === i}
           >
             <div className="ev-category-img-wrap">
-              <img src={cat.img} alt={cat.title} />
+              {cat.img ? <img src={cat.img} alt={cat.title} /> : null}
             </div>
             <div className="ev-category-body">
               <h3>{cat.title}</h3>
@@ -132,7 +142,7 @@ const Events: React.FC = () => {
         <p>{eventsData.formatsSection.subtitle}</p>
       </div>
       <div className="ev-formats-grid">
-        {formats.map((fmt: any, i: number) => (
+        {safeFormats.map((fmt: any, i: number) => (
           <button
             key={fmt.title}
             type="button"
@@ -146,7 +156,7 @@ const Events: React.FC = () => {
             aria-expanded={activeFormatIdx === i}
           >
             <div className="ev-format-img-wrap">
-              <img src={fmt.img} alt={fmt.title} />
+              {fmt.img ? <img src={fmt.img} alt={fmt.title} /> : null}
               <div className="ev-format-overlay">
                 <span className="ev-format-tag">{fmt.tag}</span>
                 <h3>{fmt.title}</h3>
@@ -175,7 +185,7 @@ const Events: React.FC = () => {
 
           <div className="ev-modal-grid">
             <div className="ev-modal-img-wrap">
-              <img src={activeCategory.img} alt={activeCategory.title} className="ev-modal-img" />
+              {activeCategory.img ? <img src={activeCategory.img} alt={activeCategory.title} className="ev-modal-img" /> : null}
               <div className="ev-modal-img-overlay" />
               <div className="ev-modal-img-title">
                 <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>{t('events_page.ui.event_category')}</span>
@@ -233,7 +243,7 @@ const Events: React.FC = () => {
 
           <div className="ev-modal-grid">
             <div className="ev-modal-img-wrap">
-              <img src={activeFormat.img} alt={activeFormat.title} className="ev-modal-img" />
+              {activeFormat.img ? <img src={activeFormat.img} alt={activeFormat.title} className="ev-modal-img" /> : null}
               <div className="ev-modal-img-overlay" />
               <div className="ev-modal-img-title">
                 <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>{t('events_page.formatsSection.label')}</span>

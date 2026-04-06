@@ -358,7 +358,7 @@
       {
         "title": "Bridal Showers & Welcome Dinners",
         "desc": "Elegant pre-wedding gatherings that set the tone for an unforgettable celebration ahead.",
-        "img": "src/assets/images/EVJF - Bachelor Party/1.jpg",
+        "img": "src/assets/images/Weddings/26.jpg",
         "detail": "From refined bridal showers to welcome dinners in the Medina, we create warm, elevated moments that feel effortless for you and unforgettable for your guests.",
         "highlights": [
           "Tablescapes, florals, lighting",
@@ -391,7 +391,7 @@
       {
         "title": "Brand Experiences",
         "desc": "Immersive brand activations and editorial productions set against Morocco's most stunning backdrops.",
-        "img": "src/assets/images/Corporate Events/2.jpg",
+        "img": "src/assets/images/Corporate Events/52.jpg",
         "detail": "Premium brand activations, launches, dinners, and editorial productions — delivered with creative direction, technical precision, and impeccable guest experience.",
         "highlights": [
           "Creative direction + production",
@@ -402,7 +402,7 @@
       {
         "title": "Corporate Gatherings",
         "desc": "Prestigious corporate events, executive retreats, and galas delivered with precision and sophistication.",
-        "img": "src/assets/images/Corporate Events/4.jpg",
+        "img": "src/assets/images/Corporate Events/51.jpg",
         "detail": "Corporate gatherings across Morocco — executive dinners, retreats, incentive experiences, and galas — planned with discretion, clarity, and polish.",
         "highlights": [
           "Budget + logistics planning",
@@ -606,13 +606,14 @@
       "option_brand": "Brand Experience",
       "option_corporate": "Corporate Gathering",
       "option_other": "Other",
-      "estimated_date": "Estimated Date",
+      "arrival_date": "Arrival Date",
+      "departure_date": "Departure Date",
       "guests": "Number of Guests",
       "guests_placeholder": "e.g. 60",
-      "location": "Preferred Location in Morocco",
-      "location_placeholder": "e.g. Marrakech, Agafay, Essaouira...",
+      "destinations": "Destinations in Mind",
+      "destinations_placeholder": "e.g. Marrakech, Agafay, Essaouira...",
       "budget": "Estimated Budget",
-      "budget_placeholder": "e.g. €25,000",
+      "budget_placeholder": "e.g. 25000",
       "message": "Message",
       "message_placeholder": "Tell us about your vision…",
       "error": "Error sending message. Please try again.",

@@ -36,6 +36,9 @@ const Wedding: React.FC = () => {
     ...theme,
     img: resolveJsonImageSrc(theme.img),
   }));
+  const safeHeroImages = heroImages.filter(Boolean);
+  const safeVenuesWithImages = venuesWithImages.filter((venue: any) => Boolean(venue.img));
+  const safeThemesWithImages = themesWithImages.filter((theme: any) => Boolean(theme.img));
 
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [activeVenueIdx, setActiveVenueIdx] = useState<number | null>(null);
@@ -63,7 +66,7 @@ const Wedding: React.FC = () => {
 
       {/* ══════════ HERO ══════════ */}
       <PageHero
-        images={heroImages}
+        images={safeHeroImages}
         label={hero.label}
         title={hero.title}
         subtitle={hero.subtitle}
@@ -97,7 +100,7 @@ const Wedding: React.FC = () => {
           <p>{venuesSection.subtitle}</p>
         </div>
         <div className="venue-experience-grid">
-          {venuesWithImages.map((v: any, i: number) => (
+          {safeVenuesWithImages.map((v: any, i: number) => (
             <button
               key={v.title}
               type="button"
@@ -106,7 +109,7 @@ const Wedding: React.FC = () => {
               aria-haspopup="dialog"
               aria-expanded={activeVenueIdx === i}
             >
-              <img src={v.img} alt={v.title} className="venue-card-img" />
+              {v.img ? <img src={v.img} alt={v.title} className="venue-card-img" /> : null}
               <div className="venue-card-overlay">
                 <h3>{v.title}</h3>
               </div>
@@ -138,7 +141,7 @@ const Wedding: React.FC = () => {
 
             <div className="wedding-modal-grid">
               <div className="wedding-modal-img-wrap">
-                <img src={activeVenue.img} alt={activeVenue.title} className="wedding-modal-img" />
+                {activeVenue.img ? <img src={activeVenue.img} alt={activeVenue.title} className="wedding-modal-img" /> : null}
                 <div className="wedding-modal-img-overlay" />
                 <div className="wedding-modal-img-title">
                   <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>{t('wedding_page.ui.venue_experience')}</span>
@@ -175,7 +178,7 @@ const Wedding: React.FC = () => {
       <section id="wedding-editorial" className="section-padding container reveal">
         <div className="editorial-container">
           <div className="editorial-img-side">
-              <img src={editorialImage} alt={editorial.imageAlt} className="editorial-img-main" />
+              {editorialImage ? <img src={editorialImage} alt={editorial.imageAlt} className="editorial-img-main" /> : null}
           </div>
           <div className="editorial-text-side">
             <span className="section-label">{editorial.label}</span>
@@ -200,9 +203,9 @@ const Wedding: React.FC = () => {
           <p>{themesSection.subtitle}</p>
         </div>
         <div className="themes-inspiration-grid">
-          {themesWithImages.map((t: any, i: number) => (
+          {safeThemesWithImages.map((t: any, i: number) => (
             <div key={i} className="theme-inspiration-card reveal" style={{ transitionDelay: `${i * 80}ms` }}>
-              <img src={t.img} alt={t.title} className="theme-inspiration-img" />
+              {t.img ? <img src={t.img} alt={t.title} className="theme-inspiration-img" /> : null}
               <div className="theme-inspiration-overlay">
                 <h3>{t.title}</h3>
               </div>

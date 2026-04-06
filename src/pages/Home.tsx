@@ -14,7 +14,7 @@ import weddingBohemian from '../assets/images/wedding/bohemian.jpg';
 
 import privateEventsImg from '../assets/images/Corporate Events/13.jpg';
 import privatePartiesImg from '../assets/images/EVJF - Bachelor Party/8.jpg';
-import corporateEventsImg from '../assets/images/Corporate Events/4.jpg';
+import corporateEventsImg from '../assets/images/Corporate Events/50.jpg';
 
 const HERO_VIDEO = 'https://videos.pexels.com/video-files/4954871/4954871-uhd_2560_1440_30fps.mp4';
 
@@ -32,7 +32,7 @@ const weddingPreviews = [
     highlights: ['Riad courtyards, rooftops, palaces', 'Design + styling direction', 'Guest journey + on-the-day orchestration'],
   },
   {
-    img: 'src/assets/images/Weddings/6.jpg',
+    img: 'https://erikatuestaphotography.com/wp-content/uploads/sites/19622/2024/08/morrocan-desert-wedding-marrakech-wedding-photographer-erika-tuesta-45.jpg',
     category: 'Signature Wedding',
     title: 'Desert Weddings',
     location: 'Agafay & the Sahara',
@@ -597,7 +597,7 @@ const Home: React.FC = () => {
           </p>
           <div className="home-final-cta-actions">
             <Link to="/contact" className="btn-primary">{t('home.cta.btn_plan')} <ArrowRight size={15} /></Link>
-            <a href="https://wa.me/212600000000?text=Hello%2C%20I%27d%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="btn-ghost">
+            <a href="https://api.whatsapp.com/send/?phone=212699728058&text=Hello%2C+I%27d+like+to+inquire+about+your+services.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="btn-ghost">
               <MessageCircle size={16} /> {t('home.cta.btn_wa')}
             </a>
           </div>

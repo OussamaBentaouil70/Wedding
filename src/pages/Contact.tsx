@@ -13,10 +13,12 @@ const Contact: React.FC = () => {
     contact_email: '',
     contact_phone: '',
     service_type: '',
-    preferred_date: '',
+    arrival_date: '',
+    departure_date: '',
     number_of_guests: '',
-    preferred_location: '',
+    destinations_in_mind: '',
     estimated_budget: '',
+    currency: 'USD',
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -25,6 +27,16 @@ const Contact: React.FC = () => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const getCurrencySymbol = (currency: string) => {
+    const symbols: { [key: string]: string } = {
+      USD: '$',
+      EUR: '€',
+      GBP: '£',
+      MAD: 'د.م.'
+    };
+    return symbols[currency] || currency;
   };
 
   const handleContactSubmit = async (e: React.FormEvent) => {
@@ -40,10 +52,12 @@ const Contact: React.FC = () => {
         contact_email: '',
         contact_phone: '',
         service_type: '',
-        preferred_date: '',
+        arrival_date: '',
+        departure_date: '',
         number_of_guests: '',
-        preferred_location: '',
+        destinations_in_mind: '',
         estimated_budget: '',
+        currency: 'USD',
         message: '',
       });
       setTimeout(() => setSubmitStatus('idle'), 5000);
@@ -154,15 +168,28 @@ const Contact: React.FC = () => {
 
                 <div className="form-row">
                   <div className="form-group">
-                    <label htmlFor="preferred_date">{t('contact_page.form.estimated_date')}</label>
+                    <label htmlFor="arrival_date">{t('contact_page.form.arrival_date')}</label>
                     <input
-                      id="preferred_date"
+                      id="arrival_date"
                       type="date"
-                      name="preferred_date"
-                      value={formData.preferred_date}
+                      name="arrival_date"
+                      value={formData.arrival_date}
                       onChange={handleInputChange}
                     />
                   </div>
+                  <div className="form-group">
+                    <label htmlFor="departure_date">{t('contact_page.form.departure_date')}</label>
+                    <input
+                      id="departure_date"
+                      type="date"
+                      name="departure_date"
+                      value={formData.departure_date}
+                      onChange={handleInputChange}
+                    />
+                  </div>
+                </div>
+
+                <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="number_of_guests">{t('contact_page.form.guests')}</label>
                     <input
@@ -174,30 +201,54 @@ const Contact: React.FC = () => {
                       onChange={handleInputChange}
                     />
                   </div>
+                  <div className="form-group">
+                    <label htmlFor="destinations_in_mind">{t('contact_page.form.destinations')}</label>
+                    <input
+                      id="destinations_in_mind"
+                      type="text"
+                      name="destinations_in_mind"
+                      placeholder={t('contact_page.form.destinations_placeholder')}
+                      value={formData.destinations_in_mind}
+                      onChange={handleInputChange}
+                    />
+                  </div>
                 </div>
 
                 <div className="form-row">
                   <div className="form-group">
-                    <label htmlFor="preferred_location">{t('contact_page.form.location')}</label>
-                    <input
-                      id="preferred_location"
-                      type="text"
-                      name="preferred_location"
-                      placeholder={t('contact_page.form.location_placeholder')}
-                      value={formData.preferred_location}
-                      onChange={handleInputChange}
-                    />
-                  </div>
-                  <div className="form-group">
                     <label htmlFor="estimated_budget">{t('contact_page.form.budget')}</label>
-                    <input
-                      id="estimated_budget"
-                      type="text"
-                      name="estimated_budget"
-                      placeholder={t('contact_page.form.budget_placeholder')}
-                      value={formData.estimated_budget}
-                      onChange={handleInputChange}
-                    />
+                    <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-end' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', flex: 1, position: 'relative' }}>
+                        <span style={{ position: 'absolute', left: '12px', fontSize: '1rem', color: 'rgba(255,255,255,0.6)', fontWeight: '500', pointerEvents: 'none' }}>
+                          {getCurrencySymbol(formData.currency)}
+                        </span>
+                        <input
+                          id="estimated_budget"
+                          type="text"
+                          name="estimated_budget"
+                          placeholder={t('contact_page.form.budget_placeholder')}
+                          value={formData.estimated_budget}
+                          onChange={handleInputChange}
+                          style={{ 
+                            flex: 1,
+                            paddingLeft: '35px',
+                            width: '100%'
+                          }}
+                        />
+                      </div>
+                      <select
+                        id="currency"
+                        name="currency"
+                        value={formData.currency}
+                        onChange={handleInputChange}
+                        style={{ flex: '0 0 120px', height: '44px' }}
+                      >
+                        <option value="USD">USD ($)</option>
+                        <option value="EUR">EUR (€)</option>
+                        <option value="GBP">GBP (£)</option>
+                        <option value="MAD">MAD (د.م.)</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
 
@@ -232,7 +283,7 @@ const Contact: React.FC = () => {
               <div className="contact-details-list">
                 <div>
                   <strong>{t('contact_page.details.email')}</strong>
-                  <a href="mailto:contact@weddingplannermorocco.org">contact@weddingplannermorocco.org</a>
+                  <a href="mailto:contact@weddingsplannermorocco.com">contact@weddingsplannermorocco.com</a>
                 </div>
                 <div>
                   <strong>{t('contact_page.details.tel')}</strong>
@@ -245,7 +296,7 @@ const Contact: React.FC = () => {
               </div>
             </div>
 
-            {import.meta.env.VITE_SCHEDULER_URL ? (
+            {/* {import.meta.env.VITE_SCHEDULER_URL ? (
               <div className="contact-scheduler-card">
                 <span className="section-label">{t('contact_page.scheduler.label')}</span>
                 <span className="gold-line gold-line-left" />
@@ -260,7 +311,7 @@ const Contact: React.FC = () => {
                   />
                 </div>
               </div>
-            ) : null}
+            ) : null} */}
 
             <div className="contact-reassurance">
               <p>{t('contact_page.form.intro')}</p>

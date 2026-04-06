@@ -107,9 +107,9 @@
   },
   "wedding_page": {
     "heroImages": [
-      "https://sumptuous-events.com/wp-content/uploads/2016/07/marrakech-wedding-planner.jpg",
-      "https://images.squarespace-cdn.com/content/v1/5e7cc650dbbd2c25c70e2fa8/de705cf0-8c99-46ff-860a-c7a6d212f1a4/el-fenn-wedding-planner",
-      "https://images.squarespace-cdn.com/content/v1/5f8ea32d7c05b54f63b91afa/b1b14475-66cb-44f1-83b0-8c5fcf1be2dd/mariarao_mamouniaweddings_-309.jpg"
+      "src/assets/images/Weddings/1.jpg",
+      "src/assets/images/Weddings/2.jpg",
+      "src/assets/images/Weddings/3.jpg"
     ],
     "hero": {
       "label": "Mariages au Maroc",
@@ -156,6 +156,7 @@
     "venues": [
       {
         "title": "Riads de Luxe",
+        "img": "src/assets/images/Weddings/8.jpg",
         "desc": "Cachés derrière des portes sculptées, les riads de Marrakech offrent des cours intimes, des dîners aux chandelles et un sentiment d'intimité cinématographique.",
         "highlights": [
           "Cours de la Médina & moments sur les toits",
@@ -165,6 +166,7 @@
       },
       {
         "title": "Villas & Domaines Privés",
+        "img": "src/assets/images/Weddings/22.jpg",
         "desc": "L'ambiance d'une résidence privée avec une hospitalité haut de gamme — de l'espace pour organiser sur plusieurs jours, des rassemblements autour de la piscine et un luxe détendu.",
         "highlights": [
           "Week-ends de mariage sur plusieurs jours",
@@ -174,6 +176,7 @@
       },
       {
         "title": "Palais & Jardins",
+        "img": "src/assets/images/Weddings/31.jpg",
         "desc": "Une architecture grandiose, des détails patrimoniaaux et des jardins luxuriants pour les couples qui souhaitent une célébration royale et percutante.",
         "highlights": [
           "Des toiles de fond de cérémonie à fort impact",
@@ -183,6 +186,7 @@
       },
       {
         "title": "Camps dans le Désert",
+        "img": "src/assets/images/Weddings/4.jpg",
         "desc": "Une cérémonie au coucher du soleil, un dîner éclairé aux lanternes et de la musique sous les étoiles — le Sahara révèle un Maroc inoubliable.",
         "highlights": [
           "Cérémonies au coucher du soleil & dîners sous les étoiles",
@@ -192,6 +196,7 @@
       },
       {
         "title": "Lieux en Bord de Mer",
+        "img": "src/assets/images/Weddings/21.jpg",
         "desc": "Air de l'océan, lumière dorée et une sophistication décontractée — les lieux côtiers apportent un romantisme sans effort avec un stylisme raffiné.",
         "highlights": [
           "Cérémonies à l'heure dorée",
@@ -201,6 +206,8 @@
       }
     ],
     "editorial": {
+      "imageUrl": "src/assets/images/Weddings/9.jpg",
+      "imageAlt": "Philosophie de design mariage",
       "label": "Notre Philosophie",
       "title": "L'Art dans Chaque Détail",
       "body": "Nous croyons qu'un mariage doit être une expérience sensorielle. Notre approche éditoriale du design garantit que chaque élément — du parfum des fleurs à la transition de la lumière — contribue à un récit cohérent et à couper le souffle. Nous organisons tout le voyage des invités en mettant l'accent sur un divertissement haut de gamme et des tables immersives.",
@@ -220,22 +227,28 @@
     },
     "themes": [
       {
-        "title": "Élégance Royale Marocaine"
+        "title": "Élégance Royale Marocaine",
+        "img": "src/assets/images/Weddings/10.jpg"
       },
       {
-        "title": "Romance Moderne Minimaliste"
+        "title": "Romance Moderne Minimaliste",
+        "img": "src/assets/images/Weddings/11.jpg"
       },
       {
-        "title": "Célébration au Coucher de Soleil"
+        "title": "Célébration au Coucher de Soleil",
+        "img": "src/assets/images/Weddings/12.jpg"
       },
       {
-        "title": "Mariage de Jardin en Fleurs"
+        "title": "Mariage de Jardin en Fleurs",
+        "img": "src/assets/images/Weddings/13.jpg"
       },
       {
-        "title": "Sophistication Blanc & Or"
+        "title": "Sophistication Blanc & Or",
+        "img": "src/assets/images/Weddings/14.jpg"
       },
       {
-        "title": "Beldi Chic Réinventé"
+        "title": "Beldi Chic Réinventé",
+        "img": "src/assets/images/Weddings/15.jpg"
       }
     ],
     "includedSection": {
@@ -345,7 +358,7 @@
       {
         "title": "Bridal Showers & Dîners de Bienvenue",
         "desc": "Des rassemblements pré-mariage élégants qui donnent le ton d'une célébration inoubliable.",
-        "img": "src/assets/images/EVJF - Bachelor Party/1.jpg",
+        "img": "src/assets/images/Weddings/26.jpg",
         "detail": "Du bridal shower raffiné au dîner de bienvenue dans la Médina, nous créons des instants chaleureux et haut de gamme.",
         "highlights": [
           "Tables, fleurs et éclairage",
@@ -378,7 +391,7 @@
       {
         "title": "Expériences de Marque",
         "desc": "Des activations immersives et productions éditoriales dans les plus beaux décors du Maroc.",
-        "img": "src/assets/images/Corporate Events/2.jpg",
+        "img": "src/assets/images/Corporate Events/52.jpg",
         "detail": "Activations premium, lancements, dîners et productions éditoriales — livrés avec direction créative et excellence opérationnelle.",
         "highlights": [
           "Direction créative + production",
@@ -389,7 +402,7 @@
       {
         "title": "Événements Corporate",
         "desc": "Retraites exécutives, dîners et galas orchestrés avec précision et sophistication.",
-        "img": "src/assets/images/Corporate Events/4.jpg",
+        "img": "src/assets/images/Corporate Events/51.jpg",
         "detail": "Événements corporate au Maroc — dîners exécutifs, retraites et expériences incentive — planifiés avec clarté et discrétion.",
         "highlights": [
           "Planification budget + logistique",
@@ -593,13 +606,14 @@
       "option_brand": "Expérience de marque",
       "option_corporate": "Événement corporate",
       "option_other": "Autre",
-      "estimated_date": "Date estimée",
+      "arrival_date": "Date d'arrivée",
+      "departure_date": "Date de départ",
       "guests": "Nombre d'invités",
       "guests_placeholder": "ex. 60",
-      "location": "Lieu souhaité au Maroc",
-      "location_placeholder": "ex. Marrakech, Agafay, Essaouira...",
+      "destinations": "Destinations souhaitées",
+      "destinations_placeholder": "ex. Marrakech, Agafay, Essaouira...",
       "budget": "Budget estimé",
-      "budget_placeholder": "ex. 25 000 €",
+      "budget_placeholder": "ex. 25 000",
       "message": "Message",
       "message_placeholder": "Parlez-nous de votre vision…",
       "error": "Erreur lors de l'envoi du message. Veuillez réessayer.",
