@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Check } from 'lucide-react';
 import Flatpickr from 'react-flatpickr';
+import { useNavigate } from 'react-router-dom';
 import { submitForm } from '../utils/formHandler';
 
 const formatDateToYMD = (date: Date) => {
@@ -30,6 +31,7 @@ const PageHero: React.FC<PageHeroProps> = ({
   variant = 'background',
   defaultService = '',
 }) => {
+  const navigate = useNavigate();
   const [bgIdx, setBgIdx] = useState(0);
   const [formData, setFormData] = useState({
     contact_name: '',
@@ -64,7 +66,10 @@ const PageHero: React.FC<PageHeroProps> = ({
     setIsSubmitting(true);
     const result = await submitForm(formData);
     setIsSubmitting(false);
-    if (result.success) setSubmitted(true);
+    if (result.success) {
+      setSubmitted(true);
+      navigate('/thank-you');
+    }
   };
 
   return (

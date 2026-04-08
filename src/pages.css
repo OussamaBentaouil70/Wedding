@@ -2950,48 +2950,57 @@
     radial-gradient(circle at 85% 12%, rgba(184,154,106,0.16) 0%, rgba(184,154,106,0) 42%),
     radial-gradient(circle at 8% 86%, rgba(42,33,24,0.08) 0%, rgba(42,33,24,0) 45%),
     var(--color-background);
-  min-height: 72vh;
+  min-height: 100vh;
+}
+
+.thank-you-hero {
+  position: relative;
+  min-height: clamp(320px, 46vh, 520px);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.thank-you-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thank-you-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(24,22,18,0.74) 0%, rgba(24,22,18,0.14) 55%, rgba(24,22,18,0.2) 100%);
+}
+
+.thank-you-hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-bottom: clamp(22px, 4.2vh, 42px);
+}
+
+.thank-you-hero-label {
+  color: rgba(255,255,255,0.96);
+  letter-spacing: 0.28em;
 }
 
 .thank-you-shell {
   width: 100%;
 }
 
-.thank-you-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: rgba(255,255,255,0.82);
-  border: 1px solid rgba(197,168,128,0.24);
-  box-shadow: 0 26px 90px rgba(0,0,0,0.12);
-  overflow: hidden;
-}
-
-.thank-you-image-wrap {
-  position: relative;
-  min-height: 560px;
-  overflow: hidden;
-}
-
-.thank-you-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.02);
-}
-
-.thank-you-image-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(28,28,30,0.72) 0%, rgba(28,28,30,0.1) 55%, transparent 100%);
-}
-
 .thank-you-content {
+  background: rgba(255,255,255,0.84);
+  border: 1px solid rgba(197,168,128,0.24);
+  box-shadow: 0 20px 70px rgba(0,0,0,0.1);
   padding: clamp(36px, 5vw, 64px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .thank-you-content h1 {
@@ -3022,12 +3031,8 @@
 }
 
 @media (max-width: 1024px) {
-  .thank-you-card {
-    grid-template-columns: 1fr;
-  }
-
-  .thank-you-image-wrap {
-    min-height: 340px;
+  .thank-you-hero {
+    min-height: 300px;
   }
 }
 

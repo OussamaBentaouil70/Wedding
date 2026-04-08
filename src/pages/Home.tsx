@@ -156,6 +156,7 @@ const Home: React.FC = () => {
     setIsSubmitting(false);
     if (result.success) {
       setFormSent(true);
+      navigate('/thank-you');
     } else {
       alert("Error: " + result.error);
     }
