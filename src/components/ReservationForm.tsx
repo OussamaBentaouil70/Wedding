@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 // Form Integration
@@ -6,6 +7,7 @@ import { submitForm } from '../utils/formHandler';
 
 const ReservationForm: React.FC = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     contact_name: '',
     contact_email: '',
@@ -31,7 +33,7 @@ const ReservationForm: React.FC = () => {
     if (result.success) {
       setSubmitStatus('success');
       setFormData({ contact_name: '', contact_email: '', contact_phone: '', preferred_date: '', service_type: '', message: 'Reservation request from global form' });
-      setTimeout(() => setSubmitStatus('idle'), 5000);
+      navigate('/thank-you');
     } else {
       setSubmitStatus('error');
     }

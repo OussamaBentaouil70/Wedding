@@ -103,7 +103,7 @@
     "desc": "Crafting luxurious and unforgettable experiences in the heart of Morocco.",
     "links_title": "Quick Links",
     "contact_title": "Contact Us",
-    "rights": "Marrakech Weddings. All rights reserved."
+    "rights": "Wedding Planner Morocco By Soufia.  All rights reserved."
   },
   "wedding_page": {
     "heroImages": [
@@ -696,5 +696,13 @@
   },
   "layout": {
     "whatsapp_label": "Chat on WhatsApp"
+  },
+  "thank_you_page": {
+    "label": "Reservation Received",
+    "title": "Wedding Planner Morocco by Soufia Sincerely Thanks You for Your Reservation Request",
+    "subtitle": "Your reservation request has been received successfully. It is our pleasure to accompany you in planning your celebration in Morocco.",
+    "note": "Our team will personally review your details and contact you within 24 hours to discuss the next steps.",
+    "back_home": "Return Home",
+    "image_alt": "Elegant wedding setup in Morocco"
   }
 }

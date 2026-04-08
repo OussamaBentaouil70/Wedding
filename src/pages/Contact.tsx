@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Flatpickr from 'react-flatpickr';
 import weddingVideo from '../assets/video/Wedding.mp4';
@@ -17,6 +18,7 @@ const formatDateToYMD = (date: Date) => {
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     contact_name: '',
     contact_email: '',
@@ -71,7 +73,7 @@ const Contact: React.FC = () => {
         message: '',
       });
       setDateRange([]);
-      setTimeout(() => setSubmitStatus('idle'), 5000);
+      navigate('/thank-you');
     } else {
       setSubmitStatus('error');
     }
