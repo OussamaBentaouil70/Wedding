@@ -19,14 +19,15 @@ interface FormValues {
 
 export const submitForm = async (values: FormValues) => {
   try {
-    const endpoint = import.meta.env.VITE_FORM_ENDPOINT
-      || (import.meta.env.PROD ? '/send_email.php' : '/api/send_email.php');
+    const endpoint =
+      import.meta.env.VITE_FORM_ENDPOINT ||
+      (import.meta.env.PROD ? "/send_email.php" : "/api/send_email.php");
 
     // In production use real PHP endpoint, in dev use Vite proxy fallback
     const response = await fetch(endpoint, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(values),
     });
@@ -39,10 +40,11 @@ export const submitForm = async (values: FormValues) => {
       throw new Error(result.message || "Server Error");
     }
   } catch (error) {
-    console.error('PHP Submission Error:', error);
-    const errorMessage = error instanceof Error
-      ? error.message
-      : "Oussama, the email could not be sent. Check your hosting/PHP.";
+    console.error("PHP Submission Error:", error);
+    const errorMessage =
+      error instanceof Error
+        ? error.message
+        : "Oussama, the email could not be sent. Check your hosting/PHP.";
     return { success: false, error: errorMessage };
   }
 };
