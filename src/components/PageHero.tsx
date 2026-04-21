@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ArrowRight, Check } from 'lucide-react';
 import Flatpickr from 'react-flatpickr';
 import { useNavigate } from 'react-router-dom';
@@ -11,6 +11,11 @@ const formatDateToYMD = (date: Date) => {
   return `${year}-${month}-${day}`;
 };
 
+type HeroServiceOption = {
+  value: string;
+  label: string;
+};
+
 interface PageHeroProps {
   /** Array of image URLs that fade in sequence */
   images: string[];
@@ -21,6 +26,12 @@ interface PageHeroProps {
   variant?: 'background' | 'split';
   /** Which service type to pre-select in the form */
   defaultService?: string;
+  /** Service dropdown options for the hero reservation form */
+  serviceOptions?: HeroServiceOption[];
+  /** Placeholder text for the service dropdown */
+  servicePlaceholder?: string;
+  /** Hide hero form when page needs form at the bottom */
+  showForm?: boolean;
 }
 
 const PageHero: React.FC<PageHeroProps> = ({
@@ -30,6 +41,9 @@ const PageHero: React.FC<PageHeroProps> = ({
   subtitle,
   variant = 'background',
   defaultService = '',
+  serviceOptions,
+  servicePlaceholder,
+  showForm = true,
 }) => {
   const navigate = useNavigate();
   const [bgIdx, setBgIdx] = useState(0);
@@ -46,9 +60,23 @@ const PageHero: React.FC<PageHeroProps> = ({
     currency: 'USD',
     message: '',
   });
+  const fallbackServiceOptions = [
+    { value: 'Wedding', label: 'Wedding' },
+    { value: 'Corporate Event', label: 'Corporate Event' },
+    { value: 'Private Celebration', label: 'Private Celebration' },
+    { value: 'Other', label: 'Other' },
+  ];
+  const heroServiceOptions = serviceOptions ?? fallbackServiceOptions;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [dateRange, setDateRange] = useState<Date[]>([]);
+
+  useEffect(() => {
+    setFormData(prev => ({
+      ...prev,
+      service_type: defaultService,
+    }));
+  }, [defaultService]);
 
   // Cycle background images every 5 seconds
   React.useEffect(() => {
@@ -73,7 +101,7 @@ const PageHero: React.FC<PageHeroProps> = ({
   };
 
   return (
-    <header className={`page-hero ${variant === 'split' ? 'page-hero--split' : ''}`}>
+    <header className={`page-hero ${variant === 'split' ? 'page-hero--split' : ''} ${showForm ? '' : 'page-hero--no-form'}`}>
       {variant === 'background' ? (
         <>
           {/* Fading background images */}
@@ -121,17 +149,18 @@ const PageHero: React.FC<PageHeroProps> = ({
           <p className="page-hero-subtitle">{subtitle}</p>
         </div>
 
-        <div className="page-hero-form-wrap fade-in" id="reservation-form">
-          {submitted ? (
-            <div className="page-hero-form-success">
-              <Check size={34} />
-              <h3>Request Received!</h3>
-              <p>We'll be in touch within 24 hours to begin planning your event.</p>
-            </div>
-          ) : (
-            <form className="page-hero-form" onSubmit={handleSubmit}>
-              <h3>Start Planning</h3>
-              <p>Tell us about your vision — we'll handle everything from here.</p>
+        {showForm ? (
+          <div className="page-hero-form-wrap fade-in" id="reservation-form">
+            {submitted ? (
+              <div className="page-hero-form-success">
+                <Check size={34} />
+                <h3>Request Received!</h3>
+                <p>We'll be in touch within 24 hours to begin planning your event.</p>
+              </div>
+            ) : (
+              <form className="page-hero-form" onSubmit={handleSubmit}>
+                <h3>Start Planning</h3>
+                <p>Tell us about your vision — we'll handle everything from here.</p>
 
               <div className="phf-group">
                 <input
@@ -174,12 +203,11 @@ const PageHero: React.FC<PageHeroProps> = ({
                     required
                   >
                     <option value="" disabled>
-                      Type of Event
+                      {servicePlaceholder ?? 'Type of Event'}
                     </option>
-                    <option value="Wedding">Wedding</option>
-                    <option value="Corporate Event">Corporate Event</option>
-                    <option value="Private Celebration">Private Celebration</option>
-                    <option value="Other">Other</option>
+                    {heroServiceOptions.map((option) => (
+                      <option key={option.value} value={option.value}>{option.label}</option>
+                    ))}
                   </select>
                 </div>
                 <div className="phf-group">
@@ -258,18 +286,19 @@ const PageHero: React.FC<PageHeroProps> = ({
                 />
               </div>
 
-              <button type="submit" className="btn-primary phf-submit" disabled={isSubmitting}>
-                {isSubmitting ? (
-                  'Sending…'
-                ) : (
-                  <>
-                    Send Inquiry <ArrowRight size={14} />
-                  </>
-                )}
-              </button>
-            </form>
-          )}
-        </div>
+                <button type="submit" className="btn-primary phf-submit" disabled={isSubmitting}>
+                  {isSubmitting ? (
+                    'Sending…'
+                  ) : (
+                    <>
+                      Send Inquiry <ArrowRight size={14} />
+                    </>
+                  )}
+                </button>
+              </form>
+            )}
+          </div>
+        ) : null}
       </div>
     </header>
   );

@@ -71,12 +71,48 @@ const weddingModules = import.meta.glob(
   },
 ) as ImageModuleMap;
 
+const agafayDesertWeddingModules = import.meta.glob(
+  "../assets/images/Weddings/agafay-desert/*.{jpg,jpeg,png,webp}",
+  {
+    eager: true,
+    import: "default",
+  },
+) as ImageModuleMap;
+
+const elopementWeddingModules = import.meta.glob(
+  "../assets/images/Weddings/Elopement/*.{jpg,jpeg,png,webp}",
+  {
+    eager: true,
+    import: "default",
+  },
+) as ImageModuleMap;
+
+const keralaWeddingModules = import.meta.glob(
+  "../assets/images/Weddings/Kerala/*.{jpg,jpeg,png,webp}",
+  {
+    eager: true,
+    import: "default",
+  },
+) as ImageModuleMap;
+
+const jewishWeddingModules = import.meta.glob(
+  "../assets/images/Weddings/Jewish/*.{jpg,jpeg,png,webp}",
+  {
+    eager: true,
+    import: "default",
+  },
+) as ImageModuleMap;
+
 export const birthdayPrivateImages = sortImportedImages(birthdayPrivateModules);
 export const corporateEventImages = sortImportedImages(corporateEventModules);
 export const evjfBachelorImages = sortImportedImages(evjfBachelorModules);
 export const festivalImages = sortImportedImages(festivalModules);
 export const retreatImages = sortImportedImages(retreatModules);
 export const weddingImages = sortImportedImages(weddingModules);
+export const agafayDesertWeddingImages = sortImportedImages(agafayDesertWeddingModules);
+export const elopementWeddingImages = sortImportedImages(elopementWeddingModules);
+export const keralaWeddingImages = sortImportedImages(keralaWeddingModules);
+export const jewishWeddingImages = sortImportedImages(jewishWeddingModules);
 
 export const eventsHeroImages = [
   new URL("../assets/images/events/festivals.jpg", import.meta.url).href,
