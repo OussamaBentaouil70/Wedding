@@ -41,6 +41,8 @@ type WeddingPageConfig = {
   };
   themesSection: SectionCopy;
   themes: Array<{ title: string; img: string }>;
+  serviceShowcaseSection?: SectionCopy;
+  serviceShowcase?: Array<{ title: string; img: string; desc?: string; highlights?: string[] }>;
   ctaSection: SectionCopy;
   includedSection?: { title: string; subtitle: string };
   included?: Array<{ title: string; desc: string }>;
@@ -116,6 +118,43 @@ const weddingPageConfigs: Record<string, WeddingPageConfig> = {
       { title: 'Garden Wedding in Bloom', img: 'src/assets/images/Weddings/13.jpg' },
       { title: 'White & Gold Sophistication', img: 'src/assets/images/Weddings/14.jpg' },
       { title: 'Beldi Chic Reimagined', img: 'src/assets/images/Weddings/15.jpg' },
+    ],
+    serviceShowcaseSection: {
+      label: 'Services',
+      title: 'Our Services',
+      subtitle: 'Essential wedding services delivered with style, precision, and seamless coordination.',
+    },
+    serviceShowcase: [
+      {
+        title: 'Transportation',
+        img: 'src/assets/images/Weddings/Services/transportation.jpg',
+        desc: 'Private transfers and guest transport management designed to keep every movement smooth and stress-free.',
+        highlights: ['Airport and hotel transfers', 'Ceremony and reception shuttles', 'Luxury vehicle coordination'],
+      },
+      {
+        title: 'DJ',
+        img: 'src/assets/images/Weddings/Services/DJ.jpg',
+        desc: 'Music direction and live atmosphere management to shape the perfect emotional flow from cocktail hour to last dance.',
+        highlights: ['Curated music programming', 'Sound setup coordination', 'Dance-floor experience design'],
+      },
+      {
+        title: 'Catering',
+        img: 'src/assets/images/Weddings/Services/catering wedding.jpg',
+        desc: 'Refined culinary experiences tailored to your guests, celebration style, and the rhythm of your wedding day.',
+        highlights: ['Custom menu planning', 'Tasting and service flow', 'Dietary and guest preference support'],
+      },
+      {
+        title: 'Make Up',
+        img: 'src/assets/images/Weddings/Services/make up.jpg',
+        desc: 'Professional beauty services for the bride and bridal party, timed precisely for a calm and camera-ready preparation.',
+        highlights: ['Bride and bridal party beauty', 'Trial session coordination', 'On-site touch-up support'],
+      },
+      {
+        title: 'Photography & Videography',
+        img: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1400&q=80',
+        desc: 'Editorial coverage that captures every key emotion and detail, from preparations to the final celebration moments.',
+        highlights: ['Photo and video team coordination', 'Timeline-aligned coverage', 'Cinematic highlight storytelling'],
+      },
     ],
     includedSection: {
       title: 'The Full Planning Scope',
@@ -406,14 +445,114 @@ const weddingServiceTypeByContentKey: Record<string, string> = {
   'wedding_subpages.jewish': 'Jewish',
 };
 
+const defaultServiceShowcaseSection: SectionCopy = {
+  label: 'Services',
+  title: 'Our Services',
+  subtitle: 'Essential wedding services delivered with style, precision, and seamless coordination.',
+};
+
+const defaultServiceShowcaseItems = [
+  {
+    title: 'Transportation',
+    img: 'src/assets/images/Weddings/Services/transportation.jpg',
+    desc: 'Private transfers and guest transport management designed to keep every movement smooth and stress-free.',
+    highlights: ['Airport and hotel transfers', 'Ceremony and reception shuttles', 'Luxury vehicle coordination'],
+  },
+  {
+    title: 'DJ',
+    img: 'src/assets/images/Weddings/Services/DJ.jpg',
+    desc: 'Music direction and live atmosphere management to shape the perfect emotional flow from cocktail hour to last dance.',
+    highlights: ['Curated music programming', 'Sound setup coordination', 'Dance-floor experience design'],
+  },
+  {
+    title: 'Catering',
+    img: 'src/assets/images/Weddings/Services/catering wedding.jpg',
+    desc: 'Refined culinary experiences tailored to your guests, celebration style, and the rhythm of your wedding day.',
+    highlights: ['Custom menu planning', 'Tasting and service flow', 'Dietary and guest preference support'],
+  },
+  {
+    title: 'Make Up',
+    img: 'src/assets/images/Weddings/Services/make up.jpg',
+    desc: 'Professional beauty services for the bride and bridal party, timed precisely for a calm and camera-ready preparation.',
+    highlights: ['Bride and bridal party beauty', 'Trial session coordination', 'On-site touch-up support'],
+  },
+  {
+    title: 'Photography & Videography',
+    img: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1400&q=80',
+    desc: 'Editorial coverage that captures every key emotion and detail, from preparations to the final celebration moments.',
+    highlights: ['Photo and video team coordination', 'Timeline-aligned coverage', 'Cinematic highlight storytelling'],
+  },
+];
+
 interface WeddingTemplatePageProps {
   contentKey: string;
   showWeddingTypes?: boolean;
 }
 
 const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, showWeddingTypes = false }) => {
-  const { t } = useTranslation();
-  const config = useMemo(() => weddingPageConfigs[contentKey] ?? weddingPageConfigs.wedding_page, [contentKey]);
+  const { t, i18n } = useTranslation();
+  const baseConfig = useMemo(() => weddingPageConfigs[contentKey] ?? weddingPageConfigs.wedding_page, [contentKey]);
+  const translatedConfig = useMemo(
+    () => t(contentKey, { returnObjects: true, defaultValue: null }) as Partial<WeddingPageConfig> | null,
+    [contentKey, i18n.language, i18n.resolvedLanguage, t],
+  );
+  const config = useMemo<WeddingPageConfig>(() => {
+    const tc = translatedConfig ?? {};
+    return {
+      ...baseConfig,
+      ...tc,
+      hero: {
+        ...baseConfig.hero,
+        ...(tc.hero ?? {}),
+      },
+      weddingTypesSection: tc.weddingTypesSection
+        ? { ...(baseConfig.weddingTypesSection ?? tc.weddingTypesSection), ...tc.weddingTypesSection }
+        : baseConfig.weddingTypesSection,
+      servicesSection: {
+        ...baseConfig.servicesSection,
+        ...(tc.servicesSection ?? {}),
+      },
+      services: tc.services ?? baseConfig.services,
+      venuesSection: {
+        ...baseConfig.venuesSection,
+        ...(tc.venuesSection ?? {}),
+      },
+      venues: tc.venues ?? baseConfig.venues,
+      editorial: baseConfig.editorial || tc.editorial
+        ? {
+          ...(baseConfig.editorial ?? tc.editorial ?? {}),
+          ...(tc.editorial ?? {}),
+          details: tc.editorial?.details ?? baseConfig.editorial?.details,
+        }
+        : undefined,
+      themesSection: {
+        ...baseConfig.themesSection,
+        ...(tc.themesSection ?? {}),
+      },
+      themes: tc.themes ?? baseConfig.themes,
+      serviceShowcaseSection: tc.serviceShowcaseSection ?? baseConfig.serviceShowcaseSection,
+      serviceShowcase: tc.serviceShowcase ?? baseConfig.serviceShowcase,
+      ctaSection: {
+        ...baseConfig.ctaSection,
+        ...(tc.ctaSection ?? {}),
+      },
+      includedSection: tc.includedSection
+        ? { ...(baseConfig.includedSection ?? tc.includedSection), ...tc.includedSection }
+        : baseConfig.includedSection,
+      included: tc.included ?? baseConfig.included,
+      faqSection: tc.faqSection
+        ? { ...(baseConfig.faqSection ?? tc.faqSection), ...tc.faqSection }
+        : baseConfig.faqSection,
+      faqs: tc.faqs ?? baseConfig.faqs,
+      ui: {
+        ...baseConfig.ui,
+        ...(tc.ui ?? {}),
+      },
+      heroImages: tc.heroImages ?? baseConfig.heroImages,
+    };
+  }, [baseConfig, translatedConfig]);
+  const serviceShowcaseSection = config.serviceShowcaseSection ?? defaultServiceShowcaseSection;
+  const serviceShowcaseItems = config.serviceShowcase ?? defaultServiceShowcaseItems;
   const weddingServiceType = weddingServiceTypeByContentKey[contentKey] ?? '';
   const weddingSubtypeImagesByKey: Record<string, string[]> = {
     'wedding_subpages.agafay': agafayDesertWeddingImages,
@@ -445,9 +584,14 @@ const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, s
       ? pickSubpageImage((config.venues ?? []).length + index)
       : resolveJsonImageSrc(theme.img),
   }));
+  const serviceShowcaseWithImages: any[] = serviceShowcaseItems.map((item: any) => ({
+    ...item,
+    img: resolveJsonImageSrc(item.img),
+  }));
   const safeHeroImages = heroImages.filter(Boolean);
   const safeVenuesWithImages = venuesWithImages.filter((venue: any) => Boolean(venue.img));
   const safeThemesWithImages = themesWithImages.filter((theme: any) => Boolean(theme.img));
+  const safeServiceShowcaseWithImages = serviceShowcaseWithImages.filter((item: any) => Boolean(item.img));
   const reservationImage = safeHeroImages[0] || editorialImage;
   const agafayFeatureImage = new URL(
     '../assets/images/Weddings/agafay-desert/Destination-Wedding-Photographer-3-1536x1024-1.jpg',
@@ -502,9 +646,14 @@ const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, s
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [activeVenueIdx, setActiveVenueIdx] = useState<number | null>(null);
   const [activeWeddingCardIdx, setActiveWeddingCardIdx] = useState<number | null>(null);
+  const [activeServiceShowcaseIdx, setActiveServiceShowcaseIdx] = useState<number | null>(null);
   const activeVenue = useMemo(() => (activeVenueIdx === null ? null : venuesWithImages[activeVenueIdx]), [activeVenueIdx, venuesWithImages]);
   const activeWeddingCard = activeWeddingCardIdx === null ? null : weddingTypeCards[activeWeddingCardIdx];
   const activeWeddingCardModal = activeWeddingCard && 'modal' in activeWeddingCard ? activeWeddingCard.modal : null;
+  const activeServiceShowcase = useMemo(
+    () => (activeServiceShowcaseIdx === null ? null : serviceShowcaseWithImages[activeServiceShowcaseIdx]),
+    [activeServiceShowcaseIdx, serviceShowcaseWithImages],
+  );
 
   const goToReservationForm = () => {
     setActiveWeddingCardIdx(null);
@@ -514,13 +663,16 @@ const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, s
   };
 
   useEffect(() => {
-    if (activeVenueIdx === null) return;
+    if (activeVenueIdx === null && activeServiceShowcaseIdx === null) return;
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setActiveVenueIdx(null);
+      if (e.key === 'Escape') {
+        setActiveVenueIdx(null);
+        setActiveServiceShowcaseIdx(null);
+      }
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [activeVenueIdx]);
+  }, [activeVenueIdx, activeServiceShowcaseIdx]);
 
   const scrollToReservation = () => {
     const el = document.getElementById('reservation-form');
@@ -789,6 +941,93 @@ const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, s
           ))}
         </div>
       </section>
+
+      {serviceShowcaseSection && safeServiceShowcaseWithImages.length > 0 ? (
+        <section id="wedding-services-showcase" className="reveal">
+          <div className="wedding-section-header container">
+            <span className="section-label">{serviceShowcaseSection.label}</span>
+            <span className="gold-line" />
+            <h2>{serviceShowcaseSection.title}</h2>
+            <p>{serviceShowcaseSection.subtitle}</p>
+          </div>
+          <div className="venue-experience-grid">
+            {safeServiceShowcaseWithImages.map((service: any, i: number) => (
+              <button
+                key={service.title}
+                type="button"
+                className="venue-card venue-card--button"
+                onClick={() => setActiveServiceShowcaseIdx(i)}
+                aria-haspopup="dialog"
+                aria-expanded={activeServiceShowcaseIdx === i}
+              >
+                {service.img ? <img src={service.img} alt={service.title} className="venue-card-img" /> : null}
+                <div className="venue-card-overlay">
+                  <h3>{service.title}</h3>
+                </div>
+              </button>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {activeServiceShowcase ? (
+        <div
+          className="wedding-modal-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${activeServiceShowcase.title} ${config.ui.details}`}
+          onMouseDown={(e) => {
+            if (e.target === e.currentTarget) setActiveServiceShowcaseIdx(null);
+          }}
+        >
+          <div className="wedding-modal">
+            <button
+              type="button"
+              className="wedding-modal-close"
+              onClick={() => setActiveServiceShowcaseIdx(null)}
+              aria-label={config.ui.close}
+            >
+              <X size={20} />
+            </button>
+
+            <div className="wedding-modal-grid">
+              <div className="wedding-modal-img-wrap">
+                {activeServiceShowcase.img ? (
+                  <img src={activeServiceShowcase.img} alt={activeServiceShowcase.title} className="wedding-modal-img" />
+                ) : null}
+                <div className="wedding-modal-img-overlay" />
+                <div className="wedding-modal-img-title">
+                  <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>
+                    {serviceShowcaseSection.label}
+                  </span>
+                  <h3>{activeServiceShowcase.title}</h3>
+                </div>
+              </div>
+
+              <div className="wedding-modal-body">
+                <p className="wedding-modal-desc">{activeServiceShowcase.desc}</p>
+                <ul className="wedding-modal-highlights">
+                  {(activeServiceShowcase.highlights ?? []).map((h: string) => (
+                    <li key={h}>
+                      <span className="wedding-modal-bullet">✦</span>
+                      <span>{h}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="wedding-modal-cta">
+                  <button type="button" className="btn-primary" onClick={() => { setActiveServiceShowcaseIdx(null); scrollToReservation(); }}>
+                    {config.ui.start_planning} <ArrowRight size={15} />
+                  </button>
+                  <button type="button" className="btn-outline" onClick={() => setActiveServiceShowcaseIdx(null)}>
+                    {config.ui.continue}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
 
       {config.includedSection && config.included ? (
         <section id="wedding-included" className="journey-dark-section reveal">
