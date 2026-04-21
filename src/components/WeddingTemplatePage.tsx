@@ -518,11 +518,11 @@ const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, s
         ...(tc.venuesSection ?? {}),
       },
       venues: tc.venues ?? baseConfig.venues,
-      editorial: baseConfig.editorial || tc.editorial
+      editorial: baseConfig.editorial
         ? {
-          ...(baseConfig.editorial ?? tc.editorial ?? {}),
+          ...baseConfig.editorial,
           ...(tc.editorial ?? {}),
-          details: tc.editorial?.details ?? baseConfig.editorial?.details,
+          details: tc.editorial?.details ?? baseConfig.editorial.details,
         }
         : undefined,
       themesSection: {
