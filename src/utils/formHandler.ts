@@ -8,11 +8,13 @@ interface FormValues {
   contact_email: string;
   contact_phone?: string;
   service_type: string;
+  preferred_date?: string;
+  number_of_guests?: string;
+  preferred_location?: string;
+  estimated_budget?: string;
   arrival_date?: string;
   departure_date?: string;
-  number_of_guests?: string;
   destinations_in_mind?: string;
-  estimated_budget?: string;
   currency?: string;
   message: string;
 }

@@ -49,6 +49,9 @@ const ReservationForm: React.FC<ReservationFormProps> = ({
     contact_phone: '',
     preferred_date: '',
     service_type: initialServiceType,
+    number_of_guests: '',
+    preferred_location: '',
+    estimated_budget: '',
     message: 'Reservation request from global form'
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -80,6 +83,9 @@ const ReservationForm: React.FC<ReservationFormProps> = ({
         contact_phone: '',
         preferred_date: '',
         service_type: initialServiceType,
+        number_of_guests: '',
+        preferred_location: '',
+        estimated_budget: '',
         message: 'Reservation request from global form',
       });
       navigate('/thank-you');
@@ -127,6 +133,27 @@ const ReservationForm: React.FC<ReservationFormProps> = ({
             type="date" 
             name="preferred_date"
             value={formData.preferred_date}
+            onChange={handleInputChange}
+          />
+          <input 
+            type="number" 
+            name="number_of_guests"
+            placeholder={t('reservation_form.number_of_guests') ?? 'Number of Guests'}
+            value={formData.number_of_guests}
+            onChange={handleInputChange}
+          />
+          <input 
+            type="text" 
+            name="preferred_location"
+            placeholder={t('reservation_form.preferred_location') ?? 'Preferred Location'}
+            value={formData.preferred_location}
+            onChange={handleInputChange}
+          />
+          <input 
+            type="text" 
+            name="estimated_budget"
+            placeholder={t('reservation_form.estimated_budget') ?? 'Estimated Budget'}
+            value={formData.estimated_budget}
             onChange={handleInputChange}
           />
           <select 
