@@ -25,13 +25,24 @@ export const submitForm = async (values: FormValues) => {
       import.meta.env.VITE_FORM_ENDPOINT ||
       (import.meta.env.PROD ? "/send_email.php" : "/api/send_email.php");
 
+    // Normalize values across different form variants before sending to PHP.
+    const normalizedValues: FormValues = {
+      ...values,
+      preferred_date:
+        values.preferred_date ??
+        (values.arrival_date && values.departure_date
+          ? `${values.arrival_date} to ${values.departure_date}`
+          : values.arrival_date ?? ''),
+      preferred_location: values.preferred_location ?? values.destinations_in_mind ?? '',
+    };
+
     // In production use real PHP endpoint, in dev use Vite proxy fallback
     const response = await fetch(endpoint, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(values),
+      body: JSON.stringify(normalizedValues),
     });
 
     const result = await response.json();
