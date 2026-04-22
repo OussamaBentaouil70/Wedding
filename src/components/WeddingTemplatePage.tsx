@@ -445,6 +445,102 @@ const weddingServiceTypeByContentKey: Record<string, string> = {
   'wedding_subpages.jewish': 'Jewish',
 };
 
+type VenueDetails = {
+  desc: string;
+  highlights: string[];
+};
+
+const venueDetailsByContentKey: Record<string, VenueDetails[]> = {
+  'wedding_subpages.agafay': [
+    {
+      desc: 'A desert camp setting built for atmosphere: warm lantern light, open skies, and a ceremony layout that feels intimate even at scale.',
+      highlights: ['Sunset ceremony framing', 'Private camp-style hosting', 'Designed for dinner under the stars'],
+    },
+    {
+      desc: 'Ideal for couples who want a private retreat feel, this setup layers relaxed luxury with strong guest flow and a memorable overnight experience.',
+      highlights: ['Stargazing welcome moments', 'Relaxed luxury styling', 'Great for multi-day desert weekends'],
+    },
+    {
+      desc: 'A golden-hour ceremony space that uses the desert light as part of the design, creating a vivid and cinematic setting for vows and portraits.',
+      highlights: ['Golden light ceremony timing', 'Panoramic desert views', 'Editorial photo opportunities'],
+    },
+    {
+      desc: 'Dining in the desert becomes the centerpiece here, with long tables, candlelight, and a guest experience shaped around lingering into the evening.',
+      highlights: ['Long-table dining concepts', 'Atmospheric candlelit service', 'Music and entertainment after dark'],
+    },
+    {
+      desc: 'A remote luxury retreat for couples who want privacy, comfort, and a completely immersive celebration away from the city.',
+      highlights: ['Exclusive-use privacy', 'Luxury comfort in a remote setting', 'Ideal for bespoke celebration weekends'],
+    },
+  ],
+  'wedding_subpages.elopement': [
+    {
+      desc: 'A secluded riad gives you quiet courtyards, hidden corners, and a refined backdrop that keeps the focus on the two of you.',
+      highlights: ['Quiet private atmosphere', 'Perfect for intimate vows', 'Elegant Moroccan architecture'],
+    },
+    {
+      desc: 'This landscape is made for couples who want privacy and scale in the same frame: open space, dramatic light, and an uncluttered ceremony story.',
+      highlights: ['Wide-open ceremony framing', 'Minimal guest logistics', 'Romantic sunset portraits'],
+    },
+    {
+      desc: 'A rooftop moment keeps the celebration small, elevated, and visually striking, with city views and a sense of complete escape.',
+      highlights: ['City views from above', 'Ideal for a private dinner', 'Compact and highly photogenic'],
+    },
+    {
+      desc: 'Garden corners are perfect when you want softness, texture, and a quieter energy that feels effortless and deeply personal.',
+      highlights: ['Soft natural styling', 'Calm, discreet setting', 'Beautiful for first-look moments'],
+    },
+    {
+      desc: 'For couples seeking complete privacy, this option creates a discreet luxury experience with minimal distractions and maximum intention.',
+      highlights: ['Discreet luxury hospitality', 'Tailored to private elopements', 'A calm, off-the-grid mood'],
+    },
+  ],
+  'wedding_subpages.kerala': [
+    {
+      desc: 'A grand villa allows the Kerala wedding to unfold across multiple spaces, with room for rituals, gatherings, and generous hospitality.',
+      highlights: ['Multi-day ceremony flow', 'Space for family hosting', 'Works well for traditional sequences'],
+    },
+    {
+      desc: 'Courtyards bring the ceremony close to the family energy, with a graceful layout that can be adapted for customs and processions.',
+      highlights: ['Ceremony-friendly layout', 'Elegant processional flow', 'Adaptable for cultural rituals'],
+    },
+    {
+      desc: 'Reception gardens let the design become more expressive, with colour-rich florals and dining that feels festive and elevated.',
+      highlights: ['Lush floral styling', 'Ideal for lively receptions', 'Room for music and celebration'],
+    },
+    {
+      desc: 'Multi-day spaces are planned around guest comfort, keeping each celebration moment distinct while the whole weekend feels cohesive.',
+      highlights: ['Guest-friendly circulation', 'Designed for long-form celebrations', 'Clear day-to-day event zoning'],
+    },
+    {
+      desc: 'Luxury Moroccan venues give the wedding a polished destination frame while still supporting the scale and rituals of a Kerala celebration.',
+      highlights: ['Destination feel with comfort', 'Tradition within a luxury setting', 'Excellent for family-led events'],
+    },
+  ],
+  'wedding_subpages.jewish': [
+    {
+      desc: 'Historic riads create a meaningful backdrop for heritage-led celebrations, pairing intimate architecture with a strong sense of place.',
+      highlights: ['Heritage-rich atmosphere', 'Intimate ceremony framing', 'Ideal for family and tradition'],
+    },
+    {
+      desc: 'Luxury villas offer flexible hosting for kosher dining, welcome events, and the private rhythm many Jewish weddings require.',
+      highlights: ['Flexible private hosting', 'Suitable for kosher coordination', 'Great for multi-day gatherings'],
+    },
+    {
+      desc: 'An exclusive Marrakech venue can support a more formal celebration, with elegant timing for the chuppah and reception sequence.',
+      highlights: ['Formal ceremony flow', 'Elegant reception transitions', 'Strong guest hospitality potential'],
+    },
+    {
+      desc: 'Chuppah-ready spaces are selected for balance, light, and ceremony presence, giving the ritual a beautiful and respectful frame.',
+      highlights: ['Ceremony-first layout', 'Respectful ritual setup', 'Designed for memorable vows'],
+    },
+    {
+      desc: 'Heritage-led settings blend comfort, discretion, and beauty so the celebration can honor tradition without feeling overly formal.',
+      highlights: ['Tradition-led ambience', 'Warm and welcoming hospitality', 'Balanced for intimate or larger events'],
+    },
+  ],
+};
+
 const defaultServiceShowcaseSection: SectionCopy = {
   label: 'Services',
   title: 'Our Services',
@@ -573,10 +669,15 @@ const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, s
     ? [pickSubpageImage(0), pickSubpageImage(1), pickSubpageImage(2)].filter(Boolean)
     : explicitHeroImages;
 
-  const venuesWithImages: any[] = (config.venues ?? []).map((venue: any, index: number) => ({
-    ...venue,
-    img: useSubpageImages ? pickSubpageImage(index) : resolveJsonImageSrc(venue.img),
-  }));
+  const venuesWithImages: any[] = (config.venues ?? []).map((venue: any, index: number) => {
+    const venueDetails = venueDetailsByContentKey[contentKey]?.[index];
+    return {
+      ...venue,
+      img: useSubpageImages ? pickSubpageImage(index) : resolveJsonImageSrc(venue.img),
+      desc: venue.desc ?? venueDetails?.desc ?? '',
+      highlights: venue.highlights ?? venueDetails?.highlights ?? [],
+    };
+  });
   const editorialImage: string = resolveJsonImageSrc(config.editorial?.imageUrl ?? '');
   const themesWithImages: any[] = (config.themes ?? []).map((theme: any, index: number) => ({
     ...theme,
