@@ -3282,10 +3282,13 @@
   position: relative;
   width: 100%;
   max-width: 1060px;
+  max-height: calc(100vh - 40px);
   background: var(--color-surface);
   box-shadow: 0 40px 120px rgba(0,0,0,0.55);
   border: 1px solid rgba(255,255,255,0.08);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   animation: evModalIn 0.34s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
@@ -3319,13 +3322,19 @@
 .ev-modal-grid {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
-  min-height: 560px;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .ev-modal-img-wrap {
   position: relative;
   overflow: hidden;
   min-height: 560px;
+  min-width: 0;
 }
 
 .ev-modal-img {
@@ -3362,6 +3371,7 @@
   padding: 54px 46px;
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .ev-modal-desc {
@@ -3382,7 +3392,7 @@
 
 .ev-modal-highlights li {
   display: grid;
-  grid-template-columns: 18px 1fr;
+  grid-template-columns: 18px minmax(0, 1fr);
   gap: 12px;
   align-items: start;
   color: var(--color-text);
@@ -3407,6 +3417,14 @@
   .ev-modal-img-wrap { min-height: 320px; }
   .ev-modal-body { padding: 36px 24px; }
   .ev-modal-img-title h3 { font-size: 2rem; }
+  .ev-modal-cta { flex-direction: column; flex-wrap: nowrap; }
+  .ev-modal-cta .btn-primary,
+  .ev-modal-cta .btn-outline {
+    white-space: normal;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 /* ========================================================
@@ -4389,6 +4407,45 @@
 .editorial-details-list li::before {
   content: '✦';
   margin-right: 10px;
+}
+
+/* Venue Selection Service checklist (long-form, needs to stay legible) */
+.service-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 30px;
+}
+
+.service-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-family: var(--font-body);
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--color-text);
+}
+
+.service-checklist-icon {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(197, 168, 128, 0.12);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+@media (max-width: 900px) {
+  .service-checklist { grid-template-columns: 1fr; gap: 14px; }
 }
 
 /* Wedding Themes Inspiration */

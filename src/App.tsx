@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import Wedding from './pages/Wedding';
 import WeddingSubpage from './pages/WeddingSubpage';
 import Events from './pages/Events';
+import Venues from './pages/Venues';
+import Proposals from './pages/Proposals';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import DetailView from './pages/DetailView';
@@ -17,7 +19,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/wedding" element={<Wedding />} />
           <Route path="/wedding/:weddingType" element={<WeddingSubpage />} />
+          <Route path="/proposals" element={<Proposals />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/venues" element={<Venues />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/thank-you" element={<ThankYou />} />

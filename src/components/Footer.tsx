@@ -50,7 +50,9 @@ const Footer: React.FC = () => {
           <ul>
             <li><Link to="/">{t('nav.home')}</Link></li>
             <li><Link to="/wedding">{t('nav.wedding')}</Link></li>
+            <li><Link to="/proposals">{t('nav.proposals')}</Link></li>
             <li><Link to="/events">{t('nav.events')}</Link></li>
+            <li><Link to="/venues">{t('nav.venues')}</Link></li>
             <li><Link to="/gallery">{t('nav.gallery')}</Link></li>
           </ul>
         </div>
