@@ -1,0 +1,1713 @@
+{
+  "nav": {
+    "home": "Home",
+    "wedding": "Bruiloften",
+    "events": "Evenementen",
+    "gallery": "Galerij",
+    "contact": "Plan uw evenement",
+    "language_label": "Kies een taal",
+    "venues": "Locaties",
+    "proposals": "Huwelijksaanzoeken"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Weddingplanner in Portugal",
+      "title_1": "Bijzondere destination weddings,",
+      "title_2": "helemaal op maat",
+      "subtitle": "Van de paleizen van Sintra en Lissabon tot de Algarve, Porto en de Dourovallei: wij creëren persoonlijke bruiloften met verfijnd design, heldere planning en een onvergetelijke gastervaring.",
+      "book": "Reserveren",
+      "plan": "Plan jullie bruiloft",
+      "scroll": "Scroll"
+    },
+    "trust": {
+      "item1": "Planning op maat",
+      "item2": "Destination weddings in Portugal",
+      "item3": "Doordacht design",
+      "item4": "Persoonlijke gastbeleving"
+    },
+    "about": {
+      "tagline": "Over ons",
+      "title_1": "Portugals toonaangevende",
+      "title_2": "studio voor luxe bruiloften",
+      "title_3": "& evenementen",
+      "p1": "Wij zijn een boetiekstudio voor bruiloften en evenementen in Lissabon en creëren vieringen die moeiteloos mooi en diep persoonlijk aanvoelen. Met bijna twintig jaar ervaring en projecten in meer dan 40 landen brengen wij internationale precisie naar de mooiste plekken van Portugal.",
+      "p2": "Elk evenement dat wij creëren volgt één principe:",
+      "p2_strong": "uw verhaal verdient het om met aandacht verteld te worden",
+      "weddings_btn": "Onze bruiloften",
+      "events_btn": "Onze evenementen"
+    },
+    "promises": {
+      "tagline": "Onze belofte",
+      "title": "De Lisbon Weddings-belofte",
+      "p1_title": "Design op maat",
+      "p1_desc": "Elke viering wordt afgestemd op uw visie, stijl, cultuur en de beleving van uw gasten.",
+      "p2_title": "Lokale expertise",
+      "p2_desc": "Exclusieve toegang tot de mooiste locaties, ambachtslieden en betrouwbare leveranciers van Portugal.",
+      "p3_title": "Vlekkeloze coördinatie",
+      "p3_desc": "Planning, productie, logistiek en gastbegeleiding van begin tot eind verzorgd.",
+      "p4_title": "Luxe met ziel",
+      "p4_desc": "Elegante ervaringen vol schoonheid, gastvrijheid en authentieke Portugese sfeer."
+    },
+    "weddings": {
+      "tagline": "Uitgelicht werk",
+      "title": "Signature bruiloften in heel Portugal",
+      "btn": "Ontdek onze bruiloften",
+      "view_details": "Bekijk details"
+    },
+    "events": {
+      "tagline": "Meer dan bruiloften",
+      "title": "Elegante evenementen buiten de trouwdag",
+      "subtitle": "Bedrijfsretreats, bijzondere mijlpalen, merkactivaties en privédiners – elk een ervaring om nooit te vergeten.",
+      "btn": "Ontdek onze evenementen"
+    },
+    "process": {
+      "tagline": "Zo werken wij",
+      "title_1": "Een zorgeloze reis",
+      "title_2": "Van visie naar werkelijkheid",
+      "btn": "Begin met plannen",
+      "s1_title": "Ontdekken",
+      "s1_desc": "Kennismaking, esthetische richting, omvang, budget en prioriteiten",
+      "s2_title": "Ontwerpen",
+      "s2_desc": "Locaties zoeken, creatief concept, selectie van leveranciers, gastbeleving",
+      "s3_title": "Orkestreren",
+      "s3_desc": "Productieplanning, draaiboek, logistiek, akkoorden en coördinatie",
+      "s4_title": "Vieren",
+      "s4_desc": "Uitvoering ter plaatse met rustige, discrete en professionele regie"
+    },
+    "testimonials": {
+      "tagline": "Ervaringen van bruidsparen",
+      "title": "Trouwverhalen uit Portugal",
+      "subtitle": "Van een romantische ceremonie in een paleis in Sintra tot een receptie aan de Algarve of een intieme bruiloft in de Dourovallei: ieder feest vertelt een eigen verhaal. Ontdek de locaties, details en bijzondere momenten van een destination wedding in Portugal.",
+      "note": "Echte klantbeoordelingen verschijnen na verificatie en toestemming."
+    },
+    "cta": {
+      "tagline": "Klaar om te beginnen?",
+      "title_1": "Laten we samen",
+      "title_2": "iets onvergetelijks creëren",
+      "subtitle": "Vertel ons over uw visie. Wij regelen de rest.",
+      "btn_plan": "Plan uw evenement",
+      "btn_wa": "WhatsApp",
+      "form_success": "Bedankt! Wij nemen binnen 24 uur contact met u op.",
+      "form_title": "Snelle aanvraag",
+      "form_name": "Uw naam",
+      "form_email": "E-mailadres",
+      "form_service": "Type evenement",
+      "form_service_wedding": "Bruiloft",
+      "form_service_corporate": "Zakelijk evenement",
+      "form_service_celebration": "Privéviering",
+      "form_service_other": "Anders",
+      "form_msg": "Vertel ons over uw wensen…",
+      "form_sending": "Bezig met verzenden…",
+      "form_send": "Aanvraag versturen"
+    },
+    "ui": {
+      "view_details": "Bekijk details",
+      "across": "In heel Portugal",
+      "featured_weddings": "Uitgelichte bruiloften",
+      "events_preview": "Onze evenementen",
+      "explore_weddings": "Ontdek onze bruiloften",
+      "explore_events": "Ontdek onze evenementen",
+      "continue": "Verder ontdekken"
+    },
+    "weddingPreviews": [
+      {
+        "category": "Signature bruiloft",
+        "title": "Bruiloften in Lissabon",
+        "location": "Paleizen, quintas, dakterrassen",
+        "detail": "Van historische paleizen en privé-quintas tot paleistuinen: bruiloften in Lissabon zijn filmisch, intiem en vol sfeer, met redactionele verfijning ontworpen en vlekkeloos gecoördineerd.",
+        "highlights": [
+          "Historische paleizen, privé-quintas, binnenplaatsen en dakterrassen",
+          "Design- en stylingconcept",
+          "Gastbeleving en regie op de trouwdag"
+        ]
+      },
+      {
+        "category": "Signature bruiloft",
+        "title": "Kustbruiloften",
+        "location": "De Algarve-kust",
+        "detail": "Een ceremonie bij zonsondergang, een diner bij lantaarnlicht en muziek onder de sterren: kustbruiloften zijn meeslepende bestemmingservaringen vol moeiteloze luxe.",
+        "highlights": [
+          "Ceremonies bij zonsondergang en diners onder de sterren",
+          "Logistiek en vervoersplanning",
+          "Entertainment, verlichting en timing"
+        ]
+      },
+      {
+        "category": "Signature bruiloft",
+        "title": "Kust- en landgoedbruiloften",
+        "location": "Cascais en privélandgoederen",
+        "detail": "Kustlicht, zeelucht en ontspannen verfijning: van vieringen aan zee tot privélandgoederen voor meerdaagse feesten.",
+        "highlights": [
+          "Kustceremonies in het gouden uur",
+          "Landgoedweekenden en gastenverblijf",
+          "Selectie van leveranciers en gastvrijheid"
+        ]
+      }
+    ],
+    "eventPreviews": [
+      {
+        "title": "Welkomstdiners",
+        "tag": "Privé-evenementen",
+        "detail": "De eerste bijeenkomst zet de toon: verfijnd dineren, warme gastvrijheid en een avond met het perfecte ritme voor uw gasten.",
+        "highlights": [
+          "Selectie van locatie en chef of cateraar",
+          "Tafeldecoratie en verlichting",
+          "Draaiboek en coördinatie"
+        ]
+      },
+      {
+        "title": "Verlovingsfeesten",
+        "tag": "Voor de bruiloft",
+        "detail": "Een verlovingsfeest als uit een magazine: intiem, doordacht en vlekkeloos georganiseerd.",
+        "highlights": [
+          "Concept en styling",
+          "Selectie van leveranciers",
+          "Gastbeleving en timing"
+        ]
+      },
+      {
+        "title": "Privéfeesten",
+        "tag": "Vieringen",
+        "detail": "Verjaardagen, jubilea, privédiners: stijlvolle vieringen die moeiteloos aanvoelen en onvergetelijk blijven.",
+        "highlights": [
+          "Sfeer en entertainment",
+          "Details in gastvrijheid",
+          "Teamleiding ter plaatse"
+        ]
+      },
+      {
+        "title": "Zakelijke en merkevenementen",
+        "tag": "Zakelijk",
+        "detail": "Hoogwaardige bijeenkomsten voor merken en bedrijven: creatieve regie, logistiek en uitvoering met precisie verzorgd.",
+        "highlights": [
+          "Plannings- en productiepartners",
+          "Audiovisuele techniek, podium en tijdschema",
+          "Discrete ontvangst en coördinatie"
+        ]
+      }
+    ],
+    "testimonialItems": [
+      {
+        "text": "Werken met het team voelde alsof we een artistiek directeur en een beste vriend in één hadden. Onze bruiloft in Lissabon overtrof alles wat we ons hadden voorgesteld.",
+        "origin": "Parijs, Frankrijk"
+      },
+      {
+        "text": "Elk detail – van de jasmijnboog bij zonsondergang tot de gnawa-muzikanten om middernacht – was precies wie wij zijn. Ik heb me nog nooit zo begrepen gevoeld door een planner.",
+        "origin": "Londen, Verenigd Koninkrijk"
+      },
+      {
+        "text": "Bergretreats bieden een bijzondere setting voor teambijeenkomsten, privédiners en groepservaringen op maat.",
+        "author": "Bedrijfsretreats",
+        "origin": "Serra da Estrela, Portugal"
+      }
+    ]
+  },
+  "footer": {
+    "desc": "Luxueuze, onvergetelijke ervaringen in het hart van Portugal.",
+    "links_title": "Snelle links",
+    "contact_title": "Contact",
+    "rights": "Weddings Planner Portugal. Alle rechten voorbehouden."
+  },
+  "page_hero": {
+    "title": "Begin met plannen",
+    "subtitle": "Vertel ons uw wensen — wij regelen de rest.",
+    "success_title": "Aanvraag ontvangen!",
+    "success_text": "Wij nemen binnen 24 uur contact met u op om met de planning te beginnen.",
+    "full_name": "Volledige naam",
+    "email": "E-mailadres",
+    "phone": "Telefoon / WhatsApp",
+    "event_type": "Type evenement",
+    "dates": "Aankomst- en vertrekdatum",
+    "guests": "Aantal gasten",
+    "destinations": "Gewenste bestemmingen",
+    "budget": "Geschat budget",
+    "message": "Vertel ons uw wensen…",
+    "sending": "Bezig met verzenden…",
+    "send": "Aanvraag versturen",
+    "option_wedding": "Bruiloft",
+    "option_corporate": "Zakelijk evenement",
+    "option_private": "Privéviering",
+    "option_other": "Anders",
+    "select_proposal": "Kies een type aanzoek",
+    "select_venue": "Kies een type locatie"
+  },
+  "wedding_types": {
+    "select": "Kies uw type bruiloft",
+    "options": {
+      "Elopement": "Elopement-bruiloft",
+      "Indian": "Indiase bruiloft",
+      "Jewish": "Joodse bruiloft",
+      "Algarve": "Bruiloft aan de Algarve-kust"
+    },
+    "cards": [
+      {
+        "title": "Bruiloft in Lissabon",
+        "desc": "Bruiloften op maat in Lissabon, met elegante planning, persoonlijk design en vlekkeloze coördinatie van begin tot eind.",
+        "modal": {
+          "title": "Bruiloft in Lissabon",
+          "subtitle": "Een verfijnde viering in de stad die uw destination wedding een uniek karakter geeft.",
+          "body": "Bijzondere locaties, elegante styling, persoonlijke gastvrijheid en een vlekkeloze coördinatie van uw bruiloft in Lissabon."
+        }
+      },
+      {
+        "title": "Bruiloften aan de Algarve-kust",
+        "desc": "Ceremonies bij zonsondergang en meeslepende kustvieringen aan de Algarve."
+      },
+      {
+        "title": "Elopement-bruiloften in Portugal",
+        "desc": "Intieme geloften en romantische uitstapjes rond privacy, emotie en betekenisvolle momenten."
+      },
+      {
+        "title": "Indiase bruiloft in Lissabon",
+        "desc": "Levendige vieringen die Indiase tradities verbinden met een verfijnde Portugese setting."
+      },
+      {
+        "title": "Joodse bruiloft in Lissabon",
+        "desc": "Traditierijke vieringen met ceremoniële elegantie, koosjere coördinatie en verzorgde gastvrijheid."
+      }
+    ]
+  },
+  "wedding_page": {
+    "hero": {
+      "label": "Bruiloften in Portugal",
+      "title": "Bruiloften op maat in Portugal",
+      "subtitle": "Van intieme ceremonies tot meerdaagse vieringen: wij ontwerpen bruiloften die schoonheid, emotie en vlekkeloze coördinatie verenigen."
+    },
+    "weddingTypesSection": {
+      "label": "Soorten bruiloften",
+      "title": "De bruiloften die wij creëren",
+      "subtitle": "Ontdek onze verschillende trouwconcepten en vind de ervaring die bij uw wensen past."
+    }
+  },
+  "wedding_subpages": {
+    "algarve": {
+      "hero": {
+        "label": "Bruiloften in Portugal",
+        "title": "Bruiloften aan de Algarve-kust",
+        "subtitle": "Van intieme ceremonies bij zonsondergang tot meeslepende meerdaagse vieringen: wij creëren kustbruiloften in de Algarve die natuurlijke schoonheid, exclusiviteit en onvergetelijke momenten verenigen."
+      },
+      "weddingTypesSection": {
+        "label": "Soorten bruiloften",
+        "title": "De bruiloften die wij creëren",
+        "subtitle": "Ontdek onze verschillende trouwconcepten en vind de ervaring die bij uw wensen past."
+      },
+      "servicesSection": {
+        "label": "Wat wij bieden",
+        "title": "Onze trouwservices",
+        "subtitle": "Een dienstverlening op maat: van de inrichting van luxe kustlocaties en logistiek tot gastbegeleiding en complete eventproductie op uitzonderlijke locaties."
+      },
+      "services": [
+        {
+          "title": "Inrichting van kustlocaties",
+          "desc": "Elegante opstellingen, sfeervolle verlichting en verfijnde structuren die harmoniëren met het landschap van de Algarve."
+        },
+        {
+          "title": "Logistiek en gastenbeleving",
+          "desc": "Transfers, planning en gastbegeleiding, tot in detail verzorgd, ook op afgelegen locaties."
+        },
+        {
+          "title": "Complete eventproductie",
+          "desc": "Technische coördinatie, leveranciersbeheer en professionele uitvoering van elk programmaonderdeel."
+        },
+        {
+          "title": "Ceremonies bij zonsondergang",
+          "desc": "Romantische geloften in het gouden avondlicht met panoramisch uitzicht over de kust."
+        },
+        {
+          "title": "Meerdaagse kustbruiloften",
+          "desc": "Welkomstdiner, trouwdag en afscheid als één harmonieus geheel."
+        },
+        {
+          "title": "Luxueuze styling",
+          "desc": "Bohemien elegantie, kaarslicht en warme kusttinten, afgestemd op uw persoonlijke stijl."
+        }
+      ],
+      "venuesSection": {
+        "label": "Onze locaties",
+        "title": "Vier uw liefde op de meest bijzondere plekken van Portugal",
+        "subtitle": "Van luxueuze kustlandgoederen tot privéarrangementen onder de sterrenhemel."
+      },
+      "venues": [
+        {
+          "title": "Luxueuze kustlandgoederen",
+          "desc": "Een sfeervol kustlandgoed met warm lantaarnlicht, een eindeloze hemel en een ceremonie die zelfs met veel gasten intiem aanvoelt.",
+          "highlights": [
+            "Ceremonie bij zonsondergang",
+            "Exclusieve viering op een privélandgoed",
+            "Ideaal voor diners onder de sterren"
+          ]
+        },
+        {
+          "title": "Privéarrangementen om sterren te kijken",
+          "desc": "Ideaal voor stellen die een intiem toevluchtsoord zoeken: ontspannen luxe, doordachte gastbegeleiding en een onvergetelijke overnachting.",
+          "highlights": [
+            "Ontvangst onder de sterren",
+            "Ontspannen luxe styling",
+            "Perfect voor meerdaagse kustweekenden"
+          ]
+        },
+        {
+          "title": "Ceremonieplekken in het gouden avondlicht",
+          "desc": "Hier wordt het kustlicht onderdeel van het decor en ontstaat een adembenemende, filmische achtergrond voor geloften en portretten.",
+          "highlights": [
+            "Perfecte timing in het gouden licht",
+            "Panoramisch uitzicht over de kust",
+            "Betoverende trouwfotografie"
+          ]
+        },
+        {
+          "title": "Dineren onder de kuststerren",
+          "desc": "Een diner aan de kust wordt het hoogtepunt: lange tafels, kaarslicht en een sfeer waarin gasten tot diep in de nacht willen blijven.",
+          "highlights": [
+            "Lange, feestelijk gedekte tafels",
+            "Sfeervol dineren bij kaarslicht",
+            "Muziek en entertainment na zonsondergang"
+          ]
+        },
+        {
+          "title": "Afgelegen luxe retreats",
+          "desc": "Een exclusief toevluchtsoord voor stellen die privacy, comfort en een uitzonderlijke viering ver van de stad wensen.",
+          "highlights": [
+            "Exclusief gebruik en privacy",
+            "Luxe comfort op een afgelegen plek",
+            "Ideaal voor trouwweekenden op maat"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspiratie",
+        "title": "Trouwthema's en inspiratie",
+        "subtitle": "Bohemien elegantie, diners bij kaarslicht en ceremonies in het gouden avondlicht, omgeven door de magie van de kust."
+      },
+      "themes": [
+        {
+          "title": "Bohemien elegantie"
+        },
+        {
+          "title": "Kustdiners bij kaarslicht"
+        },
+        {
+          "title": "Ceremonies bij gouden zonsondergang"
+        },
+        {
+          "title": "Romantiek aan de kust"
+        },
+        {
+          "title": "Luxe styling in neutrale tinten"
+        },
+        {
+          "title": "Een meeslepende kustbeleving"
+        }
+      ],
+      "ctaSection": {
+        "label": "Klaar voor de volgende stap?",
+        "title": "Plan uw bruiloft",
+        "subtitle": "Samen creëren we uw onvergetelijke kustbruiloft in de Algarve."
+      }
+    },
+    "elopement": {
+      "hero": {
+        "label": "Bruiloften op maat in Portugal",
+        "title": "Elopement-bruiloften in Portugal",
+        "subtitle": "Van intieme geloften tot romantische uitstapjes: wij creëren persoonlijke elopement-bruiloften vol emotie, privacy en betekenisvolle ervaringen op de mooiste plekken van Portugal."
+      },
+      "servicesSection": {
+        "label": "Wat wij bieden",
+        "title": "Onze trouwservices",
+        "subtitle": "Een service op maat, van het vinden van de perfecte locatie en styling tot fotografie en de volledige coördinatie van intieme vieringen."
+      },
+      "services": [
+        {
+          "title": "Locatiescouting",
+          "desc": "Historische paleizen en privé-quintas, schilderachtige kustlandschappen en verborgen parels die bij uw verhaal passen."
+        },
+        {
+          "title": "Styling van intieme ceremonies",
+          "desc": "Minimalistische, romantische arrangementen waarin het bijzondere moment centraal staat."
+        },
+        {
+          "title": "Fotografiecoördinatie",
+          "desc": "Natuurlijk licht, filmische composities en verfijnde details die uw herinneringen vastleggen."
+        },
+        {
+          "title": "Volledige coördinatie",
+          "desc": "Wij verzorgen discreet de hele organisatie, zodat u ontspannen van uw dag geniet."
+        },
+        {
+          "title": "Planning van uw viering",
+          "desc": "Persoonlijke details voor een privédiner, romantisch verblijf of bijzondere momenten na de ceremonie."
+        },
+        {
+          "title": "Betekenisvolle momenten met gasten",
+          "desc": "Ook bij kleine vieringen wordt elk detail bewust en met zorg vormgegeven."
+        }
+      ],
+      "venuesSection": {
+        "label": "Onze locaties",
+        "title": "Vier uw liefde op de meest bijzondere plekken van Portugal",
+        "subtitle": "Van afgelegen historische paleizen en privé-quintas tot kustlandschappen en verborgen parels in heel Portugal."
+      },
+      "venues": [
+        {
+          "title": "Historische paleizen en privé-quintas",
+          "desc": "Een historisch paleis of een privé-quinta biedt stille binnenplaatsen, verborgen hoekjes en een elegante setting waarin alleen jullie twee centraal staan.",
+          "highlights": [
+            "Rustige, besloten sfeer",
+            "Perfect voor intieme geloften",
+            "Elegante Portugese architectuur"
+          ]
+        },
+        {
+          "title": "Verborgen kustlandschappen",
+          "desc": "Voor stellen die zowel ruimte als privacy zoeken: uitgestrekte landschappen, dramatisch licht en een pure achtergrond voor hun ceremonie.",
+          "highlights": [
+            "Weids decor voor de ceremonie",
+            "Eenvoudige gastenlogistiek",
+            "Romantische portretten bij zonsondergang"
+          ]
+        },
+        {
+          "title": "Privémomenten op het dakterras",
+          "desc": "Een viering op het dakterras blijft intiem en voelt tegelijk bijzonder, met uitzicht over de stad en een heerlijk gevoel van ontsnapping.",
+          "highlights": [
+            "Panoramisch uitzicht over de stad",
+            "Ideaal voor een privédiner",
+            "Intiem en fotogeniek"
+          ]
+        },
+        {
+          "title": "Stille tuinhoekjes",
+          "desc": "Verborgen tuinen bieden zachte kleuren, natuurlijke texturen en een rustige sfeer die moeiteloos en persoonlijk aanvoelt.",
+          "highlights": [
+            "Zachte, natuurlijke styling",
+            "Rustige en discrete omgeving",
+            "Prachtig voor een first look"
+          ]
+        },
+        {
+          "title": "Luxe ver van de bewoonde wereld",
+          "desc": "Voor stellen die volledige privacy wensen: een discrete luxe ervaring met zo min mogelijk afleiding en des te meer betekenis.",
+          "highlights": [
+            "Discrete gastvrijheid op hoog niveau",
+            "Op maat voor intieme elopement-bruiloften",
+            "Rust en afzondering"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspiratie",
+        "title": "Trouwthema's en inspiratie",
+        "subtitle": "Romantisch minimalisme, filmische momenten en diep persoonlijke ervaringen."
+      },
+      "themes": [
+        {
+          "title": "Romantisch minimalisme"
+        },
+        {
+          "title": "Filmische ontsnapping"
+        },
+        {
+          "title": "Privégeloften"
+        },
+        {
+          "title": "Stille luxe"
+        },
+        {
+          "title": "Intieme viering"
+        },
+        {
+          "title": "Betekenisvolle details"
+        }
+      ],
+      "ctaSection": {
+        "label": "Klaar voor de volgende stap?",
+        "title": "Plan uw bruiloft",
+        "subtitle": "Samen creëren we uw intieme, onvergetelijke elopement-bruiloft in Portugal."
+      }
+    },
+    "indian": {
+      "hero": {
+        "label": "Bruiloften op maat in Portugal",
+        "title": "Indiase bruiloft in Lissabon",
+        "subtitle": "Van kleurrijke traditionele rituelen tot meerdaagse vieringen: wij creëren Indiase bruiloften die de culturele authenticiteit eren en tegelijkertijd een luxueuze ervaring in Portugal bieden."
+      },
+      "servicesSection": {
+        "label": "Wat wij bieden",
+        "title": "Onze trouwservices",
+        "subtitle": "Dienstverlening op maat, van de coördinatie van traditionele ceremonies en decoratie tot Indiase catering en complete gastbegeleiding."
+      },
+      "services": [
+        {
+          "title": "Coördinatie van traditionele ceremonies",
+          "desc": "Zorgvuldige planning en timing met respect voor de rituelen en gebruiken van een Indiase bruiloft."
+        },
+        {
+          "title": "Decoratie en styling",
+          "desc": "Kleurrijke bloemstukken en rijke decoraties, afgestemd op ceremonie en receptie."
+        },
+        {
+          "title": "Indiase catering",
+          "desc": "Menuplanning met cateringpartners gespecialiseerd in authentieke Indiase gerechten."
+        },
+        {
+          "title": "Gastenbeleving",
+          "desc": "Gastvrijheid, transfers en tijdsplanning voor meerdaagse huwelijksvieringen."
+        },
+        {
+          "title": "Meerdaagse eventproductie",
+          "desc": "Van het welkomstfeest tot de ceremonie en het feest: elke dag sluit naadloos aan op de volgende."
+        },
+        {
+          "title": "Culturele sensitiviteit",
+          "desc": "Respectvolle planning die Indiase tradities verenigt met de bijzondere sfeer van Lissabon."
+        }
+      ],
+      "venuesSection": {
+        "label": "Onze locaties",
+        "title": "Vier uw liefde op de meest bijzondere plekken van Portugal",
+        "subtitle": "Van ruime villa's tot elegante locaties die geschikt zijn voor meerdaagse Indiase huwelijksfeesten."
+      },
+      "venues": [
+        {
+          "title": "Ruime villa's",
+          "desc": "Een ruime villa biedt meerdere plekken voor een Indiase bruiloft, met voldoende ruimte voor rituelen, familie en hartelijke gastvrijheid.",
+          "highlights": [
+            "Doordachte planning van meerdaagse ceremonies",
+            "Ruimte voor de hele familie",
+            "Ideaal voor traditionele rituelen"
+          ]
+        },
+        {
+          "title": "Elegante binnenplaatsen",
+          "desc": "Binnenplaatsen brengen de ceremonie dicht bij de familie, in een elegante omgeving die zich aanpast aan tradities en processies.",
+          "highlights": [
+            "Ideaal voor ceremonies",
+            "Elegante routes voor processies",
+            "Flexibel voor culturele rituelen"
+          ]
+        },
+        {
+          "title": "Tuinen voor de receptie",
+          "desc": "In feestelijke tuinen komen uitbundige bloemen en een verfijnd, vrolijk diner prachtig tot hun recht.",
+          "highlights": [
+            "Rijke bloemendecoraties",
+            "Ideaal voor levendige recepties",
+            "Ruimte voor muziek en feest"
+          ]
+        },
+        {
+          "title": "Locaties voor meerdaagse vieringen",
+          "desc": "Deze locaties zijn ingericht op gastencomfort: elk onderdeel heeft een eigen karakter, terwijl het hele weekend één geheel vormt.",
+          "highlights": [
+            "Comfortabele routes voor gasten",
+            "Ontworpen voor meerdaagse vieringen",
+            "Duidelijke indeling van de ruimtes"
+          ]
+        },
+        {
+          "title": "Luxueuze Portugese trouwlocaties",
+          "desc": "Exclusieve locaties in Portugal bieden een verfijnde setting voor een destination wedding én ruimte voor de rituelen van een Indiase bruiloft.",
+          "highlights": [
+            "Bijzondere bestemming met optimaal comfort",
+            "Traditie in een luxueuze omgeving",
+            "Perfect voor familiefeesten"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspiratie",
+        "title": "Trouwthema's en inspiratie",
+        "subtitle": "Kleurrijke ceremonies, weelderige bloemen, culturele tradities en verfijnde luxe."
+      },
+      "themes": [
+        {
+          "title": "Kleurrijke ceremonies"
+        },
+        {
+          "title": "Weelderige bloemen"
+        },
+        {
+          "title": "Traditionele rituelen"
+        },
+        {
+          "title": "Verfijnde luxe"
+        },
+        {
+          "title": "Culturele viering"
+        },
+        {
+          "title": "Elegante Indiase trouwstyling"
+        }
+      ],
+      "ctaSection": {
+        "label": "Klaar voor de volgende stap?",
+        "title": "Plan uw bruiloft",
+        "subtitle": "Laat uw droom van een Indiase bruiloft in Lissabon werkelijkheid worden."
+      }
+    },
+    "jewish": {
+      "hero": {
+        "label": "Bruiloften op maat in Portugal",
+        "title": "Joodse bruiloft in Lissabon",
+        "subtitle": "Van traditionele ceremonies onder de choepa tot elegante meerdaagse vieringen: wij creëren Joodse bruiloften die erfgoed, rituelen en verfijnde vormgeving eren, met vlekkeloze coördinatie in Lissabon."
+      },
+      "servicesSection": {
+        "label": "Wat wij bieden",
+        "title": "Onze trouwservices",
+        "subtitle": "Persoonlijke begeleiding bij elke stap, inclusief koosjere catering, ceremoniestyling en cultureel bewuste planning."
+      },
+      "services": [
+        {
+          "title": "Coördinatie van koosjere catering",
+          "desc": "Zorgvuldige selectie en afstemming met cateringpartners voor koosjere maaltijden."
+        },
+        {
+          "title": "Styling van de ceremonie",
+          "desc": "Doordachte planning van de choepa, zitplaatsen en het ceremonieverloop."
+        },
+        {
+          "title": "Cultureel bewuste planning",
+          "desc": "Elk detail wordt met respect voor tradities en familieverwachtingen uitgevoerd."
+        },
+        {
+          "title": "Begeleiding van meerdaagse vieringen",
+          "desc": "Welkomstfeest, ceremonie en afscheid worden naadloos op elkaar afgestemd."
+        },
+        {
+          "title": "Gastvrijheid voor uw gasten",
+          "desc": "Transfers, planning en begeleiding voor familie en gasten die naar Lissabon reizen."
+        },
+        {
+          "title": "Elegante eventproductie",
+          "desc": "Luxueuze styling en professionele uitvoering van de hele trouwervaring."
+        }
+      ],
+      "venuesSection": {
+        "label": "Onze locaties",
+        "title": "Vier uw liefde op de meest bijzondere plekken van Portugal",
+        "subtitle": "Van historische paleizen en privé-quintas met een rijk Joods erfgoed tot luxueuze villa's en exclusieve locaties in Lissabon."
+      },
+      "venues": [
+        {
+          "title": "Historische paleizen en privé-quintas",
+          "desc": "Historische paleizen en privé-quintas bieden een betekenisvolle achtergrond voor traditierijke vieringen, met intieme architectuur en een authentieke sfeer.",
+          "highlights": [
+            "Historische ambiance",
+            "Intieme ceremonieomgeving",
+            "Ideaal voor familie en traditie"
+          ]
+        },
+        {
+          "title": "Luxueuze villa's",
+          "desc": "Luxe villa's bieden flexibele mogelijkheden voor koosjere diners, welkomstbijeenkomsten en de besloten momenten van veel Joodse bruiloften.",
+          "highlights": [
+            "Flexibele indeling voor privévieringen",
+            "Geschikt voor koosjere catering",
+            "Ideaal voor meerdaagse bijeenkomsten"
+          ]
+        },
+        {
+          "title": "Exclusieve locaties in Lissabon",
+          "desc": "Een exclusieve locatie in Lissabon vormt een stijlvolle setting voor een formele viering, met een elegant verloop van choepa tot receptie.",
+          "highlights": [
+            "Stijlvol ceremonieverloop",
+            "Elegante overgang naar de receptie",
+            "Uitstekende gastenbegeleiding"
+          ]
+        },
+        {
+          "title": "Locaties voor de choepa-ceremonie",
+          "desc": "Plekken voor de choepa worden geselecteerd op harmonie, licht en betekenis, als een prachtige en respectvolle omgeving voor het ritueel.",
+          "highlights": [
+            "Styling met aandacht voor de ceremonie",
+            "Waardige omgeving voor de rituelen",
+            "Ontworpen voor onvergetelijke geloften"
+          ]
+        },
+        {
+          "title": "Locaties met cultureel erfgoed",
+          "desc": "Erfgoedlocaties verenigen comfort, discretie en schoonheid, zodat uw viering de traditie eert zonder al te formeel te worden.",
+          "highlights": [
+            "Sfeer met respect voor tradities",
+            "Warme, gastvrije ontvangst",
+            "Geschikt voor intieme en grotere vieringen"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspiratie",
+        "title": "Trouwthema's en inspiratie",
+        "subtitle": "Tijdloze elegantie, traditionele rituelen en moderne luxe komen samen in betekenisvolle vieringen."
+      },
+      "themes": [
+        {
+          "title": "Tijdloze elegantie"
+        },
+        {
+          "title": "Traditionele rituelen"
+        },
+        {
+          "title": "Moderne luxe"
+        },
+        {
+          "title": "Betekenisvolle vieringen"
+        },
+        {
+          "title": "Erfgoed en stijl"
+        },
+        {
+          "title": "Verfijnde sfeer in Lissabon"
+        }
+      ],
+      "ctaSection": {
+        "label": "Klaar voor de volgende stap?",
+        "title": "Plan uw bruiloft",
+        "subtitle": "Samen creëren we een Joodse bruiloft in Lissabon die uw tradities en wensen weerspiegelt."
+      }
+    }
+  },
+  "wedding_ui": {
+    "details": "details",
+    "close": "Sluiten",
+    "venue_experience": "Locatiebeleving",
+    "start_planning": "Begin met plannen",
+    "continue": "Meer ontdekken",
+    "plan_wedding": "Plan uw bruiloft",
+    "discover_type": "Ontdek"
+  },
+  "wedding_services": {
+    "serviceShowcaseSection": {
+      "label": "Diensten",
+      "title": "Onze diensten",
+      "subtitle": "Essentiële trouwdiensten, verzorgd met stijl, precisie en vlekkeloze coördinatie."
+    },
+    "serviceShowcase": [
+      {
+        "title": "Vervoer",
+        "desc": "Privétransfers en gastenvervoer, zodat elke verplaatsing soepel en zorgeloos verloopt.",
+        "highlights": [
+          "Transfers van luchthaven en hotel",
+          "Pendeldiensten voor ceremonie en receptie",
+          "Coördinatie van luxe voertuigen"
+        ]
+      },
+      {
+        "title": "DJ",
+        "desc": "Muzikale regie en sfeerbeheer voor de perfecte emotionele flow, van cocktailuur tot laatste dans.",
+        "highlights": [
+          "Muziekprogramma op maat",
+          "Coördinatie van de geluidsinstallatie",
+          "Ontwerp van de dansvloerbeleving"
+        ]
+      },
+      {
+        "title": "Catering",
+        "desc": "Verfijnde culinaire ervaringen, afgestemd op uw gasten, de stijl van uw viering en het ritme van uw trouwdag.",
+        "highlights": [
+          "Menuplanning op maat",
+          "Proeverij en serviceverloop",
+          "Aandacht voor dieetwensen van gasten"
+        ]
+      },
+      {
+        "title": "Make-up",
+        "desc": "Professionele beautyservices voor de bruid en haar gevolg, precies getimed voor een rustige, fotoklare voorbereiding.",
+        "highlights": [
+          "Make-up voor bruid en gevolg",
+          "Organisatie van de proefsessie",
+          "Touch-ups ter plaatse"
+        ]
+      },
+      {
+        "title": "Fotografie en video",
+        "desc": "Redactionele verslaggeving die elke emotie en elk detail vastlegt, van de voorbereidingen tot de laatste momenten van het feest.",
+        "highlights": [
+          "Coördinatie van foto- en videoteam",
+          "Verslaggeving volgens het draaiboek",
+          "Filmische highlightvideo"
+        ]
+      }
+    ]
+  },
+  "events_page": {
+    "hero": {
+      "label": "Evenementen in Portugal",
+      "title": "Verfijnde evenementen, perfect georganiseerd",
+      "subtitle": "Wij organiseren elegante privé- en zakelijke evenementen in heel Portugal, met dezelfde precisie, stijl en gastvrijheid die onze bruiloften kenmerken."
+    },
+    "categoriesSection": {
+      "label": "Wat wij bieden",
+      "title": "Evenementcategorieën",
+      "subtitle": "Meer dan bruiloften, met dezelfde precisie, creativiteit en gastvrijheid georganiseerd."
+    },
+    "categories": [
+      {
+        "title": "Verlovingsfeesten",
+        "desc": "Vier uw eerste stap naar voor altijd in een intieme setting bij kaarslicht, met Portugese charme.",
+        "detail": "Een prachtig georganiseerd verlovingsfeest dat de toon zet voor wat komen gaat – stijlvol vormgegeven en professioneel uitgevoerd.",
+        "highlights": [
+          "Concept en moodboard",
+          "Selectie van locatie en leveranciers",
+          "Gastenverloop, planning en coördinatie ter plaatse"
+        ]
+      },
+      {
+        "title": "Bruidsfeesten en welkomstdiners",
+        "desc": "Stijlvolle bijeenkomsten voor de bruiloft die de toon zetten voor een onvergetelijke viering.",
+        "detail": "Van verfijnde bridal showers tot welkomstdiners in de historische binnenstad: wij creëren warme, exclusieve momenten die voor u moeiteloos en voor uw gasten onvergetelijk zijn.",
+        "highlights": [
+          "Tafeldecoratie, bloemen en verlichting",
+          "Menu's, muziek en entertainment",
+          "Gastvrijheid en styling"
+        ]
+      },
+      {
+        "title": "Jubilea en privévieringen",
+        "desc": "Bijzondere mijlpalen, gevierd met persoonlijk design, exclusieve locaties en oprechte details.",
+        "detail": "Jubilea, huwelijksaanzoeken, privédiners en bijzondere mijlpalen, overal in Portugal met intimiteit, schoonheid en perfecte uitvoering gecreëerd.",
+        "highlights": [
+          "Privélocaties en intieme opstellingen",
+          "Persoonlijke details met een verhaal",
+          "Discrete, persoonlijke coördinatie"
+        ]
+      },
+      {
+        "title": "Luxe verjaardagen",
+        "desc": "Van rooftopfeesten tot intieme diners aan de kust – elke mijlpaal verdient een statement.",
+        "detail": "Een luxe verjaardag verdient een eigen wereld, of het nu een rooftopfeest, villaparty of kustviering onder de sterren is.",
+        "highlights": [
+          "Op maat samengesteld entertainment",
+          "Signaturecocktails en bijzondere diners",
+          "Planning en leveranciersbeheer"
+        ]
+      },
+      {
+        "title": "Merkbelevingen",
+        "desc": "Meeslepende merkactivaties en redactionele producties tegen de mooiste decors van Portugal.",
+        "detail": "Exclusieve merkactivaties, lanceringen, diners en redactionele producties, uitgevoerd met creatieve regie, technische precisie en een uitmuntende gastenervaring.",
+        "highlights": [
+          "Creatieve regie en productie",
+          "Locatiescouting en ondersteuning bij vergunningen",
+          "Draaiboek en team ter plaatse"
+        ]
+      },
+      {
+        "title": "Zakelijke bijeenkomsten",
+        "desc": "Prestigieuze bedrijfsevenementen, directieretreats en gala's, met precisie en verfijning georganiseerd.",
+        "detail": "Zakelijke evenementen in heel Portugal, van directiediners en retreats tot incentiveprogramma's en gala's, discreet en stijlvol georganiseerd.",
+        "highlights": [
+          "Budget- en logistieke planning",
+          "Partners voor audiovisuele techniek en productie",
+          "Gastenbeleving en coördinatie ter plaatse"
+        ]
+      }
+    ],
+    "promiseSection": {
+      "title": "Onze belofte",
+      "subtitle": "Drie pijlers vormen de basis van elk evenement dat wij in Portugal creëren."
+    },
+    "promises": [
+      {
+        "title": "Strategische planning",
+        "desc": "Van concept en budget tot logistiek en tijdschema: elk detail wordt zorgvuldig uitgewerkt voordat de eerste leverancier wordt geboekt."
+      },
+      {
+        "title": "Verfijnd design",
+        "desc": "Redactionele styling, bloemen op maat, sfeerverlichting en zorgvuldig gekozen entertainment transformeren elke ruimte."
+      },
+      {
+        "title": "Naadloze gastenervaring",
+        "desc": "Ontvangst, gastvrijheidsprogramma's en coördinatie op de dag zelf, zodat uw gasten alleen maar genieten."
+      }
+    ],
+    "formatsSection": {
+      "label": "Bijzondere formats",
+      "title": "Onze evenementenformats",
+      "subtitle": "Onze populairste evenementconcepten, elk een wereld op zich."
+    },
+    "formats": [
+      {
+        "title": "Rooftopdiners in Lissabon",
+        "tag": "Bijzonder format",
+        "detail": "Gouden avondlicht, lantaarns en dineren boven de stad: verfijnde gastvrijheid in een karakteristiek Portugees decor.",
+        "highlights": [
+          "Samengesteld menu en drankenconcept",
+          "Verlichting en sfeervolle styling",
+          "Muziek en timing rond zonsondergang"
+        ]
+      },
+      {
+        "title": "Tuinsoirees",
+        "tag": "Bijzonder format",
+        "detail": "Weelderig groen, rijke bloemarrangementen en verfijnd dineren: perfect voor romantische, tijdloze vieringen.",
+        "highlights": [
+          "Bloemrijk designconcept",
+          "Flexibele indeling voor gasten",
+          "Entertainment en sfeerverlichting"
+        ]
+      },
+      {
+        "title": "Kustervaringen",
+        "tag": "Bijzonder format",
+        "detail": "Een bestemmingservaring die een verhaal op zich wordt: aankomst bij zonsondergang, luxe dineren en muziek onder de sterren.",
+        "highlights": [
+          "Coördinatie van vervoer en logistiek",
+          "Luxe styling en dining",
+          "Meeslepend entertainment"
+        ]
+      },
+      {
+        "title": "Intieme privérecepties",
+        "tag": "Bijzonder format",
+        "detail": "Een privéviering, perfect afgestemd op een kleiner gezelschap en met uitzonderlijke aandacht voor het design.",
+        "highlights": [
+          "Verfijnde tafeldetails",
+          "Persoonlijke attenties voor gasten",
+          "Vlekkeloos draaiboek"
+        ]
+      },
+      {
+        "title": "Merk- en directiediners",
+        "tag": "Bijzonder format",
+        "detail": "Exclusieve diners voor merken en directies: discreet, premium en volledig gericht op onberispelijke gastvrijheid.",
+        "highlights": [
+          "Selectie van locatie, chef en cateraar",
+          "Audiovisuele techniek en productietiming",
+          "Ontvangst en gastheerschap"
+        ]
+      }
+    ],
+    "ctaSection": {
+      "label": "Samen creëren",
+      "title": "Plan uw evenement",
+      "subtitle": "Vertel ons over uw gelegenheid, wij regelen de rest."
+    },
+    "ui": {
+      "details": "details",
+      "close": "Sluiten",
+      "event_category": "Evenementcategorie",
+      "reserve": "Reserveren / Informeren",
+      "continue": "Verder ontdekken",
+      "plan_event": "Plan uw evenement"
+    }
+  },
+  "gallery_page": {
+    "hero": {
+      "title": "De ervaring",
+      "subtitle": "Van A tot Z... Lissabon is de bestemming om het mooiste moment van uw leven te vieren."
+    },
+    "intro": {
+      "title": "Van A tot Z...",
+      "text": "Lisbon Weddings regelt alles. Wij stellen uw budget post voor post op en verzorgen ook de planning voor uw gasten (transfers, ontvangst op de luchthaven, hotels), zodat uw visie van begin tot eind wordt ondersteund. Wat uw budget ook is, vieren in Lissabon betekent een onvergetelijke bruiloft creëren."
+    },
+    "process": {
+      "title": "Onze werkwijze",
+      "steps": [
+        {
+          "title": "Kennismaking",
+          "text": "Een eerste gesprek om uw unieke stijl en belangrijkste wensen te bepalen."
+        },
+        {
+          "title": "Onderzoek",
+          "text": "Locaties zoeken op basis van capaciteit, ligging en budget."
+        },
+        {
+          "title": "Selectie",
+          "text": "De beste partners kiezen voor catering, fotografie, bloemen en beauty."
+        },
+        {
+          "title": "Planning",
+          "text": "Locatiebezoeken, proeverijen, tijdschema's en afstemming van alle leveranciers."
+        },
+        {
+          "title": "Creatie en geschenken",
+          "text": "Save-the-dates, uitnodigingen, tafelplannen en persoonlijke attenties ontwerpen."
+        },
+        {
+          "title": "Coördinatie",
+          "text": "Volledig beheer en discrete coördinatie op uw feestdag."
+        }
+      ]
+    },
+    "gallery": {
+      "label": "Galerij",
+      "title": "Collecties per categorie",
+      "subtitle": "Elke collectie is thematisch ingedeeld, zodat u eenvoudig door ons visuele archief kunt bladeren."
+    },
+    "collections": {
+      "weddings": {
+        "title": "Bruiloften",
+        "subtitle": "Ceremonies, recepties en trouwfotografie in editorialstijl uit heel Portugal."
+      },
+      "venues": {
+        "title": "Locaties",
+        "subtitle": "Paleizen, quintas, kustlandgoederen en resorts als decor voor uw viering."
+      },
+      "elopements": {
+        "title": "Elopements",
+        "subtitle": "Intieme geloften en romantische uitstapjes voor jullie twee."
+      },
+      "indian": {
+        "title": "Indiase bruiloften",
+        "subtitle": "Kleurrijke rituelen, weelderige bloemen en meerdaagse vieringen in Lissabon."
+      },
+      "jewish": {
+        "title": "Joodse bruiloften",
+        "subtitle": "Ceremonies onder de choepa en traditierijke vieringen in Lissabon."
+      },
+      "events": {
+        "title": "Evenementen en vieringen",
+        "subtitle": "Welkomstdiners, verlovingsfeesten, privévieringen en zakelijke evenementen."
+      },
+      "catering": {
+        "title": "Catering",
+        "subtitle": "Portugese, internationale en persoonlijke menu’s voor elk moment van uw viering."
+      }
+    },
+    "modal": {
+      "open_image": "Open afbeelding {{index}} van {{title}}",
+      "image_viewer": "Afbeeldingenviewer {{title}}",
+      "close": "Viewer sluiten",
+      "previous": "Vorige afbeelding",
+      "next": "Volgende afbeelding",
+      "counter": "Afbeelding {{current}} van {{total}}"
+    }
+  },
+  "contact_page": {
+    "hero": {
+      "label": "Contact",
+      "title": "Begin uw viering",
+      "subtitle": "Vertel ons over uw visie, uw datum en de ervaring die u wilt creëren."
+    },
+    "form": {
+      "label": "Aanvraag",
+      "title": "Vertel ons over uw evenement",
+      "intro": "Wij reageren discreet, persoonlijk en met zorg.",
+      "success_title": "Aanvraag ontvangen",
+      "success_text": "Bedankt. Wij nemen binnen 24 uur contact met u op.",
+      "full_name": "Volledige naam",
+      "email": "E-mail",
+      "email_placeholder": "E-mailadres",
+      "phone": "Telefoon / WhatsApp",
+      "event_type": "Type evenement",
+      "select_event_type": "Kies een type evenement",
+      "option_wedding": "Bruiloft",
+      "option_engagement": "Verlovingsfeest",
+      "option_welcome_dinner": "Welkomstdiner",
+      "option_anniversary": "Jubileum / Privéviering",
+      "option_luxury_birthday": "Luxe verjaardag",
+      "option_brand": "Merkbeleving",
+      "option_corporate": "Zakelijke bijeenkomst",
+      "option_other": "Anders",
+      "arrival_date": "Aankomstdatum",
+      "departure_date": "Vertrekdatum",
+      "dates_placeholder": "Kies uw aankomst- en vertrekdatum",
+      "guests": "Aantal gasten",
+      "guests_placeholder": "bijv. 60",
+      "destinations": "Gewenste bestemmingen",
+      "destinations_placeholder": "bijv. Lissabon, Sintra, Algarve...",
+      "budget": "Geschat budget",
+      "budget_placeholder": "bijv. 25.000",
+      "message": "Bericht",
+      "message_placeholder": "Vertel ons uw wensen…",
+      "error": "Er ging iets mis bij het verzenden. Probeer het opnieuw.",
+      "sending": "Bezig met verzenden…",
+      "send": "Aanvraag versturen"
+    },
+    "details": {
+      "label": "Contact",
+      "email": "E-mail",
+      "tel": "Tel.",
+      "office": "Kantoor"
+    },
+    "scheduler": {
+      "label": "Adviesgesprek",
+      "title": "Plan een adviesgesprek",
+      "subtitle": "Kies een moment dat u uitkomt.",
+      "iframe_title": "Agenda voor het plannen van een adviesgesprek"
+    }
+  },
+  "reservation_form": {
+    "title": "Plan uw adviesgesprek",
+    "subtitle": "Begin uw zorgeloze reis met ons.",
+    "success_title": "Adviesgesprek aangevraagd!",
+    "success_text": "Wij nemen binnen 24 uur contact met u op.",
+    "full_name": "Volledige naam",
+    "email": "E-mailadres",
+    "phone": "Telefoonnummer",
+    "number_of_guests": "Aantal gasten",
+    "preferred_location": "Voorkeurslocatie",
+    "estimated_budget": "Geschat budget",
+    "select_event": "Kies een type evenement",
+    "option_wedding": "Bruiloft",
+    "option_corporate": "Zakelijk evenement",
+    "option_private": "Privéviering",
+    "option_traditional_portuguese": "Traditionele Portugese bruiloft",
+    "option_modern_luxury": "Moderne luxe bruiloft",
+    "option_intimate_elopement": "Intieme elopement",
+    "option_multi_day_weekend": "Meerdaags trouwweekend",
+    "option_cultural_fusion": "Multiculturele bruiloft",
+    "error": "Er ging iets mis bij het aanvragen van het adviesgesprek.",
+    "requesting": "Bezig met aanvragen...",
+    "request": "Adviesgesprek aanvragen"
+  },
+  "detail_page": {
+    "cases": {
+      "default": {
+        "title": "Details van de ervaring",
+        "subtitle": "Een reis op maat"
+      }
+    },
+    "body": {
+      "p1": "Ontdek onze ervaring {{title}}. Elk detail wordt zorgvuldig gepland voor een adembenemende, vlekkeloze beleving. Ons team van experts brengt uw visie tot leven en combineert authentieke Portugese charme met internationale luxestandaarden.",
+      "p2": "Van locatiekeuze en culinaire regie tot design en gastbegeleiding: onze totaalaanpak zorgt voor een uitzonderlijk evenement. Neem contact op om uw data vast te leggen en onze mogelijkheden te ontdekken."
+    }
+  },
+  "layout": {
+    "whatsapp_label": "Chat via WhatsApp"
+  },
+  "thank_you_page": {
+    "thanks": "Bedankt",
+    "label": "Aanvraag ontvangen",
+    "title": "Weddings Planner Portugal bedankt u hartelijk voor uw reserveringsaanvraag",
+    "subtitle": "Uw aanvraag is goed ontvangen. Het is ons een genoegen u te begeleiden bij de planning van uw viering in Portugal.",
+    "note": "Ons team bekijkt uw gegevens persoonlijk en neemt binnen 24 uur contact met u op om de volgende stappen te bespreken.",
+    "back_home": "Terug naar home",
+    "image_alt": "Elegante trouwopstelling in Portugal"
+  },
+  "venues_page": {
+    "hero": {
+      "label": "Locaties in Portugal",
+      "title": "Bijzondere Portugese locaties, geselecteerd voor uw viering",
+      "subtitle": "Van privévilla's in Lissabon tot resorts aan de oceaan, historische paleizen en kustlandgoederen onder de sterren: Portugal biedt een uitzonderlijke variatie aan locaties voor destination weddings en evenementen. Wij helpen u de locatie te vinden die het best past bij uw visie, aantal gasten, budget en gewenste beleving, en coördineren elk detail van het eerste locatiebezoek tot de viering."
+    },
+    "introSection": {
+      "label": "Helder plannen",
+      "title": "Vind de juiste setting voor uw bruiloft in Portugal",
+      "subtitle": "De locatie bepaalt de hele beleving: de sfeer, de gastbeleving, de overnachtingsmogelijkheden, de logistiek, de designmogelijkheden en het totale budget. Ons team geeft persoonlijk advies op basis van uw prioriteiten."
+    },
+    "priorities": [
+      "Trouwstijl en sfeer",
+      "Aantal gasten",
+      "Overnachtingswensen",
+      "Opzet van ceremonie en receptie",
+      "Bereikbaarheid en vervoer",
+      "Opties binnen en buiten",
+      "Privacy en exclusiviteit",
+      "Meerdaagse trouwplannen",
+      "Entertainment en productie",
+      "Budget en beschikbaarheid"
+    ],
+    "categoriesSection": {
+      "label": "Locatiecategorieën",
+      "title": "Soorten trouwlocaties in Portugal",
+      "subtitle": "Of u nu een intieme elopement, een luxe trouwweekend of een groot multicultureel feest plant: vergelijk de meest geschikte locaties helder en met vertrouwen."
+    },
+    "categories": [
+      {
+        "title": "Locaties aan zee",
+        "tag": "Romantiek aan zee",
+        "desc": "Zeelucht, gouden licht en ontspannen verfijning voor een stijlvolle viering aan het water.",
+        "detail": "Van elegante strandresorts tot privékustlocaties: deze plekken bieden een frisse setting voor ceremonies buiten, cocktailrecepties en ontspannen trouwweekenden.",
+        "highlights": [
+          "Ceremonies in het gouden uur met zicht op de oceaan",
+          "Ontspannen luxe sfeer",
+          "Ideaal voor cocktails aan zee en recepties bij zonsondergang",
+          "Uitstekende uitvalsbasis voor uitstapjes",
+          "Perfect voor welkomstdiners en afscheidsbrunches",
+          "Overnachting in een resort mogelijk"
+        ],
+        "bestSuitedFor": "Kustbruiloften, ontspannen luxe vieringen, destination-weddingweekenden en stellen die een buitenlocatie met zeezicht wensen.",
+        "cta": "Ontdek trouwlocaties"
+      },
+      {
+        "title": "Privévilla's en landgoederen",
+        "tag": "Privacy en gastvrijheid",
+        "desc": "Het gevoel van een eigen huis, gecombineerd met het comfort en de service van een luxe locatie.",
+        "detail": "Bijzonder geschikt voor meerdaagse destination weddings: meerdere momenten op één plek, van welkomstdiner en samenzijn bij het zwembad tot ceremonie, receptie en afscheidsbrunch.",
+        "highlights": [
+          "Meerdaagse trouwweekenden",
+          "Overnachting ter plaatse voor een deel van de gasten",
+          "Besloten en exclusieve omgeving",
+          "Flexibele indeling voor ceremonie en receptie",
+          "Samenzijn bij het zwembad en tuinfeesten",
+          "Meer vrijheid voor styling en productie"
+        ],
+        "bestSuitedFor": "Trouwweekenden, privévieringen, destination weddings met overnachting en stellen die een ontspannen maar verfijnde sfeer zoeken.",
+        "cta": "Ontdek privévilla's in Portugal"
+      },
+      {
+        "title": "Historische paleizen en quintas",
+        "tag": "Charme van erfgoed",
+        "desc": "Gerestaureerde paleizen, herenhuizen en quintas vol Portugees karakter.",
+        "detail": "Portugese herenhuizen, gerestaureerde paleizen, elegante binnenplaatsen en aangelegde tuinen bieden sfeervolle settings voor bruiloften en intieme vieringen.",
+        "cta": "Ontdek historische paleizen en quintas"
+      },
+      {
+        "title": "Paleizen en tuinen",
+        "tag": "Grootse architectuur",
+        "desc": "Een indrukwekkende setting voor stellen die elegantie, erfgoed en visuele impact zoeken.",
+        "detail": "Monumentale entrees, ambachtelijk vakmanschap, fonteinen, binnenplaatsen en aangelegde tuinen bieden uitzonderlijke mogelijkheden voor formele ceremonies, luxe recepties en grootschalig entertainment.",
+        "highlights": [
+          "Indrukwekkende decors voor de ceremonie",
+          "Grootse entrees en architectonische details",
+          "Ruime tuinen en receptieruimtes",
+          "Grote capaciteit voor gasten",
+          "Geschikt voor livemuziek en grote producties",
+          "Sterke designmogelijkheden binnen en buiten"
+        ],
+        "bestSuitedFor": "Luxe bruiloften, grote gastenlijsten, formele recepties, multiculturele vieringen en stellen die een statementlocatie zoeken.",
+        "cta": "Ontdek paleizen en tuinen"
+      },
+      {
+        "title": "Kustlandgoederen",
+        "tag": "Onder de sterren",
+        "desc": "Een ceremonie bij zonsondergang, een diner bij lantaarnlicht en muziek onder de Portugese hemel.",
+        "detail": "Kustlandgoederen lenen zich voor intieme elopements, elegante diners of meeslepende trouwfeesten die traditionele gastvrijheid combineren met moderne productie – aan de Algarve-kust, bij Lissabon of op meer afgelegen bestemmingen.",
+        "highlights": [
+          "Ceremonies bij zonsondergang",
+          "Diners bij lantaarnlicht onder de sterren",
+          "Sterrenkijken en livemuziek",
+          "Meeslepende gastbeleving",
+          "Spectaculaire fotomomenten",
+          "Geschikt voor welkomstevents of bijzondere trouwweekenden"
+        ],
+        "bestSuitedFor": "Elopements, intieme bruiloften, bestemmingservaringen, welkomstdiners en stellen die iets bijzonders en onvergetelijks zoeken.",
+        "cta": "Plan een kustbruiloft"
+      },
+      {
+        "title": "Elegante landgoederen op het platteland",
+        "tag": "Landelijk karakter",
+        "desc": "Tuinen, terrassen en karaktervolle architectuur op het Portugese platteland.",
+        "detail": "Historische quintas en landgoederen combineren tuinen, terrassen en karaktervolle architectuur; sommige bieden ook overnachtingen voor gasten.",
+        "cta": "Ontdek elegante landgoederen"
+      },
+      {
+        "title": "Luxe hotels en resorts",
+        "tag": "Vijfsterrencomfort",
+        "desc": "Een complete oplossing met overnachting, catering en evenementenruimtes op één locatie.",
+        "detail": "Bijzonder handig voor internationale gastenlijsten en grotere bruiloften met gecoördineerd vervoer, meerdere evenementen en hoge servicestandaarden.",
+        "highlights": [
+          "Vijfsterrenovernachting voor gasten",
+          "Professionele hospitalityteams",
+          "Meerdere evenementenruimtes",
+          "Zwembad, spa en recreatie",
+          "Handige logistiek voor internationale gasten",
+          "Binnenalternatieven bij slecht weer"
+        ],
+        "bestSuitedFor": "Grote destination weddings, internationale gastenlijsten, formele vieringen en stellen die comfort en efficiëntie voorop stellen.",
+        "cta": "Ontdek luxe hotels en resorts"
+      },
+      {
+        "title": "Bergretreats",
+        "tag": "Rust van de bergen",
+        "desc": "Natuurlijke schoonheid en rustige exclusiviteit in de Serra da Estrela.",
+        "detail": "Een serene tegenhanger van de energie van Lissabon. Berglodges, privéretreats en boetiekaccommodaties bieden panoramische uitzichten, frisse lucht en een intieme band met de natuur.",
+        "highlights": [
+          "Panoramisch uitzicht op de bergen",
+          "Rustige en besloten omgeving",
+          "Ideaal voor ceremonies buiten",
+          "Perfect voor intieme trouwweekenden",
+          "Unieke cultuur- en natuuractiviteiten voor gasten",
+          "Geschikt voor welkomstlunches en afscheidsontbijten"
+        ],
+        "bestSuitedFor": "Intieme bruiloften, vieringen in de natuur, wellnessweekenden en stellen die privacy zoeken ver van de stad.",
+        "cta": "Ontdek locaties in de Serra da Estrela"
+      }
+    ],
+    "destinationsSection": {
+      "label": "In heel Portugal",
+      "title": "Trouwbestemmingen in Portugal",
+      "subtitle": "Ontdek de plek die uw verhaal vertelt, van historische paleizen tot Atlantische resorts en privéwijngoederen."
+    },
+    "destinations": [
+      {
+        "title": "Lissabon",
+        "desc": "Elegante hotels, privé-quintas en dakterrassen in een bruisende hoofdstad."
+      },
+      {
+        "title": "Algarve",
+        "desc": "Gouden kliffen, resorts aan de oceaan en privélandgoederen voor ceremonies bij zonsondergang en meerdaagse bruiloften."
+      },
+      {
+        "title": "Cascais en Estoril",
+        "desc": "Verfijnde locaties aan zee, vlak bij Lissabon, ideaal voor ontspannen kustvieringen."
+      },
+      {
+        "title": "Sintra",
+        "desc": "Romantische paleizen, historische landgoederen en weelderige tuinen voor tijdloze vieringen."
+      },
+      {
+        "title": "Porto",
+        "desc": "Historische architectuur, hotels aan de rivier en elegante receptielocaties."
+      },
+      {
+        "title": "Serra da Estrela",
+        "desc": "Bergretreats en intieme vieringen midden in de natuur."
+      },
+      {
+        "title": "Dourovallei",
+        "desc": "Wijngoederen, panoramisch uitzicht op de rivier en exclusieve trouwweekenden."
+      }
+    ],
+    "serviceSection": {
+      "label": "Hoe wij helpen",
+      "title": "Onze locatieselectieservice",
+      "subtitle": "Meer dan een lijst met locaties: helder advies voor een weloverwogen keuze.",
+      "body": "Een locatie op afstand kiezen kan lastig zijn. Foto's laten niet zien welke operationele beperkingen, capaciteit, toegangsvoorwaarden, overnachtingslimieten of extra productiekosten er zijn. U ontvangt heldere informatie om te beslissen, in plaats van wekenlang ongeschikte locaties te benaderen.",
+      "items": [
+        "Kennismakingsgesprek over uw trouwvisie",
+        "Persoonlijke shortlist van geschikte locaties",
+        "Aanvragen voor beschikbaarheid en prijzen",
+        "Vergelijking van overnachtings- en evenementopties",
+        "Beoordeling van capaciteit en indeling",
+        "Controle van de beperkingen van de locatie",
+        "Beoordeling van catering- en leveranciersregels",
+        "Planning van vervoer en bereikbaarheid",
+        "Coördinatie van locatiebezoeken",
+        "Controle van contract en betalingsschema",
+        "Advies over de sterkste optie"
+      ],
+      "cta": "Vraag uw persoonlijke locatieshortlist aan"
+    },
+    "considerationsSection": {
+      "title": "Wat wij bekijken voordat wij een locatie aanbevelen",
+      "subtitle": "Achter elke aanbeveling zit een grondige beoordeling."
+    },
+    "considerations": [
+      {
+        "title": "Capaciteit",
+        "desc": "Wij controleren of de locatie uw ceremonie, diner, dansfeest, entertainment en een plan B comfortabel kan huisvesten."
+      },
+      {
+        "title": "Overnachting",
+        "desc": "Wij bekijken het aantal kamers ter plaatse en zoeken alternatieven in de buurt als niet alle gasten op de locatie kunnen verblijven."
+      },
+      {
+        "title": "Privacy",
+        "desc": "Wij controleren of de locatie volledig exclusief kan worden afgehuurd en of er andere gasten of evenementen aanwezig kunnen zijn tijdens uw bruiloft."
+      },
+      {
+        "title": "Ligging en vervoer",
+        "desc": "Wij beoordelen de bereikbaarheid vanaf de luchthaven, de staat van de wegen, transfertijden en vervoersbehoeften tussen hotels en locaties."
+      },
+      {
+        "title": "Catering- en barregels",
+        "desc": "Wij bekijken of de catering in eigen beheer is, of externe cateraars zijn toegestaan en welke beperkingen gelden voor dranken en service."
+      },
+      {
+        "title": "Geluid en entertainment",
+        "desc": "Wij controleren eindtijden voor muziek, geluidsbeperkingen, technische eisen en de haalbaarheid van livemuziek of feesten tot laat."
+      },
+      {
+        "title": "Slechtweeralternatief",
+        "desc": "Wij beoordelen binnenruimtes, overdekte plekken en realistische alternatieven voor buitenevenementen."
+      },
+      {
+        "title": "Toegang voor productie",
+        "desc": "Wij bekijken toegang voor leveranciers, opbouwtijden, stroomcapaciteit, ophangbeperkingen en logistiek voor decoratie, verlichting en entertainment."
+      },
+      {
+        "title": "Totale investering",
+        "desc": "Wij houden niet alleen rekening met de huurprijs, maar ook met overnachting, catering, personeel, vervoer, technische productie en extra wensen."
+      }
+    ],
+    "whySection": {
+      "label": "Waarom wij",
+      "title": "Waarom uw locatiezoektocht met ons plannen?",
+      "subtitle": "Lokale expertise en heldere communicatie, van de eerste shortlist tot de viering."
+    },
+    "reasons": [
+      {
+        "title": "Lokale expertise",
+        "desc": "Ons team kent de verschillen tussen de regio's van Portugal, locatiestijlen, leveranciersnetwerken en logistieke realiteit."
+      },
+      {
+        "title": "Gerichte aanbevelingen",
+        "desc": "Wij bevelen locaties aan die echt passen bij uw aantal gasten, uw prioriteiten en uw budget."
+      },
+      {
+        "title": "Heldere communicatie",
+        "desc": "Wij presenteren de relevante informatie overzichtelijk en transparant, zodat u opties efficiënt kunt vergelijken."
+      },
+      {
+        "title": "Meertalige begeleiding",
+        "desc": "Wij communiceren met stellen, gasten en leveranciers in meerdere talen en voorkomen zo misverstanden tijdens de hele planning."
+      },
+      {
+        "title": "Volledige trouwplanning",
+        "desc": "Na de locatiekeuze kunnen wij de hele bruiloft verzorgen: design, overnachting, vervoer, catering, entertainment en coördinatie ter plaatse."
+      }
+    ],
+    "faqSection": {
+      "label": "FAQ",
+      "title": "Veelgestelde vragen"
+    },
+    "faqs": [
+      {
+        "q": "Hoe ver van tevoren moeten we een trouwlocatie in Portugal boeken?",
+        "a": "Voor bruiloften in het hoogseizoen raden wij aan ongeveer 12 tot 18 maanden van tevoren met zoeken te beginnen. Grote bruiloften, exclusieve locaties en populaire data vragen soms om nog eerder boeken."
+      },
+      {
+        "q": "Kunnen we meerdere trouwevenementen op dezelfde locatie houden?",
+        "a": "Ja. Veel villa's, resorts, landgoederen en privélocaties kunnen welkomstdiners, ceremonies, recepties, zwembadfeesten en afscheidsbrunches huisvesten. Elke locatie heeft eigen regels, dus wij controleren eerst wat er echt mogelijk is."
+      },
+      {
+        "q": "Kunnen al onze gasten op de locatie overnachten?",
+        "a": "Dat hangt van de locatie af. Sommige hotels en resorts kunnen grote groepen huisvesten, terwijl privévilla's, historische paleizen, privé-quintas en landgoederen meestal een beperkt aantal kamers hebben. Indien nodig regelen wij extra overnachtingen en vervoer voor gasten."
+      },
+      {
+        "q": "Is een kustbruiloft bij Lissabon mogelijk?",
+        "a": "Ja. Cascais en Estoril bieden kustlocaties vlak bij Lissabon. De Algarve, in het zuiden van Portugal, is ideaal voor een aparte meerdaagse viering."
+      },
+      {
+        "q": "Mogen we onze eigen leveranciers meenemen?",
+        "a": "Dat verschilt per locatie. Sommige locaties staan externe leveranciers toe, andere werken alleen met goedgekeurde partners voor catering, productie of entertainment. Wij controleren deze voorwaarden voordat de locatie wordt bevestigd."
+      },
+      {
+        "q": "Hebben Portugese locaties muziekbeperkingen?",
+        "a": "Veel locaties hanteren geluidsgrenzen of eindtijden voor muziek. Wij controleren deze regels zorgvuldig, vooral bij livemuziek, een DJ of feesten tot laat."
+      },
+      {
+        "q": "Organiseren jullie locatiebezoeken?",
+        "a": "Ja. Afhankelijk van het gekozen planningspakket stellen wij een bezoekschema op maat samen en begeleiden wij u tijdens de bezoeken."
+      },
+      {
+        "q": "Kunnen jullie de hele bruiloft plannen nadat we de locatie hebben gevonden?",
+        "a": "Ja. Onze volledige trouwplanning omvat locatiebeheer, design, leveranciers, overnachting, vervoer, gastenlogistiek, entertainment, productie en coördinatie ter plaatse."
+      }
+    ],
+    "ctaSection": {
+      "label": "Klaar?",
+      "title": "Wij vinden de Portugese locatie die bij u past",
+      "subtitle": "Deel uw voorkeursdata, het geschatte aantal gasten, de gewenste stijl en uw budget. Ons team wijst u de weg naar de meest geschikte opties in Lissabon en heel Portugal."
+    },
+    "ui": {
+      "details": "details",
+      "close": "Sluiten",
+      "venue_category": "Locatiecategorie",
+      "best_suited_for": "Ideaal voor",
+      "reserve": "Start uw locatiezoektocht",
+      "continue": "Verder ontdekken",
+      "plan_venue": "Plan een adviesgesprek"
+    }
+  },
+  "proposals_page": {
+    "hero": {
+      "label": "Huwelijksaanzoeken in Lissabon",
+      "title": "Alles voor een onvergetelijke viering in Lissabon",
+      "subtitle": "Van romantische huwelijksaanzoeken en intieme elopements tot luxe destination weddings: wij verzorgen elk detail voor elegante, emotionele en zorgvuldig vormgegeven ervaringen in Lissabon. Locaties, styling, fotografie, decoratie, logistiek, gastbeleving en vlekkeloze coördinatie – volledig afgestemd op uw wensen, zodat elk moment onvergetelijk wordt."
+    },
+    "stats": [
+      {
+        "label": "Romantische ervaringen gecreëerd"
+      },
+      {
+        "label": "Jaar expertise"
+      },
+      {
+        "label": "Landen van herkomst van onze klanten"
+      },
+      {
+        "label": "Persoonlijke trouwplanning"
+      }
+    ],
+    "categoriesSection": {
+      "label": "Stijlen voor huwelijksaanzoeken",
+      "title": "Zo zegt u ja in Lissabon",
+      "subtitle": "Elk aanzoek is geïnspireerd op uw liefdesverhaal – kies de setting die bij u past."
+    },
+    "categories": [
+      {
+        "title": "Aanzoek aan de Algarve-kust",
+        "tag": "Zonsondergang aan de kust",
+        "desc": "Een aanzoek bij kaarslicht aan de Algarve-kust, met gouden kliffen en de Atlantische horizon als decor.",
+        "detail": "In het zuiden van Portugal biedt de Algarve-kust een filmische setting: lantaarnverlichte paden, een privéopstelling bij zonsondergang en volledige rust ver van de stad.",
+        "highlights": [
+          "Privéopstelling met kaarslicht bij zonsondergang",
+          "Panoramisch uitzicht over de oceaan",
+          "Fotograaf en videograaf ter plaatse",
+          "Optioneel privédiner na het aanzoek",
+          "Optionele aankomst per oldtimer of privéboot"
+        ],
+        "bestSuitedFor": "Stellen die een spectaculair, uniek decor en volledige privacy zoeken aan de Algarve-kust.",
+        "cta": "Plan een aanzoek aan de Algarve"
+      },
+      {
+        "title": "Aanzoek op een dakterras",
+        "tag": "Uitzicht over de stad",
+        "desc": "Een privémoment op een dakterras boven Lissabon, met de Taag en de lichtjes van de stad als getuigen.",
+        "detail": "Een aanzoek op een dakterras is intiem en moeiteloos romantisch: bloemenbogen, kaarslicht en panoramisch uitzicht over Lissabon, discreet voorbereid vóór uw aankomst.",
+        "highlights": [
+          "Privédakterras van een historisch paleis, een privé-quinta of een hotel",
+          "Bloemenboog en kaarsdecoratie",
+          "Tijdens het gouden uur of onder de sterren",
+          "Champagne en bloemblaadjes",
+          "Discrete fotograaf"
+        ],
+        "bestSuitedFor": "Stellen in de historische binnenstad die een romantische, makkelijk bereikbare plek met uitzicht over de stad wensen.",
+        "cta": "Plan een dakterrasaanzoek"
+      },
+      {
+        "title": "Aanzoek bij het zwembad",
+        "tag": "Privévilla",
+        "desc": "Een serene setting bij het zwembad van een privévilla, met drijvende bloemen en warm lantaarnlicht.",
+        "detail": "Voor een ontspannen luxemoment veranderen wij het zwembad van een privévilla in een romantisch decor met drijvende bloemblaadjes, kaarsen en volledige privacy voor jullie twee.",
+        "highlights": [
+          "Exclusief gebruik van een privévilla",
+          "Drijvende bloemen en kaarsen",
+          "Zitplek of picknick bij het zwembad",
+          "Optionele livemuziek",
+          "Privacy ten opzichte van andere gasten gegarandeerd"
+        ],
+        "bestSuitedFor": "Stellen die een ontspannen resortsfeer met alle comfort en privacy zoeken.",
+        "cta": "Plan een aanzoek bij het zwembad"
+      },
+      {
+        "title": "Aanzoek op het strand",
+        "tag": "Kustromantiek",
+        "desc": "Zeelucht en gouden licht voor een aanzoek aan de Atlantische kust van Portugal.",
+        "detail": "Van de ruige kust van Cascais tot stille baaien bij Albufeira: een strandaanzoek biedt ontspannen romantiek met de golven als achtergrondmuziek.",
+        "highlights": [
+          "Timing rond zonsondergang aan de kust",
+          "Bloemenboog of pad van bloemblaadjes",
+          "Privétoegang tot het strand waar mogelijk",
+          "Fotograaf voor portretten in gouden licht",
+          "Optioneel diner aan zee"
+        ],
+        "bestSuitedFor": "Stellen die hun reis aan de kust verlengen en een natuurlijke, ontspannen setting wensen.",
+        "cta": "Plan een strandaanzoek"
+      },
+      {
+        "title": "Aanzoek in een luchtballon",
+        "tag": "Boven alles uit",
+        "desc": "Een aanzoek bij zonsopgang boven het Portugese platteland, met de Serra da Estrela aan de horizon.",
+        "detail": "Een aanzoek in een luchtballon is vanaf het eerste moment onvergetelijk: een stille zonsopgang, adembenemend uitzicht en een privétoast in de lucht, gevolgd door een stijlvolle viering na de landing.",
+        "highlights": [
+          "Privéballonvaart bij zonsopgang",
+          "Panoramisch uitzicht op de Serra da Estrela",
+          "Aanzoek tijdens de vlucht of na de landing",
+          "Champagnetoost bij de landing",
+          "Fotografie van de volledige ervaring"
+        ],
+        "bestSuitedFor": "Avontuurlijke stellen die een werkelijk uniek moment wensen.",
+        "cta": "Plan een luchtballonaanzoek"
+      },
+      {
+        "title": "Aanzoek op maat",
+        "tag": "Speciaal voor u",
+        "desc": "Een volledig persoonlijk concept, ontworpen rond uw verhaal, uw liefdestaal en uw visie.",
+        "detail": "Niet elk aanzoek past in een categorie. Heeft u een speciaal idee, een locatie of verrassing in gedachten? Ons team ontwikkelt een volledig persoonlijk concept, van begin tot eind.",
+        "highlights": [
+          "Volledig persoonlijk concept en styling",
+          "Locatiescouting in heel Portugal",
+          "Verrassingsregie met familie of vrienden",
+          "Entertainment en decoratie op maat",
+          "Discrete coördinatie van A tot Z"
+        ],
+        "bestSuitedFor": "Stellen met een specifieke visie, verrassing of locatie die een persoonlijk plan verdient.",
+        "cta": "Ontwerp mijn aanzoek op maat"
+      }
+    ],
+    "featuredSection": {
+      "label": "Uitgelicht werk",
+      "title": "Romantische vieringen in Lissabon en Portugal",
+      "subtitle": "Van het eerste ja tot de trouwdag creëren wij onvergetelijke momenten voor stellen die hun liefdesverhaal persoonlijk, elegant en betekenisvol willen beleven."
+    },
+    "featured": [
+      {
+        "title": "Luxe huwelijksaanzoeken",
+        "tag": "Aanzoeken",
+        "desc": "Een magisch moment, geïnspireerd op uw liefdesverhaal",
+        "detail": "Van aanzoeken bij kaarslicht in de Algarve tot privédakterrassen, historische paleizen en privé-quintas, zwembaden, luchtballonnen en unieke verrassingen: wij creëren luxe huwelijksaanzoeken in Lissabon die intiem, emotioneel en tijdloos zijn."
+      },
+      {
+        "title": "Intieme elopements",
+        "tag": "Elopements",
+        "desc": "Een betekenisvolle viering voor jullie twee of met de dierbaarsten",
+        "detail": "Voor stellen die dromen van een romantische ontsnapping organiseren wij intieme elopements in Lissabon en Portugal met prachtige locaties, verfijnde styling, fotografie, privédiners en vlekkeloze coördinatie."
+      },
+      {
+        "title": "Destination weddings",
+        "tag": "Bruiloften",
+        "desc": "Meerdaagse bruiloften op de mooiste plekken van Portugal",
+        "detail": "Van historische paleizen, privé-quintas en privévilla's tot tuinen, kustlandgoederen en complete trouwweekenden: wij organiseren destination weddings in Lissabon vol elegantie, cultuur, gastvrijheid en perfecte uitvoering."
+      }
+    ],
+    "aboutSection": {
+      "label": "Wie organiseert het?",
+      "name": "Ik ben Erica",
+      "role": "Planner van luxe aanzoeken en bruiloften in Lissabon",
+      "p1": "Ik ben Erica, planner van luxe huwelijksaanzoeken en bruiloften in Lissabon. Met passie creëer ik elegante, onvergetelijke ervaringen, geïnspireerd door de schoonheid van Portugal.",
+      "p2": "Met meer dan tien jaar ervaring in luxe evenementen ben ik gespecialiseerd in romantische aanzoeken, elopements en intieme vieringen, afgestemd op de visie van elk stel. Van de Algarve-kust tot historische paleizen, privé-quintas en dakterrassen: elk detail wordt zorgvuldig gekozen voor authentieke, emotionele en tijdloze momenten.",
+      "p3": "Samen met mijn team combineren we creativiteit, organisatie en oog voor detail om uw bijzondere gelegenheid onvergetelijk te maken.",
+      "cta": "Meer informatie",
+      "imageAlt": "Erica – planner van luxe aanzoeken en bruiloften in Lissabon"
+    },
+    "promiseSection": {
+      "label": "Onze belofte",
+      "title": "De romantische belofte van Lissabon"
+    },
+    "promises": [
+      {
+        "title": "Ervaringen op maat",
+        "desc": "Elk aanzoek, elopement en huwelijk wordt zorgvuldig vormgegeven rond uw verhaal, wensen en sfeer."
+      },
+      {
+        "title": "Uitzonderlijke locaties in Lissabon",
+        "desc": "Van zonsondergangen in de Algarve tot historische paleizen, privé-quintas, dakterrassen, villa's en paleizen: wij kiezen de perfecte plek voor elke viering."
+      },
+      {
+        "title": "Vlekkeloze planning en coördinatie",
+        "desc": "Van logistiek en styling tot gastenbeleving en uitvoering: elk detail wordt met zorg en precisie verzorgd."
+      },
+      {
+        "title": "Emotie, elegantie en authenticiteit",
+        "desc": "Verfijnde vieringen geïnspireerd door Portugese schoonheid, intimiteit, gastvrijheid en onvergetelijke momenten."
+      }
+    ],
+    "processSection": {
+      "label": "Het proces",
+      "title": "Zo werkt het"
+    },
+    "process": [
+      {
+        "title": "Het kennismakingsgesprek",
+        "desc": "We leren uw wensen, verhaal, verwachtingen en gewenste sfeer kennen om een persoonlijke, betekenisvolle ervaring te creëren."
+      },
+      {
+        "title": "De creatieve planning",
+        "desc": "Ons team ontwerpt en coördineert alles: locaties, styling, leveranciers, logistiek, gastenbeleving en planning, met elegantie en oog voor detail."
+      },
+      {
+        "title": "Reserveer uw datum",
+        "desc": "Data en locaties worden vastgelegd zodra de aanbetaling is ontvangen. Alle planningsdetails en betalingstermijnen worden duidelijk bevestigd."
+      },
+      {
+        "title": "De ervaring",
+        "desc": "Of het nu gaat om een aanzoek, elopement of luxe bruiloft: wij regelen alles achter de schermen zodat u volop kunt genieten."
+      }
+    ],
+    "testimonialsSection": {
+      "label": "Ervaringen van bruidsparen",
+      "title": "Trouwverhalen uit Portugal",
+      "subtitle": "Van een romantische ceremonie in een paleis in Sintra tot een receptie aan de Algarve of een intieme bruiloft in de Dourovallei: ieder feest vertelt een eigen verhaal. Ontdek de locaties, details en bijzondere momenten van een destination wedding in Portugal.",
+      "note": "Echte klantbeoordelingen verschijnen na verificatie en toestemming."
+    },
+    "ctaSection": {
+      "label": "Klaar om te beginnen?",
+      "title": "Samen creëren we iets werkelijk onvergetelijks",
+      "subtitle": "Of het nu gaat om een aanzoek, een intieme elopement of een luxe bruiloft: deel uw wensen en wij brengen elk detail tot leven in Lissabon en Portugal."
+    },
+    "ui": {
+      "details": "details",
+      "close": "Sluiten",
+      "category_label": "Type huwelijksaanzoek",
+      "best_suited_for": "Ideaal voor",
+      "reserve": "Begin met plannen",
+      "continue": "Verder ontdekken",
+      "plan": "Begin met plannen",
+      "discover": "Ontdek"
+    }
+  }
+}

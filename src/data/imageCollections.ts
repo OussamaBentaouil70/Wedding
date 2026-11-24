@@ -109,9 +109,9 @@ export const evjfBachelorImages = sortImportedImages(evjfBachelorModules);
 export const festivalImages = sortImportedImages(festivalModules);
 export const retreatImages = sortImportedImages(retreatModules);
 export const weddingImages = sortImportedImages(weddingModules);
-export const agafayDesertWeddingImages = sortImportedImages(agafayDesertWeddingModules);
+export const algarveWeddingImages = sortImportedImages(agafayDesertWeddingModules);
 export const elopementWeddingImages = sortImportedImages(elopementWeddingModules);
-export const keralaWeddingImages = sortImportedImages(keralaWeddingModules);
+export const indianWeddingImages = sortImportedImages(keralaWeddingModules);
 export const jewishWeddingImages = sortImportedImages(jewishWeddingModules);
 
 export const eventsHeroImages = [
@@ -120,36 +120,3 @@ export const eventsHeroImages = [
   new URL("../assets/images/Corporate Events/10.jpg", import.meta.url).href,
   new URL("../assets/images/Corporate Events/17.jpg", import.meta.url).href,
 ];
-
-export const galleryCollections = [
-  {
-    title: "Birthday & Private Events",
-    subtitle: "Milestones, intimate dinners, and celebratory moments.",
-    images: birthdayPrivateImages,
-  },
-  {
-    title: "EVJF - Bachelor Party",
-    subtitle: "Pre-wedding celebrations with a playful, polished feel.",
-    images: evjfBachelorImages,
-  },
-  {
-    title: "Festivals",
-    subtitle: "Energetic celebrations, live moments, and vibrant atmospheres.",
-    images: festivalImages,
-  },
-  {
-    title: "Retreats",
-    subtitle: "Wellness, escape, and slower luxury experiences.",
-    images: retreatImages,
-  },
-  {
-    title: "Corporate Events",
-    subtitle: "Executive gatherings, launches, and brand experiences.",
-    images: corporateEventImages,
-  },
-  {
-    title: "Weddings",
-    subtitle: "Ceremonies, receptions, and editorial wedding imagery.",
-    images: weddingImages,
-  },
-] as const;

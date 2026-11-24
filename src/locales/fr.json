@@ -1,1 +1,1714 @@
-{"nav":{"home":"Accueil","wedding":"Mariages","events":"├ëv├®nements","gallery":"Galerie","contact":"Organiser votre ├®v├®nement","language_label":"Choisir la langue","lang_en":"EN","lang_fr":"FR","venues":"Lieux","proposals":"Demandes en mariage"},"home":{"hero":{"tagline":"Organisation de Mariages d'Exception","title_1":"Des C├®l├®brations Sur Mesure","title_2":"Au C┼ôur du Maroc","subtitle":"L├á o├╣ vos histoires d'amour prennent vie dans les d├®cors les plus extraordinaires du Maroc  con├ºues avec intention, ex├®cut├®es avec pr├®cision.","book":"R├®server","plan":"Organiser votre c├®l├®bration","scroll":"D├®filer"},"trust":{"weddings":"Mariages Organis├®s","years":"Ann├®es d'Expertise","countries":"Pays de Destination","satisfaction":"Satisfaction Client"},"about":{"tagline":"Qui Sommes-Nous","title_1":"Le Premier Studio de","title_2":"Mariage et ├ëv├®nements","title_3":"de Luxe au Maroc","p1":"Nous sommes un studio d'organisation boutique bas├® ├á Marrakech, concevant des c├®l├®brations ├á la fois merveilleusement ├®l├®gantes et profond├®ment personnelles. Forts de pr├¿s de deux d├®cennies d'expertise locale et d'un portfolio couvrant plus de 40 pays, nous apportons une pr├®cision internationale aux d├®cors les plus majestueux du Maroc.","p2":"Chaque ├®v├®nement que nous cr├®ons est guid├® par un seul principe :","p2_strong":"votre histoire m├®rite d'├¬tre racont├®e avec intention","weddings_btn":"Nos Mariages","events_btn":"Nos ├ëv├®nements"},"promises":{"tagline":"Notre Engagement","title":"La Promesse Marrakech Weddings","p1_title":"Design Sur Mesure","p1_desc":"Chaque c├®l├®bration est adapt├®e ├á votre vision, votre style, votre culture et l'exp├®rience de vos invit├®s.","p2_title":"Expertise Locale","p2_desc":"Un acc├¿s exclusif aux plus beaux lieux, artisans et prestataires de confiance du Maroc.","p3_title":"Coordination Parfaite","p3_desc":"La planification, la production, la logistique et l'accueil des invit├®s g├®r├®s de bout en bout.","p4_title":"Un Luxe avec une ├éme","p4_desc":"Des exp├®riences ├®l├®gantes ancr├®es dans la beaut├®, l'hospitalit├® et l'atmosph├¿re marocaine."},"weddings":{"tagline":"Nos R├®alisations","title":"Mariages signatures ├á travers le Maroc","btn":"Explorer nos Mariages","view_details":"Voir les d├®tails"},"events":{"tagline":"Au-del├á des Mariages","title":"├ëv├®nements ├®l├®gants pour toutes les occasions","subtitle":"Retraites d'entreprise, c├®l├®brations marquantes, activations de marques et d├«ners priv├®s  chacun devenant une exp├®rience inoubliable.","btn":"Explorer nos ├ëv├®nements"},"process":{"tagline":"Comment ├ça Marche","title_1":"Un Voyage Sans Souci","title_2":"De la Vision ├á la R├®alit├®","btn":"Commencer l'Organisation","s1_title":"D├®couverte","s1_desc":"Consultation, direction esth├®tique, budget, priorit├®s","s2_title":"Design","s2_desc":"Recherche de lieux, concept cr├®atif, s├®lection de prestataires, exp├®rience globale","s3_title":"Orchestration","s3_desc":"Planification de la production, timeline, logistique, validations, coordination","s4_title":"C├®l├®bration","s4_desc":"Ex├®cution sur place avec une gestion calme, discr├¿te et de haut niveau"},"testimonials":{"tagline":"T├®moignages de Clients","title":"Mots de Nos Couples"},"cta":{"tagline":"Pr├¬t ├á Commencer ?","title_1":"Cr├®ons Quelque Chose","title_2":"D'Inoubliable Ensemble","subtitle":"Parlez-nous de votre vision. Nous nous occupons du reste.","btn_plan":"Organiser votre ├ëv├®nement","btn_wa":"WhatsApp","form_success":"Merci ! Nous vous contacterons dans les prochaines 24 heures.","form_title":"Demande Rapide","form_name":"Votre Nom","form_email":"Adresse Email","form_service":"Type d'├ëv├®nement","form_service_wedding":"Mariage","form_service_corporate":"├ëv├®nement d'Entreprise","form_service_celebration":"C├®l├®bration Priv├®e","form_service_other":"Autre","form_msg":"Parlez-nous de votre projet...","form_sending":"Envoi en cours...","form_send":"Envoyer la Demande"}},"footer":{"desc":"Cr├®er des exp├®riences luxueuses et inoubliables au c┼ôur du Maroc.","links_title":"Liens Rapides","contact_title":"Nous Contacter","rights":"Wedding Planner Morocco By Soufia. Tous droits r├®serv├®s."},"wedding_page":{"heroImages":["src/assets/images/Weddings/1.jpg","src/assets/images/Weddings/2.jpg","src/assets/images/Weddings/3.jpg"],"hero":{"label":"Mariages au Maroc","title":"Des Mariages Sur Mesure au Maroc","subtitle":"Des c├®r├®monies intimes aux c├®l├®brations sur plusieurs jours, nous concevons des mariages alliant beaut├®, ├®motion et coordination parfaite.","defaultService":"Mariage"},"servicesSection":{"label":"Ce Que Nous Offrons","title":"Nos Services de Mariage","subtitle":"L'excellence sur mesure pour chaque ├®tape de votre voyage."},"services":[{"title":"Organisation Compl├¿te de Mariage","desc":"Une gestion int├®grale, du concept jusqu'├á la derni├¿re danse, garantissant que chaque d├®tail soit parfaitement r├®alis├®."},{"title":"Design & Stylisme de Mariage","desc":"La cr├®ation d'un r├®cit visuel coh├®rent ├á travers le design floral, l'├®clairage et une d├®coration sur mesure."},{"title":"Coordination de Mariage ├á Destination","desc":"Une logistique experte pour les couples voyageant au Maroc, g├®rant les d├®placements, les lieux et les prestataires locaux."},{"title":"├ëlopements & Mariages Intimes","desc":"La curation de c├®r├®monies profond├®ment personnelles et ├®poustouflantes pour des c├®l├®brations plus petites et priv├®es."},{"title":"Week-ends de Mariage sur Plusieurs Jours","desc":"La conception d'un voyage complet pour vos invit├®s, du d├«ner de bienvenue au brunch d'adieu."},{"title":"Mariages Culturels & Fusion","desc":"Le m├®lange respectueux des traditions et des cultures dans une c├®l├®bration unique et harmonieuse."}],"venuesSection":{"label":"O├╣ Nous C├®l├®brons","title":"C├®l├®brez dans les D├®cors Purs et Extraordinaires du Maroc","subtitle":"Des riads cach├®s de la M├®dina jusqu'aux vastes ├®tendues majestueuses du Sahara."},"venues":[{"title":"Riads de Luxe","img":"src/assets/images/Weddings/8.jpg","desc":"Cach├®s derri├¿re des portes sculpt├®es, les riads de Marrakech offrent des cours intimes, des d├«ners aux chandelles et un sentiment d'intimit├® cin├®matographique.","highlights":["Cours de la M├®dina & moments sur les toits","Id├®al pour des c├®l├®brations intimes ├á moyennes","Parfait pour les d├«ners de bienvenue & brunchs"]},{"title":"Villas & Domaines Priv├®s","img":"src/assets/images/Weddings/22.jpg","desc":"L'ambiance d'une r├®sidence priv├®e avec une hospitalit├® haut de gamme  de l'espace pour organiser sur plusieurs jours, des rassemblements autour de la piscine et un luxe d├®tendu.","highlights":["Week-ends de mariage sur plusieurs jours","H├®bergement sur place pour les invit├®s","Agencements flexibles pour c├®r├®monie + r├®ception"]},{"title":"Palais & Jardins","img":"src/assets/images/Weddings/31.jpg","desc":"Une architecture grandiose, des d├®tails patrimoniaaux et des jardins luxuriants pour les couples qui souhaitent une c├®l├®bration royale et percutante.","highlights":["Des toiles de fond de c├®r├®monie ├á fort impact","Options pour grande capacit├® d'invit├®s","Id├®al pour r├®ceptions formelles & musique live"]},{"title":"Camps dans le D├®sert","img":"src/assets/images/Weddings/4.jpg","desc":"Une c├®r├®monie au coucher du soleil, un d├«ner ├®clair├® aux lanternes et de la musique sous les ├®toiles  le Sahara r├®v├¿le un Maroc inoubliable.","highlights":["C├®r├®monies au coucher du soleil & d├«ners sous les ├®toiles","Exp├®rience d'invit├® immersive","Parfait pour les ├®lopements ou ├®v├®nements audacieux de week-end"]},{"title":"Lieux en Bord de Mer","img":"src/assets/images/Weddings/21.jpg","desc":"Air de l'oc├®an, lumi├¿re dor├®e et une sophistication d├®contract├®e  les lieux c├┤tiers apportent un romantisme sans effort avec un stylisme raffin├®.","highlights":["C├®r├®monies ├á l'heure dor├®e","Ambiance de luxe d├®contract├®","Id├®al pour des excursions d'invit├®s & brunchs bord de mer"]}],"editorial":{"imageUrl":"src/assets/images/Weddings/9.jpg","imageAlt":"Philosophie de design mariage","label":"Notre Philosophie","title":"L'Art dans Chaque D├®tail","body":"Nous croyons qu'un mariage doit ├¬tre une exp├®rience sensorielle. Notre approche ├®ditoriale du design garantit que chaque ├®l├®ment  du parfum des fleurs ├á la transition de la lumi├¿re  contribue ├á un r├®cit coh├®rent et ├á couper le souffle. Nous organisons tout le voyage des invit├®s en mettant l'accent sur un divertissement haut de gamme et des tables immersives.","details":["Fleurs Sur Mesure","├ëclairage d'Ambiance","Tables Uniques","Divertissement S├®lectif","Gestion du Voyage Invit├®","Stylisme de C├®r├®monie"]},"themesSection":{"label":"Inspiration","title":"Th├¿mes de Mariage & Inspiration","subtitle":"D├®couvrez des th├¿mes qui r├®sonnent avec l'├óme du Maroc et votre style personnel."},"themes":[{"title":"├ël├®gance Royale Marocaine","img":"src/assets/images/Weddings/10.jpg"},{"title":"Romance Moderne Minimaliste","img":"src/assets/images/Weddings/11.jpg"},{"title":"C├®l├®bration au Coucher de Soleil","img":"src/assets/images/Weddings/12.jpg"},{"title":"Mariage de Jardin en Fleurs","img":"src/assets/images/Weddings/13.jpg"},{"title":"Sophistication Blanc & Or","img":"src/assets/images/Weddings/14.jpg"},{"title":"Beldi Chic R├®invent├®","img":"src/assets/images/Weddings/15.jpg"}],"includedSection":{"title":"L'Envergure Globale","subtitle":"Une approche holistique pour votre c├®l├®bration."},"included":[{"title":"D├®veloppement du Concept","desc":"D├®velopper un concept visuel et exp├®rientiel qui raconte votre histoire."},{"title":"Recherche de Lieux","desc":"La s├®lection parmi les endroits les plus extraordinaires du Maroc pour votre r├®ception."},{"title":"Gestion du Budget","desc":"Une planification strat├®gique et une gestion transparente de l'investissement pour votre mariage."},{"title":"S├®lection & Gestion des Prestataires","desc":"Vous mettre en relation avec les partenaires cr├®atifs locaux et internationaux les plus talentueux."},{"title":"Direction Artistique & Moodboards","desc":"La cr├®ation de planches de tendances d├®taill├®es pour chaque ├®l├®ment visuel."},{"title":"Logistique des Invit├®s & Hospitalit├®","desc":"G├®rer l'h├®bergement, les d├®placements et les exp├®riences de vos invit├®s."},{"title":"Fluidit├® C├®r├®monie et R├®ception","desc":"Agencer la choraleographie parfaite entre toutes les ├®tapes de la journ├®e."},{"title":"Coordination le Jour J","desc":"Une s├®r├®nit├® absolue tandis que nous g├®rons chaque seconde de votre ├®v├®nement."}],"faqSection":{"label":"FAQ","title":"Questions Fr├®quemment Pos├®es"},"faqs":[{"q":"Combien de temps ├á l'avance devrions-nous commencer ?","a":"Pour les mariages ├á destination au Maroc, nous recommandons de commencer entre 10 et 12 mois ├á l'avance pour r├®server votre lieu privil├®gi├® et les meilleurs prestataires."},{"q":"Travaillez-vous avec des couples internationaux ?","a":"Oui, la majorit├® de nos clients sont des couples internationaux. Nous sommes des experts dans la gestion de l'organisation ├á distance et de la logistique des invit├®s."},{"q":"Pouvez-vous organiser des c├®r├®monies multiculturelles ou symboliques ?","a":"Absolument. Nous sommes sp├®cialis├®s dans les mariages fusion et pouvons vous assister pour trouver des c├®l├®brants pour des c├®r├®monies symboliques, la├»ques ou religieuses."},{"q":"Aidez-vous pour les exp├®riences et l'h├®bergement des invit├®s ?","a":"Oui, nous fournissons une gestion compl├¿te de l'hospitalit├® comprenant la r├®servation d'h├®bergement, les visites locales et les transports pour vos invit├®s."}],"ctaSection":{"label":"Pr├¬t(e) ?","title":"Organisez Votre Mariage","subtitle":"Commen├ºons aujourd'hui ├á cr├®er votre c├®l├®bration extraordinaire au Maroc."},"ui":{"details":"d├®tails","close":"Fermer","venue_experience":"Exp├®rience du Lieu","start_planning":"Commencer l'Organisation","continue":"Continuer ├á Explorer","plan_wedding":"Organisez Votre Mariage"},"serviceShowcaseSection":{"label":"Services","title":"Nos Services","subtitle":"Des services essentiels de mariage, realises avec style, precision et une coordination fluide."},"serviceShowcase":[{"title":"Transport","desc":"Transferts prives et gestion des deplacements des invites pour une experience fluide et sans stress.","highlights":["Transferts aeroport et hotels","Navettes ceremonie et reception","Coordination de vehicules premium"]},{"title":"DJ","desc":"Direction musicale et gestion de l ambiance pour creer le rythme ideal, du cocktail a la derniere danse.","highlights":["Programmation musicale sur mesure","Coordination du systeme son","Experience piste de danse"]},{"title":"Traiteur","desc":"Experiences culinaires raffinees adaptees a vos invites, a votre style de celebration et au rythme de la journee.","highlights":["Conception de menu sur mesure","Degustation et deroule du service","Gestion des preferences alimentaires"]},{"title":"Maquillage","desc":"Services beaute professionnels pour la mariee et son cortege, organises avec un timing precis.","highlights":["Beaute mariee et cortege","Coordination de l essai","Retouches sur place"]},{"title":"Photo & Video","desc":"Une couverture editoriale qui capture chaque emotion et chaque detail, des preparatifs aux derniers instants.","highlights":["Coordination equipe photo-video","Couverture alignee au planning","Storytelling cinematographique"]}]},"events_page":{"heroImages":["src/assets/images/Festivals/1.jpg","src/assets/images/Corporate Events/4.jpg","src/assets/images/Birthday & Private events/1.jpg","src/assets/images/Retreats/1.jpeg"],"hero":{"label":"├ëv├®nements au Maroc","title":"Des ├ëv├®nements Raffin├®s, Ma├«tris├®s avec ├ël├®gance","subtitle":"Nous cr├®ons des ├®v├®nements priv├®s et corporate au Maroc avec la m├¬me pr├®cision, le m├¬me style et le m├¬me sens de l'hospitalit├® que pour nos mariages.","defaultService":"├ëv├®nement Corporate"},"categoriesSection":{"label":"Ce Que Nous Proposons","title":"Cat├®gories d'├ëv├®nements","subtitle":"Au-del├á du mariage  con├ºus avec la m├¬me exigence, cr├®ativit├® et hospitalit├®."},"categories":[{"title":"F├¬tes de Fian├ºailles","desc":"C├®l├®brez vos premiers pas vers le grand jour dans des ambiances intimistes et ├®l├®gantes.","img":"src/assets/images/EVJF - Bachelor Party/3.jpg","detail":"Une c├®l├®bration de fian├ºailles pens├®e comme un moment ├®ditorial  chaleureuse, fluide et parfaitement orchestr├®e.","highlights":["Concept + direction moodboard","S├®lection du lieu + prestataires","Flux invit├®s, timing et coordination sur place"]},{"title":"Bridal Showers & D├«ners de Bienvenue","desc":"Des rassemblements pr├®-mariage ├®l├®gants qui donnent le ton d'une c├®l├®bration inoubliable.","img":"src/assets/images/Weddings/26.jpg","detail":"Du bridal shower raffin├® au d├«ner de bienvenue dans la M├®dina, nous cr├®ons des instants chaleureux et haut de gamme.","highlights":["Tables, fleurs et ├®clairage","Menus, musique et animation","Hospitalit├® et stylisme"]},{"title":"Anniversaires & C├®l├®brations Priv├®es","desc":"Des moments forts sublim├®s par un design personnalis├®, des lieux exclusifs et des d├®tails sensibles.","img":"src/assets/images/EVJF - Bachelor Party/8.jpg","detail":"Anniversaires, demandes en mariage, d├«ners priv├®s et ├®tapes de vie  con├ºus avec intimit├®, beaut├® et ex├®cution sans faille.","highlights":["Lieux priv├®s et configurations intimistes","Direction cr├®ative narrative","Coordination discr├¿te et premium"]},{"title":"Anniversaires de Luxe","desc":"Des rooftops spectaculaires aux d├«ners dans le d├®sert  chaque anniversaire m├®rite une signature.","img":"src/assets/images/Birthday & Private events/4.jpg","detail":"Un anniversaire de luxe cr├®e son propre univers  rooftop, villa priv├®e ou c├®l├®bration sous les ├®toiles.","highlights":["Curation d'animations immersives","Moments cocktails + dining signature","Timeline + gestion prestataires"]},{"title":"Exp├®riences de Marque","desc":"Des activations immersives et productions ├®ditoriales dans les plus beaux d├®cors du Maroc.","img":"src/assets/images/Corporate Events/52.jpg","detail":"Activations premium, lancements, d├«ners et productions ├®ditoriales  livr├®s avec direction cr├®ative et excellence op├®rationnelle.","highlights":["Direction cr├®ative + production","Rep├®rage lieux et appui autorisations","Run-of-show + ├®quipe sur site"]},{"title":"├ëv├®nements Corporate","desc":"Retraites ex├®cutives, d├«ners et galas orchestr├®s avec pr├®cision et sophistication.","img":"src/assets/images/Corporate Events/51.jpg","detail":"├ëv├®nements corporate au Maroc  d├«ners ex├®cutifs, retraites et exp├®riences incentive  planifi├®s avec clart├® et discr├®tion.","highlights":["Planification budget + logistique","AV, sc├®nographie et production","Exp├®rience invit├®s et coordination terrain"]}],"promiseSection":{"title":"Notre Promesse ├ëv├®nementielle","subtitle":"Trois piliers qui soutiennent chaque ├®v├®nement que nous cr├®ons au Maroc."},"promises":[{"icon":"✦","title":"Planification Strat├®gique","desc":"Du concept au budget, de la logistique au timing  chaque d├®tail est d├®fini avant la r├®servation du moindre prestataire."},{"icon":"◈","title":"Design ├ëlev├®","desc":"Stylisme ├®ditorial, compositions florales sur mesure, ├®clairages d'ambiance et divertissement soigneusement s├®lectionn├®."},{"icon":"◎","title":"Exp├®rience Invit├®s Fluide","desc":"Gestion des arriv├®es, hospitalit├® et coordination jour J pour une exp├®rience sans friction."}],"formatsSection":{"label":"Formats Vedettes","title":"Formats d'├ëv├®nements Vedettes","subtitle":"Nos formats les plus demand├®s  chacun avec son univers."},"formats":[{"title":"D├«ners Rooftop ├á Marrakech","img":"src/assets/images/gallery/rooftop-garden.jpg","tag":"Format Vedette","detail":"Heure dor├®e, lanternes et skyline  une hospitalit├® ├®lev├®e dans une atmosph├¿re marocaine ├®ditoriale.","highlights":["Menu + accords boissons sur mesure","├ëclairage + stylisme d'ambiance","Musique + timing sunset"]},{"title":"Soir├®es dans les Jardins","img":"src/assets/images/Retreats/1.jpeg","tag":"Format Vedette","detail":"Verdure luxuriante, fleurs g├®n├®reuses et dining raffin├®  id├®al pour des c├®l├®brations romantiques et intemporelles.","highlights":["Direction florale forte","Configurations flexibles du flux invit├®s","Temps forts animation + lumi├¿re"]},{"title":"Exp├®riences dans le D├®sert","img":"src/assets/images/EVJF - Bachelor Party/2.jpg","tag":"Format Vedette","detail":"Une exp├®rience destination qui devient le r├®cit  arriv├®es au coucher du soleil, d├«ner de luxe et musique sous les ├®toiles.","highlights":["Coordination transport + logistique","Stylisme camp de luxe + dining","Divertissement immersif"]},{"title":"R├®ceptions Priv├®es Intimistes","img":"src/assets/images/Retreats/9.jpg","tag":"Format Vedette","detail":"Une c├®l├®bration priv├®e parfaitement chor├®graphi├®e  pour des groupes r├®duits et une exigence du d├®tail.","highlights":["Tablescapes haute finition","Touchpoints invit├®s personnalis├®s","Run-of-show fluide"]},{"title":"D├«ners de Marque ou Ex├®cutifs","img":"src/assets/images/Corporate Events/1.jpg","tag":"Format Vedette","detail":"Des d├«ners premium pour marques et d├®cideurs  discrets, ├®l├®gants et centr├®s sur l'hospitalit├®.","highlights":["S├®lection lieu + chef/caterer","Timing pr├¬t pour AV + production","Arriv├®e invit├®s + accueil"]}],"ctaSection":{"label":"Cr├®ons Ensemble","title":"Organisez Votre ├ëv├®nement","subtitle":"Partagez votre occasion  nous nous occupons de tout le reste."},"ui":{"details":"d├®tails","close":"Fermer","event_category":"Cat├®gorie d'├ëv├®nement","reserve":"R├®server / Demander","continue":"Continuer ├á Explorer","plan_event":"Organiser Votre ├ëv├®nement"}},"gallery_page":{"hero":{"title":"L'Exp├®rience","subtitle":"De A ├á Z... Marrakech est la destination pour c├®l├®brer le plus beau moment de votre vie."},"intro":{"title":"De A ├á Z...","text":"Marrakech Weddings s'occupe de tout. Nous construisons avec vous un budget pr├®visionnel poste par poste. Nous g├®rons ├®galement le planning des invit├®s (transferts, accueil a├®roport, h├┤tels) pour donner vie ├á votre projet. Quel que soit votre budget, s'unir ├á Marrakech garantit un mariage inoubliable."},"process":{"title":"Notre Processus","steps":[{"title":"Consultation","text":"Premier ├®change pour d├®finir votre style unique et vos priorit├®s essentielles."},{"title":"├ëtude","text":"Recherche de lieux selon la capacit├®, l'emplacement et votre budget cible."},{"title":"S├®lection","text":"Choix des meilleurs partenaires  traiteur, photo, fleurs, beaut├® et plus encore."},{"title":"Organisation","text":"Rep├®rages, d├®gustations, planning d├®taill├® et alignement complet des prestataires."},{"title":"Cr├®ation & Cadeaux","text":"Design des save-the-dates, invitations, plans de table et attentions personnalis├®es."},{"title":"Coordination","text":"Gestion compl├¿te et coordination discr├¿te de votre journ├®e de c├®l├®bration."}]},"gallery":{"label":"Galerie","title":"Collections par Cat├®gorie","subtitle":"Chaque dossier est organis├® pour parcourir facilement l'archive visuelle."},"collections":{"birthday_private":{"subtitle":"Moments marquants, d├«ners intimistes et c├®l├®brations priv├®es."},"evjf":{"subtitle":"C├®l├®brations pr├®-mariage avec une ├®nergie festive et soign├®e."},"festivals":{"subtitle":"Ambiances vibrantes, ├®motions live et c├®l├®brations pleines d'├®nergie."},"retreats":{"subtitle":"Bien-├¬tre, ├®vasion et exp├®riences de luxe au rythme apais├®."},"corporate":{"subtitle":"Rencontres ex├®cutives, lancements et exp├®riences de marque."},"weddings":{"subtitle":"C├®r├®monies, r├®ceptions et visuels ├®ditoriaux de mariage."}},"modal":{"open_image":"Ouvrir l'image {{index}} de {{title}}","image_viewer":"Visionneuse d'images {{title}}","close":"Fermer la visionneuse","previous":"Image pr├®c├®dente","next":"Image suivante","counter":"Image {{current}} sur {{total}}"}},"contact_page":{"hero":{"label":"Contact","title":"Commencez Votre C├®l├®bration","subtitle":"Parlez-nous de votre vision, de votre date et de l'exp├®rience que vous souhaitez cr├®er."},"form":{"label":"Demande","title":"Parlez-nous de votre ├®v├®nement","intro":"Nous r├®pondons avec discr├®tion, attention et personnalisation.","success_title":"Demande re├ºue","success_text":"Merci. Nous vous contacterons dans les 24 heures.","full_name":"Nom complet","email":"Email","email_placeholder":"Adresse email","phone":"T├®l├®phone / WhatsApp","event_type":"Type d'├®v├®nement","select_event_type":"S├®lectionnez un type d'├®v├®nement","option_wedding":"Mariage","option_engagement":"F├¬te de fian├ºailles","option_welcome_dinner":"D├«ner de bienvenue","option_anniversary":"Anniversaire / C├®l├®bration priv├®e","option_luxury_birthday":"Anniversaire de luxe","option_brand":"Exp├®rience de marque","option_corporate":"├ëv├®nement corporate","option_other":"Autre","arrival_date":"Date d'arriv├®e","departure_date":"Date de d├®part","guests":"Nombre d'invit├®s","guests_placeholder":"ex. 60","destinations":"Destinations souhait├®es","destinations_placeholder":"ex. Marrakech, Agafay, Essaouira...","budget":"Budget estim├®","budget_placeholder":"ex. 25 000","message":"Message","message_placeholder":"Parlez-nous de votre visionÔÇª","error":"Erreur lors de l'envoi du message. Veuillez r├®essayer.","sending":"EnvoiÔÇª","send":"Envoyer la Demande"},"details":{"label":"Contact","email":"Email","tel":"T├®l","office":"Bureau","office_value":"55 Derb Ben Zina, LaKasbah, Marrakech 40040, Morocco"},"scheduler":{"label":"Consultation","title":"R├®server une consultation","subtitle":"Choisissez un cr├®neau qui vous convient.","iframe_title":"Calendrier de r├®servation de consultation"}},"reservation_form":{"title":"R├®servez Votre Consultation","subtitle":"Commencez votre parcours en toute s├®r├®nit├® avec nous.","success_title":"Consultation Demand├®e !","success_text":"Oussama vous contactera sous 24 heures.","full_name":"Nom complet","email":"Adresse email","phone":"Num├®ro de t├®l├®phone","select_event":"S├®lectionnez un type d'├®v├®nement","option_wedding":"Mariage","option_corporate":"├ëv├®nement corporate","option_private":"C├®l├®bration priv├®e","error":"Erreur lors de la demande de consultation.","requesting":"Demande en cours...","request":"Demander une consultation","number_of_guests":"Nombre d'invit├®s","preferred_location":"Lieu pr├®f├®r├®","estimated_budget":"Budget estim├®"},"detail_page":{"cases":{"desert":{"title":"Exp├®dition de Luxe dans le D├®sert du Sahara","subtitle":"Voyage Signature"},"city":{"title":"Villes Imp├®riales & Riads Cach├®s","subtitle":"├ëchapp├®e Culturelle"},"coast":{"title":"C├┤te Atlantique du Maroc","subtitle":"Slow Travel & Retraites en Bord de Mer"},"gastronomy":{"title":"D├®couverte Gastronomique Marocaine","subtitle":"Exp├®rience Culinaire"},"wellness":{"title":"Retraites Bien-├ètre & ├ëvasions Hammam","subtitle":"R├®g├®n├®ration"},"art":{"title":"Art, Design & Patrimoine Artisanal","subtitle":"Voyage Cr├®atif"},"traditional":{"title":"Mariages Traditionnels Marocains","subtitle":"Culturel et Authentique"},"modern":{"title":"├ël├®gance de Luxe Moderne","subtitle":"Sophistiqu├® et Chic"},"default":{"title":"D├®tails de l'Exp├®rience","subtitle":"Un Voyage Sur Mesure"}},"body":{"p1":"Plongez dans notre exp├®rience {{title}}. Chaque d├®tail est minutieusement pens├® pour offrir un moment spectaculaire et fluide. Notre ├®quipe d'experts travaille avec exigence pour concr├®tiser votre vision, en alliant l'authenticit├® marocaine aux standards du luxe international.","p2":"De la s├®lection du lieu ├á la direction culinaire, en passant par l'esth├®tique et la gestion des invit├®s, notre approche globale garantit un ├®v├®nement remarquable. Contactez-nous pour s├®curiser vos dates et d├®couvrir les formules disponibles."}},"layout":{"whatsapp_label":"Discuter sur WhatsApp"},"thank_you_page":{"label":"R├®servation Re├ºue","title":"Wedding Planner Morocco by Soufia Vous Remercie Sinc├¿rement pour Votre Demande de R├®servation","subtitle":"Votre demande de r├®servation a bien ├®t├® re├ºue. C'est un plaisir de vous accompagner dans l'organisation de votre c├®l├®bration au Maroc.","note":"Notre ├®quipe ├®tudiera votre dossier avec attention et vous contactera sous 24 heures pour organiser la suite.","back_home":"Retour ├á l'accueil","image_alt":"D├®cor de mariage ├®l├®gant au Maroc"},"wedding_subpages":{"agafay":{"serviceShowcaseSection":{"label":"Services","title":"Nos Services","subtitle":"Des services essentiels de mariage, realises avec style, precision et une coordination fluide."},"serviceShowcase":[{"title":"Transport","desc":"Transferts prives et gestion des deplacements des invites pour une experience fluide et sans stress.","highlights":["Transferts aeroport et hotels","Navettes ceremonie et reception","Coordination de vehicules premium"]},{"title":"DJ","desc":"Direction musicale et gestion de l ambiance pour creer le rythme ideal, du cocktail a la derniere danse.","highlights":["Programmation musicale sur mesure","Coordination du systeme son","Experience piste de danse"]},{"title":"Traiteur","desc":"Experiences culinaires raffinees adaptees a vos invites, a votre style de celebration et au rythme de la journee.","highlights":["Conception de menu sur mesure","Degustation et deroule du service","Gestion des preferences alimentaires"]},{"title":"Maquillage","desc":"Services beaute professionnels pour la mariee et son cortege, organises avec un timing precis.","highlights":["Beaute mariee et cortege","Coordination de l essai","Retouches sur place"]},{"title":"Photo & Video","desc":"Une couverture editoriale qui capture chaque emotion et chaque detail, des preparatifs aux derniers instants.","highlights":["Coordination equipe photo-video","Couverture alignee au planning","Storytelling cinematographique"]}]},"elopement":{"serviceShowcaseSection":{"label":"Services","title":"Nos Services","subtitle":"Des services essentiels de mariage, realises avec style, precision et une coordination fluide."},"serviceShowcase":[{"title":"Transport","desc":"Transferts prives et gestion des deplacements des invites pour une experience fluide et sans stress.","highlights":["Transferts aeroport et hotels","Navettes ceremonie et reception","Coordination de vehicules premium"]},{"title":"DJ","desc":"Direction musicale et gestion de l ambiance pour creer le rythme ideal, du cocktail a la derniere danse.","highlights":["Programmation musicale sur mesure","Coordination du systeme son","Experience piste de danse"]},{"title":"Traiteur","desc":"Experiences culinaires raffinees adaptees a vos invites, a votre style de celebration et au rythme de la journee.","highlights":["Conception de menu sur mesure","Degustation et deroule du service","Gestion des preferences alimentaires"]},{"title":"Maquillage","desc":"Services beaute professionnels pour la mariee et son cortege, organises avec un timing precis.","highlights":["Beaute mariee et cortege","Coordination de l essai","Retouches sur place"]},{"title":"Photo & Video","desc":"Une couverture editoriale qui capture chaque emotion et chaque detail, des preparatifs aux derniers instants.","highlights":["Coordination equipe photo-video","Couverture alignee au planning","Storytelling cinematographique"]}]},"kerala":{"serviceShowcaseSection":{"label":"Services","title":"Nos Services","subtitle":"Des services essentiels de mariage, realises avec style, precision et une coordination fluide."},"serviceShowcase":[{"title":"Transport","desc":"Transferts prives et gestion des deplacements des invites pour une experience fluide et sans stress.","highlights":["Transferts aeroport et hotels","Navettes ceremonie et reception","Coordination de vehicules premium"]},{"title":"DJ","desc":"Direction musicale et gestion de l ambiance pour creer le rythme ideal, du cocktail a la derniere danse.","highlights":["Programmation musicale sur mesure","Coordination du systeme son","Experience piste de danse"]},{"title":"Traiteur","desc":"Experiences culinaires raffinees adaptees a vos invites, a votre style de celebration et au rythme de la journee.","highlights":["Conception de menu sur mesure","Degustation et deroule du service","Gestion des preferences alimentaires"]},{"title":"Maquillage","desc":"Services beaute professionnels pour la mariee et son cortege, organises avec un timing precis.","highlights":["Beaute mariee et cortege","Coordination de l essai","Retouches sur place"]},{"title":"Photo & Video","desc":"Une couverture editoriale qui capture chaque emotion et chaque detail, des preparatifs aux derniers instants.","highlights":["Coordination equipe photo-video","Couverture alignee au planning","Storytelling cinematographique"]}]},"jewish":{"serviceShowcaseSection":{"label":"Services","title":"Nos Services","subtitle":"Des services essentiels de mariage, realises avec style, precision et une coordination fluide."},"serviceShowcase":[{"title":"Transport","desc":"Transferts prives et gestion des deplacements des invites pour une experience fluide et sans stress.","highlights":["Transferts aeroport et hotels","Navettes ceremonie et reception","Coordination de vehicules premium"]},{"title":"DJ","desc":"Direction musicale et gestion de l ambiance pour creer le rythme ideal, du cocktail a la derniere danse.","highlights":["Programmation musicale sur mesure","Coordination du systeme son","Experience piste de danse"]},{"title":"Traiteur","desc":"Experiences culinaires raffinees adaptees a vos invites, a votre style de celebration et au rythme de la journee.","highlights":["Conception de menu sur mesure","Degustation et deroule du service","Gestion des preferences alimentaires"]},{"title":"Maquillage","desc":"Services beaute professionnels pour la mariee et son cortege, organises avec un timing precis.","highlights":["Beaute mariee et cortege","Coordination de l essai","Retouches sur place"]},{"title":"Photo & Video","desc":"Une couverture editoriale qui capture chaque emotion et chaque detail, des preparatifs aux derniers instants.","highlights":["Coordination equipe photo-video","Couverture alignee au planning","Storytelling cinematographique"]}]}},"venues_page":{"heroImages":["src/assets/images/Venues/Beachfront Venues.jpg","src/assets/images/Venues/Desert camps.jpg","src/assets/images/Weddings/8.jpg","src/assets/images/Venues/Mountain Retreats.png"],"hero":{"label":"Lieux de célébration au Maroc","title":"Des lieux d'exception au Maroc, sélectionnés pour votre célébration","subtitle":"Des villas privées à Marrakech aux resorts en bord de mer, en passant par les palais historiques et les camps du désert sous les étoiles, le Maroc offre une variété exceptionnelle de cadres pour les mariages de destination. Nous vous aidons à identifier le lieu qui reflète le mieux votre vision, le nombre d'invités, le budget et l'expérience souhaitée, puis coordonnons chaque détail depuis la première visite jusqu'à la célébration finale.","defaultService":"Consultation Lieux"},"introSection":{"label":"Planifier en toute clarté","title":"Trouvez le cadre idéal pour votre mariage au Maroc","subtitle":"Le lieu façonne l'ensemble de l'expérience : il influence l'atmosphère, le parcours des invités, les options d'hébergement, la logistique, les possibilités de design et le budget global. Notre équipe propose des recommandations personnalisées selon vos priorités."},"priorities":["Style et atmosphère souhaités","Nombre d'invités","Besoins d'hébergement","Format de la cérémonie et de la réception","Accessibilité et transport","Options intérieures et extérieures","Confidentialité et exclusivité","Mariage sur plusieurs jours","Divertissement et production","Budget et disponibilité"],"categoriesSection":{"label":"Catégories de lieux","title":"Catégories de lieux de mariage au Maroc","subtitle":"Que vous prépariez une élopement intime, un week-end de mariage luxueux ou une grande célébration multiculturelle, comparez les lieux les plus adaptés en toute clarté."},"categories":[{"title":"Lieux en bord de mer","tag":"Romance maritime","img":"src/assets/images/Venues/Beachfront Venues.jpg","desc":"L'air marin, la lumière dorée et une élégance décontractée pour une célébration raffinée au bord de la mer.","detail":"Des resorts élégants aux propriétés côtières privées, ces lieux offrent un cadre rafraîchissant pour les cérémonies en extérieur, les cocktails et les week-ends de mariage détendus.","highlights":["Cérémonies à l'heure dorée face à l'océan","Atmosphère de luxe décontracté","Idéal pour cocktails en bord de mer et réceptions au coucher du soleil","Excellent cadre pour les excursions des invités","Parfait pour les dîners d'accueil et brunchs d'adieu","Options d'hébergement en resort disponibles"],"bestSuitedFor":"Mariages côtiers, célébrations de luxe décontracté, week-ends de mariage de destination et couples recherchant un cadre extérieur avec vue sur l'océan.","cta":"Découvrir les lieux de mariage en bord de mer"},{"title":"Villas et domaines privés","tag":"Intimité et hospitalité","img":"src/assets/images/Weddings/22.jpg","desc":"L'ambiance d'une résidence personnelle alliée au confort et au service d'un lieu de luxe.","detail":"Particulièrement adaptés aux mariages de destination sur plusieurs jours, permettant d'accueillir plusieurs moments en un seul lieu : dîner d'accueil, moment à la piscine, cérémonie, réception et brunch d'adieu.","highlights":["Week-ends de mariage sur plusieurs jours","Hébergement sur place pour certains invités","Environnement privé et exclusif","Agencements flexibles pour cérémonie et réception","Moments à la piscine et célébrations au jardin","Plus de liberté pour le style et la production"],"bestSuitedFor":"Week-ends de mariage, célébrations privées, mariages de destination avec hébergement et couples recherchant une atmosphère raffinée et détendue.","cta":"Découvrir les villas privées au Maroc"},{"title":"Riads de luxe","tag":"Charme de la médina","img":"src/assets/images/Weddings/8.jpg","desc":"Une beauté marocaine intime, cachée derrière des portes en bois sculpté, au cœur de la médina.","detail":"Cours paisibles, architecture traditionnelle, terrasses sur le toit et espaces éclairés à la bougie, pleins de caractère : un cadre profondément authentique pour une expérience marocaine intime.","highlights":["Cours traditionnelles de la médina","Cocktails sur le toit au coucher du soleil","Dîners aux chandelles dans un cadre intime","Idéal pour les célébrations de petite à moyenne taille","Détails architecturaux riches et décor artisanal","Emplacement central pour des expériences culturelles"],"bestSuitedFor":"Mariages intimes, élopements, dîners d'accueil, dîners de répétition et célébrations élégantes avec un fort sens du lieu.","cta":"Découvrir les riads de luxe pour mariages"},{"title":"Palais et jardins","tag":"Architecture grandiose","img":"src/assets/images/Weddings/31.jpg","desc":"Un cadre spectaculaire pour les couples recherchant élégance, patrimoine et impact visuel.","detail":"Entrées monumentales, artisanat raffiné, fontaines, cours et jardins paysagers offrent des possibilités exceptionnelles pour des cérémonies formelles, des réceptions de luxe et des animations à grande échelle.","highlights":["Décors de cérémonie à fort impact","Entrées grandioses et détails architecturaux","Jardins spacieux et espaces de réception","Options pour un grand nombre d'invités","Adapté aux divertissements en direct et grandes productions","Fort potentiel de design intérieur et extérieur"],"bestSuitedFor":"Mariages de luxe, longues listes d'invités, réceptions formelles, célébrations multiculturelles et couples recherchant un lieu qui marque les esprits.","cta":"Découvrir les palais et jardins"},{"title":"Camps du désert","tag":"Sous les étoiles","img":"src/assets/images/Venues/Desert camps.jpg","desc":"Une cérémonie au coucher du soleil, un dîner éclairé aux lanternes et de la musique sous le ciel marocain.","detail":"Les camps du désert peuvent être conçus comme des élopements intimes, des dîners élégants ou des célébrations immersives alliant hospitalité traditionnelle et production contemporaine, dans le désert d'Agafay près de Marrakech ou dans des destinations plus reculées.","highlights":["Cérémonies au coucher du soleil","Dîners éclairés aux lanternes sous les étoiles","Observation des étoiles et musique live","Parcours immersif pour les invités","Opportunités photographiques spectaculaires","Adapté aux événements d'accueil ou week-ends audacieux"],"bestSuitedFor":"Élopements, mariages intimes, expériences de destination, dîners d'accueil et couples recherchant quelque chose de distinctif et inoubliable.","cta":"Organiser un mariage dans le désert"},{"title":"Kasbahs authentiques","tag":"Patrimoine et caractère","img":"src/assets/images/Venues/Authentic Kasbahs.avif","desc":"Patrimoine, caractère et charme marocain intemporel, ancrés dans la culture locale.","detail":"Murs en terre, terrasses, cours et paysages de montagne ou de désert créent une atmosphère à la fois authentique et cinématographique. Certaines kasbahs offrent également un hébergement, permettant de vivre un parcours de mariage complet en un seul lieu.","highlights":["Architecture marocaine traditionnelle","Cours et terrasses spectaculaires","Environnements de montagne, de vallée ou de désert","Idéal pour des week-ends de mariage de destination","Excellent cadre pour un divertissement traditionnel","Adapté aux cérémonies, dîners et expériences culturelles"],"bestSuitedFor":"Mariages de destination authentiques, célébrations culturelles, week-ends de mariage intimes et couples recherchant un lieu chargé de patrimoine.","cta":"Découvrir les kasbahs authentiques"},{"title":"Hôtels et resorts de luxe","tag":"Confort cinq étoiles","img":"src/assets/images/Venues/Luxury Hotels & Resorts.jpg","desc":"Une solution d'accueil complète alliant hébergement, restauration et espaces événementiels en un seul lieu.","detail":"Particulièrement pratiques pour les listes d'invités internationales et les mariages de grande envergure nécessitant transport coordonné, multiples événements et un niveau de service élevé.","highlights":["Hébergement cinq étoiles","Équipes d'accueil professionnelles","Plusieurs espaces événementiels","Piscine, spa et installations de loisirs","Logistique pratique pour les invités internationaux","Alternatives en intérieur en cas d'intempéries"],"bestSuitedFor":"Mariages de destination de grande envergure, listes d'invités internationales, célébrations formelles et couples privilégiant le confort et l'efficacité opérationnelle.","cta":"Découvrir les hôtels et resorts de luxe"},{"title":"Retraites en montagne","tag":"Sérénité de l'Atlas","img":"src/assets/images/Venues/Mountain Retreats.png","desc":"Beauté naturelle et exclusivité paisible dans les montagnes de l'Atlas.","detail":"Une alternative sereine à l'énergie de Marrakech. Lodges de montagne, retraites privées et propriétés-boutiques offrent des vues panoramiques, un air pur et une connexion intime avec la nature.","highlights":["Vues panoramiques sur les montagnes","Environnement paisible et privé","Idéal pour les cérémonies en extérieur","Excellent pour des week-ends de mariage intimes","Activités culturelles et nature uniques pour les invités","Adapté aux déjeuners d'accueil et petits-déjeuners d'adieu"],"bestSuitedFor":"Mariages intimes, célébrations axées sur la nature, week-ends bien-être et couples recherchant l'intimité loin de la ville.","cta":"Découvrir les lieux dans les montagnes de l'Atlas"}],"destinationsSection":{"label":"À travers le Royaume","title":"Destinations de mariage à travers le Maroc","subtitle":"Chaque région offre une atmosphère, une accessibilité et un style distincts pour votre célébration."},"destinations":[{"title":"Marrakech","desc":"La plus large sélection de lieux de mariage de luxe au Maroc : villas privées, palais, riads, resorts, jardins et camps du désert à proximité — idéal pour l'accessibilité, une hospitalité raffinée et une culture vibrante."},{"title":"Désert d'Agafay","desc":"Un paysage spectaculaire proche de Marrakech, sans long trajet nécessaire — idéal pour les cérémonies au coucher du soleil, dîners d'accueil et réceptions en extérieur sous les étoiles."},{"title":"Essaouira","desc":"Vue sur l'océan, architecture historique et atmosphère côtière décontractée — une excellente destination pour les mariages intimes, événements en bord de mer et week-ends de mariage créatifs."},{"title":"Casablanca","desc":"Hôtels contemporains, lieux côtiers élégants et accès international pratique — parfaitement adapté aux mariages modernes, réceptions formelles et longues listes d'invités."},{"title":"Rabat","desc":"Architecture raffinée, jardins paysagers, vues côtières et atmosphère calme et sophistiquée — idéal pour des célébrations élégantes et une destination moins touristique."},{"title":"Montagnes de l'Atlas","desc":"Lodges intimes, retraites de luxe et panoramas entourés de nature — particulièrement adaptés aux week-ends de mariage privés et aux cérémonies en extérieur."},{"title":"Désert du Sahara","desc":"Pour les couples en quête d'une expérience pleinement immersive, le Sahara offre un cadre extraordinaire pour des cérémonies intimes, des camps privés et des aventures de destination sur plusieurs jours."}],"serviceSection":{"label":"Comment nous aidons","title":"Notre service de sélection de lieux","subtitle":"Plus qu'une simple liste de lieux : des conseils clairs pour vous aider à décider.","body":"Choisir un lieu à distance peut être difficile. Les photographies seules ne révèlent pas toujours les restrictions opérationnelles, la capacité d'accueil, les conditions d'accès, les limites d'hébergement ou les coûts de production additionnels. Vous recevez des informations claires pour décider en toute confiance, plutôt que de passer des semaines à contacter des lieux inadaptés.","items":["Consultation initiale pour comprendre votre vision du mariage","Sélection personnalisée de lieux adaptés","Demandes de disponibilité et de tarifs","Comparaison des options d'hébergement et d'événement","Évaluation de la capacité et de l'agencement","Examen des restrictions du lieu","Évaluation des politiques de restauration et de fournisseurs","Planification du transport et de l'accessibilité","Coordination des visites sur site","Examen du contrat et de l'échéancier de paiement","Recommandation de l'option la plus solide"],"cta":"Demander votre sélection personnalisée de lieux"},"considerationsSection":{"title":"Ce que nous vérifions avant de recommander un lieu","subtitle":"Un examen approfondi derrière chacune de nos recommandations."},"considerations":[{"title":"Capacité d'accueil","desc":"Nous confirmons si le lieu peut accueillir confortablement votre cérémonie, dîner, danse, divertissement et un plan de secours."},{"title":"Hébergement","desc":"Nous évaluons le nombre de chambres disponibles sur place et identifions des options à proximité si tous les invités ne peuvent pas y loger."},{"title":"Confidentialité","desc":"Nous vérifions si la propriété peut être entièrement privatisée et si d'autres invités ou événements pourraient être présents pendant votre mariage."},{"title":"Emplacement et transport","desc":"Nous évaluons l'accès à l'aéroport, l'état des routes, les temps de transfert et les besoins de transport entre les hôtels et les espaces événementiels."},{"title":"Politiques de restauration et de bar","desc":"Nous vérifions si la restauration est assurée en interne, si des traiteurs externes sont autorisés et quelles restrictions s'appliquent aux boissons et au service."},{"title":"Son et divertissement","desc":"Nous confirmons les couvre-feux sonores, les restrictions techniques et la faisabilité d'une animation live ou de célébrations tardives."},{"title":"Plan de secours météo","desc":"Nous évaluons les alternatives en intérieur, les espaces couverts et des plans de secours réalistes pour les événements en extérieur."},{"title":"Accès pour la production","desc":"Nous examinons l'accès des prestataires, les horaires d'installation, la capacité électrique, les restrictions de rigging et les besoins logistiques pour le décor, l'éclairage et le divertissement."},{"title":"Investissement global","desc":"Nous prenons en compte non seulement le prix de location du lieu, mais aussi l'hébergement, la restauration, le personnel, le transport, la production technique et les besoins additionnels."}],"whySection":{"label":"Pourquoi nous","title":"Pourquoi confier votre recherche de lieu à notre équipe ?","subtitle":"Une expertise locale et une communication claire, de la première sélection jusqu'à la célébration finale."},"reasons":[{"icon":"✦","title":"Expertise locale","desc":"Notre équipe comprend les particularités des régions du Maroc, des styles de lieux, des réseaux de fournisseurs et des réalités logistiques."},{"icon":"◈","title":"Recommandations personnalisées","desc":"Nous recommandons des lieux qui correspondent réellement à votre nombre d'invités, vos priorités et votre budget."},{"icon":"◎","title":"Communication claire","desc":"Nous présentons les informations pertinentes de manière organisée et transparente, pour comparer les options efficacement."},{"icon":"✧","title":"Accompagnement multilingue","desc":"Nous communiquons avec les couples, les invités et les fournisseurs dans plusieurs langues, réduisant les malentendus tout au long de la planification."},{"icon":"◆","title":"Organisation complète du mariage","desc":"Après la sélection du lieu, nous pouvons gérer l'ensemble du parcours du mariage : design, hébergement, transport, restauration, divertissement et coordination sur site."}],"faqSection":{"label":"FAQ","title":"Questions fréquentes"},"faqs":[{"q":"Combien de temps à l'avance devons-nous réserver un lieu de mariage au Maroc ?","a":"Pour les mariages en période de forte demande, nous recommandons de commencer la recherche environ 12 à 18 mois à l'avance. Les grands mariages, les propriétés exclusives et les dates très demandées peuvent nécessiter une réservation encore plus anticipée."},{"q":"Pouvons-nous organiser plusieurs événements de mariage dans le même lieu ?","a":"Oui. De nombreuses villas, resorts, kasbahs et domaines privés peuvent accueillir dîners d'accueil, cérémonies, réceptions, moments à la piscine et brunchs d'adieu. Chaque lieu ayant ses propres règles, nous vérifions ce qui est opérationnellement possible avant de le recommander."},{"q":"Tous nos invités peuvent-ils loger sur place ?","a":"Cela dépend de la propriété. Certains hôtels et resorts peuvent accueillir de grands groupes, tandis que les villas privées, riads et kasbahs ont généralement une capacité limitée. Nous pouvons organiser un hébergement supplémentaire et le transport des invités si nécessaire."},{"q":"Des mariages dans le désert sont-ils possibles près de Marrakech ?","a":"Oui. Le désert d'Agafay, situé près de Marrakech, offre plusieurs options de lieux pour les cérémonies, dîners et réceptions. Des expériences désertiques plus reculées peuvent également être organisées pour un itinéraire de destination plus long."},{"q":"Pouvons-nous faire venir nos propres prestataires ?","a":"Les politiques varient selon les lieux. Certains autorisent des prestataires externes, tandis que d'autres exigent l'utilisation de partenaires de restauration, de production ou de divertissement agréés. Nous vérifions ces conditions avant de confirmer le lieu."},{"q":"Les lieux marocains ont-ils des restrictions sonores ?","a":"De nombreux lieux ont des limites sonores spécifiques ou des couvre-feux musicaux. Nous vérifions ces restrictions attentivement, en particulier pour la musique live, les DJ ou les célébrations tardives."},{"q":"Organisez-vous des visites de lieux ?","a":"Oui. Nous pouvons coordonner un itinéraire de visite personnalisé et vous accompagner lors des visites, selon la formule de planification choisie."},{"q":"Pouvez-vous organiser l'ensemble du mariage après nous avoir aidés à trouver le lieu ?","a":"Oui. Notre planification de mariage complète comprend la gestion du lieu, le design, les fournisseurs, l'hébergement, le transport, la logistique des invités, le divertissement, la production et la coordination sur site."}],"ctaSection":{"label":"Prêt(e) ?","title":"Trouvons ensemble le lieu marocain qui vous correspond","subtitle":"Partagez vos dates préférées, le nombre d'invités estimé, le style de lieu recherché et votre budget. Notre équipe vous guidera vers les options les plus adaptées à Marrakech et à travers le Maroc."},"ui":{"details":"détails","close":"Fermer","venue_category":"Catégorie de lieu","best_suited_for":"Idéal pour","reserve":"Démarrer ma recherche de lieu","continue":"Continuer la visite","plan_venue":"Réserver une consultation"}},"proposals_page":{"heroImages":["src/assets/images/Proposals/Desert Proposal.png","src/assets/images/Proposals/Rooftop proposal.png","src/assets/images/Proposals/Hot air balloon Proposal.png"],"hero":{"label":"Demandes en mariage à Marrakech","title":"Tout ce qu'il faut pour une célébration inoubliable à Marrakech","subtitle":"Des demandes en mariage romantiques aux élopements intimes et aux mariages de destination de luxe, nous prenons en charge chaque détail pour créer des expériences élégantes, émouvantes et parfaitement orchestrées à Marrakech. Sélection des lieux, mise en scène, photographie, décoration, logistique, expérience des invités et coordination complète — tout est pensé autour de votre vision pour rendre chaque instant réellement inoubliable.","defaultService":"Demande en mariage"},"stats":[{"value":"200+","label":"Expériences romantiques créées"},{"value":"11","label":"Années d'expertise"},{"value":"30+","label":"Pays de destination"},{"value":"100%","label":"Satisfaction client"}],"categoriesSection":{"label":"Styles de demande","title":"Façons de dire oui à Marrakech","subtitle":"Chaque demande est conçue autour de votre histoire d'amour — choisissez le décor qui vous correspond le mieux."},"categories":[{"title":"Demande dans le désert","tag":"Sous les étoiles","img":"src/assets/images/Proposals/Desert Proposal.png","desc":"Une demande aux chandelles sous le ciel d'Agafay, avec les dunes dorées et l'horizon infini en toile de fond.","detail":"Juste à côté de Marrakech, le désert d'Agafay offre un décor spectaculaire et cinématographique pour une demande : allées éclairées aux lanternes, mise en scène privée face au coucher du soleil, et intimité totale loin de la ville.","highlights":["Mise en scène privée aux chandelles au coucher du soleil","Vue panoramique sur le désert","Photographe et vidéaste sur place","Dîner privé optionnel après la demande","Arrivée à dos de chameau ou en 4x4"],"bestSuitedFor":"Les couples qui veulent un décor spectaculaire, unique, et une intimité totale sans quitter Marrakech.","cta":"Organiser une demande dans le désert"},{"title":"Demande sur un rooftop","tag":"Skyline de la ville","img":"src/assets/images/Proposals/Rooftop proposal.png","desc":"Un moment privé sur un rooftop au-dessus de la médina, avec les montagnes de l'Atlas et les lumières de la ville en témoins.","detail":"Une demande sur un rooftop est intime et sans effort : arche florale, bougies et vue panoramique sur Marrakech, tout est organisé discrètement avant votre arrivée.","highlights":["Rooftop privé d'un riad ou d'un hôtel","Mise en scène florale et bougies","Timing à l'heure dorée ou sous les étoiles","Champagne et pétales de fleurs","Couverture photo discrète"],"bestSuitedFor":"Les couples logés dans la médina qui veulent un cadre romantique et facilement accessible avec vue sur la ville.","cta":"Organiser une demande sur un rooftop"},{"title":"Demande au bord de la piscine","tag":"Villa privée","img":"src/assets/images/Proposals/Poolside Proposal.png","desc":"Un cadre serein au bord de la piscine d'une villa privée, orné de fleurs flottantes et de lanternes chaleureuses.","detail":"Pour un moment détendu et luxueux, nous transformons le bord de piscine d'une villa privée en une scène romantique : pétales flottants, bougies et un cadre entièrement privé, juste pour vous deux.","highlights":["Privatisation complète de la villa","Mise en scène florale flottante et bougies","Installation salon ou pique-nique au bord de l'eau","Musique live optionnelle","Intimité garantie, sans autres invités"],"bestSuitedFor":"Les couples qui veulent un cadre détendu, digne d'un resort, avec une intimité et un confort total.","cta":"Organiser une demande au bord de la piscine"},{"title":"Demande sur la plage","tag":"Romance côtière","img":"src/assets/images/Proposals/Beach Proposal.png","desc":"L'air marin et la lumière dorée pour une demande le long de la côte atlantique du Maroc.","detail":"Du littoral sauvage d'Essaouira aux criques tranquilles près d'Agadir, une demande sur la plage apporte une romance détendue et ensoleillée, avec le bruit des vagues en musique de fond.","highlights":["Timing au coucher du soleil sur la côte","Arche florale ou allée de pétales","Accès à une plage privée quand c'est possible","Photographe pour des portraits à l'heure dorée","Dîner en bord de mer en option"],"bestSuitedFor":"Les couples qui prolongent leur séjour vers la côte et souhaitent un cadre naturel et détendu.","cta":"Organiser une demande sur la plage"},{"title":"Demande en montgolfière","tag":"Au-dessus de tout","img":"src/assets/images/Proposals/Hot air balloon Proposal.png","desc":"Faites votre demande au-dessus de la plaine de Marrakech au lever du soleil, avec les montagnes de l'Atlas à l'horizon.","detail":"Une demande en montgolfière est inoubliable dès le premier instant : une ascension paisible au lever du soleil, une vue à couper le souffle, et un toast privé dans les airs avant d'atterrir pour une célébration mise en scène.","highlights":["Vol privé en montgolfière au lever du soleil","Vue panoramique sur les montagnes de l'Atlas","Moment de la demande en vol ou à l'atterrissage","Toast au champagne à l'atterrissage","Reportage photo de toute l'expérience"],"bestSuitedFor":"Les couples aventureux qui recherchent un moment vraiment unique et exceptionnel.","cta":"Organiser une demande en montgolfière"},{"title":"Demande sur mesure","tag":"Conçue pour vous","img":"src/assets/images/Proposals/Custom proposal.png","desc":"Un concept entièrement sur mesure, conçu autour de votre histoire, votre langage amoureux et votre vision.","detail":"Chaque demande ne correspond pas forcément à une catégorie. Si vous avez une idée précise, un lieu ou une surprise en tête, notre équipe conçoit un concept entièrement personnalisé, pensé uniquement pour vous.","highlights":["Concept et mise en scène entièrement personnalisés","Repérage de lieux à travers le Maroc","Mise en scène surprise avec famille ou amis","Animation et décoration sur mesure","Coordination discrète de bout en bout"],"bestSuitedFor":"Les couples ayant une vision précise, un élément surprise ou un lieu en tête, qui méritent un plan sur mesure.","cta":"Concevoir ma demande sur mesure"}],"featuredSection":{"label":"Nos réalisations","title":"Célébrations romantiques à Marrakech et au Maroc","subtitle":"Du premier « oui » au jour du mariage, nous créons des moments inoubliables pour les couples qui veulent que leur histoire d'amour soit personnelle, élégante et profondément mémorable."},"featured":[{"title":"Demandes en mariage de luxe","tag":"Demandes","desc":"Un moment magique conçu autour de votre histoire d'amour","detail":"Des mises en scène aux chandelles dans le désert d'Agafay aux rooftops privés, riads, scènes au bord de piscine, expériences en montgolfière et concepts surprises sur mesure, nous créons des demandes en mariage de luxe à Marrakech qui sont intimes, émouvantes et intemporelles.","anchor":"#proposals-categories"},{"title":"Élopements intimes","tag":"Élopements","desc":"Une célébration significative pour vous deux seuls — ou vos proches les plus chers","detail":"Pour les couples qui rêvent d'une escapade romantique, nous concevons des élopements intimes à Marrakech et au Maroc avec de beaux lieux, une mise en scène raffinée, de la photographie, des dîners privés et une coordination complète du début à la fin.","path":"/wedding/elopement"},{"title":"Mariages de destination","tag":"Mariages","desc":"Des expériences de mariage sur plusieurs jours dans les plus beaux décors du Maroc","detail":"Des riads de luxe et villas privées aux palais, jardins, camps du désert et week-ends de mariage complets, nous organisons des mariages de destination à Marrakech qui allient élégance, culture, hospitalité et exécution sans faille.","path":"/wedding"}],"aboutSection":{"label":"Qui s'en occupe ?","name":"Je suis Erica","role":"Wedding planner de luxe & spécialiste des demandes en mariage, Marrakech","p1":"Je suis Erica, wedding planner de luxe basée à Marrakech, passionnée par la création d'expériences élégantes et inoubliables inspirées par la beauté du Maroc.","p2":"Avec plus de 10 ans d'expérience dans l'événementiel de luxe, je me spécialise dans les demandes en mariage romantiques, les élopements et les célébrations intimes, pensées autour de la vision de chaque couple. Du désert d'Agafay aux riads et rooftops privés, chaque détail est soigneusement pensé pour créer des moments authentiques, émouvants et intemporels.","p3":"Avec mon équipe, nous combinons créativité, organisation et souci du détail pour transformer votre occasion spéciale en une expérience vraiment mémorable.","cta":"En savoir plus","imageAlt":"Erica – Wedding planner de luxe & spécialiste des demandes en mariage, Marrakech"},"promiseSection":{"label":"Notre engagement","title":"La promesse romance de Marrakech"},"promises":[{"icon":"✦","title":"Des expériences sur mesure","desc":"Chaque demande, élopement et mariage est pensé autour de votre histoire, votre vision et l'atmosphère souhaitée."},{"icon":"◈","title":"Des lieux d'exception à Marrakech","desc":"Des couchers de soleil du désert d'Agafay aux riads de luxe, rooftops, villas et palais, nous sélectionnons le décor parfait pour chaque célébration."},{"icon":"◎","title":"Planification et coordination sans faille","desc":"De la logistique à la mise en scène, en passant par l'expérience des invités et l'exécution, chaque détail est géré avec soin et précision."},{"icon":"❋","title":"Émotion, élégance et authenticité","desc":"Des célébrations raffinées inspirées par la beauté marocaine, l'intimité, l'hospitalité et des moments inoubliables."}],"processSection":{"label":"Le processus","title":"Comment ça marche"},"process":[{"num":"01","title":"La consultation","desc":"Nous commençons par comprendre votre vision, votre histoire, vos attentes et l'atmosphère souhaitée pour créer une expérience personnelle et sincère."},{"num":"02","title":"La planification créative","desc":"Notre équipe conçoit et coordonne chaque aspect — lieux, mise en scène, fournisseurs, logistique, expérience des invités et planning — avec élégance et souci du détail."},{"num":"03","title":"Réservez votre date","desc":"Les dates et lieux sont réservés dès réception de l'acompte. Tous les détails de planification et l'échéancier de paiement sont confirmés clairement et de façon professionnelle."},{"num":"04","title":"L'expérience","desc":"Qu'il s'agisse d'une demande, d'un élopement ou d'un mariage de luxe, nous gérons tout en coulisses pour que vous puissiez pleinement profiter de chaque instant inoubliable."}],"testimonialsSection":{"label":"Témoignages","title":"Des histoires d'amour magnifiquement racontées"},"testimonials":[{"quote":"Depuis la première conversation jusqu'à la célébration finale, l'équipe a rendu tout effortless et incroyablement spécial. Leur créativité, leur organisation et leur souci du détail sont vraiment exceptionnels.","author":"Sarah & Karim","category":"Mariage de destination"},{"quote":"Nos invités parlent encore de cette expérience des mois après. Chaque événement, chaque dîner, chaque instant était magnifiquement conçu et parfaitement coordonné.","author":"Priya & Arjun","category":"Mariage de luxe"},{"quote":"Que ce soit la demande, la planification de l'élopement ou la célébration du mariage elle-même, ils ont créé une atmosphère émouvante, élégante et profondément personnelle.","author":"Camille & Thomas","category":"Organisation complète"}],"ctaSection":{"label":"Prêt à commencer ?","title":"Créons ensemble quelque chose de vraiment inoubliable","subtitle":"Qu'il s'agisse d'une demande en mariage, d'un élopement intime ou d'une célébration de mariage de luxe, partagez votre vision avec nous — nous donnerons vie à chaque détail à Marrakech et à travers le Maroc."},"ui":{"details":"détails","close":"Fermer","category_label":"Style de demande","best_suited_for":"Idéal pour","reserve":"Commencer la planification","continue":"Continuer la visite","plan":"Commencer la planification","discover":"Découvrir"}}}
+{
+  "nav": {
+    "home": "Accueil",
+    "wedding": "Mariages",
+    "events": "Événements",
+    "gallery": "Galerie",
+    "contact": "Organiser votre événement",
+    "language_label": "Choisir la langue",
+    "venues": "Lieux",
+    "proposals": "Demandes en mariage"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Wedding Planner au Portugal",
+      "title_1": "Des mariages de destination sur mesure,",
+      "title_2": "pensés dans les moindres détails",
+      "subtitle": "Des palais de Sintra aux plages de l’Algarve, de Lisbonne à Porto et à la vallée du Douro, imaginons un mariage à votre image, entre élégance, émotion et organisation sereine.",
+      "book": "Réserver",
+      "plan": "Parlons de votre mariage",
+      "scroll": "Défiler"
+    },
+    "trust": {
+      "item1": "Organisation sur mesure",
+      "item2": "Mariages de destination au Portugal",
+      "item3": "Design soigné",
+      "item4": "Expériences personnalisées pour vos invités"
+    },
+    "about": {
+      "tagline": "Qui sommes-nous",
+      "title_1": "Le studio de référence",
+      "title_2": "pour les mariages",
+      "title_3": "et événements de luxe au Portugal",
+      "p1": "Nous sommes un studio d’organisation boutique basé à Lisbonne, créant des célébrations à la fois naturellement élégantes et profondément personnelles. Forts de près de deux décennies d’expertise et d’un portfolio couvrant plus de 40 pays, nous apportons une précision internationale aux plus beaux lieux du Portugal.",
+      "p2": "Chaque événement que nous créons est guidé par un principe :",
+      "p2_strong": "votre histoire mérite d’être racontée avec intention",
+      "weddings_btn": "Nos mariages",
+      "events_btn": "Nos événements"
+    },
+    "promises": {
+      "tagline": "Notre engagement",
+      "title": "La promesse Lisbon Weddings",
+      "p1_title": "Design sur mesure",
+      "p1_desc": "Chaque célébration est conçue selon votre vision, votre style, votre culture et l’expérience de vos invités.",
+      "p2_title": "Expertise locale",
+      "p2_desc": "Un accès privilégié aux plus beaux lieux, artisans et prestataires de confiance du Portugal.",
+      "p3_title": "Coordination sans faille",
+      "p3_desc": "Planification, production, logistique et accueil des invités pris en charge du début à la fin.",
+      "p4_title": "Un luxe qui a du sens",
+      "p4_desc": "Des expériences élégantes ancrées dans la beauté, l’hospitalité et l’atmosphère authentique du Portugal."
+    },
+    "weddings": {
+      "tagline": "Nos réalisations",
+      "title": "Mariages signature à travers le Portugal",
+      "btn": "Découvrir nos mariages",
+      "view_details": "Voir les détails"
+    },
+    "events": {
+      "tagline": "Au-delà des mariages",
+      "title": "Des événements élégants au-delà du jour J",
+      "subtitle": "Séminaires d’entreprise, célébrations marquantes, activations de marque et dîners privés : chacun devient une expérience inoubliable.",
+      "btn": "Découvrir nos événements"
+    },
+    "process": {
+      "tagline": "Notre méthode",
+      "title_1": "Un parcours fluide",
+      "title_2": "De la vision à la réalité",
+      "btn": "Commencer l’organisation",
+      "s1_title": "Découvrir",
+      "s1_desc": "Consultation, direction esthétique, périmètre, budget, priorités",
+      "s2_title": "Concevoir",
+      "s2_desc": "Recherche de lieux, concept créatif, sélection des prestataires, expérience des invités",
+      "s3_title": "Orchestrer",
+      "s3_desc": "Planification de la production, rétroplanning, logistique, validations, coordination",
+      "s4_title": "Célébrer",
+      "s4_desc": "Une coordination sur place calme, discrète et de haut niveau"
+    },
+    "testimonials": {
+      "tagline": "Témoignages",
+      "title": "Des mariages inspirés par le Portugal",
+      "subtitle": "Cérémonie romantique dans un palais de Sintra, réception face à l’océan en Algarve ou mariage intimiste dans la vallée du Douro : chaque célébration raconte une histoire singulière. Découvrez les lieux, les détails et les émotions qui rendent un mariage au Portugal inoubliable.",
+      "note": "Les avis clients seront publiés après vérification et autorisation."
+    },
+    "cta": {
+      "tagline": "Prêts à commencer ?",
+      "title_1": "Créons ensemble",
+      "title_2": "un moment inoubliable",
+      "subtitle": "Parlez-nous de votre vision. Nous nous occupons du reste.",
+      "btn_plan": "Organiser votre événement",
+      "btn_wa": "WhatsApp",
+      "form_success": "Merci ! Nous vous recontactons sous 24 heures.",
+      "form_title": "Demande rapide",
+      "form_name": "Votre nom",
+      "form_email": "Adresse e-mail",
+      "form_service": "Type d’événement",
+      "form_service_wedding": "Mariage",
+      "form_service_corporate": "Événement d’entreprise",
+      "form_service_celebration": "Célébration privée",
+      "form_service_other": "Autre",
+      "form_msg": "Parlez-nous de votre projet…",
+      "form_sending": "Envoi…",
+      "form_send": "Envoyer ma demande"
+    },
+    "ui": {
+      "view_details": "Voir les détails",
+      "across": "Partout au Portugal",
+      "featured_weddings": "Mariages à la une",
+      "events_preview": "Nos événements",
+      "explore_weddings": "Découvrir nos mariages",
+      "explore_events": "Découvrir nos événements",
+      "continue": "Poursuivre la découverte"
+    },
+    "weddingPreviews": [
+      {
+        "category": "Mariage signature",
+        "title": "Mariages à Lisbonne",
+        "location": "Palais, quintas, rooftops",
+        "detail": "Des palais historiques et quintas privées aux jardins de palais, les mariages à Lisbonne sont cinématographiques, intimes et pleins d’atmosphère, conçus avec un soin éditorial et une coordination irréprochable.",
+        "highlights": [
+          "Palais historiques, quintas privées, patios et rooftops",
+          "Direction artistique et scénographie",
+          "Parcours des invités et orchestration du jour J"
+        ]
+      },
+      {
+        "category": "Mariage signature",
+        "title": "Mariages sur la côte",
+        "location": "La côte de l’Algarve",
+        "detail": "Une cérémonie au coucher du soleil, un dîner aux lanternes et de la musique sous les étoiles : les mariages sur la côte sont des expériences immersives au luxe naturel.",
+        "highlights": [
+          "Cérémonies au coucher du soleil et dîners sous les étoiles",
+          "Logistique et organisation des transports",
+          "Animations, lumières et timing"
+        ]
+      },
+      {
+        "category": "Mariage signature",
+        "title": "Mariages côtiers et en domaine",
+        "location": "Cascais et domaines privés",
+        "detail": "Lumière océane, air marin et élégance décontractée : des célébrations en bord de mer aux domaines privés pensés pour recevoir sur plusieurs jours.",
+        "highlights": [
+          "Cérémonies en bord de mer à l’heure dorée",
+          "Week-ends en domaine et accueil des invités",
+          "Sélection des prestataires et hospitalité"
+        ]
+      }
+    ],
+    "eventPreviews": [
+      {
+        "title": "Dîners de bienvenue",
+        "tag": "Événements privés",
+        "detail": "Le premier rassemblement donne le ton : une table raffinée, un accueil chaleureux et une soirée au rythme parfait pour vos invités.",
+        "highlights": [
+          "Sélection du lieu et du chef ou traiteur",
+          "Art de la table et éclairage",
+          "Déroulé et coordination"
+        ]
+      },
+      {
+        "title": "Fêtes de fiançailles",
+        "tag": "Avant le mariage",
+        "detail": "Une fête de fiançailles digne d’un magazine : intime, pensée avec soin et parfaitement orchestrée.",
+        "highlights": [
+          "Concept et scénographie",
+          "Sélection des prestataires",
+          "Expérience des invités et timing"
+        ]
+      },
+      {
+        "title": "Fêtes privées",
+        "tag": "Célébrations",
+        "detail": "Anniversaires, anniversaires de mariage, dîners privés : des célébrations élégantes, simples à vivre et inoubliables.",
+        "highlights": [
+          "Ambiance et animations",
+          "Détails d’accueil",
+          "Gestion de l’équipe sur place"
+        ]
+      },
+      {
+        "title": "Événements d’entreprise et de marque",
+        "tag": "Professionnel",
+        "detail": "Des rendez-vous haut de gamme pour les marques et les entreprises : direction créative, logistique et exécution maîtrisées avec précision.",
+        "highlights": [
+          "Partenaires de production",
+          "Audiovisuel, scène et rétroplanning",
+          "Accueil discret et coordination"
+        ]
+      }
+    ],
+    "testimonialItems": [
+      {
+        "text": "Travailler avec l’équipe, c’était comme avoir un directeur artistique et un meilleur ami réunis. Notre mariage à Lisbonne a dépassé tout ce que nous avions imaginé.",
+        "origin": "Paris, France"
+      },
+      {
+        "text": "Chaque détail, de l’arche de jasmin au coucher du soleil aux musiciens gnaoua à minuit, nous ressemblait. Je ne me suis jamais sentie aussi comprise par une organisatrice.",
+        "origin": "Londres, Royaume-Uni"
+      },
+      {
+        "text": "Les retraites en montagne offrent un cadre unique pour les rencontres d’équipe, les dîners privés et les expériences de groupe sur mesure.",
+        "author": "Séminaires d’entreprise",
+        "origin": "Serra da Estrela, Portugal"
+      }
+    ]
+  },
+  "footer": {
+    "desc": "Des expériences luxueuses et inoubliables au cœur du Portugal.",
+    "links_title": "Liens rapides",
+    "contact_title": "Nous contacter",
+    "rights": "Weddings Planner Portugal. Tous droits réservés."
+  },
+  "page_hero": {
+    "title": "Commençons à organiser votre mariage",
+    "subtitle": "Partagez avec nous vos envies et votre vision. Nous nous occupons du reste.",
+    "success_title": "Demande reçue !",
+    "success_text": "Nous vous recontactons sous 24 heures pour commencer l’organisation.",
+    "full_name": "Nom et prénom",
+    "email": "Adresse e-mail",
+    "phone": "Téléphone / WhatsApp",
+    "event_type": "Type d’événement",
+    "dates": "Dates d’arrivée et de départ",
+    "guests": "Nombre d’invités",
+    "destinations": "Lieu(x) envisagé(s)",
+    "budget": "Budget prévisionnel",
+    "message": "Décrivez-nous votre projet…",
+    "sending": "Envoi…",
+    "send": "Envoyer ma demande",
+    "option_wedding": "Mariage",
+    "option_corporate": "Événement d’entreprise",
+    "option_private": "Célébration privée",
+    "option_other": "Autre",
+    "select_proposal": "Choisissez un style de demande",
+    "select_venue": "Choisissez un type de lieu"
+  },
+  "wedding_types": {
+    "select": "Type de mariage souhaité",
+    "options": {
+      "Elopement": "Mariage intimiste à deux",
+      "Indian": "Mariage traditionnel indien",
+      "Jewish": "Mariage juif",
+      "Algarve": "Mariage en Algarve"
+    },
+    "cards": [
+      {
+        "title": "Mariage à Lisbonne",
+        "desc": "Des mariages sur mesure à Lisbonne, avec une organisation élégante, un design personnalisé et une coordination sans faille du début à la fin.",
+        "modal": {
+          "title": "Mariage à Lisbonne",
+          "subtitle": "Une célébration raffinée au cœur de Lisbonne, où charme, élégance et authenticité se rencontrent pour une expérience inoubliable.",
+          "body": "Sélection de lieux d’exception, scénographie élégante, accueil personnalisé de vos invités et coordination irréprochable de votre mariage à Lisbonne."
+        }
+      },
+      {
+        "title": "Mariages en Algarve",
+        "desc": "Cérémonies au coucher du soleil et célébrations immersives sur la côte de l’Algarve."
+      },
+      {
+        "title": "Mariages intimistes à deux au Portugal",
+        "desc": "Des vœux intimes et des escapades romantiques, pensés autour de la discrétion, de l’émotion et des moments qui comptent."
+      },
+      {
+        "title": "Mariages traditionnels indiens à Lisbonne",
+        "desc": "Des célébrations vibrantes qui unissent les traditions indiennes à un cadre portugais raffiné."
+      },
+      {
+        "title": "Mariages juifs à Lisbonne",
+        "desc": "Des célébrations fidèles à votre héritage, avec élégance cérémonielle, coordination casher et accueil soigné."
+      }
+    ]
+  },
+  "wedding_page": {
+    "hero": {
+      "label": "Mariages au Portugal",
+      "title": "Mariages sur mesure au Portugal",
+      "subtitle": "Des cérémonies intimistes aux célébrations sur plusieurs jours, nous imaginons des mariages alliant beauté, émotion et coordination irréprochable."
+    },
+    "weddingTypesSection": {
+      "label": "Nos célébrations",
+      "title": "Des mariages d’exception, à votre image",
+      "subtitle": "Découvrez nos différents styles de mariages et laissez-vous inspirer pour imaginer une célébration unique, en parfaite harmonie avec vos envies, vos traditions et votre vision."
+    }
+  },
+  "wedding_subpages": {
+    "algarve": {
+      "hero": {
+        "label": "Mariages au Portugal",
+        "title": "Mariages en Algarve",
+        "subtitle": "Des cérémonies intimistes au coucher du soleil aux célébrations exclusives sur plusieurs jours, nous imaginons des mariages d’exception en Algarve, où la beauté sauvage des paysages rencontre le raffinement, l’élégance et la magie de moments inoubliables."
+      },
+      "weddingTypesSection": {
+        "label": "Nos célébrations",
+        "title": "Des mariages d’exception, à votre image",
+        "subtitle": "Découvrez nos différents styles de mariages et laissez-vous inspirer pour imaginer une célébration unique, en parfaite harmonie avec vos envies, vos traditions et votre vision."
+      },
+      "servicesSection": {
+        "label": "Notre savoir-faire",
+        "title": "Nos services d’organisation de mariage",
+        "subtitle": "Un accompagnement sur mesure pour des célébrations d’exception : aménagement de lieux sur le littoral, gestion logistique, accueil personnalisé des invités et organisation complète de votre événement, jusque dans les lieux les plus exclusifs et préservés du Portugal."
+      },
+      "services": [
+        {
+          "title": "Aménagement de lieux sur le littoral",
+          "desc": "Des espaces élégamment aménagés, des éclairages d’ambiance et des installations raffinées, conçus pour s’intégrer harmonieusement aux paysages spectaculaires de l’Algarve."
+        },
+        {
+          "title": "Logistique et expérience invités",
+          "desc": "Une organisation minutieuse des transferts, des horaires et de l’accueil de vos invités, pour garantir confort, fluidité et sérénité, même dans les lieux les plus isolés."
+        },
+        {
+          "title": "Organisation et production événementielle complète",
+          "desc": "Une prise en charge intégrale de votre événement, de la coordination technique à la gestion des prestataires, jusqu’à la supervision sur place de chaque moment de votre célébration."
+        },
+        {
+          "title": "Cérémonies au coucher du soleil",
+          "desc": "Échangez vos vœux dans une atmosphère romantique et intimiste, sublimée par la lumière dorée du coucher du soleil et les panoramas à couper le souffle de l’Algarve."
+        },
+        {
+          "title": "Célébrations sur le littoral sur plusieurs jours",
+          "desc": "Dîners de bienvenue, cérémonies et réceptions, instants de partage et brunchs d’au revoir : chaque moment est imaginé comme une étape d’une expérience harmonieuse et inoubliable."
+        },
+        {
+          "title": "Scénographie et décoration de luxe",
+          "desc": "Une élégance bohème et raffinée, des jeux de lumière à la bougie et des matières naturelles aux teintes chaleureuses du littoral, pour créer une atmosphère unique, entièrement personnalisée selon vos envies."
+        }
+      ],
+      "venuesSection": {
+        "label": "Nos lieux d’exception",
+        "title": "Célébrez votre mariage dans les plus beaux décors du Portugal",
+        "subtitle": "Des domaines de luxe nichés sur le littoral aux réceptions privées sous les étoiles, découvrez des lieux d’exception où paysages grandioses, élégance et exclusivité se conjuguent pour une célébration inoubliable."
+      },
+      "venues": [
+        {
+          "title": "Domaines côtiers de luxe",
+          "desc": "Un cadre exclusif au cœur du littoral, où la douce lumière des lanternes, l’immensité du ciel et une scénographie soigneusement pensée créent une atmosphère intimiste et envoûtante, même pour les célébrations de grande envergure.",
+          "highlights": [
+            "Cérémonies sublimées par la lumière du coucher du soleil",
+            "Réceptions privées dans des lieux d’exception",
+            "Dîners élégants sous un ciel étoilé"
+          ]
+        },
+        {
+          "title": "Réceptions privées sous les étoiles",
+          "desc": "Une expérience exclusive pour les couples en quête d’intimité et d’évasion. Dans un cadre privilégié, le luxe discret se mêle à une atmosphère chaleureuse, avec un accueil soigneusement orchestré et une nuit inoubliable sous le ciel étoilé du littoral.",
+          "highlights": [
+            "Moments de bienvenue et observation des étoiles",
+            "Scénographie raffinée à l’élégance décontractée",
+            "Cadre idéal pour des célébrations sur le littoral sur plusieurs jours"
+          ]
+        },
+        {
+          "title": "Cérémonies à la lumière dorée du coucher du soleil",
+          "desc": "Un cadre enchanteur où la lumière dorée du littoral devient un élément à part entière de la scénographie. Une atmosphère romantique et spectaculaire, idéale pour échanger vos vœux et immortaliser chaque instant dans des photographies d’exception.",
+          "highlights": [
+            "Cérémonies orchestrées à l’heure dorée du coucher du soleil",
+            "Vues panoramiques sur les paysages du littoral",
+            "Décors d’exception pour des photographies élégantes et artistiques"
+          ]
+        },
+        {
+          "title": "Dîners d’exception sous les étoiles du littoral",
+          "desc": "Une expérience gastronomique unique au cœur du littoral, où de somptueuses tables dressées à la lueur des bougies invitent à la convivialité et au partage. Dans une atmosphère élégante et envoûtante, la soirée se prolonge au rythme de la musique et des festivités sous un ciel étoilé.",
+          "highlights": [
+            "Grandes tablées élégantes et scénographies sur mesure",
+            "Dîners raffinés dans une ambiance intimiste à la lueur des bougies",
+            "Musique et animations pour prolonger la magie de la soirée"
+          ]
+        },
+        {
+          "title": "Retraites de luxe en pleine nature",
+          "desc": "Des havres de paix exclusifs, nichés au cœur de paysages préservés, pour les couples en quête d’intimité, de confort et d’évasion. Loin de l’effervescence de la ville, vivez une célébration immersive et entièrement personnalisée, où chaque instant se savoure dans un cadre d’exception.",
+          "highlights": [
+            "Privatisation exclusive pour une intimité absolue",
+            "Confort haut de gamme dans un environnement naturel préservé",
+            "Cadre idéal pour des célébrations sur mesure le temps d’un week-end"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspirations",
+        "title": "Thèmes et inspirations pour votre mariage",
+        "subtitle": "Élégance bohème, dîners romantiques à la lueur des bougies et cérémonies baignées par la lumière dorée du coucher du soleil : laissez-vous séduire par la magie de l’Algarve et son atmosphère envoûtante, pour imaginer un mariage unique et inoubliable."
+      },
+      "themes": [
+        {
+          "title": "Élégance bohème"
+        },
+        {
+          "title": "Dîners aux chandelles sur le littoral"
+        },
+        {
+          "title": "Cérémonies à la lumière dorée du coucher du soleil"
+        },
+        {
+          "title": "Romance au cœur du littoral"
+        },
+        {
+          "title": "Luxe raffiné aux tons naturels"
+        },
+        {
+          "title": "Immersion dans l’atmosphère envoûtante du littoral"
+        }
+      ],
+      "ctaSection": {
+        "label": "Prêts à vivre une expérience d’exception ?",
+        "title": "Imaginons ensemble votre mariage de rêve",
+        "subtitle": "Confiez-nous vos envies et laissez-nous créer un mariage inoubliable en Algarve, où chaque détail est pensé pour donner vie à une célébration qui vous ressemble."
+      }
+    },
+    "elopement": {
+      "hero": {
+        "label": "Mariages sur mesure au Portugal",
+        "title": "Mariages intimistes à deux au Portugal",
+        "subtitle": "Des échanges de vœux empreints d’émotion aux escapades romantiques les plus exclusives, nous imaginons des mariages intimistes où l’amour, la complicité et la discrétion sont à l’honneur. Chaque célébration est pensée comme une expérience profondément personnelle, dans les décors les plus enchanteurs du Portugal."
+      },
+      "servicesSection": {
+        "label": "Notre savoir-faire",
+        "title": "Nos services d’organisation de mariage",
+        "subtitle": "Un accompagnement sur mesure pour des célébrations intimistes d’exception : recherche de lieux exclusifs, scénographie personnalisée, photographie professionnelle et coordination complète de votre mariage. Chaque détail est soigneusement orchestré pour créer une expérience romantique, authentique et inoubliable."
+      },
+      "services": [
+        {
+          "title": "Recherche de lieux d’exception",
+          "desc": "Palais historiques et quintas privées, paysages spectaculaires du littoral et adresses confidentielles : nous sélectionnons des lieux uniques, en parfaite harmonie avec votre histoire et vos envies."
+        },
+        {
+          "title": "Scénographie de cérémonies intimistes",
+          "desc": "Une décoration épurée, romantique et raffinée, pensée pour sublimer l’instant sans en détourner l’essentiel : votre amour et l’émotion de vos vœux."
+        },
+        {
+          "title": "Coordination photographique",
+          "desc": "Une mise en valeur de la lumière naturelle, des compositions artistiques et des instants spontanés pour immortaliser votre histoire à travers des photographies élégantes et intemporelles."
+        },
+        {
+          "title": "Coordination complète de votre mariage",
+          "desc": "Une prise en charge discrète et minutieuse de chaque aspect logistique, pour vous permettre de vivre pleinement votre célébration, en toute sérénité et sans contraintes."
+        },
+        {
+          "title": "Organisation d’expériences romantiques",
+          "desc": "Dîner privé aux chandelles, escapade romantique ou expérience exclusive après la cérémonie : nous imaginons des attentions personnalisées pour prolonger la magie de votre union."
+        },
+        {
+          "title": "Des instants précieux, pensés dans les moindres détails",
+          "desc": "Même les célébrations les plus intimistes méritent une attention d’exception. Chaque détail est soigneusement imaginé pour offrir à vos proches une expérience chaleureuse, authentique et raffinée."
+        }
+      ],
+      "venuesSection": {
+        "label": "Nos lieux d’exception",
+        "title": "Célébrez votre mariage dans les plus beaux décors du Portugal",
+        "subtitle": "Des palais historiques et quintas privées intimistes aux paysages majestueux du littoral, en passant par des adresses secrètes aux quatre coins du Portugal, découvrez des lieux d’exception soigneusement sélectionnés pour vivre une célébration romantique, exclusive et inoubliable."
+      },
+      "venues": [
+        {
+          "title": "Palais historiques et quintas privées",
+          "desc": "Véritables havres de paix, les palais historiques et quintas privées dévoilent des patios paisibles, des recoins secrets et une architecture portugaise raffinée. Un cadre romantique et exclusif, où chaque instant est consacré à votre amour et à la beauté de votre union.",
+          "highlights": [
+            "Atmosphère paisible et intimité préservée",
+            "Cadre idéal pour une cérémonie intimiste et l’échange de vos vœux",
+            "Charme authentique et élégance de l’architecture portugaise"
+          ]
+        },
+        {
+          "title": "Paysages secrets du littoral",
+          "desc": "Un décor sauvage et préservé, idéal pour les couples en quête d’intimité et de grands espaces. Entre horizons infinis, jeux de lumière spectaculaires et beauté naturelle, le littoral offre un cadre épuré et majestueux pour une cérémonie romantique, où l’essentiel reste votre histoire d’amour.",
+          "highlights": [
+            "Cérémonies intimistes au cœur de panoramas grandioses",
+            "Organisation simplifiée et discrète pour une expérience en toute sérénité",
+            "Séances photo romantiques à la lumière dorée du coucher du soleil"
+          ]
+        },
+        {
+          "title": "Rooftops privés avec vue panoramique",
+          "desc": "Prenez de la hauteur pour vivre une célébration intimiste dans un cadre exclusif. Entre vues imprenables sur les toits de Lisbonne, atmosphère romantique et élégance discrète, les terrasses privées offrent un véritable cocon suspendu au-dessus de l’effervescence de la ville.",
+          "highlights": [
+            "Vues panoramiques sur les toits et les paysages de Lisbonne",
+            "Cadre idéal pour un dîner romantique en toute intimité",
+            "Espaces intimistes et photogéniques pour immortaliser vos plus beaux instants"
+          ]
+        },
+        {
+          "title": "Jardins intimistes et havres de verdure",
+          "desc": "De véritables écrins de verdure, où la douceur de la nature et le charme des jardins portugais créent une atmosphère paisible et romantique. Un cadre confidentiel et raffiné, idéal pour savourer des instants précieux, loin de l’agitation, dans une ambiance qui vous ressemble.",
+          "highlights": [
+            "Décoration naturelle aux accents doux et délicats",
+            "Cadre paisible et discret, propice à l’intimité",
+            "Décor enchanteur pour immortaliser votre first look"
+          ]
+        },
+        {
+          "title": "Escapades de luxe hors des sentiers battus",
+          "desc": "Pour les couples en quête d’une intimité absolue, découvrez des lieux confidentiels où le luxe discret se conjugue à la sérénité. Loin de l’agitation et des regards, chaque détail est pensé pour vous offrir une expérience exclusive et profondément personnelle, entièrement consacrée à votre histoire d’amour.",
+          "highlights": [
+            "Accueil privilégié et prestations haut de gamme en toute discrétion",
+            "Expériences sur mesure pour les mariages intimistes à deux",
+            "Atmosphère paisible et préservée, propice à une véritable déconnexion"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspirations",
+        "title": "Thèmes et inspirations pour votre mariage",
+        "subtitle": "Minimalisme romantique, instants dignes d’un film et expériences profondément personnelles : laissez-vous inspirer par des univers élégants et intimistes, où chaque détail sublime votre histoire d’amour et donne naissance à des souvenirs inoubliables."
+      },
+      "themes": [
+        {
+          "title": "Minimalisme romantique"
+        },
+        {
+          "title": "Escapade digne d’un film"
+        },
+        {
+          "title": "Échange de vœux en toute intimité"
+        },
+        {
+          "title": "Luxe discret et raffiné"
+        },
+        {
+          "title": "Célébration intimiste"
+        },
+        {
+          "title": "Des détails chargés d’émotion"
+        }
+      ],
+      "ctaSection": {
+        "label": "Prêts à vivre une expérience unique ?",
+        "title": "Imaginons ensemble votre mariage intimiste",
+        "subtitle": "Confiez-nous votre histoire et laissez-nous créer un mariage à deux, romantique et inoubliable, dans les plus beaux décors du Portugal. Une célébration sur mesure, où chaque instant reflète votre amour et votre complicité."
+      }
+    },
+    "indian": {
+      "hero": {
+        "label": "Mariages sur mesure au Portugal",
+        "title": "Mariages traditionnels indiens à Lisbonne",
+        "subtitle": "Des rituels ancestraux hauts en couleur aux somptueuses célébrations sur plusieurs jours, nous imaginons des mariages inspirés des traditions indiennes, dans le respect de leur richesse culturelle et de leur authenticité. Chaque événement allie l’élégance des coutumes indiennes au raffinement des lieux d’exception de Lisbonne, pour une expérience luxueuse et inoubliable."
+      },
+      "servicesSection": {
+        "label": "Notre savoir-faire",
+        "title": "Nos services d’organisation de mariage",
+        "subtitle": "Un accompagnement sur mesure pour des mariages traditionnels indiens à Lisbonne : coordination des rituels et cérémonies, décoration raffinée, gastronomie indienne authentique et accueil personnalisé des invités. Chaque détail est soigneusement orchestré dans le respect de vos traditions, pour une célébration d’exception alliant richesse culturelle et élégance."
+      },
+      "services": [
+        {
+          "title": "Coordination des cérémonies traditionnelles",
+          "desc": "Une organisation minutieuse du déroulement des cérémonies, dans le respect des rituels ancestraux, des coutumes et des traditions propres aux mariages indiens."
+        },
+        {
+          "title": "Décoration et scénographie",
+          "desc": "Des compositions florales généreuses, des couleurs éclatantes et une scénographie raffinée, imaginées pour sublimer chaque rituel et créer une harmonie visuelle entre les cérémonies et les réceptions."
+        },
+        {
+          "title": "Gastronomie indienne traditionnelle",
+          "desc": "Une expérience culinaire authentique, élaborée en collaboration avec des traiteurs spécialisés dans la cuisine indienne, pour proposer des menus savoureux et fidèles aux traditions gastronomiques indiennes."
+        },
+        {
+          "title": "Accueil et expérience des invités",
+          "desc": "Un accompagnement personnalisé comprenant l’accueil, les transferts, l’hospitalité et la gestion des programmes, afin d’offrir à vos invités un séjour fluide et mémorable tout au long des festivités."
+        },
+        {
+          "title": "Organisation de célébrations sur plusieurs jours",
+          "desc": "Des réceptions de bienvenue aux cérémonies traditionnelles, jusqu’aux soirées de fête, nous orchestrons chaque journée avec précision pour créer une célébration harmonieuse, immersive et inoubliable."
+        },
+        {
+          "title": "Respect des traditions et sensibilité culturelle",
+          "desc": "Une approche attentive et respectueuse de votre héritage culturel, associant l’authenticité des traditions indiennes au charme et au raffinement de Lisbonne, pour un mariage fidèle à vos valeurs et à votre histoire."
+        }
+      ],
+      "venuesSection": {
+        "label": "Nos lieux d’exception",
+        "title": "Célébrez votre mariage dans les plus beaux décors du Portugal",
+        "subtitle": "Des somptueuses villas privées aux lieux de réception les plus prestigieux de Lisbonne, découvrez des cadres d’exception parfaitement adaptés aux mariages indiens traditionnels et aux festivités sur plusieurs jours, où élégance, confort et authenticité se rencontrent."
+      },
+      "venues": [
+        {
+          "title": "Villas de prestige",
+          "desc": "De somptueuses villas privées offrant des espaces généreux et élégants pour accueillir les différentes étapes d’un mariage traditionnel indien. Entre cérémonies ancestrales, réunions familiales et réceptions raffinées, chaque espace est pensé pour célébrer vos traditions dans une atmosphère chaleureuse et exclusive.",
+          "highlights": [
+            "Espaces adaptés aux cérémonies et festivités sur plusieurs jours",
+            "Cadre privilégié pour accueillir familles et invités dans le plus grand confort",
+            "Configuration idéale pour respecter l’enchaînement des rituels traditionnels"
+          ]
+        },
+        {
+          "title": "Patios et cours intérieures d’exception",
+          "desc": "Des espaces élégants et chaleureux, où la beauté de l’architecture portugaise offre un cadre privilégié aux cérémonies traditionnelles indiennes. Pensés pour favoriser la proximité entre les familles et les invités, ces lieux se prêtent harmonieusement aux rituels, aux cortèges et aux moments de partage qui rythment votre célébration.",
+          "highlights": [
+            "Espaces élégants et fonctionnels pour les cérémonies traditionnelles",
+            "Circulation fluide et mise en scène raffinée des cortèges",
+            "Aménagements modulables dans le respect des coutumes et des rituels culturels"
+          ]
+        },
+        {
+          "title": "Jardins de réception",
+          "desc": "De somptueux jardins où la nature devient le décor de célébrations vibrantes et raffinées. Compositions florales luxuriantes, palettes de couleurs éclatantes et espaces de réception élégamment aménagés créent une atmosphère festive, idéale pour célébrer les traditions indiennes dans toute leur splendeur.",
+          "highlights": [
+            "Scénographies florales luxuriantes aux couleurs éclatantes",
+            "Cadre idéal pour des réceptions conviviales et festives",
+            "Espaces généreux pour la musique, les danses et les festivités"
+          ]
+        },
+        {
+          "title": "Espaces dédiés aux célébrations sur plusieurs jours",
+          "desc": "Des lieux d’exception conçus pour accueillir les différentes étapes de votre mariage traditionnel indien, dans un cadre alliant élégance, confort et fonctionnalité. Chaque espace est soigneusement aménagé pour offrir une atmosphère unique à chaque cérémonie, tout en préservant l’harmonie et la fluidité de l’ensemble des festivités.",
+          "highlights": [
+            "Circulation fluide et accueil confortable des invités",
+            "Espaces adaptés aux cérémonies et réceptions sur plusieurs jours",
+            "Agencement distinct et harmonieux des espaces pour chaque journée de célébration"
+          ]
+        },
+        {
+          "title": "Lieux de réception de luxe au Portugal",
+          "desc": "Des lieux prestigieux où le raffinement de l’hospitalité portugaise rencontre la richesse des traditions indiennes. Entre architecture somptueuse, prestations haut de gamme et espaces adaptés aux cérémonies traditionnelles, chaque lieu offre un cadre exceptionnel pour célébrer votre union entourés de vos proches.",
+          "highlights": [
+            "Expérience d’un mariage à destination alliant dépaysement et confort haut de gamme",
+            "Célébrations traditionnelles sublimées par un cadre luxueux",
+            "Espaces privilégiés pour les grandes réunions familiales et les festivités culturelles"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspirations",
+        "title": "Thèmes et inspirations pour votre mariage",
+        "subtitle": "Cérémonies hautes en couleur, compositions florales somptueuses, traditions culturelles ancestrales et luxe raffiné : laissez-vous inspirer par la richesse des mariages indiens pour imaginer une célébration d’exception, où authenticité, élégance et festivités se rencontrent harmonieusement."
+      },
+      "themes": [
+        {
+          "title": "Cérémonies hautes en couleur"
+        },
+        {
+          "title": "Compositions florales somptueuses"
+        },
+        {
+          "title": "Rituels et traditions ancestrales"
+        },
+        {
+          "title": "Luxe raffiné et élégance intemporelle"
+        },
+        {
+          "title": "Célébrations empreintes de traditions culturelles"
+        },
+        {
+          "title": "Scénographie élégante des mariages indiens"
+        }
+      ],
+      "ctaSection": {
+        "label": "Prêts à célébrer votre union ?",
+        "title": "Imaginons ensemble votre mariage traditionnel indien",
+        "subtitle": "Donnons vie à votre mariage de rêve à Lisbonne, en associant la richesse des traditions indiennes à l’élégance d’une célébration sur mesure, dans un cadre d’exception."
+      }
+    },
+    "jewish": {
+      "hero": {
+        "label": "Mariages sur mesure au Portugal",
+        "title": "Mariages juifs à Lisbonne",
+        "subtitle": "Des cérémonies traditionnelles sous la houppa aux somptueuses célébrations sur plusieurs jours, nous imaginons des mariages juifs d’exception, dans le respect de votre héritage culturel, de vos rites et de vos traditions. Chaque événement allie élégance, raffinement et authenticité, avec une organisation minutieuse et une coordination irréprochable au cœur de Lisbonne."
+      },
+      "servicesSection": {
+        "label": "Notre savoir-faire",
+        "title": "Nos services d’organisation de mariage",
+        "subtitle": "Un accompagnement sur mesure à chaque étape de votre mariage juif à Lisbonne : coordination de la restauration casher, aménagement des espaces de cérémonie et organisation attentive aux traditions et aux exigences culturelles et religieuses. Chaque détail est soigneusement pensé pour vous offrir une célébration élégante, authentique et parfaitement orchestrée."
+      },
+      "services": [
+        {
+          "title": "Coordination de la restauration casher",
+          "desc": "Une sélection rigoureuse de prestataires spécialisés dans la gastronomie casher et une coordination attentive des prestations culinaires, dans le respect de vos traditions et de vos exigences alimentaires religieuses."
+        },
+        {
+          "title": "Aménagement des espaces de cérémonie",
+          "desc": "Une organisation minutieuse de la cérémonie sous la houppa, de la disposition des invités et du déroulement des rituels, pour créer un cadre à la fois solennel, élégant et fidèle à vos traditions."
+        },
+        {
+          "title": "Organisation dans le respect des traditions",
+          "desc": "Un accompagnement personnalisé et respectueux de votre héritage culturel et religieux, où chaque détail est pensé en harmonie avec vos coutumes, vos valeurs et les attentes de vos familles."
+        },
+        {
+          "title": "Organisation de célébrations sur plusieurs jours",
+          "desc": "Des dîners de bienvenue aux cérémonies traditionnelles, jusqu’aux moments de partage et aux réceptions de clôture, nous orchestrons chaque étape de vos festivités avec fluidité, élégance et précision."
+        },
+        {
+          "title": "Accueil et accompagnement des invités",
+          "desc": "Une prise en charge attentive des transferts, des horaires et de l’accueil de vos familles et invités à Lisbonne, afin de leur garantir un séjour confortable, serein et parfaitement organisé."
+        },
+        {
+          "title": "Scénographie et production événementielle haut de gamme",
+          "desc": "Une décoration raffinée, une mise en scène élégante et une coordination discrète de l’ensemble des prestations, pour donner vie à un mariage d’exception où chaque instant se déroule en toute sérénité."
+        }
+      ],
+      "venuesSection": {
+        "label": "Nos lieux d’exception",
+        "title": "Célébrez votre mariage dans les plus beaux décors du Portugal",
+        "subtitle": "Des palais historiques et quintas privées empreints de l’héritage juif portugais aux somptueuses villas privées et lieux de réception exclusifs de Lisbonne, découvrez des cadres d’exception où patrimoine, traditions et raffinement se rencontrent pour donner vie à un mariage inoubliable."
+      },
+      "venues": [
+        {
+          "title": "Palais historiques et quintas de charme",
+          "desc": "Véritables joyaux du patrimoine portugais, les palais historiques et quintas privées offrent un cadre authentique et intimiste pour des célébrations empreintes de sens et de traditions. Entre architecture raffinée, patios élégants et atmosphère chargée d’histoire, ces lieux d’exception invitent à célébrer votre union dans le respect de votre héritage familial et culturel.",
+          "highlights": [
+            "Atmosphère authentique, riche en histoire et en patrimoine",
+            "Cadre intimiste et élégant pour les cérémonies traditionnelles",
+            "Lieux privilégiés pour célébrer les liens familiaux et les traditions"
+          ]
+        },
+        {
+          "title": "Villas de luxe",
+          "desc": "De somptueuses villas privées offrant un cadre exclusif et modulable pour célébrer votre mariage juif à Lisbonne. Entre réceptions de bienvenue, repas casher et cérémonies traditionnelles, ces lieux d’exception allient intimité, confort et raffinement, tout en permettant une organisation adaptée au rythme de vos festivités et au respect de vos traditions.",
+          "highlights": [
+            "Espaces privatifs et modulables pour des réceptions sur mesure",
+            "Cadre adapté à l’organisation de repas casher et au respect des exigences alimentaires religieuses",
+            "Lieux privilégiés pour les réunions familiales et les célébrations sur plusieurs jours"
+          ]
+        },
+        {
+          "title": "Lieux de réception exclusifs à Lisbonne",
+          "desc": "Des lieux prestigieux au cœur de Lisbonne, où élégance et raffinement se conjuguent pour accueillir votre mariage juif dans un cadre d’exception. Chaque espace est soigneusement pensé pour sublimer la cérémonie sous la houppa, assurer une transition harmonieuse vers la réception et offrir à vos invités une expérience mémorable, dans le respect de vos traditions.",
+          "highlights": [
+            "Espaces élégants adaptés au déroulement des cérémonies traditionnelles",
+            "Enchaînement fluide et raffiné entre la houppa, le cocktail et la réception",
+            "Accueil privilégié et prestations haut de gamme pour le confort de vos invités"
+          ]
+        },
+        {
+          "title": "Espaces de cérémonie sous la houppa",
+          "desc": "Des lieux soigneusement sélectionnés pour accueillir votre cérémonie sous la houppa, où l’harmonie des espaces, la douceur de la lumière et l’élégance de la scénographie subliment la solennité de votre union. Chaque détail est pensé pour créer une atmosphère intime et émouvante, dans le plus grand respect des rites et des traditions du mariage juif.",
+          "highlights": [
+            "Aménagement des espaces privilégiant la cérémonie et sa dimension symbolique",
+            "Installation de la houppa et organisation des rituels dans le respect des traditions",
+            "Cadre romantique et raffiné pour un échange de vœux inoubliable"
+          ]
+        },
+        {
+          "title": "Lieux empreints d’histoire et de traditions",
+          "desc": "Des lieux de caractère où le charme du patrimoine rencontre le confort contemporain et l’élégance discrète. Dans une atmosphère chaleureuse et raffinée, chaque célébration rend hommage à votre héritage culturel et familial, tout en préservant la convivialité et la spontanéité des moments partagés.",
+          "highlights": [
+            "Atmosphère authentique, inspirée des traditions et du patrimoine",
+            "Accueil chaleureux et attentionné pour vos familles et invités",
+            "Espaces adaptés aux cérémonies intimistes comme aux grandes réceptions"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspirations",
+        "title": "Thèmes et inspirations pour votre mariage",
+        "subtitle": "Élégance intemporelle, rituels ancestraux et luxe contemporain s’unissent harmonieusement pour donner vie à des célébrations d’exception, empreintes d’émotion et de sens, où chaque détail sublime votre héritage culturel et votre histoire d’amour."
+      },
+      "themes": [
+        {
+          "title": "Élégance intemporelle"
+        },
+        {
+          "title": "Rituels et traditions ancestrales"
+        },
+        {
+          "title": "Luxe contemporain"
+        },
+        {
+          "title": "Célébrations empreintes de sens et d’émotion"
+        },
+        {
+          "title": "Héritage culturel et raffinement"
+        },
+        {
+          "title": "Cadres d’exception à Lisbonne"
+        }
+      ],
+      "ctaSection": {
+        "label": "Prêts à célébrer votre union ?",
+        "title": "Imaginons ensemble votre mariage juif à Lisbonne",
+        "subtitle": "Confiez-nous votre vision et laissez-nous créer un mariage d’exception à Lisbonne, où chaque détail reflète votre histoire, honore vos traditions et donne vie à une célébration élégante, authentique et inoubliable."
+      }
+    }
+  },
+  "wedding_ui": {
+    "details": "détails",
+    "close": "Fermer",
+    "venue_experience": "Lieux d’exception",
+    "start_planning": "Organiser votre mariage",
+    "continue": "Poursuivre la découverte",
+    "plan_wedding": "Organiser votre mariage",
+    "discover_type": "Découvrir"
+  },
+  "wedding_services": {
+    "serviceShowcaseSection": {
+      "label": "Services",
+      "title": "Nos services",
+      "subtitle": "Les services essentiels de votre mariage, assurés avec style, précision et une coordination sans faille."
+    },
+    "serviceShowcase": [
+      {
+        "title": "Transport",
+        "desc": "Transferts privés et gestion du transport des invités pour que chaque déplacement se déroule en douceur et sans stress.",
+        "highlights": [
+          "Transferts aéroport et hôtels",
+          "Navettes cérémonie et réception",
+          "Coordination de véhicules de prestige"
+        ]
+      },
+      {
+        "title": "DJ",
+        "desc": "Direction musicale et gestion de l’ambiance pour accompagner l’émotion, du cocktail jusqu’à la dernière danse.",
+        "highlights": [
+          "Programmation musicale sur mesure",
+          "Coordination de l’installation sonore",
+          "Conception de l’expérience sur la piste de danse"
+        ]
+      },
+      {
+        "title": "Traiteur",
+        "desc": "Des expériences culinaires raffinées, adaptées à vos invités, au style de votre célébration et au rythme de votre journée.",
+        "highlights": [
+          "Création de menus sur mesure",
+          "Dégustation et déroulé du service",
+          "Prise en compte des régimes et préférences des invités"
+        ]
+      },
+      {
+        "title": "Maquillage",
+        "desc": "Des services beauté professionnels pour la mariée et son cortège, planifiés avec précision pour une préparation sereine et parfaite en photo.",
+        "highlights": [
+          "Mise en beauté de la mariée et du cortège",
+          "Organisation de la séance d’essai",
+          "Retouches sur place"
+        ]
+      },
+      {
+        "title": "Photographie et vidéographie",
+        "desc": "Une couverture éditoriale qui capte chaque émotion et chaque détail, des préparatifs aux derniers instants de la fête.",
+        "highlights": [
+          "Coordination des équipes photo et vidéo",
+          "Couverture alignée sur le programme",
+          "Film de mariage cinématographique"
+        ]
+      }
+    ]
+  },
+  "events_page": {
+    "hero": {
+      "label": "Événements au Portugal",
+      "title": "Des événements raffinés, orchestrés à la perfection",
+      "subtitle": "Nous imaginons et organisons des événements privés et professionnels d’exception à travers le Portugal, en associant élégance, créativité et savoir-faire. Chaque célébration bénéficie de la même exigence, du même sens du détail et de la même hospitalité raffinée qui font la signature de nos mariages.",
+      "defaultService": "Corporate Event"
+    },
+    "categoriesSection": {
+      "label": "Notre savoir-faire",
+      "title": "Nos événements sur mesure",
+      "subtitle": "Bien au-delà de l’organisation de mariages, nous imaginons des événements privés et professionnels d’exception, conçus avec la même exigence, la même créativité et le même sens de l’hospitalité qui caractérisent notre savoir-faire."
+    },
+    "categories": [
+      {
+        "title": "Fêtes de fiançailles",
+        "desc": "Célébrez vos premiers pas vers le grand jour dans un cadre intime, aux chandelles, avec le charme du Portugal.",
+        "detail": "Une célébration de fiançailles élégante et personnalisée, imaginée pour marquer le début d’une belle histoire. Entre scénographie digne d’un magazine, atmosphère romantique et organisation irréprochable, chaque détail est soigneusement orchestré pour créer un moment d’exception et donner le ton aux célébrations à venir.",
+        "highlights": [
+          "Création du concept et définition de l’univers esthétique à travers des planches d’inspiration",
+          "Sélection de lieux d’exception et de prestataires haut de gamme",
+          "Gestion de l’accueil, du déroulement et coordination sur place"
+        ]
+      },
+      {
+        "title": "Fêtes prénuptiales et dîners de bienvenue",
+        "desc": "Des rendez-vous élégants avant le mariage qui donnent le ton d’une célébration inoubliable.",
+        "detail": "Des fêtes prénuptiales raffinées aux dîners de bienvenue au cœur du centre historique de Lisbonne, nous imaginons des moments chaleureux et élégants, où chaque détail est pensé pour votre plaisir et celui de vos invités. Des expériences sur mesure, orchestrées avec discrétion et savoir-faire, pour vous permettre de profiter pleinement de chaque instant et créer des souvenirs inoubliables.",
+        "highlights": [
+          "Art de la table, compositions florales et mises en lumière raffinées",
+          "Menus personnalisés, ambiance musicale et animations exclusives",
+          "Accueil attentionné des invités et scénographie sur mesure"
+        ]
+      },
+      {
+        "title": "Anniversaires et célébrations privées",
+        "desc": "Des moments marquants sublimés par un design personnalisé, des lieux exclusifs et des attentions sincères.",
+        "detail": "Anniversaires, demandes en mariage, dîners privés et grandes occasions : nous imaginons des célébrations exclusives à travers le Portugal, où intimité, élégance et émotion se rencontrent. Chaque événement est conçu sur mesure et orchestré avec précision pour transformer vos moments les plus précieux en souvenirs inoubliables.",
+        "highlights": [
+          "Lieux privatifs d’exception et aménagements intimistes",
+          "Scénographie personnalisée, inspirée de votre histoire",
+          "Coordination discrète et accompagnement haut de gamme à chaque étape"
+        ]
+      },
+      {
+        "title": "Anniversaires de luxe",
+        "desc": "Des fêtes sur les rooftops aux dîners intimes sur la côte : chaque anniversaire mérite une signature.",
+        "detail": "Un anniversaire d’exception mérite un univers qui lui ressemble. Soirée exclusive sur un rooftop à Lisbonne, réception somptueuse dans une villa privée ou célébration féérique sous les étoiles du littoral : nous imaginons des expériences immersives et raffinées, où chaque détail contribue à rendre votre événement véritablement inoubliable.",
+        "highlights": [
+          "Sélection d’animations exclusives et d’expériences immersives",
+          "Cocktails signature et expériences gastronomiques raffinées",
+          "Planification minutieuse et coordination complète des prestataires"
+        ]
+      },
+      {
+        "title": "Événements et expériences de marque",
+        "desc": "Des activations de marque immersives et des productions éditoriales dans les plus beaux décors du Portugal.",
+        "detail": "Activations de marque haut de gamme, lancements de produits, dîners exclusifs et productions éditoriales : nous concevons des expériences uniques qui subliment votre identité et captivent votre audience. Chaque événement associe direction artistique, maîtrise technique et accueil irréprochable pour créer des moments mémorables, à la hauteur de l’image et des ambitions de votre marque.",
+        "highlights": [
+          "Direction artistique, conception créative et production événementielle",
+          "Recherche de lieux d’exception et accompagnement dans les démarches d’autorisation",
+          "Élaboration du déroulé de l’événement et coordination des équipes sur place"
+        ]
+      },
+      {
+        "title": "Événements d’entreprise et réceptions professionnelles",
+        "desc": "Événements d’entreprise prestigieux, séminaires de direction et galas orchestrés avec précision et raffinement.",
+        "detail": "Dîners de direction, séminaires résidentiels, voyages incentive et soirées de gala : nous organisons des événements professionnels haut de gamme à travers le Portugal, en associant discrétion, rigueur et raffinement. Chaque expérience est conçue sur mesure pour répondre à vos objectifs, valoriser votre image et offrir à vos collaborateurs et invités des moments d’exception.",
+        "highlights": [
+          "Élaboration du budget, planification logistique et gestion des prestations",
+          "Solutions audiovisuelles, scénographie et coordination des partenaires techniques",
+          "Accueil personnalisé des invités et supervision complète de l’événement sur place"
+        ]
+      }
+    ],
+    "promiseSection": {
+      "title": "Notre promesse d’excellence",
+      "subtitle": "Trois engagements fondamentaux guident chacune de nos créations événementielles au Portugal, pour vous offrir des expériences sur mesure où élégance, exigence et savoir-faire se rencontrent."
+    },
+    "promises": [
+      {
+        "title": "Planification stratégique",
+        "desc": "De la conception du projet à l’élaboration du budget, en passant par la logistique et la planification des différentes étapes, chaque détail est anticipé avec rigueur et précision, avant même la sélection des prestataires."
+      },
+      {
+        "title": "Direction artistique et scénographie d’exception",
+        "desc": "Une scénographie digne des plus belles publications, des créations florales sur mesure, des mises en lumière raffinées et des animations soigneusement sélectionnées pour transformer chaque lieu en un univers unique et captivant."
+      },
+      {
+        "title": "Une expérience invités irréprochable",
+        "desc": "De l’accueil à l’arrivée jusqu’à la coordination du jour J, nous orchestrons chaque étape avec discrétion et professionnalisme, afin que vos invités profitent pleinement de chaque instant, en toute sérénité."
+      }
+    ],
+    "formatsSection": {
+      "label": "Nos expériences signatures",
+      "title": "Des événements d’exception, à votre image",
+      "subtitle": "Découvrez nos formats événementiels les plus prisés, chacun imaginé comme un univers unique, alliant élégance, créativité et expériences inoubliables."
+    },
+    "formats": [
+      {
+        "title": "Dîners sur les rooftops de Lisbonne",
+        "tag": "Expérience signature",
+        "detail": "La lumière dorée du coucher du soleil, la douce lueur des lanternes et un dîner élégant avec vue sur les toits de Lisbonne : une expérience raffinée où l’hospitalité haut de gamme rencontre le charme authentique du Portugal.",
+        "highlights": [
+          "Menus sur mesure et sélection raffinée de boissons",
+          "Mise en lumière et scénographie d’ambiance",
+          "Ambiance musicale et coordination au coucher du soleil"
+        ]
+      },
+      {
+        "title": "Soirées d’exception dans les jardins",
+        "tag": "Expérience signature",
+        "detail": "Une végétation luxuriante, des compositions florales somptueuses et une gastronomie raffinée créent un cadre enchanteur pour des célébrations romantiques, élégantes et intemporelles.",
+        "highlights": [
+          "Direction artistique et scénographie florale sur mesure",
+          "Aménagement modulable des espaces pour une circulation fluide des invités",
+          "Animations exclusives et mises en lumière raffinées"
+        ]
+      },
+      {
+        "title": "Expériences exclusives sur le littoral",
+        "tag": "Expérience signature",
+        "detail": "Une expérience d’exception qui se transforme en souvenir inoubliable : arrivée au coucher du soleil, dîner raffiné dans un cadre somptueux et musique sous les étoiles, au cœur des paysages majestueux du littoral portugais.",
+        "highlights": [
+          "Coordination des transports et de la logistique",
+          "Scénographie haut de gamme et expériences gastronomiques raffinées",
+          "Animations immersives et divertissements exclusifs"
+        ]
+      },
+      {
+        "title": "Réceptions privées intimistes",
+        "tag": "Expérience signature",
+        "detail": "Une célébration privée en petit comité, orchestrée avec précision et élégance, où chaque détail de la scénographie est soigneusement pensé pour créer une expérience exclusive et personnalisée.",
+        "highlights": [
+          "Art de la table raffiné et décoration soignée dans les moindres détails",
+          "Attentions personnalisées pour chaque invité",
+          "Déroulement fluide et coordination irréprochable de chaque étape"
+        ]
+      },
+      {
+        "title": "Dîners de prestige pour marques et dirigeants",
+        "tag": "Expérience signature",
+        "detail": "Des dîners haut de gamme conçus pour les marques et les dirigeants, alliant discrétion, élégance et prestations d’exception, avec une attention particulière portée à l’excellence de l’accueil et de l’hospitalité.",
+        "highlights": [
+          "Sélection de lieux prestigieux, de chefs privés et de traiteurs d’exception",
+          "Coordination audiovisuelle et planification technique de l’événement",
+          "Accueil personnalisé et prise en charge attentive des invités"
+        ]
+      }
+    ],
+    "ctaSection": {
+      "label": "Créons ensemble",
+      "title": "Organisons votre événement",
+      "subtitle": "Parlez-nous de votre projet et de vos envies, nous nous occupons de chaque détail pour donner vie à une expérience unique et inoubliable."
+    },
+    "ui": {
+      "details": "détails",
+      "close": "Fermer",
+      "event_category": "Nos événements",
+      "reserve": "Réserver / Demander un devis",
+      "continue": "Poursuivre la découverte",
+      "plan_event": "Organiser votre événement"
+    }
+  },
+  "gallery_page": {
+    "hero": {
+      "title": "L’expérience",
+      "subtitle": "De A à Z, Lisbonne est la destination idéale pour célébrer l’un des plus beaux moments de votre vie."
+    },
+    "intro": {
+      "title": "De A à Z...",
+      "text": "Lisbon Weddings prend en charge chaque détail de votre mariage. Nous élaborons votre budget poste par poste et organisons également l’accueil et le séjour de vos invités : transferts, accueil à l’aéroport et hébergements. De la conception à la réalisation, nous vous accompagnons à chaque étape pour donner vie à votre vision. Quel que soit votre budget, célébrer votre mariage à Lisbonne, c’est choisir une destination d’exception pour créer des souvenirs inoubliables."
+    },
+    "process": {
+      "title": "Notre processus",
+      "steps": [
+        {
+          "title": "Consultation",
+          "text": "Un premier échange pour définir votre style, comprendre vos envies et identifier les priorités essentielles de votre événement."
+        },
+        {
+          "title": "Recherche",
+          "text": "Sélection de lieux d’exception selon leur capacité d’accueil, leur emplacement et votre budget prévisionnel."
+        },
+        {
+          "title": "Sélection",
+          "text": "Choix des meilleurs prestataires, du traiteur au photographe, en passant par les fleuristes et les professionnels de la mise en beauté."
+        },
+        {
+          "title": "Planification",
+          "text": "Visites des lieux, séances de dégustation, élaboration du programme détaillé et coordination de l’ensemble des prestataires."
+        },
+        {
+          "title": "Création et attentions personnalisées",
+          "text": "Conception des save the dates, faire-part, plans de table et cadeaux personnalisés pour vos invités."
+        },
+        {
+          "title": "Coordination",
+          "text": "Gestion complète et coordination discrète de chaque détail le jour de votre célébration, pour vous permettre de profiter pleinement de chaque instant."
+        }
+      ]
+    },
+    "gallery": {
+      "label": "Galerie",
+      "title": "Collections par catégorie",
+      "subtitle": "Chaque collection est soigneusement organisée par thème pour vous permettre d’explorer facilement notre univers et de découvrir nos plus belles réalisations."
+    },
+    "collections": {
+      "weddings": {
+        "title": "Mariages",
+        "subtitle": "Cérémonies, réceptions et images de mariage à l’esthétique éditoriale, partout au Portugal."
+      },
+      "venues": {
+        "title": "Lieux",
+        "subtitle": "Palais, quintas, domaines côtiers et resorts pour sublimer votre célébration."
+      },
+      "elopements": {
+        "title": "Mariages intimistes",
+        "subtitle": "Des vœux intimes et des escapades romantiques, rien que pour vous deux."
+      },
+      "indian": {
+        "title": "Mariages indiens",
+        "subtitle": "Rituels hauts en couleur, compositions florales généreuses et célébrations sur plusieurs jours à Lisbonne."
+      },
+      "jewish": {
+        "title": "Mariages juifs",
+        "subtitle": "Cérémonies sous la houppa et célébrations fidèles à votre héritage, à Lisbonne."
+      },
+      "events": {
+        "title": "Événements et célébrations",
+        "subtitle": "Dîners de bienvenue, fiançailles, célébrations privées et événements d’entreprise."
+      },
+      "catering": {
+        "title": "Gastronomie",
+        "subtitle": "Menus portugais, internationaux et sur mesure pour chaque moment de votre célébration."
+      }
+    },
+    "modal": {
+      "open_image": "Ouvrir l’image {{index}} de {{title}}",
+      "image_viewer": "Visionneuse d’images {{title}}",
+      "close": "Fermer la visionneuse",
+      "previous": "Image précédente",
+      "next": "Image suivante",
+      "counter": "Image {{current}} sur {{total}}"
+    }
+  },
+  "contact_page": {
+    "hero": {
+      "label": "Contact",
+      "title": "Commencez votre célébration",
+      "subtitle": "Parlez-nous de votre vision, de votre date et de l’expérience que vous souhaitez créer."
+    },
+    "form": {
+      "label": "Demande",
+      "title": "Parlez-nous de votre événement",
+      "intro": "Nous vous répondons avec discrétion, attention et de façon personnalisée.",
+      "success_title": "Demande reçue",
+      "success_text": "Merci. Nous vous recontactons sous 24 heures.",
+      "full_name": "Nom et prénom",
+      "email": "E-mail",
+      "email_placeholder": "Adresse e-mail",
+      "phone": "Téléphone / WhatsApp",
+      "event_type": "Type d’événement",
+      "select_event_type": "Choisissez un type d’événement",
+      "option_wedding": "Mariage",
+      "option_engagement": "Fête de fiançailles",
+      "option_welcome_dinner": "Dîner de bienvenue",
+      "option_anniversary": "Anniversaire / Célébration privée",
+      "option_luxury_birthday": "Anniversaire de luxe",
+      "option_brand": "Expérience de marque",
+      "option_corporate": "Événement d’entreprise",
+      "option_other": "Autre",
+      "arrival_date": "Date d’arrivée",
+      "departure_date": "Date de départ",
+      "dates_placeholder": "Choisissez vos dates d’arrivée et de départ",
+      "guests": "Nombre d’invités",
+      "guests_placeholder": "ex. 60",
+      "destinations": "Lieu(x) envisagé(s)",
+      "destinations_placeholder": "ex. Lisbonne, Sintra, Algarve...",
+      "budget": "Budget prévisionnel",
+      "budget_placeholder": "ex. 25 000",
+      "message": "Message",
+      "message_placeholder": "Décrivez-nous votre projet…",
+      "error": "Erreur lors de l’envoi du message. Veuillez réessayer.",
+      "sending": "Envoi…",
+      "send": "Envoyer ma demande"
+    },
+    "details": {
+      "label": "Contact",
+      "email": "E-mail",
+      "tel": "Tél.",
+      "office": "Bureau"
+    },
+    "scheduler": {
+      "label": "Consultation",
+      "title": "Réserver une consultation",
+      "subtitle": "Choisissez le créneau qui vous convient.",
+      "iframe_title": "Calendrier de réservation de consultation"
+    }
+  },
+  "reservation_form": {
+    "title": "Réservez votre consultation",
+    "subtitle": "Commencez votre projet en toute sérénité avec nous.",
+    "success_title": "Consultation demandée !",
+    "success_text": "Nous vous recontactons sous 24 heures.",
+    "full_name": "Nom et prénom",
+    "email": "Adresse e-mail",
+    "phone": "Numéro de téléphone",
+    "number_of_guests": "Nombre d’invités",
+    "preferred_location": "Lieu souhaité",
+    "estimated_budget": "Budget prévisionnel",
+    "select_event": "Choisissez un type d’événement",
+    "option_wedding": "Mariage",
+    "option_corporate": "Événement d’entreprise",
+    "option_private": "Célébration privée",
+    "option_traditional_portuguese": "Mariage traditionnel portugais",
+    "option_modern_luxury": "Mariage de luxe moderne",
+    "option_intimate_elopement": "Mariage intimiste à deux",
+    "option_multi_day_weekend": "Week-end de mariage sur plusieurs jours",
+    "option_cultural_fusion": "Mariage multiculturel",
+    "error": "Erreur lors de la demande de consultation.",
+    "requesting": "Envoi de la demande...",
+    "request": "Demander une consultation"
+  },
+  "detail_page": {
+    "cases": {
+      "default": {
+        "title": "Détails de l’expérience",
+        "subtitle": "Un voyage sur mesure"
+      }
+    },
+    "body": {
+      "p1": "Plongez dans notre expérience {{title}}. Chaque détail est minutieusement pensé pour offrir un moment spectaculaire et sans faille. Notre équipe d’experts donne vie à votre vision en alliant le charme authentique du Portugal aux standards du luxe international.",
+      "p2": "Du choix du lieu à la direction culinaire, en passant par l’esthétique et l’accueil des invités, notre approche globale garantit un événement remarquable. Contactez-nous pour réserver vos dates et découvrir nos formules."
+    }
+  },
+  "layout": {
+    "whatsapp_label": "Discuter sur WhatsApp"
+  },
+  "thank_you_page": {
+    "thanks": "Merci",
+    "label": "Demande reçue",
+    "title": "Weddings Planner Portugal vous remercie sincèrement pour votre demande de réservation",
+    "subtitle": "Votre demande a bien été reçue. C’est un plaisir de vous accompagner dans l’organisation de votre célébration au Portugal.",
+    "note": "Notre équipe étudiera votre demande avec attention et vous recontactera sous 24 heures pour organiser la suite.",
+    "back_home": "Retour à l’accueil",
+    "image_alt": "Décor de mariage élégant au Portugal"
+  },
+  "venues_page": {
+    "hero": {
+      "label": "Lieux au Portugal",
+      "title": "Des lieux d’exception au Portugal, choisis pour votre célébration",
+      "subtitle": "Des villas privées à Lisbonne aux resorts face à l’océan, en passant par les palais historiques et les domaines côtiers sous les étoiles, le Portugal offre une variété exceptionnelle de cadres pour les mariages et événements de destination. Nous vous aidons à trouver le lieu qui reflète le mieux votre vision, votre nombre d’invités, votre budget et l’expérience souhaitée, puis nous coordonnons chaque détail, de la première visite à la célébration finale."
+    },
+    "introSection": {
+      "label": "Planifier en toute clarté",
+      "title": "Trouvez le cadre idéal pour votre mariage au Portugal",
+      "subtitle": "Le lieu façonne toute l’expérience : il influence l’atmosphère, le parcours des invités, les options d’hébergement, la logistique, les possibilités de design et le budget global. Notre équipe vous fait des recommandations personnalisées selon vos priorités."
+    },
+    "priorities": [
+      "Style et atmosphère du mariage",
+      "Nombre d’invités",
+      "Besoins d’hébergement",
+      "Format de la cérémonie et de la réception",
+      "Accessibilité et transport",
+      "Options en intérieur et en extérieur",
+      "Intimité et exclusivité",
+      "Mariage sur plusieurs jours",
+      "Animations et production",
+      "Budget et disponibilités"
+    ],
+    "categoriesSection": {
+      "label": "Types de lieux",
+      "title": "Les types de lieux de mariage au Portugal",
+      "subtitle": "Que vous prépariez un mariage intimiste à deux, un week-end de mariage de luxe ou une grande célébration multiculturelle, comparez les lieux les plus adaptés en toute clarté et en toute confiance."
+    },
+    "categories": [
+      {
+        "title": "Lieux en bord de mer",
+        "tag": "Romance en bord de mer",
+        "desc": "L’air marin, la lumière dorée et une élégance décontractée pour une célébration raffinée face à l’océan.",
+        "detail": "Des resorts balnéaires élégants aux propriétés côtières privées, ces lieux offrent un cadre rafraîchissant pour les cérémonies en extérieur, les cocktails et les week-ends de mariage décontractés.",
+        "highlights": [
+          "Cérémonies à l’heure dorée face à l’océan",
+          "Atmosphère de luxe décontracté",
+          "Idéal pour les cocktails en bord de mer et les réceptions au coucher du soleil",
+          "Cadre parfait pour les excursions des invités",
+          "Parfait pour les dîners de bienvenue et brunchs d’au revoir",
+          "Hébergement en resort possible"
+        ],
+        "bestSuitedFor": "Mariages sur la côte, célébrations de luxe décontractées, week-ends de mariage de destination et couples souhaitant un cadre extérieur avec vue sur l’océan.",
+        "cta": "Découvrir les lieux de mariage"
+      },
+      {
+        "title": "Villas et domaines privés",
+        "tag": "Intimité et hospitalité",
+        "desc": "L’ambiance d’une résidence privée alliée au confort et au service d’un lieu de luxe.",
+        "detail": "Particulièrement adaptés aux mariages de destination sur plusieurs jours, ils permettent d’organiser plusieurs moments au même endroit : dîner de bienvenue, après-midi au bord de la piscine, cérémonie, réception et brunch d’au revoir.",
+        "highlights": [
+          "Week-ends de mariage sur plusieurs jours",
+          "Hébergement sur place pour une partie des invités",
+          "Cadre privé et exclusif",
+          "Aménagements flexibles pour la cérémonie et la réception",
+          "Moments au bord de la piscine et fêtes au jardin",
+          "Plus de liberté pour la décoration et la production"
+        ],
+        "bestSuitedFor": "Week-ends de mariage, célébrations privées, mariages de destination avec hébergement et couples recherchant une atmosphère détendue mais sophistiquée.",
+        "cta": "Découvrir les villas privées au Portugal"
+      },
+      {
+        "title": "Palais historiques et quintas",
+        "tag": "Charme du patrimoine",
+        "desc": "Palais restaurés, maisons de maître et quintas au caractère portugais affirmé.",
+        "detail": "Maisons de maître portugaises, palais restaurés, patios élégants et jardins paysagers offrent des cadres pleins d’atmosphère pour les mariages et les célébrations intimes.",
+        "cta": "Découvrir les palais historiques et quintas"
+      },
+      {
+        "title": "Palais et jardins",
+        "tag": "Architecture grandiose",
+        "desc": "Un cadre spectaculaire pour les couples en quête d’élégance, de patrimoine et d’impact visuel.",
+        "detail": "Entrées monumentales, savoir-faire artisanal, fontaines, patios et jardins paysagers offrent des possibilités exceptionnelles pour les cérémonies formelles, les réceptions de luxe et les grandes animations.",
+        "highlights": [
+          "Décors de cérémonie spectaculaires",
+          "Entrées grandioses et détails architecturaux",
+          "Vastes jardins et espaces de réception",
+          "Grande capacité d’accueil",
+          "Adapté aux animations live et aux grandes productions",
+          "Fort potentiel de design en intérieur comme en extérieur"
+        ],
+        "bestSuitedFor": "Mariages de luxe, grandes listes d’invités, réceptions formelles, célébrations multiculturelles et couples recherchant un lieu spectaculaire.",
+        "cta": "Découvrir les palais et jardins"
+      },
+      {
+        "title": "Domaines côtiers",
+        "tag": "Sous les étoiles",
+        "desc": "Une cérémonie au coucher du soleil, un dîner aux lanternes et de la musique sous le ciel portugais.",
+        "detail": "Les domaines côtiers peuvent accueillir des mariages intimistes à deux, des dîners élégants ou des célébrations immersives, alliant hospitalité traditionnelle et production contemporaine, sur la côte de l’Algarve, près de Lisbonne ou dans des destinations plus confidentielles.",
+        "highlights": [
+          "Cérémonies au coucher du soleil",
+          "Dîners aux lanternes sous les étoiles",
+          "Observation des étoiles et musique live",
+          "Parcours immersif pour les invités",
+          "Opportunités photo spectaculaires",
+          "Idéal pour les événements de bienvenue ou les week-ends audacieux"
+        ],
+        "bestSuitedFor": "Mariages intimistes à deux, petits mariages, expériences de destination, dîners de bienvenue et couples en quête d’un lieu singulier et inoubliable.",
+        "cta": "Organiser un mariage sur la côte"
+      },
+      {
+        "title": "Domaines de campagne élégants",
+        "tag": "Charme de la campagne",
+        "desc": "Jardins, terrasses et architecture de caractère au cœur de la campagne portugaise.",
+        "detail": "Quintas historiques et domaines de campagne associent jardins, terrasses et architecture de caractère, certaines propriétés proposant un hébergement pour les invités.",
+        "cta": "Découvrir les domaines de campagne"
+      },
+      {
+        "title": "Hôtels et resorts de luxe",
+        "tag": "Confort cinq étoiles",
+        "desc": "Une solution d’accueil complète réunissant hébergement, restauration et espaces de réception en un seul lieu.",
+        "detail": "Particulièrement pratiques pour les invités internationaux et les grands mariages nécessitant des transports coordonnés, plusieurs événements et un service de haut niveau.",
+        "highlights": [
+          "Hébergement cinq étoiles pour les invités",
+          "Équipes hôtelières professionnelles",
+          "Plusieurs espaces de réception",
+          "Piscine, spa et loisirs",
+          "Logistique simplifiée pour les invités internationaux",
+          "Solutions en intérieur en cas de mauvais temps"
+        ],
+        "bestSuitedFor": "Grands mariages de destination, invités internationaux, célébrations formelles et couples privilégiant le confort et l’efficacité.",
+        "cta": "Découvrir les hôtels et resorts de luxe"
+      },
+      {
+        "title": "Retraites en montagne",
+        "tag": "Sérénité des montagnes",
+        "desc": "Beauté naturelle et exclusivité paisible dans la Serra da Estrela.",
+        "detail": "Une alternative sereine à l’énergie de Lisbonne. Lodges de montagne, retraites privées et propriétés de charme offrent des vues panoramiques, un air pur et un lien intime avec la nature.",
+        "highlights": [
+          "Vues panoramiques sur les montagnes",
+          "Cadre paisible et privé",
+          "Idéal pour les cérémonies en extérieur",
+          "Parfait pour les week-ends de mariage intimes",
+          "Activités culturelles et nature pour les invités",
+          "Idéal pour les déjeuners de bienvenue et petits-déjeuners d’au revoir"
+        ],
+        "bestSuitedFor": "Mariages intimes, célébrations au cœur de la nature, week-ends bien-être et couples recherchant l’intimité loin de la ville.",
+        "cta": "Découvrir les lieux de la Serra da Estrela"
+      }
+    ],
+    "destinationsSection": {
+      "label": "À travers le Portugal",
+      "title": "Destinations de mariage au Portugal",
+      "subtitle": "Découvrez le cadre qui raconte votre histoire, des palais historiques aux resorts face à l’Atlantique, en passant par les domaines viticoles privés."
+    },
+    "destinations": [
+      {
+        "title": "Lisbonne",
+        "desc": "Hôtels élégants, quintas privées et rooftops dans une capitale vibrante."
+      },
+      {
+        "title": "Algarve",
+        "desc": "Falaises dorées, resorts face à l’océan et domaines privés pour des cérémonies au coucher du soleil et des mariages sur plusieurs jours."
+      },
+      {
+        "title": "Cascais et Estoril",
+        "desc": "Des lieux raffinés en bord de mer, tout près de Lisbonne, idéaux pour des célébrations côtières décontractées."
+      },
+      {
+        "title": "Sintra",
+        "desc": "Palais romantiques, domaines historiques et jardins luxuriants pour des célébrations intemporelles."
+      },
+      {
+        "title": "Porto",
+        "desc": "Architecture historique, hôtels au bord du fleuve et lieux de réception élégants."
+      },
+      {
+        "title": "Serra da Estrela",
+        "desc": "Retraites en montagne et célébrations intimes au cœur de la nature."
+      },
+      {
+        "title": "Vallée du Douro",
+        "desc": "Domaines viticoles, vues panoramiques sur le fleuve et week-ends de mariage exclusifs."
+      }
+    ],
+    "serviceSection": {
+      "label": "Notre accompagnement",
+      "title": "Notre service de sélection de lieux",
+      "subtitle": "Plus qu’une liste de lieux : des conseils clairs pour vous aider à décider en connaissance de cause.",
+      "body": "Choisir un lieu à distance peut être difficile. Les photos seules ne révèlent pas toujours les contraintes d’exploitation, la capacité d’accueil, les conditions d’accès, les limites d’hébergement ou les coûts de production supplémentaires. Vous recevez des informations claires pour décider, plutôt que de passer des semaines à contacter des lieux inadaptés.",
+      "items": [
+        "Consultation initiale pour comprendre votre vision",
+        "Sélection personnalisée de lieux adaptés",
+        "Demandes de disponibilités et de tarifs",
+        "Comparaison des options d’hébergement et de réception",
+        "Évaluation de la capacité et de l’agencement",
+        "Analyse des contraintes du lieu",
+        "Étude des règles de restauration et de prestataires",
+        "Organisation du transport et de l’accessibilité",
+        "Coordination des visites sur place",
+        "Relecture du contrat et de l’échéancier de paiement",
+        "Recommandation de la meilleure option"
+      ],
+      "cta": "Demander votre sélection personnalisée de lieux"
+    },
+    "considerationsSection": {
+      "title": "Ce que nous vérifions avant de recommander un lieu",
+      "subtitle": "Une analyse approfondie derrière chacune de nos recommandations."
+    },
+    "considerations": [
+      {
+        "title": "Capacité d’accueil",
+        "desc": "Nous vérifions que le lieu peut accueillir confortablement votre cérémonie, le dîner, la danse, les animations et un plan de repli."
+      },
+      {
+        "title": "Hébergement",
+        "desc": "Nous évaluons le nombre de chambres disponibles sur place et identifions des options à proximité lorsque tous les invités ne peuvent pas loger sur le lieu."
+      },
+      {
+        "title": "Intimité",
+        "desc": "Nous vérifions si la propriété peut être entièrement privatisée et si d’autres clients ou événements pourraient être présents pendant votre mariage."
+      },
+      {
+        "title": "Emplacement et transport",
+        "desc": "Nous évaluons l’accès à l’aéroport, l’état des routes, les temps de transfert et les besoins de transport entre les hôtels et les espaces de réception."
+      },
+      {
+        "title": "Restauration et bar",
+        "desc": "Nous vérifions si la restauration est assurée sur place, si des traiteurs extérieurs sont autorisés et quelles restrictions s’appliquent aux boissons et au service."
+      },
+      {
+        "title": "Son et animations",
+        "desc": "Nous confirmons les horaires limites pour la musique, les restrictions sonores, les besoins techniques et la faisabilité d’animations live ou de fêtes tardives."
+      },
+      {
+        "title": "Plan de repli météo",
+        "desc": "Nous évaluons les solutions en intérieur, les espaces couverts et des plans de repli réalistes pour les événements en extérieur."
+      },
+      {
+        "title": "Accès pour la production",
+        "desc": "Nous étudions l’accès des prestataires, les horaires d’installation, la puissance électrique, les contraintes d’accroche et la logistique pour la décoration, l’éclairage et les animations."
+      },
+      {
+        "title": "Investissement global",
+        "desc": "Nous prenons en compte non seulement la location du lieu, mais aussi l’hébergement, la restauration, le personnel, le transport, la production technique et les besoins supplémentaires."
+      }
+    ],
+    "whySection": {
+      "label": "Pourquoi nous",
+      "title": "Pourquoi nous confier votre recherche de lieu ?",
+      "subtitle": "Une expertise locale et une communication claire, de la première sélection jusqu’à la célébration."
+    },
+    "reasons": [
+      {
+        "title": "Expertise locale",
+        "desc": "Notre équipe connaît les spécificités des régions du Portugal, des styles de lieux, des réseaux de prestataires et des réalités logistiques."
+      },
+      {
+        "title": "Recommandations ciblées",
+        "desc": "Nous recommandons des lieux qui correspondent vraiment à votre nombre d’invités, à vos priorités et à votre budget."
+      },
+      {
+        "title": "Communication claire",
+        "desc": "Nous présentons les informations utiles de façon organisée et transparente, pour vous aider à comparer les options efficacement."
+      },
+      {
+        "title": "Accompagnement multilingue",
+        "desc": "Nous échangeons avec les couples, les invités et les prestataires dans plusieurs langues, pour éviter les malentendus tout au long de l’organisation."
+      },
+      {
+        "title": "Organisation complète du mariage",
+        "desc": "Une fois le lieu choisi, nous pouvons gérer l’ensemble de votre mariage : design, hébergement, transport, restauration, animations et coordination sur place."
+      }
+    ],
+    "faqSection": {
+      "label": "FAQ",
+      "title": "Questions fréquentes"
+    },
+    "faqs": [
+      {
+        "q": "Combien de temps à l’avance faut-il réserver un lieu de mariage au Portugal ?",
+        "a": "Pour les mariages en haute saison, nous recommandons de commencer la recherche environ 12 à 18 mois à l’avance. Les grands mariages, les propriétés exclusives et les dates très demandées peuvent nécessiter une réservation plus anticipée."
+      },
+      {
+        "q": "Peut-on organiser plusieurs événements du mariage dans le même lieu ?",
+        "a": "Oui. De nombreuses villas, resorts, domaines de campagne et propriétés privées peuvent accueillir dîners de bienvenue, cérémonies, réceptions, après-midi à la piscine et brunchs d’au revoir. Chaque lieu ayant ses propres règles, nous vérifions ce qui est réellement possible avant de le recommander."
+      },
+      {
+        "q": "Tous nos invités peuvent-ils loger sur place ?",
+        "a": "Cela dépend de la propriété. Certains hôtels et resorts peuvent accueillir de grands groupes, tandis que les villas privées, les palais historiques, les quintas privées et les domaines de campagne ont généralement un nombre de chambres limité. Nous pouvons organiser des hébergements complémentaires et le transport des invités si nécessaire."
+      },
+      {
+        "q": "Peut-on se marier sur la côte près de Lisbonne ?",
+        "a": "Oui. Cascais et Estoril proposent des lieux en bord de mer près de Lisbonne. L’Algarve, dans le sud du Portugal, est idéale pour une célébration séparée sur plusieurs jours."
+      },
+      {
+        "q": "Pouvons-nous faire venir nos propres prestataires ?",
+        "a": "Cela dépend des lieux. Certains autorisent les prestataires extérieurs, d’autres imposent des partenaires agréés pour la restauration, la production ou les animations. Nous vérifions ces conditions avant de confirmer le lieu."
+      },
+      {
+        "q": "Les lieux au Portugal ont-ils des restrictions sonores ?",
+        "a": "De nombreux lieux appliquent des limites sonores ou des horaires limites pour la musique. Nous vérifions ces règles avec attention, surtout lorsque les couples prévoient de la musique live, un DJ ou une fête tardive."
+      },
+      {
+        "q": "Organisez-vous des visites de lieux ?",
+        "a": "Oui. Nous pouvons organiser un programme de visites sur mesure et vous accompagner lors des visites, selon la formule choisie."
+      },
+      {
+        "q": "Pouvez-vous organiser tout le mariage après nous avoir aidés à trouver le lieu ?",
+        "a": "Oui. Notre organisation complète comprend la gestion du lieu, le design, les prestataires, l’hébergement, le transport, la logistique des invités, les animations, la production et la coordination sur place."
+      }
+    ],
+    "ctaSection": {
+      "label": "Prêts ?",
+      "title": "Trouvons ensemble le lieu portugais qui vous ressemble",
+      "subtitle": "Indiquez-nous vos dates, le nombre d’invités estimé, le style de lieu et votre budget. Notre équipe vous orientera vers les options les plus adaptées à Lisbonne et partout au Portugal."
+    },
+    "ui": {
+      "details": "détails",
+      "close": "Fermer",
+      "venue_category": "Type de lieu",
+      "best_suited_for": "Idéal pour",
+      "reserve": "Démarrer ma recherche de lieu",
+      "continue": "Poursuivre la découverte",
+      "plan_venue": "Réserver une consultation"
+    }
+  },
+  "proposals_page": {
+    "hero": {
+      "label": "Demandes en mariage à Lisbonne",
+      "title": "Tout pour une célébration inoubliable à Lisbonne",
+      "subtitle": "Des demandes en mariage romantiques aux mariages intimistes, en passant par les mariages de destination haut de gamme, nous prenons soin de chaque détail pour créer des expériences élégantes, riches en émotions et entièrement personnalisées à Lisbonne. Recherche de lieux d’exception, scénographie, photographie, décoration, logistique, accueil des invités et coordination irréprochable : chaque prestation est pensée autour de votre vision pour rendre chaque instant véritablement inoubliable."
+    },
+    "stats": [
+      {
+        "label": "Expériences romantiques sur mesure"
+      },
+      {
+        "label": "Ans d’expertise"
+      },
+      {
+        "label": "Pays de provenance de nos clients"
+      },
+      {
+        "label": "Organisation de mariage personnalisée"
+      }
+    ],
+    "categoriesSection": {
+      "label": "Styles de demandes en mariage",
+      "title": "Les plus belles façons de dire « Oui » à Lisbonne",
+      "subtitle": "Chaque demande en mariage est imaginée autour de votre histoire d’amour. Choisissez le cadre d’exception qui vous ressemble et laissez-nous créer un moment romantique, unique et inoubliable."
+    },
+    "categories": [
+      {
+        "title": "Demande en mariage en Algarve",
+        "tag": "Coucher de soleil sur la côte",
+        "desc": "Une demande aux chandelles sur la côte de l’Algarve, avec les falaises dorées et l’horizon atlantique en toile de fond.",
+        "detail": "Dans le sud du Portugal, l’Algarve offre un décor spectaculaire et digne d’un film pour une demande en mariage inoubliable : allées illuminées de lanternes, mise en scène privée face au coucher du soleil et intimité absolue, loin de l’agitation de la ville.",
+        "highlights": [
+          "Mise en scène romantique et privée aux chandelles, au coucher du soleil",
+          "Vues panoramiques sur l’océan",
+          "Photographe et vidéaste présents sur place",
+          "Dîner privé en option après la demande en mariage",
+          "Arrivée en voiture de collection ou en bateau privé, en option"
+        ],
+        "bestSuitedFor": "Les couples en quête d’un décor grandiose, d’une expérience unique dans une vie et d’une intimité totale, sur la côte de l’Algarve.",
+        "cta": "Organiser une demande en mariage en Algarve"
+      },
+      {
+        "title": "Demande en mariage sur un rooftop à Lisbonne",
+        "tag": "Vue sur la ville",
+        "desc": "Un moment privé sur un rooftop au-dessus de Lisbonne, avec le Tage et les lumières de la ville pour témoins.",
+        "detail": "Une demande en mariage sur un rooftop allie romantisme, intimité et élégance : arche fleurie, lumière des bougies et vue panoramique sur les toits de Lisbonne. Chaque détail est soigneusement préparé en toute discrétion avant votre arrivée, pour une surprise parfaitement orchestrée.",
+        "highlights": [
+          "Rooftop privatisé dans un palais historique, une quinta privée ou un hôtel de charme",
+          "Arche florale et décoration romantique aux chandelles",
+          "Moment magique au coucher du soleil ou sous les étoiles",
+          "Champagne et mise en scène avec pétales de roses",
+          "Reportage photographique réalisé en toute discrétion"
+        ],
+        "bestSuitedFor": "Les couples séjournant dans le centre historique qui souhaitent vivre une demande en mariage romantique, facilement accessible, avec une vue imprenable sur Lisbonne.",
+        "cta": "Organiser une demande en mariage sur un rooftop"
+      },
+      {
+        "title": "Demande en mariage au bord d’une piscine",
+        "tag": "Villa privée",
+        "desc": "Un cadre serein au bord de la piscine d’une villa privée, orné de fleurs flottantes et de la douce lumière des lanternes.",
+        "detail": "Pour un moment romantique alliant détente et luxe, nous transformons les abords de la piscine d’une villa privée en un décor enchanteur : pétales de fleurs flottants, bougies scintillantes et cadre entièrement privatisé, exclusivement réservé à votre couple.",
+        "highlights": [
+          "Privatisation complète d’une villa de luxe",
+          "Décoration florale flottante et mise en lumière aux chandelles",
+          "Espace romantique aménagé au bord de la piscine ou pique-nique raffiné",
+          "Musique live en option",
+          "Intimité totale garantie, sans présence d’autres invités"
+        ],
+        "bestSuitedFor": "Les couples qui souhaitent vivre une demande en mariage dans une atmosphère détendue et luxueuse, avec le confort d’un établissement haut de gamme et une intimité absolue.",
+        "cta": "Organiser une demande en mariage au bord d’une piscine"
+      },
+      {
+        "title": "Demande en mariage sur la plage",
+        "tag": "Romance côtière",
+        "desc": "L’air marin et la lumière dorée pour une demande en mariage le long de la côte atlantique du Portugal.",
+        "detail": "Des plages sauvages de Cascais aux criques paisibles près d’Albufeira, une demande en mariage en bord de mer offre une parenthèse romantique et ensoleillée, bercée par le doux murmure des vagues, dans un cadre naturel d’exception.",
+        "highlights": [
+          "Organisation au coucher du soleil sur la côte portugaise",
+          "Arche florale ou allée romantique de pétales de roses",
+          "Accès privatif à la plage lorsque cela est possible",
+          "Séance photo à la lumière dorée du coucher du soleil",
+          "Possibilité d’ajouter un dîner romantique en bord de mer"
+        ],
+        "bestSuitedFor": "Les couples qui prolongent leur séjour sur la côte portugaise et souhaitent une demande en mariage romantique, naturelle et décontractée, face à l’océan.",
+        "cta": "Organiser une demande en mariage sur la plage"
+      },
+      {
+        "title": "Demande en mariage en montgolfière",
+        "tag": "Au-dessus de tout",
+        "desc": "Faites votre demande au lever du soleil au-dessus de la campagne portugaise, face aux sommets de la Serra da Estrela.",
+        "detail": "Une demande en mariage en montgolfière promet une expérience inoubliable dès les premiers instants : une ascension paisible au lever du soleil, des panoramas à couper le souffle et un toast romantique dans les airs, avant de retrouver une célébration élégamment mise en scène à l’atterrissage.",
+        "highlights": [
+          "Vol privé en montgolfière au lever du soleil",
+          "Vues panoramiques spectaculaires sur les montagnes de la Serra da Estrela",
+          "Demande en mariage pendant le vol ou après l’atterrissage",
+          "Toast au champagne à l’atterrissage",
+          "Reportage photographique de l’ensemble de l’expérience"
+        ],
+        "bestSuitedFor": "Les couples aventureux qui rêvent d’une demande en mariage véritablement unique, d’un moment exceptionnel à vivre une seule fois dans leur vie.",
+        "cta": "Organiser une demande en mariage en montgolfière"
+      },
+      {
+        "title": "Demande en mariage entièrement sur mesure",
+        "tag": "Pensée pour vous",
+        "desc": "Un concept entièrement personnalisé, imaginé autour de votre histoire, de votre façon d’aimer et de votre vision.",
+        "detail": "Chaque histoire d’amour est unique, et certaines demandes en mariage méritent de sortir des sentiers battus. Si vous imaginez un lieu particulier, une surprise originale ou un concept qui vous ressemble, notre équipe crée une expérience exclusive de A à Z, entièrement pensée autour de vos envies et de votre histoire.",
+        "highlights": [
+          "Concept créatif et scénographie entièrement personnalisés",
+          "Recherche et sélection de lieux d’exception à travers le Portugal",
+          "Organisation de surprises avec la complicité de votre famille ou de vos amis",
+          "Animations exclusives et décoration sur mesure",
+          "Coordination complète et discrète, de la conception au jour J"
+        ],
+        "bestSuitedFor": "Les couples qui ont une vision précise, une surprise particulière ou un lieu de rêve en tête et souhaitent donner vie à une demande en mariage véritablement unique.",
+        "cta": "Créer ma demande en mariage sur mesure"
+      }
+    ],
+    "featuredSection": {
+      "label": "Nos réalisations",
+      "title": "Célébrations romantiques à Lisbonne et au Portugal",
+      "subtitle": "Du premier « oui » jusqu’au jour du mariage, nous imaginons des moments inoubliables pour les couples qui souhaitent célébrer leur histoire d’amour à travers des expériences personnelles, élégantes et riches en émotions."
+    },
+    "featured": [
+      {
+        "title": "Demandes en mariage de luxe",
+        "tag": "Demandes",
+        "desc": "Un moment magique imaginé autour de votre histoire d’amour",
+        "detail": "Des mises en scène romantiques aux chandelles en Algarve aux rooftops privés, en passant par les palais historiques et quintas privées, les décors au bord des piscines, les expériences en montgolfière et les surprises entièrement personnalisées, nous créons des demandes en mariage de luxe à Lisbonne, empreintes d’intimité, d’émotion et d’élégance intemporelle."
+      },
+      {
+        "title": "Mariages intimistes",
+        "tag": "À deux",
+        "desc": "Une célébration pleine de sens, à deux ou entourés de vos proches",
+        "detail": "Pour les couples qui rêvent d’une escapade romantique, nous organisons des mariages intimistes à Lisbonne et partout au Portugal, dans des lieux d’exception, avec une scénographie raffinée, des prestations photographiques, des dîners privés et une coordination irréprochable du début à la fin."
+      },
+      {
+        "title": "Mariages de destination",
+        "tag": "Mariages",
+        "desc": "Des célébrations sur plusieurs jours dans les plus beaux lieux du Portugal",
+        "detail": "Des palais historiques, quintas privées et villas privées aux jardins enchanteurs et domaines côtiers, nous organisons des mariages de destination à Lisbonne et des célébrations sur plusieurs jours, alliant élégance, traditions culturelles, hospitalité d’exception et organisation parfaitement maîtrisée."
+      }
+    ],
+    "aboutSection": {
+      "label": "Qui se cache derrière vos événements ?",
+      "name": "Je suis Erica",
+      "role": "Organisatrice de demandes en mariage et de mariages de luxe à Lisbonne",
+      "p1": "Je suis Erica, organisatrice de demandes en mariage et de mariages haut de gamme basée à Lisbonne. Passionnée par l’art de créer des expériences élégantes et inoubliables, je puise mon inspiration dans la beauté, la richesse culturelle et le charme authentique du Portugal.",
+      "p2": "Forte de plus de 10 ans d’expérience dans l’événementiel de luxe, je me spécialise dans les demandes en mariage romantiques, les mariages intimistes et les célébrations privées, entièrement imaginés autour de l’histoire et des envies de chaque couple. De l’Algarve aux palais historiques, quintas privées et rooftops de Lisbonne, chaque détail est soigneusement orchestré pour créer des instants authentiques, riches en émotions et intemporels.",
+      "p3": "Avec mon équipe, nous associons créativité, rigueur organisationnelle et sens du détail pour transformer vos plus belles occasions en expériences véritablement mémorables.",
+      "cta": "En savoir plus",
+      "imageAlt": "Erica, organisatrice de demandes en mariage et de mariages de luxe à Lisbonne"
+    },
+    "promiseSection": {
+      "label": "Notre engagement",
+      "title": "La promesse d’une expérience romantique d’exception à Lisbonne"
+    },
+    "promises": [
+      {
+        "title": "Expériences entièrement sur mesure",
+        "desc": "Chaque demande en mariage, mariage intimiste ou célébration est imaginé avec soin autour de votre histoire d’amour, de vos envies et de l’atmosphère qui vous ressemble."
+      },
+      {
+        "title": "Lieux d’exception à Lisbonne",
+        "desc": "Des couchers de soleil magiques en Algarve aux palais historiques et quintas privées, rooftops, villas privées et palais somptueux, nous sélectionnons le cadre idéal pour chaque célébration."
+      },
+      {
+        "title": "Organisation et coordination irréprochables",
+        "desc": "De la logistique à la scénographie, en passant par l’accueil des invités et le déroulement de votre événement, chaque détail est pris en charge avec attention, rigueur et précision."
+      },
+      {
+        "title": "Émotion, élégance et authenticité",
+        "desc": "Des célébrations raffinées inspirées par la beauté du Portugal, l’intimité des moments partagés et l’art de l’hospitalité portugaise, pour créer des souvenirs véritablement inoubliables."
+      }
+    ],
+    "processSection": {
+      "label": "Notre processus",
+      "title": "Comment se déroule votre expérience ?"
+    },
+    "process": [
+      {
+        "title": "La consultation personnalisée",
+        "desc": "Nous commençons par découvrir votre histoire, vos envies, vos attentes et l’atmosphère que vous souhaitez créer, afin d’imaginer une expérience unique, personnelle et riche de sens."
+      },
+      {
+        "title": "La conception et l’organisation sur mesure",
+        "desc": "Notre équipe imagine, planifie et coordonne chaque aspect de votre événement : sélection des lieux, scénographie, prestataires, logistique, accueil des invités et déroulement de la journée, avec élégance, rigueur et souci du détail."
+      },
+      {
+        "title": "La confirmation de votre réservation",
+        "desc": "Votre date et les lieux sélectionnés sont confirmés dès réception de l’acompte. L’ensemble des prestations, les étapes de l’organisation et l’échéancier des paiements sont définis en toute transparence et avec professionnalisme."
+      },
+      {
+        "title": "Le jour de votre événement",
+        "desc": "Qu’il s’agisse d’une demande en mariage, d’un mariage intimiste ou d’une célébration de luxe, nous orchestrons chaque détail en coulisses pour vous permettre de profiter pleinement de chaque instant, en toute sérénité."
+      }
+    ],
+    "testimonialsSection": {
+      "label": "Témoignages et histoires de couples",
+      "title": "Des mariages inspirés par le Portugal",
+      "subtitle": "Cérémonie romantique dans un palais de Sintra, réception face à l’océan en Algarve ou mariage intimiste dans la vallée du Douro : chaque célébration raconte une histoire singulière. Découvrez les lieux, les détails et les émotions qui rendent un mariage au Portugal inoubliable.",
+      "note": "Les avis clients seront publiés après vérification et autorisation."
+    },
+    "ctaSection": {
+      "label": "Prêts à vivre une expérience d’exception ?",
+      "title": "Créons ensemble des souvenirs véritablement inoubliables",
+      "subtitle": "Qu’il s’agisse d’une demande en mariage romantique, d’un mariage intimiste ou d’une célébration de luxe, partagez votre vision avec nous. Nous donnerons vie à chacune de vos envies, avec élégance et raffinement, à Lisbonne et partout au Portugal."
+    },
+    "ui": {
+      "details": "détails",
+      "close": "Fermer",
+      "category_label": "Style de demande en mariage",
+      "best_suited_for": "Idéal pour",
+      "reserve": "Organiser votre événement",
+      "continue": "Poursuivre la découverte",
+      "plan": "Organiser votre événement",
+      "discover": "Découvrir"
+    }
+  }
+}

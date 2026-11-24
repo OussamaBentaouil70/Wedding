@@ -1,0 +1,1713 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "wedding": "Hochzeiten",
+    "events": "Events",
+    "gallery": "Galerie",
+    "contact": "Event planen",
+    "language_label": "Sprache wählen",
+    "venues": "Locations",
+    "proposals": "Heiratsanträge"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Hochzeitsplaner in Portugal",
+      "title_1": "Individuelle Destination Weddings",
+      "title_2": "mit Stil und Persönlichkeit",
+      "subtitle": "Von den Palästen in Sintra und Lissabon über die Algarve bis nach Porto und ins Douro-Tal: Wir gestalten persönliche Hochzeiten mit durchdachtem Design und sorgfältiger Koordination.",
+      "book": "Jetzt reservieren",
+      "plan": "Jetzt Hochzeit planen",
+      "scroll": "Scrollen"
+    },
+    "trust": {
+      "item1": "Individuelle Planung",
+      "item2": "Destination Weddings in Portugal",
+      "item3": "Durchdachtes Design",
+      "item4": "Persönliche Gästeerlebnisse"
+    },
+    "about": {
+      "tagline": "Über uns",
+      "title_1": "Portugals führendes",
+      "title_2": "Studio für Luxushochzeiten",
+      "title_3": "& Events",
+      "p1": "Wir sind ein Boutique-Planungsstudio mit Sitz in Lissabon und gestalten Feiern, die mühelos schön und zutiefst persönlich wirken. Mit fast zwei Jahrzehnten Erfahrung und Projekten in über 40 Ländern bringen wir internationale Präzision an Portugals außergewöhnlichste Orte.",
+      "p2": "Jedes Event, das wir gestalten, folgt einem Grundsatz:",
+      "p2_strong": "Ihre Geschichte verdient es, mit Bedacht erzählt zu werden",
+      "weddings_btn": "Unsere Hochzeiten",
+      "events_btn": "Unsere Events"
+    },
+    "promises": {
+      "tagline": "Unser Versprechen",
+      "title": "Das Lisbon-Weddings-Versprechen",
+      "p1_title": "Individuelles Design",
+      "p1_desc": "Jede Feier wird auf Ihre Vision, Ihren Stil, Ihre Kultur und das Erlebnis Ihrer Gäste abgestimmt.",
+      "p2_title": "Lokale Expertise",
+      "p2_desc": "Exklusiver Zugang zu Portugals schönsten Locations, Kunsthandwerkern und bewährten Dienstleistern.",
+      "p3_title": "Reibungslose Koordination",
+      "p3_desc": "Planung, Produktion, Logistik und Gästeführung – von Anfang bis Ende aus einer Hand.",
+      "p4_title": "Luxus mit Seele",
+      "p4_desc": "Elegante Erlebnisse voller Schönheit, Gastfreundschaft und authentischer portugiesischer Atmosphäre."
+    },
+    "weddings": {
+      "tagline": "Ausgewählte Arbeiten",
+      "title": "Signature-Hochzeiten in ganz Portugal",
+      "btn": "Hochzeiten entdecken",
+      "view_details": "Details ansehen"
+    },
+    "events": {
+      "tagline": "Mehr als Hochzeiten",
+      "title": "Elegante Events über den Hochzeitstag hinaus",
+      "subtitle": "Firmen-Retreats, besondere Jubiläen, Markenaktivierungen und private Dinner – jedes ein Erlebnis, das in Erinnerung bleibt.",
+      "btn": "Events entdecken"
+    },
+    "process": {
+      "tagline": "So arbeiten wir",
+      "title_1": "Ein reibungsloser Weg",
+      "title_2": "Von der Vision zur Wirklichkeit",
+      "btn": "Planung beginnen",
+      "s1_title": "Entdecken",
+      "s1_desc": "Beratung, ästhetische Richtung, Umfang, Budget, Prioritäten",
+      "s2_title": "Gestalten",
+      "s2_desc": "Locationsuche, Kreativkonzept, Auswahl der Dienstleister, Gästeerlebnis",
+      "s3_title": "Orchestrieren",
+      "s3_desc": "Produktionsplanung, Zeitplan, Logistik, Freigaben, Koordination",
+      "s4_title": "Feiern",
+      "s4_desc": "Umsetzung vor Ort mit ruhiger, diskreter und professioneller Leitung"
+    },
+    "testimonials": {
+      "tagline": "Erfahrungen unserer Paare",
+      "title": "Hochzeitsgeschichten aus Portugal",
+      "subtitle": "Ob eine romantische Zeremonie in einem Palast in Sintra, ein Empfang an der Algarve oder eine intime Hochzeit im Douro-Tal: Jede Feier erzählt eine eigene Geschichte. Entdecken Sie die Orte und besonderen Details einer Destination Wedding in Portugal.",
+      "note": "Verifizierte Kundenbewertungen werden nach Freigabe veröffentlicht."
+    },
+    "cta": {
+      "tagline": "Bereit für den ersten Schritt?",
+      "title_1": "Lassen Sie uns gemeinsam",
+      "title_2": "Unvergessliches schaffen",
+      "subtitle": "Erzählen Sie uns von Ihrer Vision. Um alles Weitere kümmern wir uns.",
+      "btn_plan": "Event planen",
+      "btn_wa": "WhatsApp",
+      "form_success": "Vielen Dank! Wir melden uns innerhalb von 24 Stunden.",
+      "form_title": "Schnellanfrage",
+      "form_name": "Ihr Name",
+      "form_email": "E-Mail-Adresse",
+      "form_service": "Art des Events",
+      "form_service_wedding": "Hochzeit",
+      "form_service_corporate": "Firmenevent",
+      "form_service_celebration": "Private Feier",
+      "form_service_other": "Sonstiges",
+      "form_msg": "Erzählen Sie uns von Ihren Vorstellungen…",
+      "form_sending": "Wird gesendet…",
+      "form_send": "Anfrage senden"
+    },
+    "ui": {
+      "view_details": "Details ansehen",
+      "across": "In ganz Portugal",
+      "featured_weddings": "Ausgewählte Hochzeiten",
+      "events_preview": "Unsere Events",
+      "explore_weddings": "Hochzeiten entdecken",
+      "explore_events": "Events entdecken",
+      "continue": "Weiter entdecken"
+    },
+    "weddingPreviews": [
+      {
+        "category": "Signature-Hochzeit",
+        "title": "Hochzeiten in Lissabon",
+        "location": "Paläste, Quintas, Dachterrassen",
+        "detail": "Von historischen Palästen und privaten Quintas bis zu Palastgärten: Hochzeiten in Lissabon sind filmreif, intim und voller Atmosphäre – mit Editorial-Anspruch gestaltet und perfekt koordiniert.",
+        "highlights": [
+          "Historische Paläste, private Quintas, Innenhöfe & Dachterrassen",
+          "Design- und Styling-Konzept",
+          "Gästeerlebnis und Koordination am Hochzeitstag"
+        ]
+      },
+      {
+        "category": "Signature-Hochzeit",
+        "title": "Küstenhochzeiten",
+        "location": "Die Algarve-Küste",
+        "detail": "Eine Zeremonie bei Sonnenuntergang, ein Dinner im Laternenlicht und Musik unter Sternen – Küstenhochzeiten sind eindrucksvolle Destination-Erlebnisse mit müheloser Eleganz.",
+        "highlights": [
+          "Zeremonien bei Sonnenuntergang & Dinner unter Sternen",
+          "Logistik & Transportplanung",
+          "Unterhaltung, Licht und Timing"
+        ]
+      },
+      {
+        "category": "Signature-Hochzeit",
+        "title": "Hochzeiten an der Küste & auf Landgütern",
+        "location": "Cascais & private Anwesen",
+        "detail": "Küstenlicht, Meeresbrise und entspannte Eleganz – von Feiern am Meer bis zu privaten Anwesen für mehrtägige Hochzeiten.",
+        "highlights": [
+          "Küstenzeremonien zur goldenen Stunde",
+          "Wochenenden auf dem Anwesen & Gästebetreuung",
+          "Auswahl der Dienstleister & Gastfreundschaft"
+        ]
+      }
+    ],
+    "eventPreviews": [
+      {
+        "title": "Willkommensdinner",
+        "tag": "Private Events",
+        "detail": "Das erste Zusammentreffen gibt den Ton an – feines Dinner, herzliche Gastfreundschaft und ein perfekt getakteter Abend für Ihre Gäste.",
+        "highlights": [
+          "Auswahl von Location und Küchenchef oder Caterer",
+          "Tischgestaltung & Beleuchtung",
+          "Ablaufplan & Koordination"
+        ]
+      },
+      {
+        "title": "Verlobungsfeiern",
+        "tag": "Vor der Hochzeit",
+        "detail": "Eine Verlobungsfeier wie aus einem Magazin – intim, durchdacht und perfekt organisiert.",
+        "highlights": [
+          "Konzept & Styling",
+          "Auswahl der Dienstleister",
+          "Gästeerlebnis & Timing"
+        ]
+      },
+      {
+        "title": "Private Feiern",
+        "tag": "Feiern",
+        "detail": "Geburtstage, Jubiläen, private Dinner – stilvolle Feiern, die mühelos wirken und unvergesslich bleiben.",
+        "highlights": [
+          "Atmosphäre & Unterhaltung",
+          "Details der Gastfreundschaft",
+          "Teamleitung vor Ort"
+        ]
+      },
+      {
+        "title": "Firmen- & Markenevents",
+        "tag": "Business",
+        "detail": "Hochwertige Veranstaltungen für Marken und Unternehmen – kreative Leitung, Logistik und Umsetzung mit höchster Präzision.",
+        "highlights": [
+          "Planungs- & Produktionspartner",
+          "Technik, Bühne und Zeitpläne",
+          "Diskrete Betreuung & Koordination"
+        ]
+      }
+    ],
+    "testimonialItems": [
+      {
+        "text": "Mit dem Team zu arbeiten fühlte sich an, als hätten wir einen Art Director und eine beste Freundin in einem. Unsere Hochzeit in Lissabon übertraf alles, was wir uns vorgestellt hatten.",
+        "origin": "Paris, Frankreich"
+      },
+      {
+        "text": "Jedes Detail – vom Jasminbogen bei Sonnenuntergang bis zu den Gnawa-Musikern um Mitternacht – war genau wir. Ich habe mich noch nie so verstanden gefühlt.",
+        "origin": "London, Großbritannien"
+      },
+      {
+        "text": "Bergretreats bieten eine besondere Kulisse für Teamtreffen, private Dinner und maßgeschneiderte Gruppenerlebnisse.",
+        "author": "Firmen-Retreats",
+        "origin": "Serra da Estrela, Portugal"
+      }
+    ]
+  },
+  "footer": {
+    "desc": "Luxuriöse, unvergessliche Erlebnisse im Herzen Portugals.",
+    "links_title": "Schnellzugriff",
+    "contact_title": "Kontakt",
+    "rights": "Weddings Planner Portugal. Alle Rechte vorbehalten."
+  },
+  "page_hero": {
+    "title": "Jetzt mit der Planung beginnen",
+    "subtitle": "Erzählen Sie uns von Ihren Vorstellungen – wir kümmern uns um alles Weitere.",
+    "success_title": "Anfrage erhalten!",
+    "success_text": "Wir melden uns innerhalb von 24 Stunden, um mit der Planung zu beginnen.",
+    "full_name": "Vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefon / WhatsApp",
+    "event_type": "Art des Events",
+    "dates": "An- und Abreisedatum",
+    "guests": "Anzahl der Gäste",
+    "destinations": "Gewünschte Reiseziele",
+    "budget": "Geschätztes Budget",
+    "message": "Erzählen Sie uns von Ihren Vorstellungen…",
+    "sending": "Wird gesendet…",
+    "send": "Anfrage senden",
+    "option_wedding": "Hochzeit",
+    "option_corporate": "Firmenevent",
+    "option_private": "Private Feier",
+    "option_other": "Sonstiges",
+    "select_proposal": "Art des Heiratsantrags wählen",
+    "select_venue": "Art der Location wählen"
+  },
+  "wedding_types": {
+    "select": "Wählen Sie die Art Ihrer Hochzeit",
+    "options": {
+      "Elopement": "Elopement-Hochzeit",
+      "Indian": "Indische Hochzeit",
+      "Jewish": "Jüdische Hochzeit",
+      "Algarve": "Küstenhochzeit an der Algarve"
+    },
+    "cards": [
+      {
+        "title": "Hochzeit in Lissabon",
+        "desc": "Individuelle Hochzeiten in Lissabon mit eleganter Planung, maßgeschneidertem Design und reibungsloser Koordination von Anfang bis Ende.",
+        "modal": {
+          "title": "Hochzeit in Lissabon",
+          "subtitle": "Eine stilvolle Feier in der Stadt, die Ihrer Destination Wedding ihren unverwechselbaren Charakter verleiht.",
+          "body": "Planung besonderer Locations, elegante Gestaltung, herzliche Gästebetreuung und reibungslose Hochzeitskoordination in Lissabon."
+        }
+      },
+      {
+        "title": "Küstenhochzeiten an der Algarve",
+        "desc": "Zeremonien bei Sonnenuntergang und eindrucksvolle Küstenfeiern an der Algarve."
+      },
+      {
+        "title": "Elopement-Hochzeiten in Portugal",
+        "desc": "Intime Eheversprechen und romantische Auszeiten voller Privatsphäre, Emotion und bedeutungsvoller Momente."
+      },
+      {
+        "title": "Indische Hochzeit in Lissabon",
+        "desc": "Lebendige Feiern, die indische Traditionen mit einem eleganten portugiesischen Ambiente verbinden."
+      },
+      {
+        "title": "Jüdische Hochzeit in Lissabon",
+        "desc": "Traditionsbewusste Feiern mit zeremonieller Eleganz, koscherer Koordination und stilvoller Gastfreundschaft."
+      }
+    ]
+  },
+  "wedding_page": {
+    "hero": {
+      "label": "Hochzeiten in Portugal",
+      "title": "Individuell gestaltete Hochzeiten in Portugal",
+      "subtitle": "Von intimen Zeremonien bis zu mehrtägigen Feiern gestalten wir Hochzeiten, die Schönheit, Emotion und perfekte Koordination vereinen."
+    },
+    "weddingTypesSection": {
+      "label": "Hochzeitsarten",
+      "title": "Die Hochzeiten, die wir gestalten",
+      "subtitle": "Entdecken Sie unsere unterschiedlichen Hochzeitskonzepte und finden Sie das Erlebnis, das zu Ihren Wünschen passt."
+    }
+  },
+  "wedding_subpages": {
+    "algarve": {
+      "hero": {
+        "label": "Hochzeiten in Portugal",
+        "title": "Küstenhochzeiten an der Algarve",
+        "subtitle": "Von intimen Zeremonien bei Sonnenuntergang bis hin zu mehrtägigen Küstenerlebnissen gestalten wir Hochzeiten an der Algarve, die natürliche Schönheit, Exklusivität und unvergessliche Momente vereinen."
+      },
+      "weddingTypesSection": {
+        "label": "Hochzeitsarten",
+        "title": "Die Hochzeiten, die wir gestalten",
+        "subtitle": "Entdecken Sie unsere unterschiedlichen Hochzeitskonzepte und finden Sie das Erlebnis, das zu Ihren Wünschen passt."
+      },
+      "servicesSection": {
+        "label": "Unser Angebot",
+        "title": "Unsere Hochzeitsleistungen",
+        "subtitle": "Maßgeschneiderte Exzellenz – von der Gestaltung luxuriöser Küstenlocations über Logistik und Gästebetreuung bis zur vollständigen Eventproduktion an außergewöhnlichen Orten."
+      },
+      "services": [
+        {
+          "title": "Gestaltung von Küstenlocations",
+          "desc": "Elegante Raumkonzepte, stimmungsvolle Beleuchtung und stilvolle Aufbauten, harmonisch auf die Landschaft der Algarve abgestimmt."
+        },
+        {
+          "title": "Logistik & Gästeerlebnis",
+          "desc": "Transfers, Zeitplanung und Gästebetreuung – auch an abgelegenen Orten bis ins Detail durchdacht."
+        },
+        {
+          "title": "Komplette Eventproduktion",
+          "desc": "Technische Koordination, Dienstleistermanagement und professionelle Umsetzung sämtlicher Programmpunkte vor Ort."
+        },
+        {
+          "title": "Zeremonien bei Sonnenuntergang",
+          "desc": "Romantische Eheversprechen im goldenen Abendlicht mit weitem Blick über die Küste."
+        },
+        {
+          "title": "Mehrtägige Küstenhochzeiten",
+          "desc": "Willkommensdinner, Hochzeitstag und Abschiedsmomente als stimmiges Gesamterlebnis gestaltet."
+        },
+        {
+          "title": "Luxuriöse Gestaltung",
+          "desc": "Boho-Eleganz, Kerzenlicht und warme Küstentexturen – individuell auf Ihre Wünsche abgestimmt."
+        }
+      ],
+      "venuesSection": {
+        "label": "Unsere Veranstaltungsorte",
+        "title": "Feiern Sie an den außergewöhnlichsten Orten Portugals",
+        "subtitle": "Von luxuriösen Küstenanwesen bis zu privaten Arrangements unter dem Sternenhimmel."
+      },
+      "venues": [
+        {
+          "title": "Luxuriöse Küstenanwesen",
+          "desc": "Ein Küstenanwesen voller Atmosphäre: warmes Laternenlicht, weiter Himmel und eine Zeremonie, die selbst bei vielen Gästen intim wirkt.",
+          "highlights": [
+            "Zeremonienkulisse im Sonnenuntergang",
+            "Exklusive Feier auf einem privaten Anwesen",
+            "Konzipiert für Dinner unter dem Sternenhimmel"
+          ]
+        },
+        {
+          "title": "Private Arrangements zur Sternenbeobachtung",
+          "desc": "Ideal für Paare, die sich einen privaten Rückzugsort wünschen: entspannter Luxus, durchdachte Gästeführung und ein unvergessliches Übernachtungserlebnis.",
+          "highlights": [
+            "Empfangsmomente unter dem Sternenhimmel",
+            "Entspannt-luxuriöse Gestaltung",
+            "Ideal für mehrtägige Küstenwochenenden"
+          ]
+        },
+        {
+          "title": "Zeremonien im goldenen Abendlicht",
+          "desc": "Hier wird das Licht der Küste selbst Teil der Inszenierung und schafft eine eindrucksvolle, filmreife Kulisse für Eheversprechen und Porträts.",
+          "highlights": [
+            "Perfektes Timing im goldenen Abendlicht",
+            "Panoramablick über die Küste",
+            "Eindrucksvolle Hochzeitsfotografie"
+          ]
+        },
+        {
+          "title": "Dinner unter dem Sternenhimmel",
+          "desc": "Ein Dinner an der Küste wird zum Höhepunkt: lange Tafeln, Kerzenschein und ein Gästeerlebnis, das zum genussvollen Verweilen bis in die Nacht einlädt.",
+          "highlights": [
+            "Dinnerkonzepte an langen Tafeln",
+            "Stimmungsvolle Bewirtung bei Kerzenlicht",
+            "Musik und Unterhaltung nach Einbruch der Dunkelheit"
+          ]
+        },
+        {
+          "title": "Exklusive Luxus-Retreats an der Küste",
+          "desc": "Ein abgelegener Luxus-Rückzugsort für Paare, die Privatsphäre, Komfort und eine rundum besondere Feier fernab der Stadt suchen.",
+          "highlights": [
+            "Exklusive Nutzung und Privatsphäre",
+            "Luxuriöser Komfort in abgeschiedener Lage",
+            "Ideal für individuell gestaltete Hochzeitswochenenden"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspiration",
+        "title": "Hochzeitsthemen & Inspiration",
+        "subtitle": "Boho-Eleganz, Dinner bei Kerzenschein und Zeremonien im goldenen Sonnenuntergang – in der einzigartigen Atmosphäre der Küste."
+      },
+      "themes": [
+        {
+          "title": "Boho-Eleganz"
+        },
+        {
+          "title": "Küstendinner bei Kerzenschein"
+        },
+        {
+          "title": "Zeremonien im goldenen Sonnenuntergang"
+        },
+        {
+          "title": "Romantik an der Küste"
+        },
+        {
+          "title": "Luxuriöse Gestaltung in Naturtönen"
+        },
+        {
+          "title": "Eintauchen in die Atmosphäre der Küste"
+        }
+      ],
+      "ctaSection": {
+        "label": "Bereit?",
+        "title": "Planen Sie Ihre Hochzeit",
+        "subtitle": "Gemeinsam gestalten wir Ihre unvergessliche Küstenhochzeit an der Algarve."
+      }
+    },
+    "elopement": {
+      "hero": {
+        "label": "Individuell gestaltete Hochzeiten in Portugal",
+        "title": "Elopement-Hochzeiten in Portugal",
+        "subtitle": "Von intimen Eheversprechen bis zu romantischen Auszeiten gestalten wir Elopement-Hochzeiten voller Emotionen, Privatsphäre und persönlicher Erlebnisse an atemberaubenden Orten in Portugal."
+      },
+      "servicesSection": {
+        "label": "Unser Angebot",
+        "title": "Unsere Hochzeitsleistungen",
+        "subtitle": "Maßgeschneiderte Leistungen – von der Suche nach der perfekten Location über Styling und Fotografie bis zur vollständigen Koordination intimer Feierlichkeiten."
+      },
+      "services": [
+        {
+          "title": "Auswahl der perfekten Location",
+          "desc": "Historische Paläste und private Quintas, malerische Küstenlandschaften und verborgene Lieblingsorte, die zu Ihrer Geschichte passen."
+        },
+        {
+          "title": "Stilvolle Gestaltung intimer Zeremonien",
+          "desc": "Reduzierte, romantische Arrangements, bei denen der besondere Augenblick im Mittelpunkt steht."
+        },
+        {
+          "title": "Koordination der Fotografie",
+          "desc": "Natürliches Licht, filmreife Bildkompositionen und liebevolle Details, die Ihre Erinnerungen bewahren."
+        },
+        {
+          "title": "Vollständige Koordination",
+          "desc": "Wir kümmern uns diskret um die gesamte Organisation, damit Sie Ihren Tag entspannt genießen können."
+        },
+        {
+          "title": "Planung Ihrer Feier",
+          "desc": "Liebevolle Details für ein privates Dinner, eine romantische Auszeit oder besondere Momente nach der Zeremonie."
+        },
+        {
+          "title": "Bedeutungsvolle Momente mit Ihren Gästen",
+          "desc": "Auch bei kleinen Feiern wird jedes Detail bewusst und mit höchstem Anspruch gestaltet."
+        }
+      ],
+      "venuesSection": {
+        "label": "Unsere Veranstaltungsorte",
+        "title": "Feiern Sie an den außergewöhnlichsten Orten Portugals",
+        "subtitle": "Von abgeschiedenen historischen Palästen und privaten Quintas über Küstenlandschaften bis zu verborgenen Juwelen in ganz Portugal."
+      },
+      "venues": [
+        {
+          "title": "Historische Paläste und private Quintas",
+          "desc": "Historische Paläste und private Quintas bieten ruhige Innenhöfe, versteckte Winkel und eine elegante Kulisse, in der nur Sie beide im Mittelpunkt stehen.",
+          "highlights": [
+            "Ruhige, private Atmosphäre",
+            "Perfekt für intime Eheversprechen",
+            "Elegante portugiesische Architektur"
+          ]
+        },
+        {
+          "title": "Verborgene Küstenlandschaften",
+          "desc": "Für Paare, die Weite und Privatsphäre zugleich suchen: offene Landschaften, dramatisches Licht und eine klare, unverfälschte Kulisse für ihre Zeremonie.",
+          "highlights": [
+            "Weitläufige Kulisse für die Zeremonie",
+            "Unkomplizierte Gästelogistik",
+            "Romantische Porträts bei Sonnenuntergang"
+          ]
+        },
+        {
+          "title": "Private Momente auf der Dachterrasse",
+          "desc": "Eine Feier auf der Dachterrasse bleibt intim und wird zugleich zu einem eindrucksvollen Erlebnis – mit Blick über die Stadt und dem Gefühl, dem Alltag vollkommen zu entfliehen.",
+          "highlights": [
+            "Stadtpanorama von oben",
+            "Ideal für ein privates Dinner",
+            "Kompakt und besonders fotogen"
+          ]
+        },
+        {
+          "title": "Stille Gartenoasen",
+          "desc": "Verborgene Gartenecken bieten sanfte Farben, natürliche Strukturen und eine ruhige Atmosphäre, die mühelos und zutiefst persönlich wirkt.",
+          "highlights": [
+            "Sanfte, natürliche Gestaltung",
+            "Ruhiger, diskreter Rahmen",
+            "Wunderschön für den ersten Blick aufeinander"
+          ]
+        },
+        {
+          "title": "Luxus fernab des Alltags",
+          "desc": "Für Paare, die absolute Privatsphäre wünschen: ein diskretes Luxuserlebnis mit möglichst wenig Ablenkung und umso mehr Bedeutung.",
+          "highlights": [
+            "Diskrete Gastfreundschaft auf höchstem Niveau",
+            "Individuell auf private Elopement-Hochzeiten abgestimmt",
+            "Ruhe und Abgeschiedenheit"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspiration",
+        "title": "Hochzeitsthemen & Inspiration",
+        "subtitle": "Romantischer Minimalismus, filmreife Augenblicke und zutiefst persönliche Erlebnisse."
+      },
+      "themes": [
+        {
+          "title": "Romantischer Minimalismus"
+        },
+        {
+          "title": "Filmreife Auszeit"
+        },
+        {
+          "title": "Private Eheversprechen"
+        },
+        {
+          "title": "Stiller Luxus"
+        },
+        {
+          "title": "Intime Feier"
+        },
+        {
+          "title": "Bedeutungsvolle Details"
+        }
+      ],
+      "ctaSection": {
+        "label": "Bereit?",
+        "title": "Planen Sie Ihre Hochzeit",
+        "subtitle": "Gemeinsam gestalten wir Ihre intime und unvergessliche Elopement-Hochzeit in Portugal."
+      }
+    },
+    "indian": {
+      "hero": {
+        "label": "Individuell gestaltete Hochzeiten in Portugal",
+        "title": "Indische Hochzeit in Lissabon",
+        "subtitle": "Von lebendigen traditionellen Ritualen bis zu mehrtägigen Feierlichkeiten gestalten wir indische Hochzeiten, die kulturelle Authentizität bewahren und zugleich ein luxuriöses Erlebnis in Portugal bieten."
+      },
+      "servicesSection": {
+        "label": "Unser Angebot",
+        "title": "Unsere Hochzeitsleistungen",
+        "subtitle": "Maßgeschneiderte Leistungen von der Koordination traditioneller Zeremonien über Dekoration und Catering mit indischer Küche bis zur umfassenden Gästebetreuung."
+      },
+      "services": [
+        {
+          "title": "Koordination traditioneller Zeremonien",
+          "desc": "Sorgfältige Planung und zeitliche Abstimmung unter Wahrung der Rituale und Abläufe einer indischen Hochzeit."
+        },
+        {
+          "title": "Dekoration & Styling",
+          "desc": "Farbenprächtige Blumengestaltung und vielschichtige Dekoration, abgestimmt auf Zeremonie und Empfang."
+        },
+        {
+          "title": "Catering mit indischer Küche",
+          "desc": "Menüplanung mit Cateringpartnern, die auf authentische indische Küche spezialisiert sind."
+        },
+        {
+          "title": "Gästeerlebnis",
+          "desc": "Gastfreundschaft, Transfers und Zeitplanung für mehrtägige Hochzeitsfeiern."
+        },
+        {
+          "title": "Mehrtägige Eventproduktion",
+          "desc": "Vom Willkommensempfang über die Zeremonie bis zur Feier ist jeder Tag harmonisch aufeinander abgestimmt."
+        },
+        {
+          "title": "Kulturelles Feingefühl",
+          "desc": "Respektvolle Planung, die indische Traditionen mit dem besonderen Ambiente von Lissabon vereint."
+        }
+      ],
+      "venuesSection": {
+        "label": "Unsere Veranstaltungsorte",
+        "title": "Feiern Sie an den außergewöhnlichsten Orten Portugals",
+        "subtitle": "Von großzügigen Villen bis zu eleganten Locations, die für mehrtägige indische Hochzeitsfeiern geeignet sind."
+      },
+      "venues": [
+        {
+          "title": "Großzügige Villen",
+          "desc": "Eine weitläufige Villa bietet vielfältige Räume für eine indische Hochzeit – mit Platz für Rituale, Zusammenkünfte und herzliche Gastfreundschaft.",
+          "highlights": [
+            "Durchdachter Ablauf mehrtägiger Zeremonien",
+            "Platz für die ganze Familie",
+            "Ideal für traditionelle Rituale"
+          ]
+        },
+        {
+          "title": "Elegante Innenhöfe",
+          "desc": "Innenhöfe schaffen eine familiäre Nähe zur Zeremonie und bieten einen stilvollen Rahmen, der sich an Bräuche und Prozessionen anpassen lässt.",
+          "highlights": [
+            "Ideal für Zeremonien",
+            "Elegante Wege für Prozessionen",
+            "Flexibel für kulturelle Rituale"
+          ]
+        },
+        {
+          "title": "Gärten für den Hochzeitsempfang",
+          "desc": "In festlichen Gärten kann die Gestaltung besonders ausdrucksstark werden – mit farbenprächtigen Blumen und einem ebenso eleganten wie fröhlichen Dinner.",
+          "highlights": [
+            "Üppige Blumendekoration",
+            "Ideal für lebendige Empfänge",
+            "Platz für Musik und ausgelassene Feiern"
+          ]
+        },
+        {
+          "title": "Locations für mehrtägige Feierlichkeiten",
+          "desc": "Diese Locations sind auf den Komfort der Gäste ausgerichtet: Jeder Programmpunkt hat seinen eigenen Charakter, während das gesamte Wochenende harmonisch zusammenwirkt.",
+          "highlights": [
+            "Komfortable Wege für die Gäste",
+            "Für mehrtägige Feierlichkeiten konzipiert",
+            "Klare Aufteilung der Veranstaltungsbereiche"
+          ]
+        },
+        {
+          "title": "Luxuriöse Veranstaltungsorte in Portugal",
+          "desc": "Exklusive Locations in Portugal bieten einen stilvollen Rahmen für eine Destination Wedding und zugleich Raum für die Größe und Rituale einer indischen Hochzeit.",
+          "highlights": [
+            "Besonderes Reiseziel mit höchstem Komfort",
+            "Tradition in luxuriösem Ambiente",
+            "Hervorragend für Familienfeiern"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspiration",
+        "title": "Hochzeitsthemen & Inspiration",
+        "subtitle": "Farbenfrohe Zeremonien, üppige Blumenarrangements, kulturelle Traditionen und erlesener Luxus."
+      },
+      "themes": [
+        {
+          "title": "Farbenfrohe Zeremonien"
+        },
+        {
+          "title": "Üppige Blumenpracht"
+        },
+        {
+          "title": "Traditionelle Rituale"
+        },
+        {
+          "title": "Erlesener Luxus"
+        },
+        {
+          "title": "Kulturelle Feierlichkeiten"
+        },
+        {
+          "title": "Elegante Gestaltung indischer Hochzeiten"
+        }
+      ],
+      "ctaSection": {
+        "label": "Bereit?",
+        "title": "Planen Sie Ihre Hochzeit",
+        "subtitle": "Lassen Sie Ihre Traumhochzeit nach indischer Tradition in Lissabon Wirklichkeit werden."
+      }
+    },
+    "jewish": {
+      "hero": {
+        "label": "Individuell gestaltete Hochzeiten in Portugal",
+        "title": "Jüdische Hochzeit in Lissabon",
+        "subtitle": "Von traditionellen Zeremonien unter der Chuppa bis zu eleganten mehrtägigen Feiern gestalten wir jüdische Hochzeiten, die das kulturelle Erbe, die Rituale und eine anspruchsvolle Ästhetik würdigen – mit reibungsloser Koordination in Lissabon."
+      },
+      "servicesSection": {
+        "label": "Unser Angebot",
+        "title": "Unsere Hochzeitsleistungen",
+        "subtitle": "Maßgeschneiderte Begleitung in jeder Phase – einschließlich der Koordination koscheren Caterings, der Gestaltung der Zeremonie und einer kultursensiblen Planung."
+      },
+      "services": [
+        {
+          "title": "Koordination koscheren Caterings",
+          "desc": "Sorgfältige Auswahl und Abstimmung mit Cateringpartnern für koschere Speisen."
+        },
+        {
+          "title": "Gestaltung der Zeremonie",
+          "desc": "Umsichtige Planung der Chuppa, der Sitzordnung und des Zeremonienablaufs."
+        },
+        {
+          "title": "Kultursensible Planung",
+          "desc": "Jedes Detail wird mit Respekt vor Traditionen und familiären Erwartungen umgesetzt."
+        },
+        {
+          "title": "Begleitung mehrtägiger Feierlichkeiten",
+          "desc": "Willkommensdinner, Zeremonie und Abschiedsmomente werden nahtlos aufeinander abgestimmt."
+        },
+        {
+          "title": "Gastfreundschaft für Ihre Gäste",
+          "desc": "Transfers, Zeitplanung und Betreuung für Familien und Gäste, die nach Lissabon reisen."
+        },
+        {
+          "title": "Elegante Eventproduktion",
+          "desc": "Luxuriöse Gestaltung und souveräne Umsetzung während des gesamten Hochzeitserlebnisses."
+        }
+      ],
+      "venuesSection": {
+        "label": "Unsere Veranstaltungsorte",
+        "title": "Feiern Sie an den außergewöhnlichsten Orten Portugals",
+        "subtitle": "Von historischen Palästen und privaten Quintas mit reichem jüdischem Erbe bis zu luxuriösen Villen und exklusiven Veranstaltungsorten in Lissabon."
+      },
+      "venues": [
+        {
+          "title": "Historische Paläste und private Quintas",
+          "desc": "Historische Paläste und private Quintas bieten eine bedeutungsvolle Kulisse für traditionsverbundene Feiern und vereinen intime Architektur mit einem unverwechselbaren Ortsgefühl.",
+          "highlights": [
+            "Atmosphäre voller Geschichte",
+            "Intimer Rahmen für die Zeremonie",
+            "Ideal für Familie und Tradition"
+          ]
+        },
+        {
+          "title": "Luxuriöse Villen",
+          "desc": "Luxusvillen bieten flexible Möglichkeiten für koschere Dinner, Willkommensveranstaltungen und den privaten Ablauf vieler jüdischer Hochzeiten.",
+          "highlights": [
+            "Flexible Gestaltung privater Feiern",
+            "Geeignet für die Koordination koscherer Speisen",
+            "Ideal für mehrtägige Zusammenkünfte"
+          ]
+        },
+        {
+          "title": "Exklusive Locations in Lissabon",
+          "desc": "Eine exklusive Location in Lissabon bietet den passenden Rahmen für eine formelle Feier – mit einem eleganten Ablauf von der Chuppa bis zum Empfang.",
+          "highlights": [
+            "Stilvoller Ablauf der Zeremonie",
+            "Elegante Übergänge zum Empfang",
+            "Hervorragende Möglichkeiten zur Gästebetreuung"
+          ]
+        },
+        {
+          "title": "Locations für die Chuppa-Zeremonie",
+          "desc": "Für die Chuppa geeignete Orte werden mit Blick auf Harmonie, Licht und die besondere Bedeutung der Zeremonie ausgewählt – als wunderschöner, respektvoller Rahmen für das Ritual.",
+          "highlights": [
+            "Gestaltung mit Fokus auf die Zeremonie",
+            "Würdevoller Rahmen für die Rituale",
+            "Für unvergessliche Eheversprechen konzipiert"
+          ]
+        },
+        {
+          "title": "Traditionsverbundene Veranstaltungsorte",
+          "desc": "Orte mit kulturellem Erbe vereinen Komfort, Diskretion und Schönheit, damit Ihre Feier die Tradition würdigt, ohne zu förmlich zu wirken.",
+          "highlights": [
+            "Traditionsbewusstes Ambiente",
+            "Herzliche, einladende Gastfreundschaft",
+            "Für intime und größere Feiern geeignet"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspiration",
+        "title": "Hochzeitsthemen & Inspiration",
+        "subtitle": "Zeitlose Eleganz, traditionelle Rituale und moderner Luxus verschmelzen zu bedeutungsvollen Feierlichkeiten."
+      },
+      "themes": [
+        {
+          "title": "Zeitlose Eleganz"
+        },
+        {
+          "title": "Traditionelle Rituale"
+        },
+        {
+          "title": "Moderner Luxus"
+        },
+        {
+          "title": "Bedeutungsvolle Feierlichkeiten"
+        },
+        {
+          "title": "Kulturelles Erbe & Stil"
+        },
+        {
+          "title": "Stilvolles Ambiente in Lissabon"
+        }
+      ],
+      "ctaSection": {
+        "label": "Bereit?",
+        "title": "Planen Sie Ihre Hochzeit",
+        "subtitle": "Gemeinsam gestalten wir eine jüdische Hochzeit in Lissabon, die Ihre Traditionen und Wünsche widerspiegelt."
+      }
+    }
+  },
+  "wedding_ui": {
+    "details": "Details",
+    "close": "Schließen",
+    "venue_experience": "Location-Erlebnis",
+    "start_planning": "Planung beginnen",
+    "continue": "Weiter entdecken",
+    "plan_wedding": "Hochzeit planen",
+    "discover_type": "Entdecken"
+  },
+  "wedding_services": {
+    "serviceShowcaseSection": {
+      "label": "Leistungen",
+      "title": "Unsere Leistungen",
+      "subtitle": "Die wichtigsten Hochzeitsleistungen – mit Stil, Präzision und reibungsloser Koordination."
+    },
+    "serviceShowcase": [
+      {
+        "title": "Transport",
+        "desc": "Private Transfers und Gästetransporte, damit jeder Weg reibungslos und stressfrei verläuft.",
+        "highlights": [
+          "Flughafen- und Hoteltransfers",
+          "Shuttles zu Zeremonie und Empfang",
+          "Koordination von Luxusfahrzeugen"
+        ]
+      },
+      {
+        "title": "DJ",
+        "desc": "Musikalische Leitung und Stimmungsmanagement – vom Cocktailempfang bis zum letzten Tanz.",
+        "highlights": [
+          "Individuelles Musikprogramm",
+          "Koordination der Tontechnik",
+          "Gestaltung des Tanzflächen-Erlebnisses"
+        ]
+      },
+      {
+        "title": "Catering",
+        "desc": "Feine kulinarische Erlebnisse, abgestimmt auf Ihre Gäste, den Stil Ihrer Feier und den Rhythmus Ihres Hochzeitstages.",
+        "highlights": [
+          "Individuelle Menüplanung",
+          "Verkostung und Serviceablauf",
+          "Berücksichtigung von Ernährungswünschen"
+        ]
+      },
+      {
+        "title": "Make-up",
+        "desc": "Professionelles Beauty-Styling für Braut und Brautgefolge, präzise getaktet für eine entspannte, kamerataugliche Vorbereitung.",
+        "highlights": [
+          "Styling für Braut und Brautgefolge",
+          "Organisation des Probetermins",
+          "Touch-ups vor Ort"
+        ]
+      },
+      {
+        "title": "Foto & Video",
+        "desc": "Editoriale Begleitung, die jede Emotion und jedes Detail einfängt – von den Vorbereitungen bis zu den letzten Momenten der Feier.",
+        "highlights": [
+          "Koordination von Foto- und Videoteam",
+          "Begleitung im Einklang mit dem Zeitplan",
+          "Filmreife Highlight-Videos"
+        ]
+      }
+    ]
+  },
+  "events_page": {
+    "hero": {
+      "label": "Events in Portugal",
+      "title": "Stilvolle Events, perfekt organisiert",
+      "subtitle": "Wir gestalten elegante private und geschäftliche Veranstaltungen in ganz Portugal – mit derselben Präzision, Ästhetik und Gastfreundschaft, die unsere Hochzeiten auszeichnen."
+    },
+    "categoriesSection": {
+      "label": "Unser Angebot",
+      "title": "Eventkategorien",
+      "subtitle": "Mehr als Hochzeiten: mit derselben Präzision, Kreativität und Gastfreundschaft gestaltet."
+    },
+    "categories": [
+      {
+        "title": "Verlobungsfeiern",
+        "desc": "Feiern Sie den ersten Schritt in eine gemeinsame Zukunft – intim, bei Kerzenlicht und mit portugiesischem Charme.",
+        "detail": "Eine wunderschöne Verlobungsfeier, die den Auftakt für alles Kommende bildet – inszeniert wie ein Editorial, organisiert mit höchster Professionalität.",
+        "highlights": [
+          "Konzept und Moodboard",
+          "Auswahl von Location und Dienstleistern",
+          "Gästeführung, Zeitplan und Koordination vor Ort"
+        ]
+      },
+      {
+        "title": "Brautpartys und Willkommensdinner",
+        "desc": "Stilvolle Zusammenkünfte vor der Hochzeit, die den Ton für eine unvergessliche Feier setzen.",
+        "detail": "Von stilvollen Brautpartys bis zu Willkommensdinnern in der Altstadt gestalten wir herzliche, exklusive Momente, die für Sie mühelos und für Ihre Gäste unvergesslich sind.",
+        "highlights": [
+          "Tischgestaltung, Blumen und Beleuchtung",
+          "Menüs, Musik und Unterhaltung",
+          "Gastfreundschaft und Styling"
+        ]
+      },
+      {
+        "title": "Jubiläen und private Feiern",
+        "desc": "Besondere Meilensteine, gefeiert mit persönlichem Design, exklusiven Locations und liebevollen Details.",
+        "detail": "Jubiläen, Heiratsanträge, private Dinner und besondere Lebensmomente – in ganz Portugal mit Intimität, Schönheit und perfekter Umsetzung gestaltet.",
+        "highlights": [
+          "Private Locations und intime Arrangements",
+          "Persönliche Gestaltung mit Geschichte",
+          "Diskrete, umfassende Koordination"
+        ]
+      },
+      {
+        "title": "Luxuriöse Geburtstagsfeiern",
+        "desc": "Von Partys auf Dachterrassen bis zu intimen Dinnern an der Küste – jeder Meilenstein verdient einen besonderen Auftritt.",
+        "detail": "Ein luxuriöser Geburtstag ist eine Welt für sich – ob Dachterrassen-Soirée, Villenparty oder Küstenfeier unter dem Sternenhimmel.",
+        "highlights": [
+          "Individuell kuratierte Unterhaltung",
+          "Signature-Cocktails und kulinarische Erlebnisse",
+          "Zeitplan und Dienstleistermanagement"
+        ]
+      },
+      {
+        "title": "Markenerlebnisse",
+        "desc": "Eindrucksvolle Markenaktivierungen und Editorial-Produktionen vor Portugals schönsten Kulissen.",
+        "detail": "Exklusive Markenaktivierungen, Produkteinführungen, Dinner und Editorial-Produktionen – mit kreativer Leitung, technischer Präzision und herausragendem Gästeerlebnis.",
+        "highlights": [
+          "Kreativkonzept und Produktion",
+          "Locationsuche und Unterstützung bei Genehmigungen",
+          "Regieplan und Team vor Ort"
+        ]
+      },
+      {
+        "title": "Firmenveranstaltungen",
+        "desc": "Hochwertige Firmenevents, Executive-Retreats und Galas – präzise und stilvoll umgesetzt.",
+        "detail": "Business-Events in ganz Portugal – Executive-Dinner, Retreats, Incentive-Reisen und Galas – diskret, klar und stilvoll organisiert.",
+        "highlights": [
+          "Budget- und Logistikplanung",
+          "Partner für audiovisuelle Technik, Bühne und Produktion",
+          "Gästeerlebnis und Koordination vor Ort"
+        ]
+      }
+    ],
+    "promiseSection": {
+      "title": "Unser Eventversprechen",
+      "subtitle": "Drei Säulen, die jede unserer Veranstaltungen in Portugal tragen."
+    },
+    "promises": [
+      {
+        "title": "Strategische Planung",
+        "desc": "Von Konzept und Budget bis zu Logistik und Zeitplan wird jedes Detail präzise durchdacht, bevor der erste Dienstleister gebucht wird."
+      },
+      {
+        "title": "Anspruchsvolles Design",
+        "desc": "Editorial-Styling, maßgeschneiderte Floristik, stimmungsvolle Beleuchtung und ausgewählte Unterhaltung verwandeln jeden Raum."
+      },
+      {
+        "title": "Perfektes Gästeerlebnis",
+        "desc": "Ankunftsmanagement, Gastfreundschaft und Tageskoordination – damit Ihre Gäste jeden Moment unbeschwert genießen."
+      }
+    ],
+    "formatsSection": {
+      "label": "Besondere Formate",
+      "title": "Unsere Eventformate",
+      "subtitle": "Unsere beliebtesten Eventkonzepte – jedes eine eigene Welt."
+    },
+    "formats": [
+      {
+        "title": "Dachterrassen-Dinner in Lissabon",
+        "tag": "Besonderes Format",
+        "detail": "Goldene Abendstunde, Laternenlicht und Dinner über den Dächern – Gastfreundschaft auf höchstem Niveau in portugiesischer Editorial-Atmosphäre.",
+        "highlights": [
+          "Individuelles Menü- und Getränkekonzept",
+          "Beleuchtung und stimmungsvolles Styling",
+          "Musik und perfektes Timing zum Sonnenuntergang"
+        ]
+      },
+      {
+        "title": "Garten-Soirées",
+        "tag": "Besonderes Format",
+        "detail": "Üppiges Grün, vielschichtige Blumenarrangements und feines Dining – perfekt für romantische, zeitlose Feiern.",
+        "highlights": [
+          "Florales Gestaltungskonzept",
+          "Flexible Raumaufteilung für Gäste",
+          "Unterhaltung und Lichtinszenierung"
+        ]
+      },
+      {
+        "title": "Küstenerlebnisse",
+        "tag": "Besonderes Format",
+        "detail": "Ein Erlebnis am Reiseziel, das selbst zur Geschichte wird – Ankunft bei Sonnenuntergang, luxuriöses Dinner und Musik unter Sternen.",
+        "highlights": [
+          "Transfer- und Logistikkoordination",
+          "Luxuriöses Styling und Dining",
+          "Mitreißende Unterhaltung"
+        ]
+      },
+      {
+        "title": "Intime private Empfänge",
+        "tag": "Besonderes Format",
+        "detail": "Eine private Feier, perfekt auf kleinere Gästegruppen abgestimmt und mit außergewöhnlicher Liebe zum Detail gestaltet.",
+        "highlights": [
+          "Fein abgestimmte Tischgestaltung",
+          "Persönliche Aufmerksamkeiten für Gäste",
+          "Reibungsloser Ablauf"
+        ]
+      },
+      {
+        "title": "Marken- und Executive-Dinner",
+        "tag": "Besonderes Format",
+        "detail": "Hochkarätige Dinner für Marken und Führungskräfte – diskret, exklusiv und geprägt von herausragender Gastfreundschaft.",
+        "highlights": [
+          "Auswahl von Location, Küchenchef und Caterer",
+          "Audiovisuelle Technik und Produktionsablauf",
+          "Empfang und Betreuung der Gäste"
+        ]
+      }
+    ],
+    "ctaSection": {
+      "label": "Gemeinsam gestalten",
+      "title": "Planen Sie Ihr Event",
+      "subtitle": "Erzählen Sie uns von Ihrem Anlass – wir kümmern uns um alles Weitere."
+    },
+    "ui": {
+      "details": "Details",
+      "close": "Schließen",
+      "event_category": "Eventkategorie",
+      "reserve": "Reservieren / Anfragen",
+      "continue": "Weiter entdecken",
+      "plan_event": "Event planen"
+    }
+  },
+  "gallery_page": {
+    "hero": {
+      "title": "Das Erlebnis",
+      "subtitle": "Von A bis Z ... Lissabon ist der Ort, um den schönsten Moment Ihres Lebens zu feiern."
+    },
+    "intro": {
+      "title": "Von A bis Z ...",
+      "text": "Lisbon Weddings kümmert sich um alles. Wir erstellen Ihr Budget Posten für Posten und organisieren auch die Reiseplanung Ihrer Gäste (Transfers, Flughafenempfang, Hotels), damit Ihre Wünsche von Anfang bis Ende Wirklichkeit werden. Unabhängig von Ihrem Budget wird eine Feier in Lissabon zu einem unvergesslichen Erlebnis."
+    },
+    "process": {
+      "title": "Unser Ablauf",
+      "steps": [
+        {
+          "title": "Beratung",
+          "text": "Ein erstes Gespräch, um Ihren persönlichen Stil und die wichtigsten Prioritäten zu bestimmen."
+        },
+        {
+          "title": "Recherche",
+          "text": "Suche nach Locations anhand von Kapazität, Lage und Budget."
+        },
+        {
+          "title": "Auswahl",
+          "text": "Wir wählen die besten Partner für Catering, Fotografie, Floristik und Beauty aus."
+        },
+        {
+          "title": "Planung",
+          "text": "Besichtigungen, Verkostungen, Zeitpläne und Abstimmung aller Dienstleister."
+        },
+        {
+          "title": "Gestaltung und Gastgeschenke",
+          "text": "Entwurf von Save-the-Dates, Einladungen, Tischplänen und persönlichen Aufmerksamkeiten."
+        },
+        {
+          "title": "Koordination",
+          "text": "Vollständige Organisation und diskrete Koordination an Ihrem großen Tag."
+        }
+      ]
+    },
+    "gallery": {
+      "label": "Galerie",
+      "title": "Kollektionen nach Kategorie",
+      "subtitle": "Jede Sammlung ist thematisch geordnet, damit Sie unsere schönsten Arbeiten mühelos entdecken können."
+    },
+    "collections": {
+      "weddings": {
+        "title": "Hochzeiten",
+        "subtitle": "Zeremonien, Empfänge und Hochzeitsfotografie im Editorial-Stil aus ganz Portugal."
+      },
+      "venues": {
+        "title": "Locations",
+        "subtitle": "Paläste, Quintas, Küstenanwesen und Resorts als Bühne für Ihre Feier."
+      },
+      "elopements": {
+        "title": "Elopements",
+        "subtitle": "Intime Eheversprechen und romantische Auszeiten nur für Sie beide."
+      },
+      "indian": {
+        "title": "Indische Hochzeiten",
+        "subtitle": "Farbenfrohe Rituale, üppige Blumen und mehrtägige Feiern in Lissabon."
+      },
+      "jewish": {
+        "title": "Jüdische Hochzeiten",
+        "subtitle": "Zeremonien unter der Chuppa und traditionsbewusste Feiern in Lissabon."
+      },
+      "events": {
+        "title": "Events & Feiern",
+        "subtitle": "Willkommensdinner, Verlobungsfeiern, private Feiern und Firmenevents."
+      },
+      "catering": {
+        "title": "Catering",
+        "subtitle": "Portugiesische, internationale und individuelle Menüs für jeden Moment Ihrer Feier."
+      }
+    },
+    "modal": {
+      "open_image": "Bild {{index}} von {{title}} öffnen",
+      "image_viewer": "Bildergalerie {{title}}",
+      "close": "Galerie schließen",
+      "previous": "Vorheriges Bild",
+      "next": "Nächstes Bild",
+      "counter": "Bild {{current}} von {{total}}"
+    }
+  },
+  "contact_page": {
+    "hero": {
+      "label": "Kontakt",
+      "title": "Beginnen Sie Ihre Feier",
+      "subtitle": "Erzählen Sie uns von Ihrer Vision, Ihrem Datum und dem Erlebnis, das Sie sich wünschen."
+    },
+    "form": {
+      "label": "Anfrage",
+      "title": "Erzählen Sie uns von Ihrem Event",
+      "intro": "Wir antworten diskret, persönlich und mit Sorgfalt.",
+      "success_title": "Anfrage erhalten",
+      "success_text": "Vielen Dank. Wir melden uns innerhalb von 24 Stunden.",
+      "full_name": "Vollständiger Name",
+      "email": "E-Mail",
+      "email_placeholder": "E-Mail-Adresse",
+      "phone": "Telefon / WhatsApp",
+      "event_type": "Art des Events",
+      "select_event_type": "Art des Events wählen",
+      "option_wedding": "Hochzeit",
+      "option_engagement": "Verlobungsfeier",
+      "option_welcome_dinner": "Willkommensdinner",
+      "option_anniversary": "Jubiläum / Private Feier",
+      "option_luxury_birthday": "Luxuriöse Geburtstagsfeier",
+      "option_brand": "Markenerlebnis",
+      "option_corporate": "Firmenveranstaltung",
+      "option_other": "Sonstiges",
+      "arrival_date": "Anreisedatum",
+      "departure_date": "Abreisedatum",
+      "dates_placeholder": "An- und Abreisedatum wählen",
+      "guests": "Anzahl der Gäste",
+      "guests_placeholder": "z. B. 60",
+      "destinations": "Gewünschte Reiseziele",
+      "destinations_placeholder": "z. B. Lissabon, Sintra, Algarve ...",
+      "budget": "Geschätztes Budget",
+      "budget_placeholder": "z. B. 25.000",
+      "message": "Nachricht",
+      "message_placeholder": "Erzählen Sie uns von Ihren Vorstellungen…",
+      "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+      "sending": "Wird gesendet…",
+      "send": "Anfrage senden"
+    },
+    "details": {
+      "label": "Kontakt",
+      "email": "E-Mail",
+      "tel": "Tel.",
+      "office": "Büro"
+    },
+    "scheduler": {
+      "label": "Beratung",
+      "title": "Beratungstermin buchen",
+      "subtitle": "Wählen Sie einen Termin, der Ihnen passt.",
+      "iframe_title": "Kalender zur Terminbuchung"
+    }
+  },
+  "reservation_form": {
+    "title": "Buchen Sie Ihre Beratung",
+    "subtitle": "Beginnen Sie Ihre Planung entspannt mit uns.",
+    "success_title": "Beratung angefragt!",
+    "success_text": "Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+    "full_name": "Vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefonnummer",
+    "number_of_guests": "Anzahl der Gäste",
+    "preferred_location": "Bevorzugter Ort",
+    "estimated_budget": "Geschätztes Budget",
+    "select_event": "Art des Events wählen",
+    "option_wedding": "Hochzeit",
+    "option_corporate": "Firmenevent",
+    "option_private": "Private Feier",
+    "option_traditional_portuguese": "Traditionelle portugiesische Hochzeit",
+    "option_modern_luxury": "Moderne Luxushochzeit",
+    "option_intimate_elopement": "Intimes Elopement",
+    "option_multi_day_weekend": "Mehrtägiges Hochzeitswochenende",
+    "option_cultural_fusion": "Multikulturelle Hochzeit",
+    "error": "Fehler bei der Beratungsanfrage.",
+    "requesting": "Wird angefragt...",
+    "request": "Beratung anfragen"
+  },
+  "detail_page": {
+    "cases": {
+      "default": {
+        "title": "Details zum Erlebnis",
+        "subtitle": "Eine individuelle Reise"
+      }
+    },
+    "body": {
+      "p1": "Tauchen Sie ein in unser Erlebnis {{title}}. Jedes Detail wird sorgfältig geplant, um ein atemberaubendes, reibungsloses Erlebnis zu schaffen. Unser Expertenteam setzt Ihre Vision um und verbindet authentischen portugiesischen Charme mit internationalem Luxusstandard.",
+      "p2": "Von der Wahl der Location über die kulinarische Leitung bis zu Design und Gästebetreuung sorgt unser ganzheitlicher Ansatz für ein außergewöhnliches Event. Kontaktieren Sie uns, um Ihre Termine zu sichern und unsere Angebote kennenzulernen."
+    }
+  },
+  "layout": {
+    "whatsapp_label": "Per WhatsApp schreiben"
+  },
+  "thank_you_page": {
+    "thanks": "Vielen Dank",
+    "label": "Anfrage erhalten",
+    "title": "Weddings Planner Portugal bedankt sich herzlich für Ihre Reservierungsanfrage",
+    "subtitle": "Ihre Anfrage ist erfolgreich bei uns eingegangen. Wir freuen uns darauf, Sie bei der Planung Ihrer Feier in Portugal zu begleiten.",
+    "note": "Unser Team prüft Ihre Angaben persönlich und meldet sich innerhalb von 24 Stunden, um die nächsten Schritte zu besprechen.",
+    "back_home": "Zur Startseite",
+    "image_alt": "Elegante Hochzeitsdekoration in Portugal"
+  },
+  "venues_page": {
+    "hero": {
+      "label": "Locations in Portugal",
+      "title": "Außergewöhnliche Locations in Portugal, ausgewählt für Ihre Feier",
+      "subtitle": "Von privaten Villen in Lissabon über Resorts am Meer bis zu historischen Palästen und Küstenanwesen unter dem Sternenhimmel bietet Portugal eine außergewöhnliche Vielfalt an Orten für Destination Weddings und Events. Wir helfen Ihnen, die Location zu finden, die am besten zu Ihrer Vision, Ihrer Gästezahl, Ihrem Budget und Ihrem gewünschten Erlebnis passt – und koordinieren jedes Detail von der ersten Besichtigung bis zur Feier."
+    },
+    "introSection": {
+      "label": "Klar planen",
+      "title": "Finden Sie den richtigen Ort für Ihre Hochzeit in Portugal",
+      "subtitle": "Die Location prägt das gesamte Erlebnis – sie beeinflusst Atmosphäre, Gästeerlebnis, Unterkunftsmöglichkeiten, Logistik, Gestaltungsmöglichkeiten und Gesamtbudget. Unser Team gibt Ihnen individuelle Empfehlungen nach Ihren Prioritäten."
+    },
+    "priorities": [
+      "Hochzeitsstil & Atmosphäre",
+      "Anzahl der Gäste",
+      "Unterkunftsbedarf",
+      "Ablauf von Zeremonie & Empfang",
+      "Erreichbarkeit & Transport",
+      "Optionen drinnen & draußen",
+      "Privatsphäre & Exklusivität",
+      "Mehrtägige Hochzeitspläne",
+      "Unterhaltung & Produktion",
+      "Budget & Verfügbarkeit"
+    ],
+    "categoriesSection": {
+      "label": "Location-Kategorien",
+      "title": "Hochzeitslocations in Portugal im Überblick",
+      "subtitle": "Ob intimes Elopement, luxuriöses Hochzeitswochenende oder große multikulturelle Feier – vergleichen Sie die passenden Locations klar und mit Zuversicht."
+    },
+    "categories": [
+      {
+        "title": "Locations am Meer",
+        "tag": "Romantik am Meer",
+        "desc": "Meeresbrise, goldenes Licht und entspannte Eleganz für eine stilvolle Feier am Wasser.",
+        "detail": "Von eleganten Strandresorts bis zu privaten Anwesen an der Küste bieten diese Locations einen erfrischenden Rahmen für Trauungen im Freien, Cocktailempfänge und entspannte Hochzeitswochenenden.",
+        "highlights": [
+          "Zeremonien zur goldenen Stunde mit Meerblick",
+          "Entspannte Luxusatmosphäre",
+          "Ideal für Cocktails am Meer & Empfänge bei Sonnenuntergang",
+          "Perfekter Ausgangspunkt für Gästeausflüge",
+          "Ideal für Willkommensdinner & Abschiedsbrunch",
+          "Unterkunft im Resort möglich"
+        ],
+        "bestSuitedFor": "Küstenhochzeiten, entspannte Luxusfeiern, Destination-Wedding-Wochenenden und Paare, die eine Location im Freien mit Meerblick wünschen.",
+        "cta": "Hochzeitslocations entdecken"
+      },
+      {
+        "title": "Private Villen & Anwesen",
+        "tag": "Privatsphäre & Gastfreundschaft",
+        "desc": "Das Gefühl eines privaten Zuhauses, verbunden mit dem Komfort und Service einer Luxuslocation.",
+        "detail": "Besonders geeignet für mehrtägige Destination Weddings: Mehrere Programmpunkte finden an einem Ort statt – vom Willkommensdinner und Treffen am Pool bis zu Zeremonie, Empfang und Abschiedsbrunch.",
+        "highlights": [
+          "Mehrtägige Hochzeitswochenenden",
+          "Unterkunft vor Ort für ausgewählte Gäste",
+          "Privates, exklusives Umfeld",
+          "Flexible Aufteilung für Zeremonie & Empfang",
+          "Treffen am Pool & Gartenfeiern",
+          "Mehr Freiheit für Styling & Produktion"
+        ],
+        "bestSuitedFor": "Hochzeitswochenenden, private Feiern, Destination Weddings mit Unterkunft und Paare, die eine entspannte und zugleich elegante Atmosphäre suchen.",
+        "cta": "Private Villen in Portugal entdecken"
+      },
+      {
+        "title": "Historische Paläste & Quintas",
+        "tag": "Charme der Geschichte",
+        "desc": "Restaurierte Paläste, Herrenhäuser und Quintas voller portugiesischem Charakter.",
+        "detail": "Portugiesische Herrenhäuser, restaurierte Paläste, elegante Innenhöfe und gepflegte Gärten bieten stimmungsvolle Kulissen für Hochzeiten und intime Feiern.",
+        "cta": "Historische Paläste & Quintas entdecken"
+      },
+      {
+        "title": "Paläste & Gärten",
+        "tag": "Große Architektur",
+        "desc": "Eine eindrucksvolle Kulisse für Paare, die Eleganz, Geschichte und visuelle Wirkung suchen.",
+        "detail": "Monumentale Eingänge, kunstvolles Handwerk, Brunnen, Innenhöfe und gepflegte Parkanlagen bieten außergewöhnliche Möglichkeiten für formelle Zeremonien, Luxusempfänge und große Unterhaltungsprogramme.",
+        "highlights": [
+          "Eindrucksvolle Kulissen für die Zeremonie",
+          "Prachtvolle Eingänge & architektonische Details",
+          "Großzügige Gärten & Empfangsbereiche",
+          "Große Gästekapazitäten",
+          "Geeignet für Livemusik & große Produktionen",
+          "Starkes Gestaltungspotenzial drinnen und draußen"
+        ],
+        "bestSuitedFor": "Luxushochzeiten, große Gästelisten, formelle Empfänge, multikulturelle Feiern und Paare, die eine Location mit Wow-Effekt suchen.",
+        "cta": "Paläste & Gärten entdecken"
+      },
+      {
+        "title": "Küstenanwesen",
+        "tag": "Unter den Sternen",
+        "desc": "Eine Zeremonie bei Sonnenuntergang, ein Dinner im Laternenlicht und Musik unter portugiesischem Himmel.",
+        "detail": "Küstenanwesen eignen sich für intime Elopements, elegante Dinner oder eindrucksvolle Hochzeitsfeiern, die traditionelle Gastfreundschaft mit moderner Produktion verbinden – an der Algarve, in der Nähe von Lissabon oder an abgelegeneren Orten.",
+        "highlights": [
+          "Zeremonien bei Sonnenuntergang",
+          "Dinner im Laternenlicht unter Sternen",
+          "Sternenbeobachtung & Livemusik",
+          "Eindrucksvolles Gästeerlebnis",
+          "Spektakuläre Fotomotive",
+          "Ideal für Willkommensevents oder außergewöhnliche Hochzeitswochenenden"
+        ],
+        "bestSuitedFor": "Elopements, kleine Hochzeiten, Destination-Erlebnisse, Willkommensdinner und Paare, die etwas Besonderes und Unvergessliches suchen.",
+        "cta": "Küstenhochzeit planen"
+      },
+      {
+        "title": "Elegante Landgüter",
+        "tag": "Ländlicher Charakter",
+        "desc": "Gärten, Terrassen und charaktervolle Architektur im portugiesischen Hinterland.",
+        "detail": "Historische Quintas und Landgüter vereinen Gärten, Terrassen und charaktervolle Architektur; ausgewählte Anwesen bieten auch Unterkünfte für Gäste.",
+        "cta": "Elegante Landgüter entdecken"
+      },
+      {
+        "title": "Luxushotels & Resorts",
+        "tag": "Fünf-Sterne-Komfort",
+        "desc": "Eine Rundum-Lösung mit Unterkunft, Catering und Veranstaltungsräumen an einem Ort.",
+        "detail": "Besonders praktisch für internationale Gästelisten und größere Hochzeiten mit koordinierten Transfers, mehreren Programmpunkten und hohen Serviceansprüchen.",
+        "highlights": [
+          "Fünf-Sterne-Unterkunft für Gäste",
+          "Professionelle Hotelteams",
+          "Mehrere Veranstaltungsräume",
+          "Pool, Spa & Freizeitangebote",
+          "Bequeme Logistik für internationale Gäste",
+          "Ausweichmöglichkeiten drinnen bei schlechtem Wetter"
+        ],
+        "bestSuitedFor": "Große Destination Weddings, internationale Gästelisten, formelle Feiern und Paare, denen Komfort und reibungslose Abläufe wichtig sind.",
+        "cta": "Luxushotels & Resorts entdecken"
+      },
+      {
+        "title": "Bergretreats",
+        "tag": "Ruhe der Berge",
+        "desc": "Natürliche Schönheit und ruhige Exklusivität in der Serra da Estrela.",
+        "detail": "Eine ruhige Alternative zur Energie Lissabons. Berglodges, private Retreats und Boutique-Unterkünfte bieten Panoramablicke, frische Luft und eine enge Verbindung zur Natur.",
+        "highlights": [
+          "Panoramablick auf die Berge",
+          "Ruhige, private Umgebung",
+          "Ideal für Zeremonien im Freien",
+          "Perfekt für intime Hochzeitswochenenden",
+          "Besondere Kultur- und Naturerlebnisse für Gäste",
+          "Ideal für Willkommenslunch & Abschiedsfrühstück"
+        ],
+        "bestSuitedFor": "Intime Hochzeiten, naturverbundene Feiern, Wellness-Wochenenden und Paare, die Privatsphäre fernab der Stadt suchen.",
+        "cta": "Locations in der Serra da Estrela entdecken"
+      }
+    ],
+    "destinationsSection": {
+      "label": "In ganz Portugal",
+      "title": "Hochzeitsdestinationen in Portugal",
+      "subtitle": "Entdecken Sie den Ort, der Ihre Geschichte erzählt – von historischen Palästen über Atlantik-Resorts bis zu privaten Weingütern."
+    },
+    "destinations": [
+      {
+        "title": "Lissabon",
+        "desc": "Elegante Hotels, private Quintas und Dachterrassen in einer lebendigen Hauptstadt."
+      },
+      {
+        "title": "Algarve",
+        "desc": "Goldene Klippen, Resorts am Meer und private Anwesen für Zeremonien bei Sonnenuntergang und mehrtägige Hochzeiten."
+      },
+      {
+        "title": "Cascais & Estoril",
+        "desc": "Stilvolle Locations am Meer, ganz in der Nähe von Lissabon – ideal für entspannte Küstenfeiern."
+      },
+      {
+        "title": "Sintra",
+        "desc": "Romantische Paläste, historische Anwesen und üppige Gärten für zeitlose Feiern."
+      },
+      {
+        "title": "Porto",
+        "desc": "Historische Architektur, Hotels am Fluss und elegante Empfangslocations."
+      },
+      {
+        "title": "Serra da Estrela",
+        "desc": "Bergretreats und intime Feiern inmitten der Natur."
+      },
+      {
+        "title": "Douro-Tal",
+        "desc": "Weingüter, Panoramablick auf den Fluss und exklusive Hochzeitswochenenden."
+      }
+    ],
+    "serviceSection": {
+      "label": "Wie wir helfen",
+      "title": "Unser Service zur Locationsuche",
+      "subtitle": "Mehr als eine Liste von Locations – klare Orientierung für eine fundierte Entscheidung.",
+      "body": "Eine Location aus der Ferne auszuwählen, kann schwierig sein. Fotos allein zeigen nicht, welche betrieblichen Einschränkungen, Kapazitäten, Zufahrtsbedingungen, Unterkunftsgrenzen oder zusätzlichen Produktionskosten es gibt. Sie erhalten klare Informationen für Ihre Entscheidung, statt wochenlang ungeeignete Locations anzufragen.",
+      "items": [
+        "Erstgespräch zu Ihrer Hochzeitsvision",
+        "Individuelle Vorauswahl passender Locations",
+        "Anfragen zu Verfügbarkeit und Preisen",
+        "Vergleich von Unterkunfts- und Veranstaltungsoptionen",
+        "Prüfung von Kapazität und Raumaufteilung",
+        "Prüfung der Auflagen der Location",
+        "Bewertung der Catering- und Dienstleisterregeln",
+        "Planung von Transport und Erreichbarkeit",
+        "Koordination der Besichtigungen",
+        "Prüfung von Vertrag und Zahlungsplan",
+        "Empfehlung der besten Option"
+      ],
+      "cta": "Ihre individuelle Location-Auswahl anfragen"
+    },
+    "considerationsSection": {
+      "title": "Was wir vor einer Empfehlung prüfen",
+      "subtitle": "Hinter jeder Empfehlung steht eine sorgfältige Prüfung."
+    },
+    "considerations": [
+      {
+        "title": "Gästekapazität",
+        "desc": "Wir prüfen, ob die Location Zeremonie, Dinner, Tanz, Unterhaltung und einen Plan B bequem aufnehmen kann."
+      },
+      {
+        "title": "Unterkunft",
+        "desc": "Wir prüfen die Zahl der Zimmer vor Ort und finden Alternativen in der Nähe, wenn nicht alle Gäste dort übernachten können."
+      },
+      {
+        "title": "Privatsphäre",
+        "desc": "Wir klären, ob die Location vollständig exklusiv gebucht werden kann und ob andere Gäste oder Events während Ihrer Hochzeit anwesend sein könnten."
+      },
+      {
+        "title": "Lage & Transport",
+        "desc": "Wir bewerten Flughafenanbindung, Straßenverhältnisse, Transferzeiten und den Transportbedarf zwischen Hotels und Veranstaltungsorten."
+      },
+      {
+        "title": "Catering- & Barregeln",
+        "desc": "Wir prüfen, ob das Catering hausintern ist, ob externe Caterer erlaubt sind und welche Einschränkungen für Getränke und Service gelten."
+      },
+      {
+        "title": "Ton & Unterhaltung",
+        "desc": "Wir klären Musik-Sperrzeiten, Lautstärkeauflagen, technische Anforderungen und ob Livemusik oder Feiern bis spät in die Nacht möglich sind."
+      },
+      {
+        "title": "Schlechtwetter-Alternative",
+        "desc": "Wir prüfen Innenräume, überdachte Bereiche und realistische Alternativpläne für Veranstaltungen im Freien."
+      },
+      {
+        "title": "Zugang für die Produktion",
+        "desc": "Wir prüfen Zufahrt für Dienstleister, Aufbauzeiten, Stromkapazität, Rigging-Auflagen und die Logistik für Dekoration, Licht und Unterhaltung."
+      },
+      {
+        "title": "Gesamtinvestition",
+        "desc": "Wir berücksichtigen nicht nur die Locationmiete, sondern auch Unterkunft, Catering, Personal, Transport, technische Produktion und weitere Anforderungen."
+      }
+    ],
+    "whySection": {
+      "label": "Warum wir",
+      "title": "Warum Sie Ihre Locationsuche mit uns planen sollten",
+      "subtitle": "Lokale Expertise und klare Kommunikation – von der ersten Auswahl bis zur Feier."
+    },
+    "reasons": [
+      {
+        "title": "Lokale Expertise",
+        "desc": "Unser Team kennt die Unterschiede zwischen Portugals Regionen, Locationstilen, Dienstleisternetzwerken und logistischen Gegebenheiten."
+      },
+      {
+        "title": "Gezielte Empfehlungen",
+        "desc": "Wir empfehlen Locations, die wirklich zu Ihrer Gästezahl, Ihren Prioritäten und Ihrem Budget passen."
+      },
+      {
+        "title": "Klare Kommunikation",
+        "desc": "Wir stellen alle relevanten Informationen übersichtlich und transparent dar, damit Sie Optionen effizient vergleichen können."
+      },
+      {
+        "title": "Mehrsprachige Betreuung",
+        "desc": "Wir kommunizieren mit Paaren, Gästen und Dienstleistern in mehreren Sprachen und vermeiden so Missverständnisse während der gesamten Planung."
+      },
+      {
+        "title": "Komplette Hochzeitsplanung",
+        "desc": "Nach der Wahl der Location können wir Ihre gesamte Hochzeit übernehmen – Design, Unterkunft, Transport, Catering, Unterhaltung und Koordination vor Ort."
+      }
+    ],
+    "faqSection": {
+      "label": "FAQ",
+      "title": "Häufig gestellte Fragen"
+    },
+    "faqs": [
+      {
+        "q": "Wie früh sollten wir eine Hochzeitslocation in Portugal buchen?",
+        "a": "Für Hochzeiten in der Hochsaison empfehlen wir, etwa 12 bis 18 Monate im Voraus mit der Suche zu beginnen. Große Hochzeiten, exklusive Anwesen und sehr gefragte Termine erfordern unter Umständen eine noch frühere Buchung."
+      },
+      {
+        "q": "Können wir mehrere Hochzeitsevents an derselben Location feiern?",
+        "a": "Ja. Viele Villen, Resorts, Landgüter und private Anwesen bieten Platz für Willkommensdinner, Zeremonien, Empfänge, Poolpartys und Abschiedsbrunches. Da jede Location eigene Regeln hat, klären wir vor einer Empfehlung, was tatsächlich möglich ist."
+      },
+      {
+        "q": "Können alle unsere Gäste vor Ort übernachten?",
+        "a": "Das hängt vom Anwesen ab. Manche Hotels und Resorts können große Gruppen unterbringen, während private Villen, historische Paläste, private Quintas und Landgüter meist nur begrenzte Zimmerkapazitäten haben. Bei Bedarf organisieren wir zusätzliche Unterkünfte und Gästetransfers."
+      },
+      {
+        "q": "Sind Küstenhochzeiten in der Nähe von Lissabon möglich?",
+        "a": "Ja. Cascais und Estoril bieten Küstenlocations in der Nähe von Lissabon. Die Algarve im Süden Portugals eignet sich ideal für eine eigene mehrtägige Feier."
+      },
+      {
+        "q": "Können wir eigene Dienstleister mitbringen?",
+        "a": "Das ist unterschiedlich. Manche Locations erlauben externe Dienstleister, andere verlangen die Zusammenarbeit mit zugelassenen Partnern für Catering, Produktion oder Unterhaltung. Wir prüfen diese Bedingungen, bevor die Location bestätigt wird."
+      },
+      {
+        "q": "Gibt es in portugiesischen Locations Musikauflagen?",
+        "a": "Viele Locations haben Lautstärkegrenzen oder Musik-Sperrzeiten. Wir prüfen diese Auflagen sorgfältig, besonders wenn Livemusik, DJs oder lange Partys geplant sind."
+      },
+      {
+        "q": "Organisieren Sie Besichtigungen?",
+        "a": "Ja. Je nach gewähltem Planungspaket koordinieren wir ein individuelles Besichtigungsprogramm und begleiten Sie zu den Locations."
+      },
+      {
+        "q": "Können Sie nach der Locationsuche die gesamte Hochzeit planen?",
+        "a": "Ja. Unsere Komplettplanung umfasst Locationmanagement, Design, Dienstleister, Unterkunft, Transport, Gästelogistik, Unterhaltung, Produktion und Koordination vor Ort."
+      }
+    ],
+    "ctaSection": {
+      "label": "Bereit?",
+      "title": "Wir finden die portugiesische Location, die zu Ihnen passt",
+      "subtitle": "Nennen Sie uns Ihre Wunschtermine, die geschätzte Gästezahl, den gewünschten Stil und Ihr Budget. Unser Team zeigt Ihnen die passendsten Optionen in Lissabon und ganz Portugal."
+    },
+    "ui": {
+      "details": "Details",
+      "close": "Schließen",
+      "venue_category": "Location-Kategorie",
+      "best_suited_for": "Besonders geeignet für",
+      "reserve": "Locationsuche starten",
+      "continue": "Weiter entdecken",
+      "plan_venue": "Beratung buchen"
+    }
+  },
+  "proposals_page": {
+    "hero": {
+      "label": "Heiratsanträge in Lissabon",
+      "title": "Alles für eine unvergessliche Feier in Lissabon",
+      "subtitle": "Von romantischen Heiratsanträgen und intimen Elopements bis zu luxuriösen Destination Weddings kümmern wir uns um jedes Detail und gestalten elegante, emotionale und perfekt abgestimmte Erlebnisse in Lissabon. Locationsuche, Styling, Fotografie, Dekoration, Logistik, Gästebetreuung und nahtlose Koordination – alles wird nach Ihren Vorstellungen geplant, damit jeder Moment unvergesslich bleibt."
+    },
+    "stats": [
+      {
+        "label": "Romantische Erlebnisse gestaltet"
+      },
+      {
+        "label": "Jahre Erfahrung"
+      },
+      {
+        "label": "Herkunftsländer unserer Kunden"
+      },
+      {
+        "label": "Persönliche Hochzeitsplanung"
+      }
+    ],
+    "categoriesSection": {
+      "label": "Arten von Heiratsanträgen",
+      "title": "So sagen Sie Ja in Lissabon",
+      "subtitle": "Jeder Heiratsantrag erzählt Ihre Liebesgeschichte – wählen Sie den Ort, der am besten zu Ihnen passt."
+    },
+    "categories": [
+      {
+        "title": "Heiratsantrag an der Algarve",
+        "tag": "Sonnenuntergang an der Küste",
+        "desc": "Ein Antrag bei Kerzenlicht an der Algarve-Küste, mit goldenen Klippen und dem Atlantik als Kulisse.",
+        "detail": "Im Süden Portugals bietet die Algarve-Küste eine filmreife Kulisse: von Laternen beleuchtete Wege, ein privates Arrangement mit Blick auf den Sonnenuntergang und absolute Ruhe fern der Stadt.",
+        "highlights": [
+          "Privates Kerzenarrangement bei Sonnenuntergang",
+          "Panoramablick über den Ozean",
+          "Fotograf und Videograf vor Ort",
+          "Optionales privates Dinner danach",
+          "Optionale Anreise im Oldtimer oder mit einem privaten Boot"
+        ],
+        "bestSuitedFor": "Paare, die eine spektakuläre, einmalige Kulisse und absolute Privatsphäre an der Algarve-Küste wünschen.",
+        "cta": "Heiratsantrag an der Algarve planen"
+      },
+      {
+        "title": "Heiratsantrag auf der Dachterrasse",
+        "tag": "Über den Dächern",
+        "desc": "Ein privater Moment auf einer Dachterrasse über Lissabon, mit dem Tejo und den Lichtern der Stadt als Zeugen.",
+        "detail": "Ein Heiratsantrag über den Dächern ist intim und mühelos romantisch – Blumenbogen, Kerzenlicht und Panoramablick auf Lissabon, diskret vor Ihrer Ankunft vorbereitet.",
+        "highlights": [
+          "Private Dachterrasse eines historischen Palastes, einer privaten Quinta oder eines Hotels",
+          "Blumenbogen und Kerzendekoration",
+          "Zur goldenen Stunde oder unter Sternen",
+          "Champagner und Blütenblätter",
+          "Diskrete fotografische Begleitung"
+        ],
+        "bestSuitedFor": "Paare in der Altstadt, die eine romantische, leicht erreichbare Kulisse mit Stadtpanorama suchen.",
+        "cta": "Dachterrassen-Heiratsantrag planen"
+      },
+      {
+        "title": "Heiratsantrag am Pool",
+        "tag": "Private Villa",
+        "desc": "Eine ruhige Kulisse am Pool einer privaten Villa, geschmückt mit schwimmenden Blüten und warmem Laternenlicht.",
+        "detail": "Für einen entspannten, luxuriösen Moment verwandeln wir den Poolbereich einer privaten Villa in eine romantische Szenerie – mit schwimmenden Blüten, Kerzen und absoluter Privatsphäre nur für Sie beide.",
+        "highlights": [
+          "Exklusive Nutzung einer privaten Villa",
+          "Schwimmende Blumen und Kerzen",
+          "Sitzbereich oder Picknick am Pool",
+          "Optionale Livemusik",
+          "Garantierte Privatsphäre gegenüber anderen Gästen"
+        ],
+        "bestSuitedFor": "Paare, die entspannten Resort-Luxus mit höchstem Komfort und Privatsphäre verbinden möchten.",
+        "cta": "Heiratsantrag am Pool planen"
+      },
+      {
+        "title": "Heiratsantrag am Strand",
+        "tag": "Küstenromantik",
+        "desc": "Meeresbrise und goldenes Licht für einen Antrag an Portugals Atlantikküste.",
+        "detail": "Von der wilden Küste bei Cascais bis zu stillen Buchten bei Albufeira: Ein Heiratsantrag am Meer verbindet sonnige Leichtigkeit mit dem romantischen Klang der Wellen.",
+        "highlights": [
+          "Perfektes Timing zum Sonnenuntergang",
+          "Blumenbogen oder Weg aus Blütenblättern",
+          "Privater Strandzugang, sofern möglich",
+          "Fotograf für Porträts im goldenen Licht",
+          "Optionales Dinner am Meer"
+        ],
+        "bestSuitedFor": "Paare, die ihre Reise an der Küste verlängern und eine natürliche, entspannte Kulisse wünschen.",
+        "cta": "Strand-Heiratsantrag planen"
+      },
+      {
+        "title": "Heiratsantrag im Heißluftballon",
+        "tag": "Über allem",
+        "desc": "Ein Antrag bei Sonnenaufgang über der portugiesischen Landschaft, mit der Serra da Estrela am Horizont.",
+        "detail": "Ein Heiratsantrag im Heißluftballon ist vom ersten Augenblick an unvergesslich – stiller Aufstieg bei Sonnenaufgang, atemberaubende Aussicht und ein privater Toast in der Luft vor einer stilvollen Feier nach der Landung.",
+        "highlights": [
+          "Privater Ballonflug bei Sonnenaufgang",
+          "Panoramablick auf die Serra da Estrela",
+          "Antrag während des Flugs oder nach der Landung",
+          "Champagnerempfang nach der Landung",
+          "Fotografische Begleitung des gesamten Erlebnisses"
+        ],
+        "bestSuitedFor": "Abenteuerlustige Paare, die einen wirklich einzigartigen Moment erleben möchten.",
+        "cta": "Heißluftballon-Heiratsantrag planen"
+      },
+      {
+        "title": "Individueller Heiratsantrag",
+        "tag": "Nur für Sie",
+        "desc": "Ein vollständig individuelles Konzept rund um Ihre Geschichte, Ihre Art zu lieben und Ihre Vision.",
+        "detail": "Nicht jeder Antrag passt in eine Kategorie. Wenn Sie eine besondere Idee, einen Ort oder eine Überraschung im Sinn haben, entwickelt unser Team ein vollständig maßgeschneidertes Konzept nur für Sie.",
+        "highlights": [
+          "Individuelles Konzept und Styling",
+          "Locationsuche in ganz Portugal",
+          "Überraschungsinszenierung mit Familie oder Freunden",
+          "Maßgeschneiderte Unterhaltung und Dekoration",
+          "Diskrete Rundumkoordination"
+        ],
+        "bestSuitedFor": "Paare mit einer konkreten Vision, Überraschung oder Wunschlocation, die eine persönliche Planung verdient.",
+        "cta": "Meinen individuellen Antrag gestalten"
+      }
+    ],
+    "featuredSection": {
+      "label": "Ausgewählte Arbeiten",
+      "title": "Romantische Feiern in Lissabon und Portugal",
+      "subtitle": "Vom ersten Ja bis zum Hochzeitstag gestalten wir unvergessliche Momente für Paare, die ihre Liebesgeschichte persönlich, elegant und voller Gefühl erleben möchten."
+    },
+    "featured": [
+      {
+        "title": "Luxuriöse Heiratsanträge",
+        "tag": "Heiratsanträge",
+        "desc": "Ein magischer Moment, inspiriert von Ihrer Liebesgeschichte",
+        "detail": "Von Arrangements bei Kerzenschein an der Algarve bis zu privaten Dachterrassen, historischen Palästen und privaten Quintas, Pools, Heißluftballonfahrten und individuellen Überraschungen gestalten wir luxuriöse Heiratsanträge in Lissabon, die intim, emotional und zeitlos sind."
+      },
+      {
+        "title": "Intime Elopement-Hochzeiten",
+        "tag": "Elopements",
+        "desc": "Eine bedeutungsvolle Feier nur für Sie beide oder Ihre engsten Liebsten",
+        "detail": "Für Paare, die von einer romantischen Auszeit träumen, gestalten wir intime Elopements in Lissabon und Portugal mit wunderschönen Locations, elegantem Styling, Fotografie, privaten Dinnern und reibungsloser Koordination."
+      },
+      {
+        "title": "Destination Weddings",
+        "tag": "Hochzeiten",
+        "desc": "Mehrtägige Hochzeitsfeiern an Portugals schönsten Orten",
+        "detail": "Von historischen Palästen, privaten Quintas und Villen bis zu Gärten, Küstenanwesen und ganzen Hochzeitswochenenden planen wir Destination Weddings in Lissabon, die Eleganz, Kultur, Gastfreundschaft und perfekte Umsetzung verbinden."
+      }
+    ],
+    "aboutSection": {
+      "label": "Wer steckt dahinter?",
+      "name": "Ich bin Erica",
+      "role": "Planerin für luxuriöse Heiratsanträge und Hochzeiten in Lissabon",
+      "p1": "Ich bin Erica und plane luxuriöse Heiratsanträge und Hochzeiten in Lissabon. Mit Leidenschaft gestalte ich elegante, unvergessliche Erlebnisse, inspiriert von der Schönheit Portugals.",
+      "p2": "Mit über zehn Jahren Erfahrung im Luxus-Eventbereich bin ich auf romantische Heiratsanträge, Elopements und intime Feiern spezialisiert, die ganz auf die Wünsche jedes Paares abgestimmt sind. Von der Algarve-Küste bis zu historischen Palästen, privaten Quintas und Dachterrassen wird jedes Detail sorgfältig gestaltet, um authentische, emotionale und zeitlose Momente zu schaffen.",
+      "p3": "Gemeinsam mit meinem Team verbinden wir Kreativität, Organisation und Liebe zum Detail, um Ihren besonderen Anlass unvergesslich zu machen.",
+      "cta": "Mehr erfahren",
+      "imageAlt": "Erica – Planerin für luxuriöse Heiratsanträge und Hochzeiten in Lissabon"
+    },
+    "promiseSection": {
+      "label": "Unser Versprechen",
+      "title": "Das romantische Versprechen von Lissabon"
+    },
+    "promises": [
+      {
+        "title": "Maßgeschneiderte Erlebnisse",
+        "desc": "Jeder Heiratsantrag, jedes Elopement und jede Hochzeit wird sorgfältig nach Ihrer Geschichte, Ihren Wünschen und Ihrer Atmosphäre gestaltet."
+      },
+      {
+        "title": "Außergewöhnliche Locations in Lissabon",
+        "desc": "Von Sonnenuntergängen an der Algarve bis zu historischen Palästen, privaten Quintas, Dachterrassen, Villen und Palästen wählen wir für jede Feier den perfekten Ort."
+      },
+      {
+        "title": "Reibungslose Planung und Koordination",
+        "desc": "Von Logistik und Styling bis zur Gästebetreuung und Umsetzung kümmern wir uns präzise um jedes Detail."
+      },
+      {
+        "title": "Emotion, Eleganz und Authentizität",
+        "desc": "Stilvolle Feiern, inspiriert von portugiesischer Schönheit, Intimität, Gastfreundschaft und unvergesslichen Augenblicken."
+      }
+    ],
+    "processSection": {
+      "label": "Der Ablauf",
+      "title": "So funktioniert es"
+    },
+    "process": [
+      {
+        "title": "Das Beratungsgespräch",
+        "desc": "Wir lernen Ihre Wünsche, Ihre Geschichte, Ihre Erwartungen und die gewünschte Atmosphäre kennen, um ein persönliches, bedeutungsvolles Erlebnis zu gestalten."
+      },
+      {
+        "title": "Die kreative Planung",
+        "desc": "Unser Team plant und koordiniert jeden Aspekt – Locations, Styling, Dienstleister, Logistik, Gästeerlebnis und Zeitplan – mit Eleganz und Liebe zum Detail."
+      },
+      {
+        "title": "Sichern Sie Ihren Termin",
+        "desc": "Termine und Locations werden nach Eingang der Anzahlung verbindlich reserviert. Alle Planungsdetails und Zahlungsfristen werden klar und professionell bestätigt."
+      },
+      {
+        "title": "Das Erlebnis",
+        "desc": "Ob Heiratsantrag, Elopement oder Luxushochzeit: Wir kümmern uns im Hintergrund um alles, damit Sie jeden unvergesslichen Moment genießen können."
+      }
+    ],
+    "testimonialsSection": {
+      "label": "Erfahrungen unserer Paare",
+      "title": "Hochzeitsgeschichten aus Portugal",
+      "subtitle": "Ob eine romantische Zeremonie in einem Palast in Sintra, ein Empfang an der Algarve oder eine intime Hochzeit im Douro-Tal: Jede Feier erzählt eine eigene Geschichte. Entdecken Sie die Orte und besonderen Details einer Destination Wedding in Portugal.",
+      "note": "Verifizierte Kundenbewertungen werden nach Freigabe veröffentlicht."
+    },
+    "ctaSection": {
+      "label": "Bereit für den ersten Schritt?",
+      "title": "Gemeinsam gestalten wir etwas wirklich Unvergessliches",
+      "subtitle": "Ob Heiratsantrag, intimes Elopement oder luxuriöse Hochzeitsfeier: Teilen Sie uns Ihre Wünsche mit – wir verwirklichen jedes Detail in Lissabon und Portugal."
+    },
+    "ui": {
+      "details": "Details",
+      "close": "Schließen",
+      "category_label": "Art des Heiratsantrags",
+      "best_suited_for": "Besonders geeignet für",
+      "reserve": "Planung beginnen",
+      "continue": "Weiter entdecken",
+      "plan": "Planung beginnen",
+      "discover": "Entdecken"
+    }
+  }
+}

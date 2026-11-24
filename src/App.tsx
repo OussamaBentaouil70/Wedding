@@ -1,7 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import Wedding from './pages/Wedding';
 import WeddingSubpage from './pages/WeddingSubpage';
 import Events from './pages/Events';
 import Venues from './pages/Venues';
@@ -17,7 +16,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/wedding" element={<Wedding />} />
+          <Route path="/wedding" element={<Navigate to="/wedding/algarve" replace />} />
           <Route path="/wedding/:weddingType" element={<WeddingSubpage />} />
           <Route path="/proposals" element={<Proposals />} />
           <Route path="/events" element={<Events />} />

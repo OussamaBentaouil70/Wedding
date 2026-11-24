@@ -76,7 +76,7 @@ const Proposals: React.FC = () => {
         subtitle={proposalsData.hero.subtitle}
         defaultService={proposalsData.hero.defaultService}
         serviceOptions={serviceOptions}
-        servicePlaceholder="Select a proposal style"
+        servicePlaceholder={t('page_hero.select_proposal')}
       />
 
       {/* ══════════ STATS BAR ══════════ */}
@@ -248,7 +248,7 @@ const Proposals: React.FC = () => {
         </div>
       </section>
 
-      {/* ══════════ THE MARRAKECH ROMANCE PROMISE ══════════ */}
+      {/* ══════════ THE LISBON ROMANCE PROMISE ══════════ */}
       <section id="proposals-promise" className="ev-promise-section">
         <div className="ev-promise-bg" />
         <div className="container ev-promise-inner">
@@ -291,16 +291,22 @@ const Proposals: React.FC = () => {
       </section>
 
       {/* ══════════ CLIENT STORIES ══════════ */}
-      {testimonials.length > 0 ? (
-        <section id="proposals-testimonials" className="home-testimonials">
-          <div className="testimonials-bg" />
-          <div className="container testimonials-inner">
-            <div className="reveal" style={{ textAlign: 'center', marginBottom: '60px' }}>
-              <span className="section-label" style={{ color: 'rgba(212,185,138,0.9)' }}>{proposalsData.testimonialsSection.label}</span>
-              <span className="gold-line" style={{ background: 'rgba(184,154,106,0.5)' }} />
-              <h2 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3rem)' }}>{proposalsData.testimonialsSection.title}</h2>
-            </div>
+      <section id="proposals-testimonials" className="home-testimonials">
+        <div className="testimonials-bg" />
+        <div className="container testimonials-inner">
+          <div className="reveal" style={{ textAlign: 'center', marginBottom: testimonials.length > 0 ? '60px' : 0 }}>
+            <span className="section-label" style={{ color: 'rgba(212,185,138,0.9)' }}>{proposalsData.testimonialsSection.label}</span>
+            <span className="gold-line" style={{ background: 'rgba(184,154,106,0.5)' }} />
+            <h2 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3rem)' }}>{proposalsData.testimonialsSection.title}</h2>
+            {proposalsData.testimonialsSection.subtitle ? (
+              <p style={{ color: 'rgba(255,255,255,0.75)', maxWidth: '760px', margin: '24px auto 0' }}>{proposalsData.testimonialsSection.subtitle}</p>
+            ) : null}
+            {testimonials.length === 0 && proposalsData.testimonialsSection.note ? (
+              <p style={{ color: 'rgba(212,185,138,0.9)', fontStyle: 'italic', marginTop: '16px' }}>{proposalsData.testimonialsSection.note}</p>
+            ) : null}
+          </div>
 
+          {testimonials.length > 0 ? (
             <div className="testimonial-slider">
               <div className="testimonial-card reveal">
                 <blockquote className="testimonial-quote">"{testimonials[testiIdx].quote}"</blockquote>
@@ -322,9 +328,9 @@ const Proposals: React.FC = () => {
                 ))}
               </div>
             </div>
-          </div>
-        </section>
-      ) : null}
+          ) : null}
+        </div>
+      </section>
 
       {/* ══════════ FINAL CTA ══════════ */}
       <section id="proposals-cta" className="wedding-cta-final">

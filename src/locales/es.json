@@ -1,0 +1,1713 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "wedding": "Bodas",
+    "events": "Eventos",
+    "gallery": "Galería",
+    "contact": "Organizar su evento",
+    "language_label": "Elegir idioma",
+    "venues": "Espacios",
+    "proposals": "Pedidas de mano"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Wedding Planner en Portugal",
+      "title_1": "Bodas de destino únicas,",
+      "title_2": "diseñadas a vuestra medida",
+      "subtitle": "Desde los palacios de Sintra y Lisboa hasta la costa del Algarve, Oporto y el valle del Duero, creamos celebraciones personales con diseño cuidado, planificación experta y experiencias inolvidables.",
+      "book": "Reservar",
+      "plan": "Empecemos a planificar",
+      "scroll": "Desplazar"
+    },
+    "trust": {
+      "item1": "Planificación a medida",
+      "item2": "Bodas de destino en Portugal",
+      "item3": "Diseño cuidado",
+      "item4": "Experiencias personalizadas para los invitados"
+    },
+    "about": {
+      "tagline": "Quiénes somos",
+      "title_1": "El estudio de referencia",
+      "title_2": "en bodas de lujo",
+      "title_3": "y eventos en Portugal",
+      "p1": "Somos un estudio boutique de organización con sede en Lisboa que crea celebraciones de una belleza natural y profundamente personales. Con casi dos décadas de experiencia y una trayectoria en más de 40 países, aportamos precisión internacional a los escenarios más extraordinarios de Portugal.",
+      "p2": "Cada evento que creamos sigue un principio:",
+      "p2_strong": "vuestra historia merece ser contada con intención",
+      "weddings_btn": "Nuestras bodas",
+      "events_btn": "Nuestros eventos"
+    },
+    "promises": {
+      "tagline": "Nuestro compromiso",
+      "title": "La promesa Lisbon Weddings",
+      "p1_title": "Diseño a medida",
+      "p1_desc": "Cada celebración se adapta a vuestra visión, estilo, cultura y a la experiencia de vuestros invitados.",
+      "p2_title": "Experiencia local",
+      "p2_desc": "Acceso exclusivo a los mejores espacios, artesanos y proveedores de confianza de Portugal.",
+      "p3_title": "Coordinación impecable",
+      "p3_desc": "Planificación, producción, logística y atención a los invitados gestionadas de principio a fin.",
+      "p4_title": "Lujo con alma",
+      "p4_desc": "Experiencias elegantes basadas en la belleza, la hospitalidad y la auténtica atmósfera portuguesa."
+    },
+    "weddings": {
+      "tagline": "Nuestro trabajo",
+      "title": "Bodas exclusivas en todo Portugal",
+      "btn": "Descubrir nuestras bodas",
+      "view_details": "Ver detalles"
+    },
+    "events": {
+      "tagline": "Más allá de las bodas",
+      "title": "Eventos elegantes más allá del día de la boda",
+      "subtitle": "Retiros de empresa, celebraciones especiales, activaciones de marca y cenas privadas: cada uno, una experiencia para recordar.",
+      "btn": "Descubrir nuestros eventos"
+    },
+    "process": {
+      "tagline": "Cómo trabajamos",
+      "title_1": "Un recorrido sin preocupaciones",
+      "title_2": "De la idea a la realidad",
+      "btn": "Empezar a planificar",
+      "s1_title": "Descubrir",
+      "s1_desc": "Consulta, dirección estética, alcance, presupuesto y prioridades",
+      "s2_title": "Diseñar",
+      "s2_desc": "Búsqueda de espacios, concepto creativo, selección de proveedores y experiencia de los invitados",
+      "s3_title": "Orquestar",
+      "s3_desc": "Planificación de la producción, cronograma, logística, aprobaciones y coordinación",
+      "s4_title": "Celebrar",
+      "s4_desc": "Ejecución en el lugar con una gestión serena, discreta y de alto nivel"
+    },
+    "testimonials": {
+      "tagline": "Historias de parejas",
+      "title": "Bodas inspiradas en Portugal",
+      "subtitle": "Una ceremonia romántica en un palacio de Sintra, una recepción junto al Atlántico en el Algarve o una boda íntima en el valle del Duero: cada celebración cuenta una historia única. Descubrid los escenarios, los detalles y las emociones de una boda de destino en Portugal.",
+      "note": "Las opiniones reales se publicarán tras su verificación y autorización."
+    },
+    "cta": {
+      "tagline": "¿Listos para empezar?",
+      "title_1": "Creemos juntos",
+      "title_2": "algo inolvidable",
+      "subtitle": "Contadnos vuestra visión. Nosotros nos encargamos de todo lo demás.",
+      "btn_plan": "Organizar su evento",
+      "btn_wa": "WhatsApp",
+      "form_success": "¡Gracias! Os responderemos en menos de 24 horas.",
+      "form_title": "Consulta rápida",
+      "form_name": "Vuestro nombre",
+      "form_email": "Correo electrónico",
+      "form_service": "Tipo de evento",
+      "form_service_wedding": "Boda",
+      "form_service_corporate": "Evento corporativo",
+      "form_service_celebration": "Celebración privada",
+      "form_service_other": "Otro",
+      "form_msg": "Contadnos vuestro proyecto…",
+      "form_sending": "Enviando…",
+      "form_send": "Enviar solicitud"
+    },
+    "ui": {
+      "view_details": "Ver detalles",
+      "across": "En todo Portugal",
+      "featured_weddings": "Bodas destacadas",
+      "events_preview": "Nuestros eventos",
+      "explore_weddings": "Descubrir nuestras bodas",
+      "explore_events": "Descubrir nuestros eventos",
+      "continue": "Seguir descubriendo"
+    },
+    "weddingPreviews": [
+      {
+        "category": "Boda exclusiva",
+        "title": "Bodas en Lisboa",
+        "location": "Palacios, quintas, azoteas",
+        "detail": "Desde palacios históricos y quintas privadas hasta jardines palaciegos, las bodas en Lisboa son cinematográficas, íntimas y llenas de atmósfera, diseñadas con un acabado editorial y una coordinación impecable.",
+        "highlights": [
+          "Palacios históricos, quintas privadas, patios y azoteas",
+          "Dirección de diseño y estilismo",
+          "Recorrido de los invitados y coordinación del gran día"
+        ]
+      },
+      {
+        "category": "Boda exclusiva",
+        "title": "Bodas en la costa",
+        "location": "La costa del Algarve",
+        "detail": "Una ceremonia al atardecer, una cena a la luz de los farolillos y música bajo las estrellas: las bodas en la costa son experiencias de destino envolventes y de un lujo natural.",
+        "highlights": [
+          "Ceremonias al atardecer y cenas bajo las estrellas",
+          "Logística y planificación del transporte",
+          "Animación, iluminación y tiempos"
+        ]
+      },
+      {
+        "category": "Boda exclusiva",
+        "title": "Bodas en la costa y en fincas",
+        "location": "Cascais y fincas privadas",
+        "detail": "Luz atlántica, brisa marina y sofisticación relajada: desde celebraciones junto al mar hasta fincas privadas pensadas para recibir durante varios días.",
+        "highlights": [
+          "Ceremonias junto al mar a la hora dorada",
+          "Fines de semana en fincas y alojamiento de invitados",
+          "Selección de proveedores y hospitalidad"
+        ]
+      }
+    ],
+    "eventPreviews": [
+      {
+        "title": "Cenas de bienvenida",
+        "tag": "Eventos privados",
+        "detail": "El primer encuentro marca el tono: una cena refinada, una acogida cálida y una velada con el ritmo perfecto para vuestros invitados.",
+        "highlights": [
+          "Selección del espacio y del chef o catering",
+          "Mesas e iluminación",
+          "Programa y coordinación"
+        ]
+      },
+      {
+        "title": "Celebraciones de compromiso",
+        "tag": "Antes de la boda",
+        "detail": "Una celebración de compromiso digna de revista: íntima, cuidada y perfectamente gestionada.",
+        "highlights": [
+          "Concepto y estilismo",
+          "Selección de proveedores",
+          "Experiencia de los invitados y tiempos"
+        ]
+      },
+      {
+        "title": "Fiestas privadas",
+        "tag": "Celebraciones",
+        "detail": "Cumpleaños, aniversarios, cenas privadas: celebraciones elegantes que se viven con naturalidad y no se olvidan.",
+        "highlights": [
+          "Ambiente y animación",
+          "Detalles de hospitalidad",
+          "Gestión del equipo en el lugar"
+        ]
+      },
+      {
+        "title": "Eventos corporativos y de marca",
+        "tag": "Empresas",
+        "detail": "Encuentros de alto nivel para marcas y empresas: dirección creativa, logística y ejecución con total precisión.",
+        "highlights": [
+          "Socios de planificación y producción",
+          "Audiovisuales, escenarios y cronogramas",
+          "Acogida discreta y coordinación"
+        ]
+      }
+    ],
+    "testimonialItems": [
+      {
+        "text": "Trabajar con el equipo fue como tener un director artístico y un mejor amigo a la vez. Nuestra boda en Lisboa superó todo lo que habíamos imaginado.",
+        "origin": "París, Francia"
+      },
+      {
+        "text": "Cada detalle, desde el arco de jazmín al atardecer hasta los músicos gnawa a medianoche, era exactamente como nosotros. Nunca me había sentido tan comprendida por una organizadora.",
+        "origin": "Londres, Reino Unido"
+      },
+      {
+        "text": "Los retiros de montaña ofrecen un escenario único para encuentros de equipo, cenas privadas y experiencias de grupo a medida.",
+        "author": "Retiros de empresa",
+        "origin": "Serra da Estrela, Portugal"
+      }
+    ]
+  },
+  "footer": {
+    "desc": "Experiencias de lujo inolvidables en el corazón de Portugal.",
+    "links_title": "Enlaces rápidos",
+    "contact_title": "Contacto",
+    "rights": "Weddings Planner Portugal. Todos los derechos reservados."
+  },
+  "page_hero": {
+    "title": "Empecemos a organizar vuestra boda",
+    "subtitle": "Compartid con nosotros vuestros deseos y vuestra visión. Nosotros nos encargamos del resto.",
+    "success_title": "¡Solicitud recibida!",
+    "success_text": "Os contactaremos en menos de 24 horas para empezar a planificar.",
+    "full_name": "Nombre y apellidos",
+    "email": "Correo electrónico",
+    "phone": "Teléfono / WhatsApp",
+    "event_type": "Tipo de evento",
+    "dates": "Fechas de llegada y salida",
+    "guests": "Número de invitados",
+    "destinations": "Lugar(es) previstos",
+    "budget": "Presupuesto estimado",
+    "message": "Contadnos vuestro proyecto…",
+    "sending": "Enviando…",
+    "send": "Enviar mi solicitud",
+    "option_wedding": "Boda",
+    "option_corporate": "Evento corporativo",
+    "option_private": "Celebración privada",
+    "option_other": "Otro",
+    "select_proposal": "Elegid un estilo de pedida",
+    "select_venue": "Elegid un tipo de espacio"
+  },
+  "wedding_types": {
+    "select": "Tipo de boda deseado",
+    "options": {
+      "Elopement": "Boda íntima para dos",
+      "Indian": "Boda tradicional india",
+      "Jewish": "Boda judía",
+      "Algarve": "Boda en el Algarve"
+    },
+    "cards": [
+      {
+        "title": "Boda en Lisboa",
+        "desc": "Bodas a medida en Lisboa, con una organización elegante, un diseño personalizado y una coordinación impecable de principio a fin.",
+        "modal": {
+          "title": "Boda en Lisboa",
+          "subtitle": "Una celebración refinada en el corazón de Lisboa, donde el encanto, la elegancia y la autenticidad se unen para crear una experiencia inolvidable.",
+          "body": "Selección de lugares excepcionales, escenografía elegante, acogida personalizada de vuestros invitados y coordinación impecable de vuestra boda en Lisboa."
+        }
+      },
+      {
+        "title": "Bodas en el Algarve",
+        "desc": "Ceremonias al atardecer y celebraciones envolventes en la costa del Algarve."
+      },
+      {
+        "title": "Bodas íntimas para dos en Portugal",
+        "desc": "Votos íntimos y escapadas románticas pensados en torno a la privacidad, la emoción y los momentos que importan."
+      },
+      {
+        "title": "Bodas tradicionales indias en Lisboa",
+        "desc": "Celebraciones vibrantes que unen las tradiciones indias con un entorno portugués refinado."
+      },
+      {
+        "title": "Bodas judías en Lisboa",
+        "desc": "Celebraciones fieles a vuestro legado, con elegancia ceremonial, coordinación kosher y una acogida cuidada."
+      }
+    ]
+  },
+  "wedding_page": {
+    "hero": {
+      "label": "Bodas en Portugal",
+      "title": "Bodas a medida en Portugal",
+      "subtitle": "Desde ceremonias íntimas hasta celebraciones de varios días, diseñamos bodas que combinan belleza, emoción y una coordinación impecable."
+    },
+    "weddingTypesSection": {
+      "label": "Nuestras celebraciones",
+      "title": "Bodas excepcionales, a vuestra medida",
+      "subtitle": "Descubrid nuestros diferentes estilos de boda e inspiraos para imaginar una celebración única, en perfecta armonía con vuestros deseos, vuestras tradiciones y vuestra visión."
+    }
+  },
+  "wedding_subpages": {
+    "algarve": {
+      "hero": {
+        "label": "Bodas en Portugal",
+        "title": "Bodas en el Algarve",
+        "subtitle": "Desde ceremonias íntimas al atardecer hasta celebraciones exclusivas de varios días, diseñamos bodas excepcionales en el Algarve, donde la belleza salvaje del paisaje se une al refinamiento, la elegancia y la magia de momentos inolvidables."
+      },
+      "weddingTypesSection": {
+        "label": "Nuestras celebraciones",
+        "title": "Bodas excepcionales, a vuestra medida",
+        "subtitle": "Descubrid nuestros diferentes estilos de boda e inspiraos para imaginar una celebración única, en perfecta armonía con vuestros deseos, vuestras tradiciones y vuestra visión."
+      },
+      "servicesSection": {
+        "label": "Nuestro saber hacer",
+        "title": "Nuestros servicios de organización de bodas",
+        "subtitle": "Un acompañamiento a medida para celebraciones excepcionales: montaje de espacios en la costa, gestión logística, bienvenida personalizada de los invitados y organización integral de vuestro evento, incluso en los rincones más exclusivos y vírgenes de Portugal."
+      },
+      "services": [
+        {
+          "title": "Montaje de espacios en la costa",
+          "desc": "Espacios elegantemente acondicionados, iluminación ambiental e instalaciones refinadas, diseñados para integrarse armoniosamente en los espectaculares paisajes del Algarve."
+        },
+        {
+          "title": "Logística y experiencia de los invitados",
+          "desc": "Una organización meticulosa de los traslados, los horarios y la bienvenida de vuestros invitados, para garantizar comodidad, fluidez y tranquilidad, incluso en los lugares más remotos."
+        },
+        {
+          "title": "Organización y producción integral de eventos",
+          "desc": "Una gestión completa de vuestro evento, desde la coordinación técnica hasta la gestión de proveedores, con supervisión in situ de cada momento de vuestra celebración."
+        },
+        {
+          "title": "Ceremonias al atardecer",
+          "desc": "Intercambiad vuestros votos en un ambiente romántico e íntimo, realzado por la luz dorada del atardecer y las impresionantes vistas del Algarve."
+        },
+        {
+          "title": "Celebraciones en la costa durante varios días",
+          "desc": "Cenas de bienvenida, ceremonias y recepciones, momentos de convivencia y brunchs de despedida: cada instante se concibe como una etapa de una experiencia armoniosa e inolvidable."
+        },
+        {
+          "title": "Escenografía y decoración de lujo",
+          "desc": "Una elegancia bohemia y refinada, juegos de luz con velas y materiales naturales en cálidos tonos costeros, para crear una atmósfera única, completamente personalizada según vuestros deseos."
+        }
+      ],
+      "venuesSection": {
+        "label": "Nuestros lugares excepcionales",
+        "title": "Celebrad vuestra boda en los escenarios más bellos de Portugal",
+        "subtitle": "Desde fincas de lujo en plena costa hasta recepciones privadas bajo las estrellas, descubrid espacios excepcionales donde paisajes grandiosos, elegancia y exclusividad se unen para una celebración inolvidable."
+      },
+      "venues": [
+        {
+          "title": "Fincas de lujo en la costa",
+          "desc": "Un entorno exclusivo en plena costa, donde la suave luz de las linternas, la inmensidad del cielo y una escenografía cuidadosamente diseñada crean una atmósfera íntima y cautivadora, incluso para celebraciones de gran formato.",
+          "highlights": [
+            "Ceremonias realzadas por la luz del atardecer",
+            "Recepciones privadas en espacios excepcionales",
+            "Cenas elegantes bajo un cielo estrellado"
+          ]
+        },
+        {
+          "title": "Recepciones privadas bajo las estrellas",
+          "desc": "Una experiencia exclusiva para parejas en busca de intimidad y desconexión. En un entorno privilegiado, el lujo discreto se funde con una atmósfera cálida, con una acogida cuidadosamente orquestada y una noche inolvidable bajo el cielo estrellado de la costa.",
+          "highlights": [
+            "Momentos de bienvenida y observación de las estrellas",
+            "Escenografía refinada con una elegancia relajada",
+            "Entorno ideal para celebraciones de varios días en la costa"
+          ]
+        },
+        {
+          "title": "Ceremonias bañadas por la luz dorada del atardecer",
+          "desc": "Un entorno encantador donde la luz dorada de la costa se convierte en una parte esencial de la escenografía. Una atmósfera romántica y espectacular, ideal para intercambiar vuestros votos e inmortalizar cada instante en fotografías excepcionales.",
+          "highlights": [
+            "Ceremonias diseñadas a la hora dorada del atardecer",
+            "Vistas panorámicas sobre los paisajes de la costa",
+            "Escenarios excepcionales para fotografías elegantes y artísticas"
+          ]
+        },
+        {
+          "title": "Cenas excepcionales bajo las estrellas de la costa",
+          "desc": "Una experiencia gastronómica única en plena costa, donde suntuosas mesas preparadas a la luz de las velas invitan a la convivencia y al disfrute compartido. En una atmósfera elegante y cautivadora, la velada se prolonga al ritmo de la música y las celebraciones bajo un cielo estrellado.",
+          "highlights": [
+            "Grandes mesas elegantes y escenografías a medida",
+            "Cenas refinadas en un ambiente íntimo a la luz de las velas",
+            "Música y animación para prolongar la magia de la velada"
+          ]
+        },
+        {
+          "title": "Retiros de lujo en plena naturaleza",
+          "desc": "Santuarios exclusivos de paz, enclavados en paisajes vírgenes, para parejas que buscan intimidad, confort y evasión. Lejos del bullicio de la ciudad, vivid una celebración envolvente y totalmente personalizada, donde cada instante se disfruta en un entorno excepcional.",
+          "highlights": [
+            "Privatización exclusiva para una intimidad absoluta",
+            "Confort de alta gama en un entorno natural preservado",
+            "Entorno ideal para celebraciones a medida durante un fin de semana"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspiraciones",
+        "title": "Temas e inspiraciones para vuestra boda",
+        "subtitle": "Elegancia bohemia, cenas románticas a la luz de las velas y ceremonias bañadas por la luz dorada del atardecer: dejaos seducir por la magia del Algarve y su atmósfera envolvente para imaginar una boda única e inolvidable."
+      },
+      "themes": [
+        {
+          "title": "Elegancia bohemia"
+        },
+        {
+          "title": "Cenas a la luz de las velas en la costa"
+        },
+        {
+          "title": "Ceremonias bajo la dorada luz del atardecer"
+        },
+        {
+          "title": "Romance en el corazón de la costa"
+        },
+        {
+          "title": "Lujo refinado en tonos naturales"
+        },
+        {
+          "title": "Inmersión en la atmósfera envolvente de la costa"
+        }
+      ],
+      "ctaSection": {
+        "label": "¿Listos para vivir una experiencia excepcional?",
+        "title": "Imaginemos juntos la boda de vuestros sueños",
+        "subtitle": "Contadnos vuestras ideas y dejadnos crear una boda inolvidable en el Algarve, donde cada detalle está pensado para dar vida a una celebración que refleje vuestra esencia."
+      }
+    },
+    "elopement": {
+      "hero": {
+        "label": "Bodas a medida en Portugal",
+        "title": "Bodas íntimas para dos en Portugal",
+        "subtitle": "Desde intercambios de votos cargados de emoción hasta escapadas románticas exclusivas, imaginamos bodas íntimas donde el amor, la complicidad y la discreción ocupan un lugar central. Cada celebración se concibe como una experiencia profundamente personal, en los escenarios más encantadores de Portugal."
+      },
+      "servicesSection": {
+        "label": "Nuestra experiencia",
+        "title": "Nuestros servicios de organización de bodas",
+        "subtitle": "Un acompañamiento a medida para celebraciones íntimas excepcionales: búsqueda de espacios exclusivos, diseño escenográfico personalizado, fotografía profesional y coordinación integral de vuestra boda. Cada detalle se orquesta con esmero para crear una experiencia romántica, auténtica e inolvidable."
+      },
+      "services": [
+        {
+          "title": "Búsqueda de espacios excepcionales",
+          "desc": "Palacios históricos y quintas privadas, paisajes espectaculares de la costa y direcciones confidenciales: seleccionamos lugares únicos, en perfecta sintonía con vuestra historia y vuestros deseos."
+        },
+        {
+          "title": "Escenografía de ceremonias íntimas",
+          "desc": "Una decoración depurada, romántica y refinada, pensada para realzar el momento sin desviar la atención de lo esencial: vuestro amor y la emoción de vuestros votos."
+        },
+        {
+          "title": "Coordinación fotográfica",
+          "desc": "Una puesta en valor de la luz natural, las composiciones artísticas y los instantes espontáneos para inmortalizar vuestra historia a través de fotografías elegantes y atemporales."
+        },
+        {
+          "title": "Coordinación integral de vuestra boda",
+          "desc": "Una gestión discreta y minuciosa de cada aspecto logístico, para que podáis vivir plenamente vuestra celebración, con serenidad y sin contratiempos."
+        },
+        {
+          "title": "Organización de experiencias románticas",
+          "desc": "Cena privada a la luz de las velas, escapada romántica o experiencia exclusiva tras la ceremonia: concebimos detalles personalizados para prolongar la magia de vuestra unión."
+        },
+        {
+          "title": "Instantes preciosos, pensados hasta el último detalle",
+          "desc": "Incluso las celebraciones más íntimas merecen una atención excepcional. Cada detalle se imagina cuidadosamente para ofrecer a vuestros invitados una experiencia cálida, auténtica y refinada."
+        }
+      ],
+      "venuesSection": {
+        "label": "Nuestros lugares excepcionales",
+        "title": "Celebrad vuestra boda en los escenarios más bellos de Portugal",
+        "subtitle": "Desde palacios históricos y quintas privadas íntimos y exclusivos hasta paisajes majestuosos de la costa, pasando por rincones secretos en todo Portugal, descubrid lugares excepcionales cuidadosamente seleccionados para vivir una celebración romántica, exclusiva e inolvidable."
+      },
+      "venues": [
+        {
+          "title": "Palacios históricos y quintas privadas",
+          "desc": "Auténticos remansos de paz, estos palacios históricos y quintas privadas revelan patios serenos, rincones secretos y una arquitectura portuguesa refinada. Un entorno romántico y exclusivo, donde cada instante se dedica a vuestro amor y a la belleza de vuestra unión.",
+          "highlights": [
+            "Ambiente tranquilo e intimidad preservada",
+            "Marco ideal para una ceremonia íntima y el intercambio de vuestros votos",
+            "Encanto auténtico y elegancia de la arquitectura portuguesa"
+          ]
+        },
+        {
+          "title": "Paisajes secretos de la costa",
+          "desc": "Un escenario salvaje y virgen, ideal para parejas en busca de intimidad y amplitud. Entre horizontes infinitos, juegos de luz espectaculares y una belleza natural excepcional, la costa ofrece un entorno sobrio y majestuoso para una ceremonia romántica, donde lo esencial sigue siendo vuestra historia de amor.",
+          "highlights": [
+            "Ceremonias íntimas en el corazón de panoramas grandiosos",
+            "Organización sencilla y discreta para una experiencia en total serenidad",
+            "Sesiones de fotos románticas a la luz dorada del atardecer"
+          ]
+        },
+        {
+          "title": "Azoteas privadas con vistas panorámicas",
+          "desc": "Alcanzad nuevas alturas para vivir una celebración íntima en un entorno exclusivo. Entre vistas impresionantes sobre los tejados de Lisboa, una atmósfera romántica y una elegancia discreta, las terrazas privadas ofrecen un auténtico refugio suspendido sobre el pulso vibrante de la ciudad.",
+          "highlights": [
+            "Vistas panorámicas sobre los tejados y los paisajes de Lisboa",
+            "Escenario ideal para una cena romántica en total intimidad",
+            "Espacios íntimos y fotogénicos para inmortalizar vuestros momentos más especiales"
+          ]
+        },
+        {
+          "title": "Jardines íntimos y remansos de verdor",
+          "desc": "Auténticos enclaves de vegetación, donde la serenidad de la naturaleza y el encanto de los jardines portugueses crean una atmósfera tranquila y romántica. Un entorno reservado y refinado, ideal para disfrutar de momentos preciosos, lejos del bullicio, en una ambientación que refleja vuestra esencia.",
+          "highlights": [
+            "Decoración natural con matices suaves y delicados",
+            "Entorno tranquilo y discreto, propicio para la intimidad",
+            "Escenario encantador para inmortalizar vuestro first look"
+          ]
+        },
+        {
+          "title": "Escapadas de lujo fuera de los caminos trillados",
+          "desc": "Para las parejas que buscan una intimidad absoluta, descubrid espacios exclusivos donde el lujo discreto se une a la serenidad. Lejos del bullicio y de las miradas, cada detalle está pensado para ofreceros una experiencia exclusiva y profundamente personal, enteramente dedicada a vuestra historia de amor.",
+          "highlights": [
+            "Acogida privilegiada y servicios de alta gama con la máxima discreción",
+            "Experiencias a medida para bodas íntimas en pareja",
+            "Ambiente tranquilo y preservado, ideal para una auténtica desconexión"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspiración",
+        "title": "Temas e inspiraciones para vuestra boda",
+        "subtitle": "Minimalismo romántico, escenas de película y experiencias profundamente personales: dejaos inspirar por universos elegantes e íntimos, donde cada detalle realza vuestra historia de amor y da vida a recuerdos inolvidables."
+      },
+      "themes": [
+        {
+          "title": "Minimalismo romántico"
+        },
+        {
+          "title": "Una escapada de película"
+        },
+        {
+          "title": "Intercambio de votos en la intimidad"
+        },
+        {
+          "title": "Lujo sutil y refinado"
+        },
+        {
+          "title": "Una celebración íntima"
+        },
+        {
+          "title": "Detalles cargados de emoción"
+        }
+      ],
+      "ctaSection": {
+        "label": "¿Listos para vivir una experiencia única?",
+        "title": "Imaginemos juntos vuestra boda íntima",
+        "subtitle": "Confiadnos vuestra historia y dejadnos crear una boda en pareja, romántica e inolvidable, en los escenarios más bellos de Portugal. Una celebración a medida, donde cada instante refleje vuestro amor y vuestra complicidad."
+      }
+    },
+    "indian": {
+      "hero": {
+        "label": "Bodas a medida en Portugal",
+        "title": "Bodas tradicionales indias en Lisboa",
+        "subtitle": "Desde rituales ancestrales llenos de color hasta celebraciones suntuosas de varios días, diseñamos bodas inspiradas en las tradiciones indias, respetando la riqueza cultural y la autenticidad de cada detalle. Cada evento combina la elegancia de las costumbres indias con la sofisticación de los espacios excepcionales de Lisboa, para ofrecer una experiencia lujosa e inolvidable."
+      },
+      "servicesSection": {
+        "label": "Nuestro saber hacer",
+        "title": "Nuestros servicios de organización de bodas",
+        "subtitle": "Un acompañamiento a medida para bodas tradicionales indias en Lisboa: coordinación de rituales y ceremonias, decoración refinada, gastronomía india auténtica y acogida personalizada de los invitados. Cada detalle se orquesta con esmero, respetando vuestras tradiciones, para una celebración excepcional que aúna riqueza cultural y elegancia."
+      },
+      "services": [
+        {
+          "title": "Coordinación de ceremonias tradicionales",
+          "desc": "Una organización minuciosa del desarrollo de las ceremonias, con respeto por los rituales ancestrales, las costumbres y las tradiciones propias de las bodas indias."
+        },
+        {
+          "title": "Decoración y escenografía",
+          "desc": "Composiciones florales generosas, colores vibrantes y una escenografía refinada, concebidas para realzar cada ritual y crear una armonía visual entre las ceremonias y los banquetes."
+        },
+        {
+          "title": "Gastronomía india tradicional",
+          "desc": "Una experiencia culinaria auténtica, elaborada en colaboración con caterings especializados en cocina india, para ofrecer menús sabrosos y fieles a las tradiciones gastronómicas indias."
+        },
+        {
+          "title": "Acogida y experiencia de los invitados",
+          "desc": "Un acompañamiento personalizado que incluye la bienvenida, los traslados, la hospitalidad y la gestión de los programas, para ofrecer a vuestros invitados una estancia fluida y memorable durante todas las festividades."
+        },
+        {
+          "title": "Organización de celebraciones de varios días",
+          "desc": "Desde las recepciones de bienvenida hasta las ceremonias tradicionales, pasando por las veladas festivas, orquestamos cada jornada con precisión para crear una celebración armoniosa, envolvente e inolvidable."
+        },
+        {
+          "title": "Respeto por las tradiciones y sensibilidad cultural",
+          "desc": "Un enfoque atento y respetuoso de vuestra herencia cultural, que combina la autenticidad de las tradiciones indias con el encanto y el refinamiento de Lisboa, para una boda fiel a vuestros valores y a vuestra historia."
+        }
+      ],
+      "venuesSection": {
+        "label": "Nuestros lugares excepcionales",
+        "title": "Celebrad vuestra boda en los escenarios más bellos de Portugal",
+        "subtitle": "Desde suntuosas villas privadas hasta los espacios más prestigiosos de Lisboa, descubrid enclaves excepcionales perfectamente adaptados a bodas indias tradicionales y celebraciones de varios días, donde la elegancia, el confort y la autenticidad se encuentran."
+      },
+      "venues": [
+        {
+          "title": "Villas de prestigio",
+          "desc": "Suntuosas villas privadas que ofrecen espacios amplios y elegantes para acoger las distintas etapas de una boda tradicional india. Entre ceremonias ancestrales, encuentros familiares y recepciones refinadas, cada espacio está pensado para celebrar vuestras tradiciones en un ambiente cálido y exclusivo.",
+          "highlights": [
+            "Espacios adaptados a ceremonias y celebraciones de varios días",
+            "Entorno privilegiado para recibir a familias e invitados con el máximo confort",
+            "Configuración ideal para respetar la secuencia de los rituales tradicionales"
+          ]
+        },
+        {
+          "title": "Patios y claustros excepcionales",
+          "desc": "Espacios elegantes y acogedores, donde la belleza de la arquitectura portuguesa ofrece un marco privilegiado para ceremonias tradicionales indias. Pensados para favorecer la cercanía entre familias e invitados, estos espacios se integran con armonía en los rituales, los cortejos y los momentos de convivencia que marcan vuestra celebración.",
+          "highlights": [
+            "Espacios elegantes y funcionales para ceremonias tradicionales",
+            "Circulación fluida y puesta en escena refinada de los cortejos",
+            "Disposiciones modulables, respetando las costumbres y los rituales culturales"
+          ]
+        },
+        {
+          "title": "Jardines para celebraciones",
+          "desc": "Jardines suntuosos donde la naturaleza se convierte en el telón de fondo de celebraciones vibrantes y refinadas. Abundantes composiciones florales, paletas de color luminosas y espacios de recepción elegantemente acondicionados crean una atmósfera festiva, ideal para celebrar las tradiciones indias en todo su esplendor.",
+          "highlights": [
+            "Escenografías florales exuberantes con colores vibrantes",
+            "El entorno ideal para recepciones cálidas y festivas",
+            "Amplios espacios para la música, los bailes y las celebraciones"
+          ]
+        },
+        {
+          "title": "Espacios dedicados a celebraciones de varios días",
+          "desc": "Espacios excepcionales concebidos para acoger las distintas etapas de vuestra boda tradicional india, en un entorno que combina elegancia, confort y funcionalidad. Cada espacio se cuida al detalle para ofrecer una atmósfera única en cada ceremonia, preservando al mismo tiempo la armonía y la fluidez de todo el conjunto de celebraciones.",
+          "highlights": [
+            "Circulación fluida y acogida cómoda para los invitados",
+            "Espacios adaptados a ceremonias y recepciones de varios días",
+            "Distribución diferenciada y armoniosa de los espacios para cada jornada de celebración"
+          ]
+        },
+        {
+          "title": "Lugares de celebración de lujo en Portugal",
+          "desc": "Espacios prestigiosos donde la sofisticación de la hospitalidad portuguesa se une a la riqueza de las tradiciones indias. Entre arquitectura exquisita, servicios de alto nivel y espacios adaptados a las ceremonias tradicionales, cada lugar ofrece un entorno excepcional para celebrar vuestra unión rodeados de vuestros seres queridos.",
+          "highlights": [
+            "Una boda de destino que combina cambio de aires y confort de alto nivel",
+            "Celebraciones tradicionales realzadas por un entorno lujoso",
+            "Espacios privilegiados para grandes reuniones familiares y festividades culturales"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspiraciones",
+        "title": "Temas e inspiraciones para vuestra boda",
+        "subtitle": "Ceremonias llenas de color, composiciones florales suntuosas, tradiciones culturales ancestrales y un lujo refinado: dejaos inspirar por la riqueza de las bodas indias para imaginar una celebración excepcional, donde autenticidad, elegancia y festividad se encuentran en perfecta armonía."
+      },
+      "themes": [
+        {
+          "title": "Ceremonias llenas de color"
+        },
+        {
+          "title": "Composiciones florales suntuosas"
+        },
+        {
+          "title": "Rituales y tradiciones ancestrales"
+        },
+        {
+          "title": "Lujo refinado y elegancia atemporal"
+        },
+        {
+          "title": "Celebraciones impregnadas de tradiciones culturales"
+        },
+        {
+          "title": "Escenografía elegante de bodas indias"
+        }
+      ],
+      "ctaSection": {
+        "label": "¿Listos para celebrar vuestra unión?",
+        "title": "Imaginemos juntos vuestra boda tradicional india",
+        "subtitle": "Demos vida a la boda de vuestros sueños en Lisboa, combinando la riqueza de las tradiciones indias con la elegancia de una celebración a medida, en un entorno excepcional."
+      }
+    },
+    "jewish": {
+      "hero": {
+        "label": "Bodas a medida en Portugal",
+        "title": "Bodas judías en Lisboa",
+        "subtitle": "Desde ceremonias tradicionales bajo la jupá hasta celebraciones suntuosas de varios días, diseñamos bodas judías excepcionales, respetando vuestro legado cultural, vuestros ritos y vuestras tradiciones. Cada evento combina elegancia, refinamiento y autenticidad, con una organización meticulosa y una coordinación impecable en el corazón de Lisboa."
+      },
+      "servicesSection": {
+        "label": "Nuestro saber hacer",
+        "title": "Nuestros servicios de organización de bodas",
+        "subtitle": "Un acompañamiento a medida en cada etapa de vuestra boda judía en Lisboa: coordinación del catering kosher, acondicionamiento de los espacios de ceremonia y una organización atenta a las tradiciones y a las exigencias culturales y religiosas. Cada detalle se piensa cuidadosamente para ofreceros una celebración elegante, auténtica y perfectamente orquestada."
+      },
+      "services": [
+        {
+          "title": "Coordinación del catering kosher",
+          "desc": "Selección rigurosa de proveedores especializados en gastronomía kosher y coordinación cuidadosa de los servicios culinarios, respetando vuestras tradiciones y vuestras exigencias alimentarias religiosas."
+        },
+        {
+          "title": "Diseño de los espacios de ceremonia",
+          "desc": "Organización minuciosa de la ceremonia bajo la jupá, la disposición de los invitados y el desarrollo de los rituales, para crear un entorno solemne, elegante y fiel a vuestras tradiciones."
+        },
+        {
+          "title": "Organización con respeto por las tradiciones",
+          "desc": "Un acompañamiento personalizado y respetuoso con vuestra herencia cultural y religiosa, en el que cada detalle se concibe en armonía con vuestras costumbres, vuestros valores y las expectativas de vuestras familias."
+        },
+        {
+          "title": "Organización de celebraciones durante varios días",
+          "desc": "Desde las cenas de bienvenida hasta las ceremonias tradicionales, pasando por los momentos de convivencia y las recepciones de clausura, orquestamos cada etapa de vuestras celebraciones con fluidez, elegancia y precisión."
+        },
+        {
+          "title": "Acogida y acompañamiento de los invitados",
+          "desc": "Una atención minuciosa a los traslados, los horarios y la bienvenida de vuestras familias e invitados en Lisboa, para garantizarles una estancia cómoda, tranquila y perfectamente organizada."
+        },
+        {
+          "title": "Escenografía y producción de eventos de alto nivel",
+          "desc": "Una decoración refinada, una puesta en escena elegante y una coordinación discreta de todos los servicios, para dar vida a una boda excepcional en la que cada instante transcurre con total serenidad."
+        }
+      ],
+      "venuesSection": {
+        "label": "Nuestros lugares excepcionales",
+        "title": "Celebrad vuestra boda en los escenarios más bellos de Portugal",
+        "subtitle": "Desde palacios históricos y quintas privadas impregnados del legado judío portugués hasta suntuosas villas privadas y exclusivos espacios para eventos en Lisboa, descubrid entornos excepcionales donde patrimonio, tradiciones y refinamiento se unen para dar vida a una boda inolvidable."
+      },
+      "venues": [
+        {
+          "title": "Palacios históricos y quintas con encanto",
+          "desc": "Verdaderas joyas del patrimonio portugués, los palacios históricos y quintas privadas ofrecen un entorno auténtico e íntimo para celebraciones llenas de significado y tradición. Entre una arquitectura refinada, patios elegantes y una atmósfera cargada de historia, estos lugares excepcionales invitan a celebrar vuestra unión con respeto por vuestra herencia familiar y cultural.",
+          "highlights": [
+            "Atmósfera auténtica, rica en historia y patrimonio",
+            "Entorno íntimo y elegante para ceremonias tradicionales",
+            "Lugares privilegiados para celebrar los vínculos familiares y las tradiciones"
+          ]
+        },
+        {
+          "title": "Villas de lujo",
+          "desc": "Suntuosas villas privadas que ofrecen un entorno exclusivo y versátil para celebrar vuestra boda judía en Lisboa. Entre recepciones de bienvenida, comidas kosher y ceremonias tradicionales, estos lugares excepcionales combinan intimidad, confort y sofisticación, al tiempo que permiten una organización adaptada al ritmo de vuestras celebraciones y al respeto de vuestras tradiciones.",
+          "highlights": [
+            "Espacios privados y modulables para recepciones a medida",
+            "Entorno adecuado para la organización de comidas kosher y el respeto de los requisitos alimentarios religiosos",
+            "Lugares privilegiados para reuniones familiares y celebraciones de varios días"
+          ]
+        },
+        {
+          "title": "Lugares de recepción exclusivos en Lisboa",
+          "desc": "Lugares prestigiosos en el corazón de Lisboa, donde elegancia y refinamiento se unen para acoger vuestra boda judía en un entorno excepcional. Cada espacio está cuidadosamente concebido para realzar la ceremonia bajo la jupá, garantizar una transición armoniosa hacia la recepción y ofrecer a vuestros invitados una experiencia memorable, respetando vuestras tradiciones.",
+          "highlights": [
+            "Espacios elegantes adaptados al desarrollo de las ceremonias tradicionales",
+            "Secuencia fluida y refinada entre la jupá, el cóctel y la recepción",
+            "Acogida privilegiada y servicios de alto nivel para el confort de vuestros invitados"
+          ]
+        },
+        {
+          "title": "Espacios de ceremonia bajo la jupá",
+          "desc": "Espacios cuidadosamente seleccionados para acoger vuestra ceremonia bajo la jupá, donde la armonía de los espacios, la suavidad de la luz y la elegancia de la escenografía realzan la solemnidad de vuestra unión. Cada detalle se concibe para crear un ambiente íntimo y emotivo, con el máximo respeto por los ritos y las tradiciones de la boda judía.",
+          "highlights": [
+            "Distribución de los espacios priorizando la ceremonia y su dimensión simbólica",
+            "Instalación de la jupá y organización de los rituales con respeto a las tradiciones",
+            "Un entorno romántico y refinado para un intercambio de votos inolvidable"
+          ]
+        },
+        {
+          "title": "Lugares cargados de historia y tradición",
+          "desc": "Espacios con carácter donde el encanto del patrimonio se encuentra con el confort contemporáneo y una elegancia discreta. En una atmósfera cálida y refinada, cada celebración rinde homenaje a vuestro legado cultural y familiar, preservando al mismo tiempo la cercanía y la espontaneidad de los momentos compartidos.",
+          "highlights": [
+            "Atmósfera auténtica, inspirada en las tradiciones y el patrimonio",
+            "Acogida cálida y atenta para vuestras familias e invitados",
+            "Espacios adaptados tanto a ceremonias íntimas como a grandes recepciones"
+          ]
+        }
+      ],
+      "themesSection": {
+        "label": "Inspiración",
+        "title": "Temas e inspiraciones para vuestra boda",
+        "subtitle": "La elegancia atemporal, los rituales ancestrales y el lujo contemporáneo se unen en armonía para dar vida a celebraciones excepcionales, llenas de emoción y significado, donde cada detalle realza vuestro legado cultural y vuestra historia de amor."
+      },
+      "themes": [
+        {
+          "title": "Elegancia atemporal"
+        },
+        {
+          "title": "Rituales y tradiciones ancestrales"
+        },
+        {
+          "title": "Lujo contemporáneo"
+        },
+        {
+          "title": "Celebraciones cargadas de significado y emoción"
+        },
+        {
+          "title": "Herencia cultural y refinamiento"
+        },
+        {
+          "title": "Entornos excepcionales en Lisboa"
+        }
+      ],
+      "ctaSection": {
+        "label": "¿Listos para celebrar vuestra unión?",
+        "title": "Imaginemos juntos vuestra boda judía en Lisboa",
+        "subtitle": "Confiadnos vuestra visión y dejadnos crear una boda excepcional en Lisboa, donde cada detalle refleje vuestra historia, honre vuestras tradiciones y dé vida a una celebración elegante, auténtica e inolvidable."
+      }
+    }
+  },
+  "wedding_ui": {
+    "details": "detalles",
+    "close": "Cerrar",
+    "venue_experience": "Lugares excepcionales",
+    "start_planning": "Organizar vuestra boda",
+    "continue": "Seguir descubriendo",
+    "plan_wedding": "Organizar vuestra boda",
+    "discover_type": "Descubrir"
+  },
+  "wedding_services": {
+    "serviceShowcaseSection": {
+      "label": "Servicios",
+      "title": "Nuestros servicios",
+      "subtitle": "Los servicios esenciales de vuestra boda, prestados con estilo, precisión y una coordinación impecable."
+    },
+    "serviceShowcase": [
+      {
+        "title": "Transporte",
+        "desc": "Traslados privados y gestión del transporte de los invitados para que cada desplazamiento sea fluido y sin estrés.",
+        "highlights": [
+          "Traslados desde el aeropuerto y los hoteles",
+          "Lanzaderas para la ceremonia y la recepción",
+          "Coordinación de vehículos de lujo"
+        ]
+      },
+      {
+        "title": "DJ",
+        "desc": "Dirección musical y gestión del ambiente para acompañar la emoción desde el cóctel hasta el último baile.",
+        "highlights": [
+          "Programación musical a medida",
+          "Coordinación del equipo de sonido",
+          "Diseño de la experiencia en la pista de baile"
+        ]
+      },
+      {
+        "title": "Catering",
+        "desc": "Experiencias gastronómicas refinadas, adaptadas a vuestros invitados, al estilo de la celebración y al ritmo del día.",
+        "highlights": [
+          "Menús a medida",
+          "Degustación y desarrollo del servicio",
+          "Atención a dietas y preferencias de los invitados"
+        ]
+      },
+      {
+        "title": "Maquillaje",
+        "desc": "Servicios de belleza profesionales para la novia y su cortejo, con tiempos precisos para una preparación tranquila y perfecta ante la cámara.",
+        "highlights": [
+          "Belleza para la novia y su cortejo",
+          "Organización de la prueba",
+          "Retoques en el lugar"
+        ]
+      },
+      {
+        "title": "Fotografía y vídeo",
+        "desc": "Una cobertura editorial que capta cada emoción y cada detalle, desde los preparativos hasta los últimos momentos de la fiesta.",
+        "highlights": [
+          "Coordinación de los equipos de foto y vídeo",
+          "Cobertura alineada con el programa",
+          "Vídeo resumen de estilo cinematográfico"
+        ]
+      }
+    ]
+  },
+  "events_page": {
+    "hero": {
+      "label": "Eventos en Portugal",
+      "title": "Eventos refinados, orquestados a la perfección",
+      "subtitle": "Diseñamos y organizamos eventos privados y profesionales excepcionales en todo Portugal, combinando elegancia, creatividad y saber hacer. Cada celebración recibe la misma exigencia, el mismo sentido del detalle y la misma hospitalidad refinada que distinguen nuestras bodas."
+    },
+    "categoriesSection": {
+      "label": "Nuestro saber hacer",
+      "title": "Nuestros eventos a medida",
+      "subtitle": "Más allá de la organización de bodas, concebimos eventos privados y profesionales excepcionales, diseñados con la misma exigencia, la misma creatividad y el mismo sentido de la hospitalidad que caracterizan nuestro saber hacer."
+    },
+    "categories": [
+      {
+        "title": "Fiestas de compromiso",
+        "desc": "Celebre sus primeros pasos hacia el gran día en un entorno íntimo, a la luz de las velas y con el encanto de Portugal.",
+        "detail": "Una celebración de compromiso elegante y personalizada, concebida para marcar el inicio de una hermosa historia. Entre una escenografía digna de revista, una atmósfera romántica y una organización impecable, cada detalle se orquesta con esmero para crear un momento excepcional y dar el tono a las celebraciones venideras.",
+        "highlights": [
+          "Creación del concepto y definición del universo estético a través de moodboards",
+          "Selección de lugares excepcionales y proveedores de alto nivel",
+          "Gestión de la acogida, del desarrollo y coordinación in situ"
+        ]
+      },
+      {
+        "title": "Fiestas previas a la boda y cenas de bienvenida",
+        "desc": "Encuentros elegantes antes de la boda que marcan el tono de una celebración inolvidable.",
+        "detail": "Desde fiestas previas a la boda refinadas hasta cenas de bienvenida en el corazón del casco histórico de Lisboa, diseñamos momentos cálidos y elegantes, donde cada detalle está pensado para su disfrute y el de sus invitados. Experiencias a medida, coordinadas con discreción y saber hacer, para que pueda disfrutar plenamente de cada instante y crear recuerdos inolvidables.",
+        "highlights": [
+          "Arte de la mesa, composiciones florales y una iluminación refinada",
+          "Menús personalizados, ambiente musical y experiencias exclusivas",
+          "Acogida impecable de los invitados y escenografía a medida"
+        ]
+      },
+      {
+        "title": "Aniversarios y celebraciones privadas",
+        "desc": "Momentos especiales realzados con un diseño personalizado, espacios exclusivos y detalles sinceros.",
+        "detail": "Aniversarios, pedidas de mano, cenas privadas y grandes ocasiones: concebimos celebraciones exclusivas en Portugal, donde la intimidad, la elegancia y la emoción se encuentran. Cada evento se diseña a medida y se orquesta con precisión para transformar sus momentos más valiosos en recuerdos inolvidables.",
+        "highlights": [
+          "Espacios privados excepcionales y montajes íntimos",
+          "Escenografía personalizada, inspirada en su historia",
+          "Coordinación discreta y acompañamiento de alto nivel en cada etapa"
+        ]
+      },
+      {
+        "title": "Cumpleaños de lujo",
+        "desc": "De fiestas en azoteas a cenas íntimas en la costa: cada cumpleaños merece su propio sello.",
+        "detail": "Un cumpleaños excepcional merece un universo a su medida. Una velada exclusiva en una azotea de Lisboa, una recepción suntuosa en una villa privada o una celebración mágica bajo las estrellas de la costa: diseñamos experiencias inmersivas y refinadas, en las que cada detalle contribuye a hacer de su evento un recuerdo verdaderamente inolvidable.",
+        "highlights": [
+          "Selección de animaciones exclusivas y experiencias inmersivas",
+          "Cócteles de autor y experiencias gastronómicas refinadas",
+          "Planificación minuciosa y coordinación completa de los proveedores"
+        ]
+      },
+      {
+        "title": "Eventos y experiencias de marca",
+        "desc": "Activaciones de marca inmersivas y producciones editoriales en los escenarios más espectaculares de Portugal.",
+        "detail": "Activaciones de marca de alto nivel, lanzamientos de producto, cenas exclusivas y producciones editoriales: diseñamos experiencias únicas que realzan su identidad y cautivan a su audiencia. Cada evento combina dirección artística, dominio técnico y una hospitalidad impecable para crear momentos memorables, a la altura de la imagen y las ambiciones de su marca.",
+        "highlights": [
+          "Dirección artística, concepción creativa y producción de eventos",
+          "Búsqueda de espacios excepcionales y acompañamiento en los trámites de autorización",
+          "Elaboración del programa del evento y coordinación de los equipos sobre el terreno"
+        ]
+      },
+      {
+        "title": "Eventos corporativos y recepciones profesionales",
+        "desc": "Eventos corporativos de prestigio, retiros de dirección y galas organizados con precisión y sofisticación.",
+        "detail": "Cenas de dirección, seminarios residenciales, viajes de incentivo y veladas de gala: organizamos eventos profesionales de alto nivel en todo Portugal, combinando discreción, rigor y elegancia. Cada experiencia se diseña a medida para responder a sus objetivos, realzar su imagen y ofrecer a sus colaboradores e invitados momentos excepcionales.",
+        "highlights": [
+          "Elaboración del presupuesto, planificación logística y gestión de los servicios",
+          "Soluciones audiovisuales, escenografía y coordinación con los socios técnicos",
+          "Acogida personalizada de los invitados y supervisión completa del evento in situ"
+        ]
+      }
+    ],
+    "promiseSection": {
+      "title": "Nuestra promesa de excelencia",
+      "subtitle": "Tres compromisos fundamentales guían cada uno de nuestros eventos en Portugal, para ofrecerle experiencias a medida donde convergen elegancia, exigencia y saber hacer."
+    },
+    "promises": [
+      {
+        "title": "Planificación estratégica",
+        "desc": "Desde la concepción del proyecto hasta la elaboración del presupuesto, pasando por la logística y la planificación de cada etapa, cada detalle se anticipa con rigor y precisión, incluso antes de la selección de proveedores."
+      },
+      {
+        "title": "Dirección artística y escenografía excepcionales",
+        "desc": "Una escenografía digna de las más bellas publicaciones, creaciones florales a medida, una iluminación refinada y propuestas cuidadosamente seleccionadas para transformar cada espacio en un universo único y cautivador."
+      },
+      {
+        "title": "Una experiencia impecable para los invitados",
+        "desc": "Desde la acogida a la llegada hasta la coordinación del gran día, orquestamos cada etapa con discreción y profesionalidad, para que sus invitados disfruten plenamente de cada momento, con total tranquilidad."
+      }
+    ],
+    "formatsSection": {
+      "label": "Nuestras experiencias exclusivas",
+      "title": "Eventos excepcionales, a su imagen",
+      "subtitle": "Descubra nuestros formatos de evento más solicitados, cada uno concebido como un universo único que combina elegancia, creatividad y experiencias inolvidables."
+    },
+    "formats": [
+      {
+        "title": "Cenas en azoteas de Lisboa",
+        "tag": "Experiencia exclusiva",
+        "detail": "La luz dorada del atardecer, el suave resplandor de las linternas y una cena elegante con vistas sobre los tejados de Lisboa: una experiencia refinada en la que la hospitalidad de alto nivel se une al encanto auténtico de Portugal.",
+        "highlights": [
+          "Menús a medida y una cuidada selección de bebidas",
+          "Iluminación y escenografía de ambiente",
+          "Ambiente musical y coordinación al atardecer"
+        ]
+      },
+      {
+        "title": "Veladas excepcionales en los jardines",
+        "tag": "Experiencia exclusiva",
+        "detail": "Una vegetación exuberante, composiciones florales suntuosas y una gastronomía refinada crean un entorno encantador para celebraciones románticas, elegantes y atemporales.",
+        "highlights": [
+          "Dirección artística y escenografía floral a medida",
+          "Distribución flexible de los espacios para una circulación fluida de los invitados",
+          "Animaciones exclusivas y una iluminación sofisticada"
+        ]
+      },
+      {
+        "title": "Experiencias exclusivas en la costa",
+        "tag": "Experiencia exclusiva",
+        "detail": "Una experiencia excepcional que se convierte en un recuerdo inolvidable: llegada al atardecer, cena refinada en un entorno suntuoso y música bajo las estrellas, en pleno corazón de los majestuosos paisajes de la costa portuguesa.",
+        "highlights": [
+          "Coordinación de transportes y logística",
+          "Escenografía de alto nivel y experiencias gastronómicas refinadas",
+          "Animaciones inmersivas y entretenimiento exclusivo"
+        ]
+      },
+      {
+        "title": "Recepciones privadas íntimas",
+        "tag": "Experiencia exclusiva",
+        "detail": "Una celebración privada en petit comité, orquestada con precisión y elegancia, donde cada detalle de la escenografía está cuidadosamente pensado para crear una experiencia exclusiva y personalizada.",
+        "highlights": [
+          "Arte de la mesa refinado y decoración cuidada hasta el más mínimo detalle",
+          "Atenciones personalizadas para cada invitado",
+          "Desarrollo fluido y coordinación impecable en cada etapa"
+        ]
+      },
+      {
+        "title": "Cenas de prestigio para marcas y directivos",
+        "tag": "Experiencia exclusiva",
+        "detail": "Cenas de alto nivel diseñadas para marcas y directivos, que combinan discreción, elegancia y prestaciones excepcionales, con una atención especial a la excelencia en la acogida y la hospitalidad.",
+        "highlights": [
+          "Selección de espacios prestigiosos, chefs privados y caterings excepcionales",
+          "Coordinación audiovisual y planificación técnica del evento",
+          "Acogida personalizada y atención cuidada a los invitados"
+        ]
+      }
+    ],
+    "ctaSection": {
+      "label": "Creemos juntos",
+      "title": "Organicemos su evento",
+      "subtitle": "Cuéntenos su proyecto y sus deseos; nos ocuparemos de cada detalle para dar vida a una experiencia única e inolvidable."
+    },
+    "ui": {
+      "details": "detalles",
+      "close": "Cerrar",
+      "event_category": "Nuestros eventos",
+      "reserve": "Reservar / Solicitar presupuesto",
+      "continue": "Seguir descubriendo",
+      "plan_event": "Organizar su evento"
+    }
+  },
+  "gallery_page": {
+    "hero": {
+      "title": "La experiencia",
+      "subtitle": "De principio a fin, Lisboa es el destino ideal para celebrar uno de los momentos más hermosos de vuestra vida."
+    },
+    "intro": {
+      "title": "De la A a la Z...",
+      "text": "Lisbon Weddings se encarga de cada detalle de vuestra boda. Elaboramos vuestro presupuesto partida por partida y también organizamos la acogida y la estancia de vuestros invitados: traslados, recepción en el aeropuerto y alojamientos. Del concepto a la realización, os acompañamos en cada etapa para dar vida a vuestra visión. Sea cual sea vuestro presupuesto, celebrar vuestra boda en Lisboa es elegir un destino excepcional para crear recuerdos inolvidables."
+    },
+    "process": {
+      "title": "Nuestro proceso",
+      "steps": [
+        {
+          "title": "Consulta",
+          "text": "Un primer intercambio para definir vuestro estilo, comprender vuestros deseos e identificar las prioridades esenciales de vuestro evento."
+        },
+        {
+          "title": "Búsqueda",
+          "text": "Selección de escenarios excepcionales según su capacidad, su ubicación y vuestro presupuesto previsto."
+        },
+        {
+          "title": "Selección",
+          "text": "Elección de los mejores proveedores, desde el catering hasta el fotógrafo, pasando por los floristas y los profesionales de belleza."
+        },
+        {
+          "title": "Planificación",
+          "text": "Visitas a los espacios, sesiones de degustación, elaboración del programa detallado y coordinación de todos los proveedores."
+        },
+        {
+          "title": "Creación y detalles personalizados",
+          "text": "Diseño de save the dates, invitaciones, seating plans y regalos personalizados para vuestros invitados."
+        },
+        {
+          "title": "Coordinación",
+          "text": "Gestión integral y coordinación discreta de cada detalle el día de vuestra celebración, para que podáis disfrutar plenamente de cada instante."
+        }
+      ]
+    },
+    "gallery": {
+      "label": "Galería",
+      "title": "Colecciones por categoría",
+      "subtitle": "Cada colección está cuidadosamente organizada por temática para que podáis explorar fácilmente nuestro universo y descubrir nuestras realizaciones más bellas."
+    },
+    "collections": {
+      "weddings": {
+        "title": "Bodas",
+        "subtitle": "Ceremonias, recepciones e imágenes de boda con estética editorial en todo Portugal."
+      },
+      "venues": {
+        "title": "Espacios",
+        "subtitle": "Palacios, quintas, fincas costeras y resorts que dan forma a vuestra celebración."
+      },
+      "elopements": {
+        "title": "Bodas íntimas",
+        "subtitle": "Votos íntimos y escapadas románticas solo para vosotros dos."
+      },
+      "indian": {
+        "title": "Bodas indias",
+        "subtitle": "Rituales llenos de color, flores exuberantes y celebraciones de varios días en Lisboa."
+      },
+      "jewish": {
+        "title": "Bodas judías",
+        "subtitle": "Ceremonias bajo la jupá y celebraciones fieles a vuestro legado en Lisboa."
+      },
+      "events": {
+        "title": "Eventos y celebraciones",
+        "subtitle": "Cenas de bienvenida, fiestas de compromiso, celebraciones privadas y eventos corporativos."
+      },
+      "catering": {
+        "title": "Catering",
+        "subtitle": "Menús portugueses, internacionales y a medida para cada momento de vuestra celebración."
+      }
+    },
+    "modal": {
+      "open_image": "Abrir la imagen {{index}} de {{title}}",
+      "image_viewer": "Visor de imágenes de {{title}}",
+      "close": "Cerrar el visor",
+      "previous": "Imagen anterior",
+      "next": "Imagen siguiente",
+      "counter": "Imagen {{current}} de {{total}}"
+    }
+  },
+  "contact_page": {
+    "hero": {
+      "label": "Contacto",
+      "title": "Empiece su celebración",
+      "subtitle": "Cuéntenos su visión, su fecha y la experiencia que desea crear."
+    },
+    "form": {
+      "label": "Solicitud",
+      "title": "Háblenos de su evento",
+      "intro": "Respondemos con discreción, atención y de forma personalizada.",
+      "success_title": "Solicitud recibida",
+      "success_text": "Gracias. Le responderemos en menos de 24 horas.",
+      "full_name": "Nombre y apellidos",
+      "email": "Correo electrónico",
+      "email_placeholder": "Dirección de correo electrónico",
+      "phone": "Teléfono / WhatsApp",
+      "event_type": "Tipo de evento",
+      "select_event_type": "Seleccione un tipo de evento",
+      "option_wedding": "Boda",
+      "option_engagement": "Fiesta de compromiso",
+      "option_welcome_dinner": "Cena de bienvenida",
+      "option_anniversary": "Aniversario / Celebración privada",
+      "option_luxury_birthday": "Cumpleaños de lujo",
+      "option_brand": "Experiencia de marca",
+      "option_corporate": "Evento corporativo",
+      "option_other": "Otro",
+      "arrival_date": "Fecha de llegada",
+      "departure_date": "Fecha de salida",
+      "dates_placeholder": "Seleccione las fechas de llegada y salida",
+      "guests": "Número de invitados",
+      "guests_placeholder": "p. ej. 60",
+      "destinations": "Lugar(es) previstos",
+      "destinations_placeholder": "p. ej. Lisboa, Sintra, Algarve...",
+      "budget": "Presupuesto estimado",
+      "budget_placeholder": "p. ej. 25.000",
+      "message": "Mensaje",
+      "message_placeholder": "Cuéntenos su proyecto…",
+      "error": "Error al enviar el mensaje. Inténtelo de nuevo.",
+      "sending": "Enviando…",
+      "send": "Enviar mi solicitud"
+    },
+    "details": {
+      "label": "Contacto",
+      "email": "Correo electrónico",
+      "tel": "Tel.",
+      "office": "Oficina"
+    },
+    "scheduler": {
+      "label": "Consulta",
+      "title": "Reservar una consulta",
+      "subtitle": "Elija el horario que mejor le convenga.",
+      "iframe_title": "Calendario de reserva de consultas"
+    }
+  },
+  "reservation_form": {
+    "title": "Reserve su consulta",
+    "subtitle": "Empiece su proyecto con total tranquilidad.",
+    "success_title": "¡Consulta solicitada!",
+    "success_text": "Le responderemos en menos de 24 horas.",
+    "full_name": "Nombre y apellidos",
+    "email": "Correo electrónico",
+    "phone": "Número de teléfono",
+    "number_of_guests": "Número de invitados",
+    "preferred_location": "Lugar preferido",
+    "estimated_budget": "Presupuesto estimado",
+    "select_event": "Seleccione un tipo de evento",
+    "option_wedding": "Boda",
+    "option_corporate": "Evento corporativo",
+    "option_private": "Celebración privada",
+    "option_traditional_portuguese": "Boda tradicional portuguesa",
+    "option_modern_luxury": "Boda de lujo moderna",
+    "option_intimate_elopement": "Boda íntima para dos",
+    "option_multi_day_weekend": "Fin de semana de boda de varios días",
+    "option_cultural_fusion": "Boda multicultural",
+    "error": "Error al solicitar la consulta.",
+    "requesting": "Enviando solicitud...",
+    "request": "Solicitar una consulta"
+  },
+  "detail_page": {
+    "cases": {
+      "default": {
+        "title": "Detalles de la experiencia",
+        "subtitle": "Un viaje a medida"
+      }
+    },
+    "body": {
+      "p1": "Descubra nuestra experiencia {{title}}. Cada detalle se planifica minuciosamente para ofrecer un momento espectacular y sin contratiempos. Nuestro equipo de expertos da vida a su visión combinando el encanto auténtico de Portugal con los estándares del lujo internacional.",
+      "p2": "Desde la elección del espacio hasta la dirección gastronómica, pasando por la estética y la gestión de los invitados, nuestro enfoque integral garantiza un evento extraordinario. Contáctenos para reservar sus fechas y conocer nuestras propuestas."
+    }
+  },
+  "layout": {
+    "whatsapp_label": "Chatear por WhatsApp"
+  },
+  "thank_you_page": {
+    "thanks": "Gracias",
+    "label": "Solicitud recibida",
+    "title": "Weddings Planner Portugal le agradece sinceramente su solicitud de reserva",
+    "subtitle": "Hemos recibido su solicitud correctamente. Será un placer acompañarle en la organización de su celebración en Portugal.",
+    "note": "Nuestro equipo revisará sus datos personalmente y se pondrá en contacto con usted en menos de 24 horas para hablar de los siguientes pasos.",
+    "back_home": "Volver al inicio",
+    "image_alt": "Montaje de boda elegante en Portugal"
+  },
+  "venues_page": {
+    "hero": {
+      "label": "Espacios en Portugal",
+      "title": "Espacios portugueses excepcionales, seleccionados para vuestra celebración",
+      "subtitle": "Desde villas privadas en Lisboa hasta resorts frente al océano, palacios históricos y fincas costeras bajo las estrellas, Portugal ofrece una variedad excepcional de escenarios para bodas y eventos de destino. Os ayudamos a encontrar el espacio que mejor refleje vuestra visión, número de invitados, presupuesto y experiencia, y coordinamos cada detalle desde la primera visita hasta la celebración."
+    },
+    "introSection": {
+      "label": "Planificar con claridad",
+      "title": "Encontrad el escenario ideal para vuestra boda en Portugal",
+      "subtitle": "El espacio define toda la experiencia: influye en la atmósfera, el recorrido de los invitados, el alojamiento, la logística, las posibilidades de diseño y el presupuesto global. Nuestro equipo os ofrece recomendaciones a medida según vuestras prioridades."
+    },
+    "priorities": [
+      "Estilo y ambiente de la boda",
+      "Número de invitados",
+      "Necesidades de alojamiento",
+      "Formato de la ceremonia y la recepción",
+      "Accesibilidad y transporte",
+      "Opciones interiores y exteriores",
+      "Privacidad y exclusividad",
+      "Bodas de varios días",
+      "Animación y producción",
+      "Presupuesto y disponibilidad"
+    ],
+    "categoriesSection": {
+      "label": "Tipos de espacios",
+      "title": "Tipos de espacios para bodas en Portugal",
+      "subtitle": "Tanto si planificáis una boda íntima, un fin de semana de boda de lujo o una gran celebración multicultural, comparad los espacios más adecuados con claridad y confianza."
+    },
+    "categories": [
+      {
+        "title": "Espacios frente al mar",
+        "tag": "Romance junto al mar",
+        "desc": "Brisa marina, luz dorada y sofisticación relajada para una celebración refinada junto al mar.",
+        "detail": "Desde elegantes resorts de playa hasta propiedades costeras privadas, estos espacios ofrecen un entorno fresco para ceremonias al aire libre, cócteles y fines de semana de boda relajados.",
+        "highlights": [
+          "Ceremonias a la hora dorada frente al océano",
+          "Ambiente de lujo relajado",
+          "Ideal para cócteles junto al mar y recepciones al atardecer",
+          "Excelente punto de partida para excursiones de los invitados",
+          "Perfecto para cenas de bienvenida y brunchs de despedida",
+          "Opciones de alojamiento en resort"
+        ],
+        "bestSuitedFor": "Bodas en la costa, celebraciones de lujo relajado, fines de semana de boda de destino y parejas que desean un entorno exterior con vistas al océano.",
+        "cta": "Descubrir espacios para bodas"
+      },
+      {
+        "title": "Villas y fincas privadas",
+        "tag": "Privacidad y hospitalidad",
+        "desc": "La sensación de una residencia privada con el confort y el servicio de un espacio de lujo.",
+        "detail": "Especialmente adecuadas para bodas de destino de varios días, permiten celebrar varios momentos en un mismo lugar: desde una cena de bienvenida y una reunión junto a la piscina hasta la ceremonia, la recepción y el brunch de despedida.",
+        "highlights": [
+          "Fines de semana de boda de varios días",
+          "Alojamiento en el lugar para parte de los invitados",
+          "Entorno privado y exclusivo",
+          "Distribuciones flexibles para ceremonia y recepción",
+          "Reuniones junto a la piscina y celebraciones en el jardín",
+          "Mayor libertad para el estilismo y la producción"
+        ],
+        "bestSuitedFor": "Fines de semana de boda, celebraciones privadas, bodas de destino con alojamiento y parejas que buscan un ambiente relajado pero sofisticado.",
+        "cta": "Descubrir villas privadas en Portugal"
+      },
+      {
+        "title": "Palacios históricos y quintas",
+        "tag": "Encanto patrimonial",
+        "desc": "Palacios restaurados, casas señoriales y quintas con todo el carácter portugués.",
+        "detail": "Casas señoriales portuguesas, palacios restaurados, patios elegantes y jardines paisajísticos ofrecen escenarios llenos de atmósfera para bodas y celebraciones íntimas.",
+        "cta": "Descubrir palacios históricos y quintas"
+      },
+      {
+        "title": "Palacios y jardines",
+        "tag": "Gran arquitectura",
+        "desc": "Un escenario espectacular para parejas que buscan elegancia, patrimonio e impacto visual.",
+        "detail": "Entradas monumentales, artesanía minuciosa, fuentes, patios y jardines paisajísticos ofrecen posibilidades excepcionales para ceremonias formales, recepciones de lujo y grandes espectáculos.",
+        "highlights": [
+          "Escenarios de ceremonia de gran impacto",
+          "Grandes entradas y detalles arquitectónicos",
+          "Amplios jardines y zonas de recepción",
+          "Gran capacidad de invitados",
+          "Adecuado para música en directo y grandes producciones",
+          "Gran potencial de diseño en interior y exterior"
+        ],
+        "bestSuitedFor": "Bodas de lujo, listas de invitados numerosas, recepciones formales, celebraciones multiculturales y parejas que buscan un espacio impactante.",
+        "cta": "Descubrir palacios y jardines"
+      },
+      {
+        "title": "Fincas costeras",
+        "tag": "Bajo las estrellas",
+        "desc": "Una ceremonia al atardecer, una cena a la luz de los farolillos y música bajo el cielo portugués.",
+        "detail": "Las fincas costeras pueden acoger bodas íntimas, cenas elegantes o celebraciones envolventes que combinan la hospitalidad tradicional con la producción contemporánea, en la costa del Algarve, cerca de Lisboa o en destinos más recónditos.",
+        "highlights": [
+          "Ceremonias al atardecer",
+          "Cenas a la luz de los farolillos bajo las estrellas",
+          "Observación de estrellas y música en directo",
+          "Recorrido envolvente para los invitados",
+          "Oportunidades fotográficas espectaculares",
+          "Ideal para eventos de bienvenida o fines de semana atrevidos"
+        ],
+        "bestSuitedFor": "Bodas íntimas para dos, bodas pequeñas, experiencias de destino, cenas de bienvenida y parejas que buscan algo singular e inolvidable.",
+        "cta": "Planificar una boda en la costa"
+      },
+      {
+        "title": "Elegantes fincas de campo",
+        "tag": "Carácter rural",
+        "desc": "Jardines, terrazas y arquitectura con carácter en el campo portugués.",
+        "detail": "Quintas históricas y fincas de campo combinan jardines, terrazas y arquitectura con carácter, y algunas propiedades ofrecen alojamiento para los invitados.",
+        "cta": "Descubrir fincas de campo"
+      },
+      {
+        "title": "Hoteles y resorts de lujo",
+        "tag": "Confort de cinco estrellas",
+        "desc": "Una solución de hospitalidad completa que reúne alojamiento, catering y espacios para eventos en un solo lugar.",
+        "detail": "Especialmente prácticos para listas de invitados internacionales y bodas grandes que requieren transporte coordinado, varios eventos y un alto nivel de servicio.",
+        "highlights": [
+          "Alojamiento de cinco estrellas para los invitados",
+          "Equipos de hostelería profesionales",
+          "Varios espacios para eventos",
+          "Piscina, spa e instalaciones de ocio",
+          "Logística cómoda para invitados internacionales",
+          "Alternativas interiores en caso de mal tiempo"
+        ],
+        "bestSuitedFor": "Grandes bodas de destino, listas de invitados internacionales, celebraciones formales y parejas que priorizan el confort y la eficiencia.",
+        "cta": "Descubrir hoteles y resorts de lujo"
+      },
+      {
+        "title": "Retiros de montaña",
+        "tag": "Serenidad de montaña",
+        "desc": "Belleza natural y exclusividad tranquila en la Serra da Estrela.",
+        "detail": "Una alternativa serena a la energía de Lisboa. Refugios de montaña, retiros privados y propiedades boutique ofrecen vistas panorámicas, aire puro y una conexión íntima con la naturaleza.",
+        "highlights": [
+          "Vistas panorámicas a la montaña",
+          "Entorno tranquilo y privado",
+          "Ideal para ceremonias al aire libre",
+          "Perfecto para fines de semana de boda íntimos",
+          "Actividades culturales y de naturaleza para los invitados",
+          "Ideal para almuerzos de bienvenida y desayunos de despedida"
+        ],
+        "bestSuitedFor": "Bodas íntimas, celebraciones en plena naturaleza, fines de semana de bienestar y parejas que buscan privacidad lejos de la ciudad.",
+        "cta": "Descubrir espacios en la Serra da Estrela"
+      }
+    ],
+    "destinationsSection": {
+      "label": "Por todo Portugal",
+      "title": "Destinos de boda en Portugal",
+      "subtitle": "Descubrid el escenario que refleja vuestra historia, desde palacios históricos hasta resorts atlánticos y fincas vinícolas privadas."
+    },
+    "destinations": [
+      {
+        "title": "Lisboa",
+        "desc": "Hoteles elegantes, quintas privadas y azoteas en una capital vibrante."
+      },
+      {
+        "title": "Algarve",
+        "desc": "Acantilados dorados, resorts frente al océano y fincas privadas para ceremonias al atardecer y bodas de varios días."
+      },
+      {
+        "title": "Cascais y Estoril",
+        "desc": "Espacios sofisticados junto al mar, muy cerca de Lisboa, ideales para celebraciones costeras relajadas."
+      },
+      {
+        "title": "Sintra",
+        "desc": "Palacios románticos, fincas históricas y jardines exuberantes para celebraciones atemporales."
+      },
+      {
+        "title": "Oporto",
+        "desc": "Arquitectura histórica, hoteles junto al río y elegantes espacios de recepción."
+      },
+      {
+        "title": "Serra da Estrela",
+        "desc": "Retiros de montaña y celebraciones íntimas rodeadas de naturaleza."
+      },
+      {
+        "title": "Valle del Duero",
+        "desc": "Fincas vinícolas, vistas panorámicas al río y fines de semana de boda exclusivos."
+      }
+    ],
+    "serviceSection": {
+      "label": "Cómo os ayudamos",
+      "title": "Nuestro servicio de selección de espacios",
+      "subtitle": "Más que una lista de espacios: orientación clara para tomar una decisión informada.",
+      "body": "Elegir un espacio a distancia puede ser difícil. Las fotografías no siempre muestran las restricciones operativas, la capacidad, las condiciones de acceso, las limitaciones de alojamiento o los costes de producción adicionales. Recibís información clara para decidir, en lugar de pasar semanas contactando con espacios que no encajan.",
+      "items": [
+        "Consulta inicial para entender vuestra visión de la boda",
+        "Preselección personalizada de espacios adecuados",
+        "Consultas de disponibilidad y precios",
+        "Comparación de opciones de alojamiento y eventos",
+        "Evaluación de la capacidad y la distribución",
+        "Revisión de las restricciones del espacio",
+        "Análisis de las condiciones de catering y proveedores",
+        "Planificación del transporte y la accesibilidad",
+        "Coordinación de las visitas al espacio",
+        "Revisión del contrato y del calendario de pagos",
+        "Recomendación de la mejor opción"
+      ],
+      "cta": "Solicitad vuestra preselección de espacios"
+    },
+    "considerationsSection": {
+      "title": "Lo que analizamos antes de recomendar un espacio",
+      "subtitle": "Un estudio exhaustivo detrás de cada recomendación."
+    },
+    "considerations": [
+      {
+        "title": "Capacidad",
+        "desc": "Confirmamos si el espacio puede acoger cómodamente la ceremonia, la cena, el baile, la animación y el plan alternativo."
+      },
+      {
+        "title": "Alojamiento",
+        "desc": "Evaluamos el número de habitaciones disponibles en el lugar e identificamos opciones cercanas cuando no todos los invitados pueden alojarse allí."
+      },
+      {
+        "title": "Privacidad",
+        "desc": "Verificamos si la propiedad puede privatizarse por completo y si podría haber otros huéspedes o eventos durante vuestra boda."
+      },
+      {
+        "title": "Ubicación y transporte",
+        "desc": "Evaluamos el acceso al aeropuerto, el estado de las carreteras, los tiempos de traslado y las necesidades de transporte entre hoteles y espacios."
+      },
+      {
+        "title": "Catering y bar",
+        "desc": "Revisamos si el catering es propio, si se permiten caterings externos y qué restricciones se aplican a las bebidas y al servicio."
+      },
+      {
+        "title": "Sonido y animación",
+        "desc": "Confirmamos los horarios límite de música, las restricciones de sonido, los requisitos técnicos y la viabilidad de música en directo o fiestas hasta tarde."
+      },
+      {
+        "title": "Plan alternativo por el tiempo",
+        "desc": "Evaluamos alternativas interiores, espacios cubiertos y planes de respaldo realistas para los eventos al aire libre."
+      },
+      {
+        "title": "Acceso para la producción",
+        "desc": "Revisamos el acceso de proveedores, los horarios de montaje, la potencia eléctrica, las restricciones de anclaje y la logística de decoración, iluminación y animación."
+      },
+      {
+        "title": "Inversión global",
+        "desc": "Tenemos en cuenta no solo el alquiler del espacio, sino también el alojamiento, el catering, el personal, el transporte, la producción técnica y otras necesidades."
+      }
+    ],
+    "whySection": {
+      "label": "Por qué nosotros",
+      "title": "¿Por qué confiarnos la búsqueda de vuestro espacio?",
+      "subtitle": "Experiencia local y comunicación clara, desde la primera preselección hasta la celebración."
+    },
+    "reasons": [
+      {
+        "title": "Experiencia local",
+        "desc": "Nuestro equipo conoce las diferencias entre las regiones de Portugal, los estilos de espacios, las redes de proveedores y la realidad logística."
+      },
+      {
+        "title": "Recomendaciones a medida",
+        "desc": "Recomendamos espacios que realmente encajan con vuestro número de invitados, vuestras prioridades y vuestro presupuesto."
+      },
+      {
+        "title": "Comunicación clara",
+        "desc": "Presentamos la información relevante de forma organizada y transparente para que podáis comparar las opciones con eficacia."
+      },
+      {
+        "title": "Atención multilingüe",
+        "desc": "Nos comunicamos con parejas, invitados y proveedores en varios idiomas, evitando malentendidos durante toda la planificación."
+      },
+      {
+        "title": "Organización integral de la boda",
+        "desc": "Una vez elegido el espacio, podemos gestionar toda la boda: diseño, alojamiento, transporte, catering, animación y coordinación en el lugar."
+      }
+    ],
+    "faqSection": {
+      "label": "Preguntas frecuentes",
+      "title": "Preguntas frecuentes"
+    },
+    "faqs": [
+      {
+        "q": "¿Con cuánta antelación debemos reservar un espacio para la boda en Portugal?",
+        "a": "Para bodas en temporada alta, recomendamos empezar la búsqueda entre 12 y 18 meses antes. Las bodas grandes, las propiedades exclusivas y las fechas más solicitadas pueden requerir una reserva aún más temprana."
+      },
+      {
+        "q": "¿Podemos celebrar varios eventos de la boda en el mismo espacio?",
+        "a": "Sí. Muchas villas, resorts, fincas de campo y propiedades privadas pueden acoger cenas de bienvenida, ceremonias, recepciones, reuniones junto a la piscina y brunchs de despedida. Cada espacio tiene sus propias normas, así que confirmamos lo que es posible antes de recomendarlo."
+      },
+      {
+        "q": "¿Pueden alojarse todos nuestros invitados en el espacio?",
+        "a": "Depende de la propiedad. Algunos hoteles y resorts pueden alojar grupos grandes, mientras que las villas privadas, los palacios históricos, las quintas privadas y las fincas de campo suelen tener un número limitado de habitaciones. Podemos organizar alojamiento adicional y el transporte de los invitados cuando sea necesario."
+      },
+      {
+        "q": "¿Es posible celebrar una boda en la costa cerca de Lisboa?",
+        "a": "Sí. Cascais y Estoril ofrecen espacios costeros cerca de Lisboa. El Algarve, en el sur de Portugal, es ideal para una celebración aparte de varios días."
+      },
+      {
+        "q": "¿Podemos traer nuestros propios proveedores?",
+        "a": "Depende del espacio. Algunos permiten proveedores externos, mientras que otros exigen trabajar con socios de catering, producción o animación autorizados. Revisamos estas condiciones antes de confirmar el espacio."
+      },
+      {
+        "q": "¿Tienen restricciones de música los espacios en Portugal?",
+        "a": "Muchos espacios tienen límites de sonido o un horario límite para la música. Revisamos estas restricciones con cuidado, sobre todo cuando las parejas planean música en directo, DJ o fiestas hasta tarde."
+      },
+      {
+        "q": "¿Organizáis visitas a los espacios?",
+        "a": "Sí. Podemos coordinar un itinerario de visitas a medida y acompañaros durante las visitas, según el servicio de planificación elegido."
+      },
+      {
+        "q": "¿Podéis organizar toda la boda después de ayudarnos a encontrar el espacio?",
+        "a": "Sí. Nuestra planificación integral incluye la gestión del espacio, el diseño, los proveedores, el alojamiento, el transporte, la logística de los invitados, la animación, la producción y la coordinación en el lugar."
+      }
+    ],
+    "ctaSection": {
+      "label": "¿Listos?",
+      "title": "Encontremos el espacio portugués que os represente",
+      "subtitle": "Compartid vuestras fechas preferidas, el número estimado de invitados, el estilo de espacio y el presupuesto. Nuestro equipo os orientará hacia las opciones más adecuadas en Lisboa y en todo Portugal."
+    },
+    "ui": {
+      "details": "detalles",
+      "close": "Cerrar",
+      "venue_category": "Tipo de espacio",
+      "best_suited_for": "Ideal para",
+      "reserve": "Empezar la búsqueda de espacio",
+      "continue": "Seguir descubriendo",
+      "plan_venue": "Reservar una consulta"
+    }
+  },
+  "proposals_page": {
+    "hero": {
+      "label": "Pedidas de mano en Lisboa",
+      "title": "Todo para una celebración inolvidable en Lisboa",
+      "subtitle": "De las pedidas de mano románticas a las bodas íntimas, pasando por las bodas de destino de alto nivel, cuidamos cada detalle para crear experiencias elegantes, llenas de emoción y totalmente personalizadas en Lisboa. Búsqueda de espacios excepcionales, escenografía, fotografía, decoración, logística, acogida de invitados y coordinación impecable: cada servicio se diseña en torno a vuestra visión para que cada momento sea verdaderamente inolvidable."
+    },
+    "stats": [
+      {
+        "label": "Experiencias románticas a medida"
+      },
+      {
+        "label": "Años de experiencia"
+      },
+      {
+        "label": "Países de procedencia de nuestros clientes"
+      },
+      {
+        "label": "Organización de bodas personalizada"
+      }
+    ],
+    "categoriesSection": {
+      "label": "Estilos de pedida de mano",
+      "title": "Las maneras más bellas de decir «sí» en Lisboa",
+      "subtitle": "Cada pedida de mano se diseña en torno a vuestra historia de amor. Elegid el escenario excepcional que más os represente y dejadnos crear un momento romántico, único e inolvidable."
+    },
+    "categories": [
+      {
+        "title": "Pedida de mano en el Algarve",
+        "tag": "Atardecer en la costa",
+        "desc": "Una pedida a la luz de las velas en la costa del Algarve, con acantilados dorados y el horizonte atlántico como telón de fondo.",
+        "detail": "En el sur de Portugal, el Algarve ofrece un escenario espectacular y de película para una pedida de mano inolvidable: caminos iluminados con farolillos, una puesta en escena privada frente al atardecer y una intimidad absoluta, lejos del bullicio de la ciudad.",
+        "highlights": [
+          "Puesta en escena romántica y privada a la luz de las velas, al atardecer",
+          "Vistas panorámicas al océano",
+          "Fotógrafo y videógrafo presentes en el lugar",
+          "Cena privada opcional después de la pedida",
+          "Llegada opcional en coche clásico o barco privado"
+        ],
+        "bestSuitedFor": "Parejas que buscan un entorno grandioso, una experiencia única en la vida y una intimidad total, en la costa del Algarve.",
+        "cta": "Organizar una pedida de mano en el Algarve"
+      },
+      {
+        "title": "Pedida de mano en una azotea de Lisboa",
+        "tag": "Vistas a la ciudad",
+        "desc": "Un momento privado en una azotea sobre Lisboa, con el Tajo y las luces de la ciudad como testigos.",
+        "detail": "Una pedida de mano en una azotea combina romanticismo, intimidad y elegancia: arco floral, luz de las velas y vistas panorámicas sobre los tejados de Lisboa. Cada detalle se prepara cuidadosamente y con total discreción antes de vuestra llegada, para una sorpresa perfectamente orquestada.",
+        "highlights": [
+          "Azotea privatizada en un palacio histórico, una quinta privada o un hotel con encanto",
+          "Arco floral y decoración romántica a la luz de las velas",
+          "Momento mágico al atardecer o bajo las estrellas",
+          "Champán y puesta en escena con pétalos de rosa",
+          "Reportaje fotográfico realizado con total discreción"
+        ],
+        "bestSuitedFor": "Parejas que se alojan en el casco histórico y desean vivir una pedida de mano romántica, de fácil acceso y con unas vistas impresionantes de Lisboa.",
+        "cta": "Organizar una pedida de mano en una azotea"
+      },
+      {
+        "title": "Pedida de mano junto a la piscina",
+        "tag": "Villa privada",
+        "desc": "Un entorno sereno junto a la piscina de una villa privada, decorado con flores flotantes y la cálida luz de los farolillos.",
+        "detail": "Para un momento romántico que combina relax y lujo, transformamos el entorno de la piscina de una villa privada en un escenario encantador: pétalos de flores flotantes, velas resplandecientes y un ambiente completamente privatizado, reservado en exclusiva para vosotros.",
+        "highlights": [
+          "Privatización completa de una villa de lujo",
+          "Decoración floral flotante e iluminación con velas",
+          "Espacio romántico junto a la piscina o picnic sofisticado",
+          "Música en directo opcional",
+          "Privacidad total garantizada, sin presencia de otros huéspedes"
+        ],
+        "bestSuitedFor": "Parejas que desean vivir una pedida de mano en un ambiente relajado y lujoso, con el confort de un alojamiento de alto nivel y una intimidad absoluta.",
+        "cta": "Organizar una pedida de mano junto a la piscina"
+      },
+      {
+        "title": "Pedida de mano en la playa",
+        "tag": "Romance costero",
+        "desc": "Brisa marina y luz dorada para una pedida de mano en la costa atlántica de Portugal.",
+        "detail": "Desde las playas salvajes de Cascais hasta las calas tranquilas cerca de Albufeira, una pedida de mano junto al mar ofrece una pausa romántica y soleada, mecida por el suave murmullo de las olas, en un entorno natural excepcional.",
+        "highlights": [
+          "Organización al atardecer en la costa portuguesa",
+          "Arco floral o romántico sendero de pétalos de rosa",
+          "Acceso privado a la playa cuando sea posible",
+          "Sesión de fotos con la luz dorada del atardecer",
+          "Posibilidad de añadir una cena romántica junto al mar"
+        ],
+        "bestSuitedFor": "Parejas que prolongan su estancia en la costa portuguesa y desean una pedida de mano romántica, natural y relajada, frente al océano.",
+        "cta": "Organizar una pedida de mano en la playa"
+      },
+      {
+        "title": "Pedida de mano en globo aerostático",
+        "tag": "En lo más alto",
+        "desc": "Pedid la mano al amanecer sobre el campo portugués, con la Serra da Estrela en el horizonte.",
+        "detail": "Una pedida de mano en globo aerostático promete una experiencia inolvidable desde los primeros instantes: un ascenso tranquilo al amanecer, panorámicas impresionantes y un brindis romántico en el aire, antes de disfrutar de una celebración elegantemente orquestada al aterrizar.",
+        "highlights": [
+          "Vuelo privado en globo aerostático al amanecer",
+          "Vistas panorámicas espectaculares sobre las montañas de la Serra da Estrela",
+          "Pedida de mano durante el vuelo o después del aterrizaje",
+          "Brindis con champán al aterrizar",
+          "Reportaje fotográfico de toda la experiencia"
+        ],
+        "bestSuitedFor": "Parejas aventureras que sueñan con una pedida de mano verdaderamente única, un momento excepcional para vivir una sola vez en la vida.",
+        "cta": "Organizar una pedida de mano en globo"
+      },
+      {
+        "title": "Pedida de mano totalmente a medida",
+        "tag": "Pensada para vosotros",
+        "desc": "Un concepto totalmente personalizado, diseñado en torno a vuestra historia, vuestra forma de amar y vuestra visión.",
+        "detail": "Cada historia de amor es única, y algunas pedidas de mano merecen salirse de lo establecido. Si imagináis un lugar especial, una sorpresa original o un concepto que refleje vuestra esencia, nuestro equipo crea una experiencia exclusiva de principio a fin, concebida íntegramente en torno a vuestros deseos y vuestra historia.",
+        "highlights": [
+          "Concepto creativo y escenografía totalmente personalizados",
+          "Búsqueda y selección de espacios excepcionales en Portugal",
+          "Organización de sorpresas con la complicidad de vuestra familia o amigos",
+          "Animaciones exclusivas y decoración a medida",
+          "Coordinación completa y discreta, desde la concepción hasta el gran día"
+        ],
+        "bestSuitedFor": "Parejas que tienen una visión precisa, una sorpresa especial o el lugar soñado en mente y desean dar vida a una pedida de mano verdaderamente única.",
+        "cta": "Crear mi pedida de mano a medida"
+      }
+    ],
+    "featuredSection": {
+      "label": "Nuestras realizaciones",
+      "title": "Celebraciones románticas en Lisboa y en Portugal",
+      "subtitle": "Desde el primer «sí» hasta el día de la boda, imaginamos momentos inolvidables para las parejas que desean celebrar su historia de amor a través de experiencias personales, elegantes y llenas de emoción."
+    },
+    "featured": [
+      {
+        "title": "Pedidas de mano de lujo",
+        "tag": "Pedidas",
+        "desc": "Un momento mágico concebido en torno a vuestra historia de amor",
+        "detail": "Desde escenarios románticos a la luz de las velas en el Algarve hasta azoteas privadas, pasando por palacios históricos y quintas privadas, decoraciones junto a la piscina, experiencias en globo aerostático y sorpresas totalmente personalizadas, creamos pedidas de mano de lujo en Lisboa, llenas de intimidad, emoción y elegancia atemporal."
+      },
+      {
+        "title": "Bodas íntimas",
+        "tag": "Para dos",
+        "desc": "Una celebración con significado, en pareja o rodeados de vuestros seres queridos",
+        "detail": "Para las parejas que sueñan con una escapada romántica, organizamos bodas íntimas en Lisboa y en todo Portugal, en lugares excepcionales, con una escenografía refinada, servicios fotográficos, cenas privadas y una coordinación impecable de principio a fin."
+      },
+      {
+        "title": "Bodas de destino",
+        "tag": "Bodas",
+        "desc": "Celebraciones de varios días en los lugares más bellos de Portugal",
+        "detail": "Desde palacios históricos, quintas privadas y villas privadas hasta jardines encantadores y fincas costeras, organizamos bodas de destino en Lisboa y celebraciones de varios días, combinando elegancia, tradiciones culturales, hospitalidad excepcional y una organización perfectamente gestionada."
+      }
+    ],
+    "aboutSection": {
+      "label": "¿Quién está detrás de vuestros eventos?",
+      "name": "Soy Erica",
+      "role": "Organizadora de pedidas de mano y bodas de lujo en Lisboa",
+      "p1": "Soy Erica, organizadora de pedidas de mano y bodas de alto nivel con base en Lisboa. Apasionada por el arte de crear experiencias elegantes e inolvidables, encuentro mi inspiración en la belleza, la riqueza cultural y el encanto auténtico de Portugal.",
+      "p2": "Con más de 10 años de experiencia en el sector de los eventos de lujo, me especializo en pedidas de mano románticas, bodas íntimas y celebraciones privadas, concebidas por completo en torno a la historia y los deseos de cada pareja. Desde el Algarve hasta los palacios históricos, las quintas privadas y las azoteas de Lisboa, cada detalle se orquesta con esmero para crear momentos auténticos, llenos de emoción y atemporales.",
+      "p3": "Junto a mi equipo, combinamos creatividad, rigor organizativo y atención al detalle para transformar vuestras ocasiones más especiales en experiencias verdaderamente memorables.",
+      "cta": "Más información",
+      "imageAlt": "Erica, organizadora de pedidas de mano y bodas de lujo en Lisboa"
+    },
+    "promiseSection": {
+      "label": "Nuestro compromiso",
+      "title": "La promesa de una experiencia romántica excepcional en Lisboa"
+    },
+    "promises": [
+      {
+        "title": "Experiencias totalmente a medida",
+        "desc": "Cada pedida de mano, boda íntima o celebración se imagina con esmero en torno a vuestra historia de amor, vuestros deseos y la atmósfera que mejor os representa."
+      },
+      {
+        "title": "Espacios excepcionales en Lisboa",
+        "desc": "Desde mágicos atardeceres en el Algarve hasta palacios históricos y quintas privadas, azoteas, villas privadas y palacios suntuosos, seleccionamos el escenario ideal para cada celebración."
+      },
+      {
+        "title": "Organización y coordinación impecables",
+        "desc": "Desde la logística hasta la escenografía, pasando por la acogida de los invitados y el desarrollo de vuestro evento, cada detalle se gestiona con atención, rigor y precisión."
+      },
+      {
+        "title": "Emoción, elegancia y autenticidad",
+        "desc": "Celebraciones refinadas inspiradas en la belleza de Portugal, la intimidad de los momentos compartidos y el arte de la hospitalidad portuguesa, para crear recuerdos verdaderamente inolvidables."
+      }
+    ],
+    "processSection": {
+      "label": "Nuestro proceso",
+      "title": "¿Cómo se desarrolla vuestra experiencia?"
+    },
+    "process": [
+      {
+        "title": "La consulta personalizada",
+        "desc": "Empezamos por conocer vuestra historia, vuestros deseos, vuestras expectativas y la atmósfera que queréis crear, para imaginar una experiencia única, personal y llena de significado."
+      },
+      {
+        "title": "La concepción y la organización a medida",
+        "desc": "Nuestro equipo imagina, planifica y coordina cada aspecto de vuestro evento: selección de espacios, escenografía, proveedores, logística, acogida de invitados y desarrollo de la jornada, con elegancia, rigor y atención al detalle."
+      },
+      {
+        "title": "La confirmación de vuestra reserva",
+        "desc": "La fecha y los espacios seleccionados quedan confirmados en cuanto recibimos el anticipo. El conjunto de los servicios, las etapas de la organización y el calendario de pagos se definen con total transparencia y profesionalidad."
+      },
+      {
+        "title": "El día de vuestro evento",
+        "desc": "Ya se trate de una pedida de mano, una boda íntima o una celebración de lujo, orquestamos cada detalle entre bastidores para que podáis disfrutar plenamente de cada instante, con total tranquilidad."
+      }
+    ],
+    "testimonialsSection": {
+      "label": "Historias y opiniones de parejas",
+      "title": "Bodas inspiradas en Portugal",
+      "subtitle": "Una ceremonia romántica en un palacio de Sintra, una recepción junto al Atlántico en el Algarve o una boda íntima en el valle del Duero: cada celebración cuenta una historia única. Descubrid los escenarios, los detalles y las emociones de una boda de destino en Portugal.",
+      "note": "Las opiniones reales se publicarán tras su verificación y autorización."
+    },
+    "ctaSection": {
+      "label": "¿Listos para vivir una experiencia excepcional?",
+      "title": "Creemos juntos recuerdos verdaderamente inolvidables",
+      "subtitle": "Tanto si soñáis con una pedida de mano romántica, una boda íntima o una celebración de lujo, compartid con nosotros vuestra visión. Daremos vida a cada uno de vuestros deseos, con elegancia y refinamiento, en Lisboa y en todo Portugal."
+    },
+    "ui": {
+      "details": "detalles",
+      "close": "Cerrar",
+      "category_label": "Estilo de pedida de mano",
+      "best_suited_for": "Ideal para",
+      "reserve": "Organizar vuestro evento",
+      "continue": "Seguir descubriendo",
+      "plan": "Organizar vuestro evento",
+      "discover": "Descubrir"
+    }
+  }
+}

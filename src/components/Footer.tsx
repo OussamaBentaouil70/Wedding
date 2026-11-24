@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faFacebook, faLinkedin, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import logo from '../assets/images/logo2.png';
+import logo from '../assets/images/logo-portugal.png';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -13,19 +13,28 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-brand">
-          <img src={logo} alt="Wedding Planner Morocco Logo" className="footer-logo-img" />
+          <img src={logo} alt="Weddings Planner Portugal Logo" className="footer-logo-img" />
           <p>{t('footer.desc')}</p>
           <div className="social-links">
-            <a 
-              href="https://www.instagram.com/weddingsplannermorocco/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://www.instagram.com/wpm_weddings"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
               className="social-icon"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a 
+            <a
+              href="https://www.tiktok.com/@weddings.planner?_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+              className="social-icon"
+            >
+              <FontAwesomeIcon icon={faTiktok} />
+            </a>
+            <a
               href="https://www.facebook.com/profile.php?id=61576790920930" 
               target="_blank" 
               rel="noopener noreferrer" 
@@ -49,7 +58,7 @@ const Footer: React.FC = () => {
           <h3>{t('footer.links_title')}</h3>
           <ul>
             <li><Link to="/">{t('nav.home')}</Link></li>
-            <li><Link to="/wedding">{t('nav.wedding')}</Link></li>
+            <li><Link to="/wedding/algarve">{t('nav.wedding')}</Link></li>
             <li><Link to="/proposals">{t('nav.proposals')}</Link></li>
             <li><Link to="/events">{t('nav.events')}</Link></li>
             <li><Link to="/venues">{t('nav.venues')}</Link></li>
@@ -60,7 +69,7 @@ const Footer: React.FC = () => {
           <h3>{t('footer.contact_title')}</h3>
           <p className="footer-contact-item">
             <FontAwesomeIcon icon={faPhone} className="footer-contact-icon" aria-hidden="true" />
-            <a href="tel:+212699728058">+212699728058</a>
+            <a href="tel:+34678798513">+34 678 79 85 13</a>
           </p>
           <p className="footer-contact-item">
             <FontAwesomeIcon icon={faLocationDot} className="footer-contact-icon" aria-hidden="true" />

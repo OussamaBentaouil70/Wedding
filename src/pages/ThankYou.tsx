@@ -13,7 +13,7 @@ const ThankYou: React.FC = () => {
         <img src={thankYouImage} alt={t('thank_you_page.image_alt')} className="thank-you-hero-image" />
         <div className="thank-you-hero-overlay" />
         <div className="container thank-you-hero-content">
-          <span className="section-label thank-you-hero-label">Thank You</span>
+          <span className="section-label thank-you-hero-label">{t('thank_you_page.thanks')}</span>
           <span className="gold-line" />
         </div>
       </section>

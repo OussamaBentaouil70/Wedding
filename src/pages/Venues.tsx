@@ -71,7 +71,7 @@ const Venues: React.FC = () => {
         subtitle={venuesData.hero.subtitle}
         defaultService={venuesData.hero.defaultService}
         serviceOptions={serviceOptions}
-        servicePlaceholder="Select a venue type"
+        servicePlaceholder={t('page_hero.select_venue')}
       />
 
       {/* ══════════ INTRO / PRIORITIES ══════════ */}
@@ -89,8 +89,8 @@ const Venues: React.FC = () => {
             </ul>
           </div>
           <div className="editorial-img-side">
-            {safeHeroImages[0] ? (
-              <img src={safeHeroImages[0]} alt={venuesData.introSection.title} className="editorial-img-main" />
+            {(venuesData.introSection.image || safeHeroImages[0]) ? (
+              <img src={resolveJsonImageSrc(venuesData.introSection.image) || safeHeroImages[0]} alt={venuesData.introSection.title} className="editorial-img-main" />
             ) : null}
           </div>
         </div>
@@ -200,7 +200,7 @@ const Venues: React.FC = () => {
         </div>
       )}
 
-      {/* ══════════ DESTINATIONS ACROSS MOROCCO ══════════ */}
+      {/* ══════════ DESTINATIONS ACROSS PORTUGAL ══════════ */}
       <section id="venues-destinations" className="section-padding container reveal">
         <div className="wedding-section-header">
           <span className="section-label">{venuesData.destinationsSection.label}</span>

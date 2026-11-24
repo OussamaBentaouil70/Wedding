@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ArrowRight, Check } from 'lucide-react';
 import Flatpickr from 'react-flatpickr';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { submitForm } from '../utils/formHandler';
 
 const formatDateToYMD = (date: Date) => {
@@ -46,6 +47,7 @@ const PageHero: React.FC<PageHeroProps> = ({
   showForm = true,
 }) => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [bgIdx, setBgIdx] = useState(0);
   const [formData, setFormData] = useState({
     contact_name: '',
@@ -61,10 +63,10 @@ const PageHero: React.FC<PageHeroProps> = ({
     message: '',
   });
   const fallbackServiceOptions = [
-    { value: 'Wedding', label: 'Wedding' },
-    { value: 'Corporate Event', label: 'Corporate Event' },
-    { value: 'Private Celebration', label: 'Private Celebration' },
-    { value: 'Other', label: 'Other' },
+    { value: 'Wedding', label: t('page_hero.option_wedding') },
+    { value: 'Corporate Event', label: t('page_hero.option_corporate') },
+    { value: 'Private Celebration', label: t('page_hero.option_private') },
+    { value: 'Other', label: t('page_hero.option_other') },
   ];
   const heroServiceOptions = serviceOptions ?? fallbackServiceOptions;
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -154,18 +156,18 @@ const PageHero: React.FC<PageHeroProps> = ({
             {submitted ? (
               <div className="page-hero-form-success">
                 <Check size={34} />
-                <h3>Request Received!</h3>
-                <p>We'll be in touch within 24 hours to begin planning your event.</p>
+                <h3>{t('page_hero.success_title')}</h3>
+                <p>{t('page_hero.success_text')}</p>
               </div>
             ) : (
               <form className="page-hero-form" onSubmit={handleSubmit}>
-                <h3>Start Planning</h3>
-                <p>Tell us about your vision — we'll handle everything from here.</p>
+                <h3>{t('page_hero.title')}</h3>
+                <p>{t('page_hero.subtitle')}</p>
 
               <div className="phf-group">
                 <input
                   name="contact_name"
-                  placeholder="Full Name"
+                  placeholder={t('page_hero.full_name')}
                   value={formData.contact_name}
                   onChange={handleChange}
                   required
@@ -177,7 +179,7 @@ const PageHero: React.FC<PageHeroProps> = ({
                   <input
                     name="contact_email"
                     type="email"
-                    placeholder="Email Address"
+                    placeholder={t('page_hero.email')}
                     value={formData.contact_email}
                     onChange={handleChange}
                     required
@@ -187,7 +189,7 @@ const PageHero: React.FC<PageHeroProps> = ({
                   <input
                     name="contact_phone"
                     type="tel"
-                    placeholder="Phone / WhatsApp"
+                    placeholder={t('page_hero.phone')}
                     value={formData.contact_phone}
                     onChange={handleChange}
                   />
@@ -203,7 +205,7 @@ const PageHero: React.FC<PageHeroProps> = ({
                     required
                   >
                     <option value="" disabled>
-                      {servicePlaceholder ?? 'Type of Event'}
+                      {servicePlaceholder ?? t('page_hero.event_type')}
                     </option>
                     {heroServiceOptions.map((option) => (
                       <option key={option.value} value={option.value}>{option.label}</option>
@@ -226,7 +228,7 @@ const PageHero: React.FC<PageHeroProps> = ({
                       }));
                     }}
                     className="date-range-input"
-                    placeholder="Arrival & Departure Dates"
+                    placeholder={t('page_hero.dates')}
                   />
                 </div>
               </div>
@@ -236,7 +238,7 @@ const PageHero: React.FC<PageHeroProps> = ({
                   <input
                     name="number_of_guests"
                     type="text"
-                    placeholder="Number of Guests"
+                    placeholder={t('page_hero.guests')}
                     value={formData.number_of_guests}
                     onChange={handleChange}
                   />
@@ -245,7 +247,7 @@ const PageHero: React.FC<PageHeroProps> = ({
                   <input
                     name="destinations_in_mind"
                     type="text"
-                    placeholder="Destinations in Mind"
+                    placeholder={t('page_hero.destinations')}
                     value={formData.destinations_in_mind}
                     onChange={handleChange}
                   />
@@ -257,7 +259,7 @@ const PageHero: React.FC<PageHeroProps> = ({
                   <input
                     name="estimated_budget"
                     type="text"
-                    placeholder="Estimated Budget"
+                    placeholder={t('page_hero.budget')}
                     value={formData.estimated_budget}
                     onChange={handleChange}
                   />
@@ -271,7 +273,6 @@ const PageHero: React.FC<PageHeroProps> = ({
                     <option value="USD">USD ($)</option>
                     <option value="EUR">EUR (€)</option>
                     <option value="GBP">GBP (£)</option>
-                    <option value="MAD">MAD (د.م.)</option>
                   </select>
                 </div>
               </div>
@@ -279,7 +280,7 @@ const PageHero: React.FC<PageHeroProps> = ({
               <div className="phf-group">
                 <textarea
                   name="message"
-                  placeholder="Tell us about your vision…"
+                  placeholder={t('page_hero.message')}
                   value={formData.message}
                   onChange={handleChange}
                   rows={3}
@@ -288,10 +289,10 @@ const PageHero: React.FC<PageHeroProps> = ({
 
                 <button type="submit" className="btn-primary phf-submit" disabled={isSubmitting}>
                   {isSubmitting ? (
-                    'Sending…'
+                    t('page_hero.sending')
                   ) : (
                     <>
-                      Send Inquiry <ArrowRight size={14} />
+                      {t('page_hero.send')} <ArrowRight size={14} />
                     </>
                   )}
                 </button>

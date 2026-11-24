@@ -2,19 +2,28 @@ import React, { useEffect, useMemo, useState } from 'react';
 import HeaderVideo from '../components/HeaderVideo';
 import { ChevronLeft, ChevronRight, MessageCircle, FileText, CheckCircle, Calendar, Gift, Users, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { galleryCollections } from '../data/imageCollections';
+import { galleryCollections as baseCollections } from '../data/galleryCollections';
 
 // Imports
-import galleryHero from '../assets/video/Wedding.mp4';
+import galleryHero from '../assets/video/portugal-hero.mp4';
 
 const Gallery: React.FC = () => {
   const { t } = useTranslation();
+  const galleryCollections = useMemo(
+    () =>
+      baseCollections.map((collection) => ({
+        ...collection,
+        title: t(`gallery_page.collections.${collection.key}.title`),
+        subtitle: t(`gallery_page.collections.${collection.key}.subtitle`),
+      })),
+    [t],
+  );
   const [activeCollectionIndex, setActiveCollectionIndex] = useState<number | null>(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   const activeCollection = useMemo(
     () => (activeCollectionIndex === null ? null : galleryCollections[activeCollectionIndex]),
-    [activeCollectionIndex]
+    [activeCollectionIndex, galleryCollections]
   );
 
   const activeImages = activeCollection?.images ?? [];
@@ -57,22 +66,6 @@ const Gallery: React.FC = () => {
       icon: <Icon size={32} />,
     };
   });
-
-  const collectionKeyByTitle: Record<string, string> = {
-    'Birthday & Private Events': 'birthday_private',
-    'EVJF - Bachelor Party': 'evjf',
-    'Festivals': 'festivals',
-    'Retreats': 'retreats',
-    'Corporate Events': 'corporate',
-    'Weddings': 'weddings',
-  };
-
-  const getCollectionSubtitle = (title: string, fallback: string) => {
-    const key = collectionKeyByTitle[title];
-    if (!key) return fallback;
-    const translated = t(`gallery_page.collections.${key}.subtitle`);
-    return translated === `gallery_page.collections.${key}.subtitle` ? fallback : translated;
-  };
 
   return (
     <div className="page-gallery">
@@ -117,21 +110,21 @@ const Gallery: React.FC = () => {
           <p>{t('gallery_page.gallery.subtitle')}</p>
         </div>
 
-        {galleryCollections.map((collection) => (
-          <div key={collection.title} style={{ marginBottom: '72px' }}>
+        {galleryCollections.map((collection, collectionIndex) => (
+          <div key={collection.key} style={{ marginBottom: '72px' }}>
             <div className="wedding-section-header" style={{ marginBottom: '28px' }}>
-              <span className="section-label">{collection.title}</span>
+              <span className="section-label">{t('gallery_page.gallery.label')}</span>
               <span className="gold-line" />
               <h2>{collection.title}</h2>
-              <p>{getCollectionSubtitle(collection.title, collection.subtitle)}</p>
+              <p>{collection.subtitle}</p>
             </div>
             <div className="themes-gallery">
               {collection.images.map((img, idx) => (
                 <button
-                  key={`${collection.title}-${idx}`}
+                  key={`${collection.key}-${idx}`}
                   type="button"
                   className="theme-card theme-card--button"
-                  onClick={() => openCollectionImage(galleryCollections.findIndex((item) => item.title === collection.title), idx)}
+                  onClick={() => openCollectionImage(collectionIndex, idx)}
                   aria-haspopup="dialog"
                   aria-label={t('gallery_page.modal.open_image', { title: collection.title, index: idx + 1 })}
                 >

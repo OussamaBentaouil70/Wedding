@@ -5,12 +5,6 @@ import { useTranslation } from 'react-i18next';
 import PageHero from './PageHero';
 import ReservationForm from './ReservationForm';
 import { resolveJsonImageSrc } from '../utils/imageResolver';
-import {
-  agafayDesertWeddingImages,
-  elopementWeddingImages,
-  keralaWeddingImages,
-  jewishWeddingImages,
-} from '../data/imageCollections';
 
 type SectionCopy = {
   label: string;
@@ -59,20 +53,32 @@ type WeddingPageConfig = {
   };
 };
 
+const defaultWeddingUi = {
+  details: 'details',
+  close: 'Close',
+  venue_experience: 'Venue Experience',
+  start_planning: 'Start Planning',
+  continue: 'Continue Browsing',
+  plan_wedding: 'Plan Your Wedding',
+  discover_type: 'Discover',
+};
+
+const weddingTypesSection: SectionCopy = {
+  label: 'Wedding Types',
+  title: 'Types of Weddings We Create',
+  subtitle: 'Explore each celebration style and discover the experience that fits your vision.',
+};
+
 const weddingPageConfigs: Record<string, WeddingPageConfig> = {
   'wedding_page': {
     hero: {
-      label: 'Weddings in Morocco',
-      title: 'Bespoke Weddings in Morocco',
+      label: 'Weddings in Portugal',
+      title: 'Bespoke Weddings in Portugal',
       subtitle: 'From intimate ceremonies to multi-day celebrations, we design weddings that balance beauty, emotion, and flawless coordination.',
       defaultService: 'Wedding',
     },
     heroImages: ['src/assets/images/Weddings/1.jpg', 'src/assets/images/Weddings/2.jpg', 'src/assets/images/Weddings/3.jpg'],
-    weddingTypesSection: {
-      label: 'Wedding Types',
-      title: 'Types of Weddings We Create',
-      subtitle: 'Explore each celebration style and discover the experience that fits your vision.',
-    },
+    weddingTypesSection,
     servicesSection: {
       label: 'What We Offer',
       title: 'Our Wedding Services',
@@ -81,21 +87,21 @@ const weddingPageConfigs: Record<string, WeddingPageConfig> = {
     services: [
       { title: 'Full Wedding Planning', desc: 'Comprehensive management from concept to the final dance, ensuring every detail is perfectly realized.' },
       { title: 'Wedding Design & Styling', desc: 'Creating a cohesive visual narrative through floral design, lighting, and bespoke decor.' },
-      { title: 'Destination Wedding Coordination', desc: 'Expert logistics for couples traveling to Morocco, managing travel, venues, and local vendors.' },
+      { title: 'Destination Wedding Coordination', desc: 'Expert logistics for couples traveling to Portugal, managing travel, venues, and local vendors.' },
       { title: 'Elopements & Intimate Weddings', desc: 'Curating deeply personal and breathtaking ceremonies for smaller, more private celebrations.' },
       { title: 'Multi-Day Wedding Weekends', desc: 'Designing a full journey for your guests, from welcome dinners to farewell brunches.' },
       { title: 'Cultural & Fusion Weddings', desc: 'Respectfully blending traditions and cultures into a unique and harmonious celebration.' },
     ],
     venuesSection: {
       label: 'Where We Celebrate',
-      title: "Celebrate in Morocco's Most Extraordinary Settings",
-      subtitle: 'From the hidden riads of the Medina to the majestic expanse of the Sahara.',
+      title: "Celebrate in Portugal's Most Extraordinary Settings",
+      subtitle: 'From historic palaces and private quintas to the Atlantic coastline.',
     },
     venues: [
-      { title: 'Luxury Riads', img: 'src/assets/images/Weddings/8.jpg', desc: 'Hidden behind carved doors, Marrakech riads offer intimate courtyards, candlelit dinners, and a sense of cinematic privacy.', highlights: ['Medina courtyards & rooftop moments', 'Ideal for intimate to mid-size celebrations', 'Perfect for welcome dinners & brunches'] },
+      { title: 'Historic Palaces & Quintas', img: 'src/assets/images/Weddings/8.jpg', desc: 'Portuguese manor houses, restored palaces, elegant courtyards and landscaped gardens offer atmospheric settings for weddings and intimate celebrations.', highlights: ['Courtyards, rooftops & palace gardens', 'Ideal for intimate to mid-size celebrations', 'Perfect for welcome dinners & brunches'] },
       { title: 'Private Villas & Estates', img: 'src/assets/images/Weddings/22.jpg', desc: 'A private residence feel with elevated hospitality — space for multi-day hosting, poolside gatherings, and relaxed luxury.', highlights: ['Multi-day wedding weekends', 'On-site accommodation for guests', 'Flexible layouts for ceremony + reception'] },
       { title: 'Palaces & Gardens', img: 'src/assets/images/Weddings/31.jpg', desc: 'Grand architecture, heritage details, and lush gardens for couples who want a statement-making, regal celebration.', highlights: ['High-impact ceremony backdrops', 'Large guest capacity options', 'Ideal for formal receptions & live entertainment'] },
-      { title: 'Desert Camps', img: 'src/assets/images/Weddings/4.jpg', desc: 'A sunset ceremony, lantern-lit dining, and music under the stars — the Sahara is Morocco at its most unforgettable.', highlights: ['Sunset ceremonies & stargazing dinners', 'Immersive guest experience', 'Perfect for elopements or bold weekend events'] },
+      { title: 'Coastal Estates', img: 'src/assets/images/Weddings/4.jpg', desc: 'A sunset ceremony, lantern-lit dining, and music under the stars — coastal weddings are immersive destination experiences with effortless luxury.', highlights: ['Sunset ceremonies & stargazing dinners', 'Immersive guest experience', 'Perfect for elopements or bold weekend events'] },
       { title: 'Beachfront Venues', img: 'src/assets/images/Weddings/21.jpg', desc: 'Ocean air, golden light, and relaxed sophistication — coastal venues bring effortless romance with refined styling.', highlights: ['Golden-hour ceremonies', 'Laid-back luxury atmosphere', 'Great for guest excursions & seaside brunches'] },
     ],
     editorial: {
@@ -109,52 +115,15 @@ const weddingPageConfigs: Record<string, WeddingPageConfig> = {
     themesSection: {
       label: 'Inspiration',
       title: 'Wedding Themes & Inspiration',
-      subtitle: "Discover themes that resonate with Morocco's soul and your personal style.",
+      subtitle: "Discover themes that resonate with Portugal's soul and your personal style.",
     },
     themes: [
-      { title: 'Moroccan Royal Elegance', img: 'src/assets/images/Weddings/10.jpg' },
+      { title: 'Portuguese Palace Elegance', img: 'src/assets/images/Weddings/10.jpg' },
       { title: 'Modern Minimal Romance', img: 'src/assets/images/Weddings/11.jpg' },
-      { title: 'Desert Sunset Celebration', img: 'src/assets/images/Weddings/12.jpg' },
+      { title: 'Atlantic Sunset Celebration', img: 'src/assets/images/Weddings/12.jpg' },
       { title: 'Garden Wedding in Bloom', img: 'src/assets/images/Weddings/13.jpg' },
       { title: 'White & Gold Sophistication', img: 'src/assets/images/Weddings/14.jpg' },
-      { title: 'Beldi Chic Reimagined', img: 'src/assets/images/Weddings/15.jpg' },
-    ],
-    serviceShowcaseSection: {
-      label: 'Services',
-      title: 'Our Services',
-      subtitle: 'Essential wedding services delivered with style, precision, and seamless coordination.',
-    },
-    serviceShowcase: [
-      {
-        title: 'Transportation',
-        img: 'src/assets/images/Weddings/Services/transportation.jpg',
-        desc: 'Private transfers and guest transport management designed to keep every movement smooth and stress-free.',
-        highlights: ['Airport and hotel transfers', 'Ceremony and reception shuttles', 'Luxury vehicle coordination'],
-      },
-      {
-        title: 'DJ',
-        img: 'src/assets/images/Weddings/Services/DJ.jpg',
-        desc: 'Music direction and live atmosphere management to shape the perfect emotional flow from cocktail hour to last dance.',
-        highlights: ['Curated music programming', 'Sound setup coordination', 'Dance-floor experience design'],
-      },
-      {
-        title: 'Catering',
-        img: 'src/assets/images/Weddings/Services/catering wedding.jpg',
-        desc: 'Refined culinary experiences tailored to your guests, celebration style, and the rhythm of your wedding day.',
-        highlights: ['Custom menu planning', 'Tasting and service flow', 'Dietary and guest preference support'],
-      },
-      {
-        title: 'Make Up',
-        img: 'src/assets/images/Weddings/Services/make up.jpg',
-        desc: 'Professional beauty services for the bride and bridal party, timed precisely for a calm and camera-ready preparation.',
-        highlights: ['Bride and bridal party beauty', 'Trial session coordination', 'On-site touch-up support'],
-      },
-      {
-        title: 'Photography & Videography',
-        img: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1400&q=80',
-        desc: 'Editorial coverage that captures every key emotion and detail, from preparations to the final celebration moments.',
-        highlights: ['Photo and video team coordination', 'Timeline-aligned coverage', 'Cinematic highlight storytelling'],
-      },
+      { title: 'Quinta Chic Reimagined', img: 'src/assets/images/Weddings/15.jpg' },
     ],
     includedSection: {
       title: 'The Full Planning Scope',
@@ -162,7 +131,7 @@ const weddingPageConfigs: Record<string, WeddingPageConfig> = {
     },
     included: [
       { title: 'Concept development', desc: 'Developing a unique visual and experiential concept that tells your story.' },
-      { title: 'Venue sourcing', desc: "Curating a list of Morocco's most extraordinary settings for your celebration." },
+      { title: 'Venue sourcing', desc: "Curating a list of Portugal's most extraordinary settings for your celebration." },
       { title: 'Budget guidance', desc: 'Strategic planning and transparent management of your wedding investment.' },
       { title: 'Vendor selection and management', desc: 'Connecting you with the most talented local and international creative partners.' },
       { title: 'Design direction and moodboards', desc: 'Creation of detailed moodboards focusing on every visual element of your day.' },
@@ -175,7 +144,7 @@ const weddingPageConfigs: Record<string, WeddingPageConfig> = {
       title: 'Frequently Asked Questions',
     },
     faqs: [
-      { q: 'How far in advance should we start?', a: 'For destination weddings in Morocco, we recommend starting 10–12 months in advance to secure your preferred venue and top-tier vendors.' },
+      { q: 'How far in advance should we start?', a: 'For destination weddings in Portugal, we recommend starting 10–12 months in advance to secure your preferred venue and top-tier vendors.' },
       { q: 'Do you work with international couples?', a: 'Yes, the majority of our clients are international couples. We are experts in handling remote planning and guest logistics.' },
       { q: 'Can you plan multicultural or symbolic ceremonies?', a: 'Absolutely. We specialise in fusion weddings and can assist with finding celebrants for symbolic, secular, or religious ceremonies.' },
       { q: 'Do you assist with guest experiences and accommodation?', a: 'Yes, we provide full hospitality management including accommodation booking, local tours, and transport for your guests.' },
@@ -183,92 +152,79 @@ const weddingPageConfigs: Record<string, WeddingPageConfig> = {
     ctaSection: {
       label: 'Ready?',
       title: 'Plan Your Wedding',
-      subtitle: "Let's start crafting your extraordinary celebration in Morocco today.",
+      subtitle: "Let's start crafting your extraordinary celebration in Portugal today.",
     },
-    ui: {
-      details: 'details',
-      close: 'Close',
-      venue_experience: 'Venue Experience',
-      start_planning: 'Start Planning',
-      continue: 'Continue Browsing',
-      plan_wedding: 'Plan Your Wedding',
-      discover_type: 'Discover',
-    },
+    ui: defaultWeddingUi,
   },
-  'wedding_subpages.agafay': {
+  'wedding_subpages.algarve': {
     hero: {
-      label: 'Weddings in Morocco',
-      title: 'Agafay Desert Weddings',
-      subtitle: 'From intimate sunset ceremonies to immersive multi-day desert experiences, we design weddings in Agafay that combine natural beauty, exclusivity, and unforgettable moments.',
+      label: 'Weddings in Portugal',
+      title: 'Algarve Coast Weddings',
+      subtitle: 'From intimate sunset ceremonies to immersive multi-day coastal experiences, we design weddings in Algarve that combine natural beauty, exclusivity, and unforgettable moments.',
       defaultService: 'Wedding',
     },
+    heroImages: ['src/assets/images/portugal/weddings/algarve-coast-weddings.jpg', 'src/assets/images/portugal/weddings/luxury-coastal-estates.jpg', 'src/assets/images/portugal/weddings/atlantic-romance.jpg'],
+    weddingTypesSection,
     servicesSection: {
       label: 'What We Offer',
       title: 'Our Wedding Services',
-      subtitle: 'Tailored excellence including desert camp setup, logistics, guest experience, and full event production in remote luxury settings.',
+      subtitle: 'Tailored excellence including Coastal Venue Styling, logistics, guest experience, and full event production in remote luxury settings.',
     },
     services: [
-      { title: 'Desert Camp Setup', desc: 'Elegant layouts, atmospheric lighting, and refined structures built for the Agafay landscape.' },
+      { title: 'Coastal Venue Styling', desc: 'Elegant layouts, atmospheric lighting, and refined structures built for the Algarve landscape.' },
       { title: 'Logistics & Guest Experience', desc: 'Transportation, timing, and hospitality details handled with precision in a remote setting.' },
       { title: 'Full Event Production', desc: 'Technical coordination, vendor management, and on-site delivery across every event moment.' },
-      { title: 'Sunset Ceremonies', desc: 'Romantic vows shaped around golden light and panoramic desert views.' },
-      { title: 'Multi-Day Desert Celebrations', desc: 'Welcome dinners, ceremony days, and farewell moments designed as one cohesive journey.' },
-      { title: 'Luxury Styling', desc: 'Bohemian elegance, candlelight, and warm desert textures tailored to your vision.' },
+      { title: 'Sunset Ceremonies', desc: 'Romantic vows shaped around golden light and panoramic ocean views.' },
+      { title: 'Multi-Day Coastal Celebrations', desc: 'Welcome dinners, ceremony days, and farewell moments designed as one cohesive journey.' },
+      { title: 'Luxury Styling', desc: 'Bohemian elegance, candlelight, and warm coastal textures tailored to your vision.' },
     ],
     venuesSection: {
       label: 'Where We Celebrate',
-      title: "Celebrate in Morocco's Most Extraordinary Settings",
-      subtitle: 'From luxury desert camps to private setups under the stars, just outside Marrakech.',
+      title: "Celebrate in Portugal's Most Extraordinary Settings",
+      subtitle: 'From luxury coastal estates to private setups under the stars, just outside Lisbon.',
     },
     venues: [
-      { title: 'Luxury Desert Camps', img: 'src/assets/images/Weddings/4.jpg' },
-      { title: 'Private Stargazing Setups', img: 'src/assets/images/Weddings/12.jpg' },
-      { title: 'Golden Hour Ceremony Spaces', img: 'src/assets/images/Weddings/13.jpg' },
-      { title: 'Desert Dining Under the Stars', img: 'src/assets/images/Weddings/14.jpg' },
-      { title: 'Remote Luxury Retreats', img: 'src/assets/images/Weddings/15.jpg' },
+      { title: 'Luxury Coastal Estates', img: 'src/assets/images/portugal/weddings/luxury-coastal-estates.jpg' },
+      { title: 'Private Stargazing Setups', img: 'src/assets/images/portugal/weddings/immersive-coastal-mood.jpg' },
+      { title: 'Golden Hour Ceremony Spaces', img: 'src/assets/images/portugal/weddings/golden-sunset-ceremonies.jpg' },
+      { title: 'Coastal Dining Under the Stars', img: 'src/assets/images/portugal/weddings/candlelit-coastal-dinners.jpg' },
+      { title: 'Remote Luxury Retreats', img: 'src/assets/images/portugal/weddings/atlantic-romance.jpg' },
     ],
     themesSection: {
       label: 'Inspiration',
       title: 'Wedding Themes & Inspiration',
-      subtitle: 'Bohemian elegance, candlelit dinners, and golden sunset ceremonies in a unique desert atmosphere.',
+      subtitle: 'Bohemian elegance, candlelit dinners, and golden sunset ceremonies in a unique coastal atmosphere.',
     },
     themes: [
-      { title: 'Bohemian Elegance', img: 'src/assets/images/Weddings/10.jpg' },
-      { title: 'Candlelit Desert Dinners', img: 'src/assets/images/Weddings/11.jpg' },
-      { title: 'Golden Sunset Ceremonies', img: 'src/assets/images/Weddings/12.jpg' },
-      { title: 'Desert Romance', img: 'src/assets/images/Weddings/13.jpg' },
-      { title: 'Neutral Luxe Styling', img: 'src/assets/images/Weddings/14.jpg' },
-      { title: 'Immersive Desert Mood', img: 'src/assets/images/Weddings/15.jpg' },
+      { title: 'Bohemian Elegance', img: 'src/assets/images/portugal/weddings/bohemian-elegance.jpg' },
+      { title: 'Candlelit Coastal Dinners', img: 'src/assets/images/portugal/weddings/candlelit-coastal-dinners.jpg' },
+      { title: 'Golden Sunset Ceremonies', img: 'src/assets/images/portugal/weddings/golden-sunset-ceremonies.jpg' },
+      { title: 'Atlantic Romance', img: 'src/assets/images/portugal/weddings/atlantic-romance.jpg' },
+      { title: 'Neutral Luxe Styling', img: 'src/assets/images/portugal/weddings/neutral-luxe-styling.jpg' },
+      { title: 'Immersive Coastal Mood', img: 'src/assets/images/portugal/weddings/immersive-coastal-mood.jpg' },
     ],
     ctaSection: {
       label: 'Ready?',
       title: 'Plan Your Wedding',
-      subtitle: "Let's craft your unforgettable desert wedding experience in Agafay.",
+      subtitle: "Let's craft your unforgettable coastal wedding experience in Algarve.",
     },
-    ui: {
-      details: 'details',
-      close: 'Close',
-      venue_experience: 'Venue Experience',
-      start_planning: 'Start Planning',
-      continue: 'Continue Browsing',
-      plan_wedding: 'Plan Your Wedding',
-      discover_type: 'Discover',
-    },
+    ui: defaultWeddingUi,
   },
   'wedding_subpages.elopement': {
     hero: {
-      label: 'Bespoke Weddings in Morocco',
-      title: 'Elopement Weddings in Morocco',
-      subtitle: 'From intimate vows to romantic escapes, we design elopements that focus on emotion, privacy, and meaningful experiences in breathtaking Moroccan settings.',
+      label: 'Bespoke Weddings in Portugal',
+      title: 'Elopement Weddings in Portugal',
+      subtitle: 'From intimate vows to romantic escapes, we design elopements that focus on emotion, privacy, and meaningful experiences in breathtaking Portuguese settings.',
       defaultService: 'Wedding',
     },
+    heroImages: ['src/assets/images/portugal/elopement/plan-your-wedding.jpg', 'src/assets/images/portugal/elopement/hidden-atlantic-coastlines.jpg', 'src/assets/images/portugal/elopement/romantic-minimalism.jpg'],
     servicesSection: {
       label: 'What We Offer',
       title: 'Our Wedding Services',
       subtitle: 'Tailored excellence including location scouting, styling, photography, and full coordination for intimate celebrations.',
     },
     services: [
-      { title: 'Location Scouting', desc: 'Private riads, scenic desert landscapes, and hidden destinations matched to your story.' },
+      { title: 'Location Scouting', desc: 'Historic palaces and private quintas, scenic Atlantic coastlines, and hidden destinations matched to your story.' },
       { title: 'Intimate Ceremony Styling', desc: 'Minimal, romantic visuals that keep the focus on the moment itself.' },
       { title: 'Photography Coordination', desc: 'Natural light, cinematic framing, and memory-making details captured beautifully.' },
       { title: 'Full Coordination', desc: 'All logistics handled discreetly so the experience remains calm and effortless.' },
@@ -277,15 +233,15 @@ const weddingPageConfigs: Record<string, WeddingPageConfig> = {
     ],
     venuesSection: {
       label: 'Where We Celebrate',
-      title: "Celebrate in Morocco's Most Extraordinary Settings",
-      subtitle: 'From secluded riads to desert landscapes and hidden gems across Morocco.',
+      title: "Celebrate in Portugal's Most Extraordinary Settings",
+      subtitle: 'From historic palaces and private quintas to Atlantic coastlines and hidden gems across Portugal.',
     },
     venues: [
-      { title: 'Secluded Riads', img: 'src/assets/images/Weddings/8.jpg' },
-      { title: 'Hidden Desert Landscapes', img: 'src/assets/images/Weddings/4.jpg' },
-      { title: 'Private Rooftop Moments', img: 'src/assets/images/Weddings/21.jpg' },
-      { title: 'Quiet Garden Corners', img: 'src/assets/images/Weddings/13.jpg' },
-      { title: 'Off-the-Grid Luxury', img: 'src/assets/images/Weddings/15.jpg' },
+      { title: 'Historic Palaces & Private Quintas', img: 'src/assets/images/portugal/elopement/historic-palaces-and-private-quintas.jpg' },
+      { title: 'Hidden Atlantic Coastlines', img: 'src/assets/images/portugal/elopement/hidden-atlantic-coastlines.jpg' },
+      { title: 'Private Rooftop Moments', img: 'src/assets/images/portugal/elopement/private-rooftop-moments.jpg' },
+      { title: 'Quiet Garden Corners', img: 'src/assets/images/portugal/elopement/quiet-garden-corner.jpg' },
+      { title: 'Off-the-Grid Luxury', img: 'src/assets/images/portugal/elopement/off-the-grid-luxury.jpg' },
     ],
     themesSection: {
       label: 'Inspiration',
@@ -293,59 +249,52 @@ const weddingPageConfigs: Record<string, WeddingPageConfig> = {
       subtitle: 'Romantic minimalism, cinematic moments, and deeply personal experiences.',
     },
     themes: [
-      { title: 'Romantic Minimalism', img: 'src/assets/images/Weddings/11.jpg' },
-      { title: 'Cinematic Escape', img: 'src/assets/images/Weddings/12.jpg' },
-      { title: 'Private Vows', img: 'src/assets/images/Weddings/13.jpg' },
-      { title: 'Quiet Luxury', img: 'src/assets/images/Weddings/14.jpg' },
-      { title: 'Intimate Celebration', img: 'src/assets/images/Weddings/15.jpg' },
-      { title: 'Meaningful Details', img: 'src/assets/images/Weddings/10.jpg' },
+      { title: 'Romantic Minimalism', img: 'src/assets/images/portugal/elopement/romantic-minimalism.jpg' },
+      { title: 'Cinematic Escape', img: 'src/assets/images/portugal/elopement/cinematic-escape.jpg' },
+      { title: 'Private Vows', img: 'src/assets/images/portugal/elopement/private-vows.jpg' },
+      { title: 'Quiet Luxury', img: 'src/assets/images/portugal/elopement/quiet-luxury.jpg' },
+      { title: 'Intimate Celebration', img: 'src/assets/images/portugal/elopement/intimate-celebration.jpg' },
+      { title: 'Meaningful Details', img: 'src/assets/images/portugal/elopement/meaningful-details.jpg' },
     ],
     ctaSection: {
       label: 'Ready?',
       title: 'Plan Your Wedding',
-      subtitle: "Let's create your intimate and unforgettable elopement in Morocco.",
+      subtitle: "Let's create your intimate and unforgettable elopement in Portugal.",
     },
-    ui: {
-      details: 'details',
-      close: 'Close',
-      venue_experience: 'Venue Experience',
-      start_planning: 'Start Planning',
-      continue: 'Continue Browsing',
-      plan_wedding: 'Plan Your Wedding',
-      discover_type: 'Discover',
-    },
+    ui: defaultWeddingUi,
   },
-  'wedding_subpages.kerala': {
+  'wedding_subpages.indian': {
     hero: {
-      label: 'Bespoke Weddings in Morocco',
-      title: 'Kerala Wedding in Marrakech',
-      subtitle: 'From vibrant traditional rituals to multi-day celebrations, we design Kerala weddings that respect cultural authenticity while elevating the experience in a luxury Moroccan setting.',
+      label: 'Bespoke Weddings in Portugal',
+      title: 'Indian Wedding in Lisbon',
+      subtitle: 'From vibrant traditional rituals to multi-day celebrations, we design Indian weddings that respect cultural authenticity while elevating the experience in a luxury Portuguese setting.',
       defaultService: 'Wedding',
     },
+    heroImages: ['src/assets/images/portugal/indian-wedding/other-images.jpg', 'src/assets/images/portugal/indian-wedding/luxury-venues-in-portugal.jpg', 'src/assets/images/portugal/indian-wedding/other-images-2.jpg'],
     servicesSection: {
       label: 'What We Offer',
       title: 'Our Wedding Services',
       subtitle: 'Tailored excellence including traditional ceremony coordination, décor, catering (Indian cuisine), and guest experience.',
     },
     services: [
-      { title: 'Traditional Ceremony Coordination', desc: 'Planning and sequencing that respects the rituals and structure of Kerala weddings.' },
+      { title: 'Traditional Ceremony Coordination', desc: 'Planning and sequencing that respects the rituals and structure of Indian weddings.' },
       { title: 'Décor & Styling', desc: 'Color-rich floral design and layered styling that complements the ceremony and reception flow.' },
       { title: 'Indian Cuisine Catering', desc: 'Menu coordination with catering partners experienced in authentic Indian culinary experiences.' },
       { title: 'Guest Experience', desc: 'Hospitality, transfers, and schedule management for multi-day celebration weekends.' },
       { title: 'Multi-Day Production', desc: 'From welcome moments to ceremony and reception, every day is coherently planned.' },
-      { title: 'Cultural Sensitivity', desc: 'Respectful planning that balances Kerala traditions with the Marrakech setting.' },
+      { title: 'Cultural Sensitivity', desc: 'Respectful planning that balances Indian traditions with the Lisbon setting.' },
     ],
     venuesSection: {
       label: 'Where We Celebrate',
-      title: "Celebrate in Morocco's Most Extraordinary Settings",
+      title: "Celebrate in Portugal's Most Extraordinary Settings",
       subtitle: 'From grand villas to elegant venues adapted for multi-day Indian celebrations.',
     },
     venues: [
-      { title: 'Grand Villas', img: 'src/assets/images/Weddings/22.jpg' },
-      { title: 'Elegant Courtyards', img: 'src/assets/images/Weddings/31.jpg' },
-      { title: 'Reception Gardens', img: 'src/assets/images/Weddings/13.jpg' },
-      { title: 'Multi-Day Celebration Spaces', img: 'src/assets/images/Weddings/14.jpg' },
-      { title: 'Luxury Moroccan Venues', img: 'src/assets/images/Weddings/15.jpg' },
+      { title: 'Grand Villas', img: 'src/assets/images/portugal/indian-wedding/grand-villas.jpg' },
+      { title: 'Elegant Courtyards', img: 'src/assets/images/portugal/indian-wedding/elegant-courtyards.jpg' },
+      { title: 'Reception Gardens', img: 'src/assets/images/portugal/indian-wedding/reception-gardens.jpg' },
+      { title: 'Multi-Day Celebration Spaces', img: 'src/assets/images/portugal/indian-wedding/multi-day-celebration-spaces.jpg' },
+      { title: 'Luxury Portuguese Venues', img: 'src/assets/images/portugal/indian-wedding/luxury-venues-in-portugal.jpg' },
     ],
     themesSection: {
       label: 'Inspiration',
@@ -353,35 +302,28 @@ const weddingPageConfigs: Record<string, WeddingPageConfig> = {
       subtitle: 'Colorful ceremonies, floral richness, cultural traditions, and refined luxury.',
     },
     themes: [
-      { title: 'Colorful Ceremonies', img: 'src/assets/images/Weddings/10.jpg' },
-      { title: 'Floral Richness', img: 'src/assets/images/Weddings/11.jpg' },
-      { title: 'Traditional Rituals', img: 'src/assets/images/Weddings/12.jpg' },
-      { title: 'Refined Luxury', img: 'src/assets/images/Weddings/14.jpg' },
-      { title: 'Cultural Celebration', img: 'src/assets/images/Weddings/15.jpg' },
-      { title: 'Elegant Indian Wedding Styling', img: 'src/assets/images/Weddings/13.jpg' },
+      { title: 'Colorful Ceremonies', img: 'src/assets/images/portugal/indian-wedding/other-images.jpg' },
+      { title: 'Floral Richness', img: 'src/assets/images/portugal/indian-wedding/reception-gardens.jpg' },
+      { title: 'Traditional Rituals', img: 'src/assets/images/portugal/indian-wedding/other-images-2.jpg' },
+      { title: 'Refined Luxury', img: 'src/assets/images/portugal/indian-wedding/luxury-venues-in-portugal.jpg' },
+      { title: 'Cultural Celebration', img: 'src/assets/images/portugal/indian-wedding/multi-day-celebration-spaces.jpg' },
+      { title: 'Elegant Indian Wedding Styling', img: 'src/assets/images/portugal/indian-wedding/elegant-courtyards.jpg' },
     ],
     ctaSection: {
       label: 'Ready?',
       title: 'Plan Your Wedding',
-      subtitle: "Let's bring your Kerala wedding vision to life in Marrakech.",
+      subtitle: "Let's bring your Indian wedding vision to life in Lisbon.",
     },
-    ui: {
-      details: 'details',
-      close: 'Close',
-      venue_experience: 'Venue Experience',
-      start_planning: 'Start Planning',
-      continue: 'Continue Browsing',
-      plan_wedding: 'Plan Your Wedding',
-      discover_type: 'Discover',
-    },
+    ui: defaultWeddingUi,
   },
   'wedding_subpages.jewish': {
     hero: {
-      label: 'Bespoke Weddings in Morocco',
-      title: 'Jewish Wedding in Marrakech',
-      subtitle: 'From traditional ceremonies under the chuppah to elegant multi-day celebrations, we design Jewish weddings that honor heritage, rituals, and refined aesthetics, while ensuring seamless coordination in Marrakech.',
+      label: 'Bespoke Weddings in Portugal',
+      title: 'Jewish Wedding in Lisbon',
+      subtitle: 'From traditional ceremonies under the chuppah to elegant multi-day celebrations, we design Jewish weddings that honor heritage, rituals, and refined aesthetics, while ensuring seamless coordination in Lisbon.',
       defaultService: 'Wedding',
     },
+    heroImages: ['src/assets/images/portugal/jewish-wedding/other-images2.jpg', 'src/assets/images/portugal/jewish-wedding/chuppah-ceremony-spaces.jpg', 'src/assets/images/portugal/jewish-wedding/other-images.jpg'],
     servicesSection: {
       label: 'What We Offer',
       title: 'Our Wedding Services',
@@ -392,20 +334,20 @@ const weddingPageConfigs: Record<string, WeddingPageConfig> = {
       { title: 'Ceremonial Setup', desc: 'Thoughtful planning for the chuppah, seating, and ceremonial flow.' },
       { title: 'Culturally Aligned Planning', desc: 'Every detail is handled with respect for tradition and family expectations.' },
       { title: 'Multi-Day Celebration Support', desc: 'Welcome dinners, ceremony days, and farewell moments planned seamlessly.' },
-      { title: 'Guest Hospitality', desc: 'Transfers, timing, and hosting support for family and guests arriving in Marrakech.' },
+      { title: 'Guest Hospitality', desc: 'Transfers, timing, and hosting support for family and guests arriving in Lisbon.' },
       { title: 'Elegant Production', desc: 'Luxury styling and calm execution across the full wedding experience.' },
     ],
     venuesSection: {
       label: 'Where We Celebrate',
-      title: "Celebrate in Morocco's Most Extraordinary Settings",
-      subtitle: 'From historic riads rich in Jewish heritage to luxury villas and exclusive venues in Marrakech.',
+      title: "Celebrate in Portugal's Most Extraordinary Settings",
+      subtitle: 'From historic palaces and private quintas rich in Jewish heritage to luxury villas and exclusive venues in Lisbon.',
     },
     venues: [
-      { title: 'Historic Riads', img: 'src/assets/images/Weddings/8.jpg' },
-      { title: 'Luxury Villas', img: 'src/assets/images/Weddings/22.jpg' },
-      { title: 'Exclusive Marrakech Venues', img: 'src/assets/images/Weddings/31.jpg' },
-      { title: 'Chuppah Ceremony Spaces', img: 'src/assets/images/Weddings/13.jpg' },
-      { title: 'Heritage-Led Settings', img: 'src/assets/images/Weddings/14.jpg' },
+      { title: 'Historic Palaces & Private Quintas', img: 'src/assets/images/portugal/jewish-wedding/historic-palaces-and-private-quintas.jpg' },
+      { title: 'Luxury Villas', img: 'src/assets/images/portugal/jewish-wedding/luxury-villas.jpg' },
+      { title: 'Exclusive Lisbon Venues', img: 'src/assets/images/portugal/jewish-wedding/exclusive-lisbon-venues.jpg' },
+      { title: 'Chuppah Ceremony Spaces', img: 'src/assets/images/portugal/jewish-wedding/chuppah-ceremony-spaces.jpg' },
+      { title: 'Heritage-Led Settings', img: 'src/assets/images/portugal/jewish-wedding/heritage-led-settings.jpg' },
     ],
     themesSection: {
       label: 'Inspiration',
@@ -413,35 +355,27 @@ const weddingPageConfigs: Record<string, WeddingPageConfig> = {
       subtitle: 'Timeless elegance, traditional rituals, and modern luxury blended into meaningful celebrations.',
     },
     themes: [
-      { title: 'Timeless Elegance', img: 'src/assets/images/Weddings/10.jpg' },
-      { title: 'Traditional Rituals', img: 'src/assets/images/Weddings/11.jpg' },
-      { title: 'Modern Luxury', img: 'src/assets/images/Weddings/12.jpg' },
-      { title: 'Meaningful Celebrations', img: 'src/assets/images/Weddings/13.jpg' },
-      { title: 'Heritage & Style', img: 'src/assets/images/Weddings/14.jpg' },
-      { title: 'Refined Marrakech Setting', img: 'src/assets/images/Weddings/15.jpg' },
+      { title: 'Timeless Elegance', img: 'src/assets/images/portugal/jewish-wedding/timeless-elegance.jpg' },
+      { title: 'Traditional Rituals', img: 'src/assets/images/portugal/jewish-wedding/traditional-rituals.jpg' },
+      { title: 'Modern Luxury', img: 'src/assets/images/portugal/jewish-wedding/modern-luxury.jpg' },
+      { title: 'Meaningful Celebrations', img: 'src/assets/images/portugal/jewish-wedding/meaningful-celebrations.jpg' },
+      { title: 'Heritage & Style', img: 'src/assets/images/portugal/jewish-wedding/heritage-style.jpg' },
+      { title: 'Refined Lisbon Setting', img: 'src/assets/images/portugal/jewish-wedding/other-images.jpg' },
     ],
     ctaSection: {
       label: 'Ready?',
       title: 'Plan Your Wedding',
-      subtitle: "Let's create a Jewish wedding in Marrakech that reflects your traditions and vision.",
+      subtitle: "Let's create a Jewish wedding in Lisbon that reflects your traditions and vision.",
     },
-    ui: {
-      details: 'details',
-      close: 'Close',
-      venue_experience: 'Venue Experience',
-      start_planning: 'Start Planning',
-      continue: 'Continue Browsing',
-      plan_wedding: 'Plan Your Wedding',
-      discover_type: 'Discover',
-    },
+    ui: defaultWeddingUi,
   },
 };
 
 const weddingServiceTypeByContentKey: Record<string, string> = {
-  'wedding_page': 'Wedding in Marrakech',
-  'wedding_subpages.agafay': 'Agafay',
+  'wedding_page': 'Wedding in Lisbon',
+  'wedding_subpages.algarve': 'Algarve',
   'wedding_subpages.elopement': 'Elopement',
-  'wedding_subpages.kerala': 'Kerala',
+  'wedding_subpages.indian': 'Indian',
   'wedding_subpages.jewish': 'Jewish',
 };
 
@@ -451,21 +385,21 @@ type VenueDetails = {
 };
 
 const venueDetailsByContentKey: Record<string, VenueDetails[]> = {
-  'wedding_subpages.agafay': [
+  'wedding_subpages.algarve': [
     {
-      desc: 'A desert camp setting built for atmosphere: warm lantern light, open skies, and a ceremony layout that feels intimate even at scale.',
+      desc: 'A coastal estate setting built for atmosphere: warm lantern light, open skies, and a ceremony layout that feels intimate even at scale.',
       highlights: ['Sunset ceremony framing', 'Private camp-style hosting', 'Designed for dinner under the stars'],
     },
     {
       desc: 'Ideal for couples who want a private retreat feel, this setup layers relaxed luxury with strong guest flow and a memorable overnight experience.',
-      highlights: ['Stargazing welcome moments', 'Relaxed luxury styling', 'Great for multi-day desert weekends'],
+      highlights: ['Stargazing welcome moments', 'Relaxed luxury styling', 'Great for multi-day coastal weekends'],
     },
     {
-      desc: 'A golden-hour ceremony space that uses the desert light as part of the design, creating a vivid and cinematic setting for vows and portraits.',
-      highlights: ['Golden light ceremony timing', 'Panoramic desert views', 'Editorial photo opportunities'],
+      desc: 'A golden-hour ceremony space that uses the Atlantic light as part of the design, creating a vivid and cinematic setting for vows and portraits.',
+      highlights: ['Golden light ceremony timing', 'Panoramic ocean views', 'Editorial photo opportunities'],
     },
     {
-      desc: 'Dining in the desert becomes the centerpiece here, with long tables, candlelight, and a guest experience shaped around lingering into the evening.',
+      desc: 'Dining by the ocean becomes the centerpiece here, with long tables, candlelight, and a guest experience shaped around lingering into the evening.',
       highlights: ['Long-table dining concepts', 'Atmospheric candlelit service', 'Music and entertainment after dark'],
     },
     {
@@ -475,8 +409,8 @@ const venueDetailsByContentKey: Record<string, VenueDetails[]> = {
   ],
   'wedding_subpages.elopement': [
     {
-      desc: 'A secluded riad gives you quiet courtyards, hidden corners, and a refined backdrop that keeps the focus on the two of you.',
-      highlights: ['Quiet private atmosphere', 'Perfect for intimate vows', 'Elegant Moroccan architecture'],
+      desc: 'Historic palaces and private quintas give you quiet courtyards, hidden corners, and a refined backdrop that keeps the focus on the two of you.',
+      highlights: ['Quiet private atmosphere', 'Perfect for intimate vows', 'Elegant Portuguese architecture'],
     },
     {
       desc: 'This landscape is made for couples who want privacy and scale in the same frame: open space, dramatic light, and an uncluttered ceremony story.',
@@ -495,9 +429,9 @@ const venueDetailsByContentKey: Record<string, VenueDetails[]> = {
       highlights: ['Discreet luxury hospitality', 'Tailored to private elopements', 'A calm, off-the-grid mood'],
     },
   ],
-  'wedding_subpages.kerala': [
+  'wedding_subpages.indian': [
     {
-      desc: 'A grand villa allows the Kerala wedding to unfold across multiple spaces, with room for rituals, gatherings, and generous hospitality.',
+      desc: 'A grand villa allows the Indian wedding to unfold across multiple spaces, with room for rituals, gatherings, and generous hospitality.',
       highlights: ['Multi-day ceremony flow', 'Space for family hosting', 'Works well for traditional sequences'],
     },
     {
@@ -513,13 +447,13 @@ const venueDetailsByContentKey: Record<string, VenueDetails[]> = {
       highlights: ['Guest-friendly circulation', 'Designed for long-form celebrations', 'Clear day-to-day event zoning'],
     },
     {
-      desc: 'Luxury Moroccan venues give the wedding a polished destination frame while still supporting the scale and rituals of a Kerala celebration.',
+      desc: 'Luxury Portuguese venues give the wedding a polished destination frame while still supporting the scale and rituals of an Indian celebration.',
       highlights: ['Destination feel with comfort', 'Tradition within a luxury setting', 'Excellent for family-led events'],
     },
   ],
   'wedding_subpages.jewish': [
     {
-      desc: 'Historic riads create a meaningful backdrop for heritage-led celebrations, pairing intimate architecture with a strong sense of place.',
+      desc: 'Historic palaces and private quintas create a meaningful backdrop for heritage-led celebrations, pairing intimate architecture with a strong sense of place.',
       highlights: ['Heritage-rich atmosphere', 'Intimate ceremony framing', 'Ideal for family and tradition'],
     },
     {
@@ -527,7 +461,7 @@ const venueDetailsByContentKey: Record<string, VenueDetails[]> = {
       highlights: ['Flexible private hosting', 'Suitable for kosher coordination', 'Great for multi-day gatherings'],
     },
     {
-      desc: 'An exclusive Marrakech venue can support a more formal celebration, with elegant timing for the chuppah and reception sequence.',
+      desc: 'An exclusive Lisbon venue can support a more formal celebration, with elegant timing for the chuppah and reception sequence.',
       highlights: ['Formal ceremony flow', 'Elegant reception transitions', 'Strong guest hospitality potential'],
     },
     {
@@ -585,12 +519,27 @@ interface WeddingTemplatePageProps {
   showWeddingTypes?: boolean;
 }
 
+// Translations only carry text; images and anything missing come from the base config.
+const mergeByIndex = <T extends object>(base: T[] | undefined, translated: Partial<T>[] | undefined): T[] | undefined => {
+  if (!Array.isArray(translated)) return base;
+  if (!base) return translated as T[];
+  return base.map((item, i) => ({ ...item, ...(translated[i] ?? {}) }));
+};
+
 const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, showWeddingTypes = false }) => {
   const { t, i18n } = useTranslation();
   const baseConfig = useMemo(() => weddingPageConfigs[contentKey] ?? weddingPageConfigs.wedding_page, [contentKey]);
   const translatedConfig = useMemo(
     () => t(contentKey, { returnObjects: true, defaultValue: null }) as Partial<WeddingPageConfig> | null,
     [contentKey, i18n.language, i18n.resolvedLanguage, t],
+  );
+  const sharedUi = useMemo(
+    () => t('wedding_ui', { returnObjects: true, defaultValue: null }) as Partial<WeddingPageConfig['ui']> | null,
+    [i18n.language, t],
+  );
+  const sharedServices = useMemo(
+    () => t('wedding_services', { returnObjects: true, defaultValue: null }) as Pick<WeddingPageConfig, 'serviceShowcaseSection' | 'serviceShowcase'> | null,
+    [i18n.language, t],
   );
   const config = useMemo<WeddingPageConfig>(() => {
     const tc = translatedConfig ?? {};
@@ -608,12 +557,12 @@ const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, s
         ...baseConfig.servicesSection,
         ...(tc.servicesSection ?? {}),
       },
-      services: tc.services ?? baseConfig.services,
+      services: mergeByIndex(baseConfig.services, tc.services) ?? baseConfig.services,
       venuesSection: {
         ...baseConfig.venuesSection,
         ...(tc.venuesSection ?? {}),
       },
-      venues: tc.venues ?? baseConfig.venues,
+      venues: mergeByIndex(baseConfig.venues, tc.venues) ?? baseConfig.venues,
       editorial: baseConfig.editorial
         ? {
           ...baseConfig.editorial,
@@ -625,9 +574,10 @@ const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, s
         ...baseConfig.themesSection,
         ...(tc.themesSection ?? {}),
       },
-      themes: tc.themes ?? baseConfig.themes,
-      serviceShowcaseSection: tc.serviceShowcaseSection ?? baseConfig.serviceShowcaseSection,
-      serviceShowcase: tc.serviceShowcase ?? baseConfig.serviceShowcase,
+      themes: mergeByIndex(baseConfig.themes, tc.themes) ?? baseConfig.themes,
+      // Shared across all wedding pages (locale key: wedding_services)
+      serviceShowcaseSection: sharedServices?.serviceShowcaseSection ?? baseConfig.serviceShowcaseSection,
+      serviceShowcase: mergeByIndex(baseConfig.serviceShowcase ?? defaultServiceShowcaseItems, sharedServices?.serviceShowcase),
       ctaSection: {
         ...baseConfig.ctaSection,
         ...(tc.ctaSection ?? {}),
@@ -642,20 +592,16 @@ const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, s
       faqs: tc.faqs ?? baseConfig.faqs,
       ui: {
         ...baseConfig.ui,
+        ...(sharedUi ?? {}),
         ...(tc.ui ?? {}),
       },
-      heroImages: tc.heroImages ?? baseConfig.heroImages,
+      heroImages: baseConfig.heroImages ?? tc.heroImages,
     };
-  }, [baseConfig, translatedConfig]);
+  }, [baseConfig, translatedConfig, sharedUi, sharedServices]);
   const serviceShowcaseSection = config.serviceShowcaseSection ?? defaultServiceShowcaseSection;
   const serviceShowcaseItems = config.serviceShowcase ?? defaultServiceShowcaseItems;
   const weddingServiceType = weddingServiceTypeByContentKey[contentKey] ?? '';
-  const weddingSubtypeImagesByKey: Record<string, string[]> = {
-    'wedding_subpages.agafay': agafayDesertWeddingImages,
-    'wedding_subpages.elopement': elopementWeddingImages,
-    'wedding_subpages.kerala': keralaWeddingImages,
-    'wedding_subpages.jewish': jewishWeddingImages,
-  };
+  const weddingSubtypeImagesByKey: Record<string, string[]> = {};
 
   const subpageImages = weddingSubtypeImagesByKey[contentKey] ?? [];
   const useSubpageImages = subpageImages.length > 0;
@@ -694,55 +640,57 @@ const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, s
   const safeThemesWithImages = themesWithImages.filter((theme: any) => Boolean(theme.img));
   const safeServiceShowcaseWithImages = serviceShowcaseWithImages.filter((item: any) => Boolean(item.img));
   const reservationImage = safeHeroImages[0] || editorialImage;
-  const agafayFeatureImage = new URL(
-    '../assets/images/Weddings/agafay-desert/Destination-Wedding-Photographer-3-1536x1024-1.jpg',
-    import.meta.url,
-  ).href;
-  const weddingTypeCards = [
+  const baseWeddingTypeCards = [
     {
-      title: 'Wedding in Marrakech',
-      desc: 'Bespoke weddings in Marrakech with elegant planning, tailored design, and seamless coordination from start to finish.',
-      image: 'src/assets/images/Weddings/1.jpg',
+      title: 'Wedding in Lisbon',
+      desc: 'Bespoke weddings in Lisbon with elegant planning, tailored design, and seamless coordination from start to finish.',
+      image: 'src/assets/images/portugal/weddings/wedding-in-lisbon.jpg',
       modal: {
-        title: 'Wedding in Marrakech',
+        title: 'Wedding in Lisbon',
         subtitle: 'A refined celebration in the city that defines your destination experience.',
-        body: 'Intimate venue planning, elegant styling, guest hospitality, and seamless wedding coordination in Marrakech.',
-        image: 'src/assets/images/Weddings/1.jpg',
+        body: 'Intimate venue planning, elegant styling, guest hospitality, and seamless wedding coordination in Lisbon.',
+        image: 'src/assets/images/portugal/weddings/wedding-in-lisbon.jpg',
       },
     },
     {
-      title: 'Agafay Desert Wedding',
-      desc: 'Sunset ceremonies and immersive desert celebrations just outside Marrakech.',
-      path: '/wedding/agafay-desert',
-      image: agafayFeatureImage,
+      title: 'Algarve Coast Weddings',
+      desc: 'Sunset ceremonies and immersive coastal celebrations on the Algarve coast.',
+      path: '/wedding/algarve',
+      image: 'src/assets/images/portugal/weddings/algarve-coast-weddings.jpg',
     },
     {
-      title: 'Elopement Wedding in Morocco',
+      title: 'Elopement Weddings in Portugal',
       desc: 'Intimate vows and romantic escapes designed around privacy, emotion, and meaningful moments.',
       path: '/wedding/elopement',
-      image: elopementWeddingImages[0] ?? 'src/assets/images/Weddings/8.jpg',
+      image: 'src/assets/images/portugal/elopement/plan-your-wedding.jpg',
     },
     {
-      title: 'Kerala Wedding in Marrakech',
-      desc: 'Vibrant cultural celebrations that combine Indian traditions with a refined Moroccan setting.',
-      path: '/wedding/kerala',
-      image: keralaWeddingImages[0] ?? 'src/assets/images/Weddings/22.jpg',
+      title: 'Indian Wedding in Lisbon',
+      desc: 'Vibrant cultural celebrations that combine Indian traditions with a refined Portuguese setting.',
+      path: '/wedding/Indian',
+      image: 'src/assets/images/portugal/weddings/kerala-wedding.jpg',
     },
     {
-      title: 'Jewish Wedding in Marrakech',
+      title: 'Jewish Wedding in Lisbon',
       desc: 'Heritage-led celebrations with ceremonial elegance, kosher coordination, and polished hosting.',
       path: '/wedding/jewish',
-      image: jewishWeddingImages[0] ?? 'src/assets/images/Weddings/31.jpg',
+      image: 'src/assets/images/portugal/weddings/jewish-wedding.jpg',
     },
   ];
 
-  const weddingReservationOptions = [
-    { value: 'Wedding in Marrakech', label: 'Wedding in Marrakech' },
-    { value: 'Agafay', label: 'Agafay' },
-    { value: 'Jewish', label: 'Jewish' },
-    { value: 'Elopement', label: 'Elopement' },
-    { value: 'Kerala', label: 'Kerala' },
-  ];
+  const translatedCards = t('wedding_types.cards', { returnObjects: true, defaultValue: [] }) as any[];
+  const weddingTypeCards = baseWeddingTypeCards.map((card: any, i: number) => {
+    const { modal: trModal, ...trText } = Array.isArray(translatedCards) ? translatedCards[i] ?? {} : {};
+    // Only cards that have a modal in the base config get a `modal` key: the template
+    // checks `'modal' in card` to decide between opening the modal and linking to the page.
+    if (!('modal' in card)) return { ...card, ...trText };
+    return { ...card, ...trText, modal: { ...card.modal, ...(trModal ?? {}) } };
+  });
+
+  const weddingReservationOptions = ['Elopement', 'Indian', 'Jewish', 'Algarve'].map((value) => ({
+    value,
+    label: t(`wedding_types.options.${value}`, { defaultValue: value }),
+  }));
 
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [activeVenueIdx, setActiveVenueIdx] = useState<number | null>(null);
@@ -793,7 +741,7 @@ const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, s
         subtitle={config.hero.subtitle}
         defaultService={weddingServiceType || config.hero.defaultService}
         serviceOptions={weddingReservationOptions}
-        servicePlaceholder="Select a wedding type"
+        servicePlaceholder={t('wedding_types.select')}
         showForm
       />
 
@@ -1202,7 +1150,7 @@ const WeddingTemplatePage: React.FC<WeddingTemplatePageProps> = ({ contentKey, s
             <ReservationForm
               title="Wedding Reservation"
               subtitle="Tell us which wedding style you want to plan, and we’ll take it from there."
-              selectPlaceholder="Select a wedding type"
+              selectPlaceholder={t('wedding_types.select')}
               requestButtonLabel="Request Wedding Planning"
               successTitle="Wedding request received"
               successText="Thank you. We’ll be in touch within 24 hours to discuss your wedding plans."

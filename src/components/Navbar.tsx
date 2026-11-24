@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Globe } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import logo from '../assets/images/logo2.png';
+import logo from '../assets/images/logo-portugal.png';
+import { SUPPORTED_LANGUAGES } from '../i18n';
 
 const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -20,15 +21,35 @@ const Navbar: React.FC = () => {
   // Close mobile menu on route change
   useEffect(() => { setIsMobileMenuOpen(false); }, [location.pathname]);
 
-  const currentLang = i18n.resolvedLanguage?.startsWith('fr') ? 'fr' : 'en';
+  const currentLang =
+    (SUPPORTED_LANGUAGES as readonly string[]).find((lang) => i18n.resolvedLanguage?.startsWith(lang)) ?? 'en';
 
   const onLanguageChange = (lang: string) => {
     i18n.changeLanguage(lang);
   };
 
+  const showLanguageSwitch = true;
+
+  const renderLanguageOptions = () =>
+    SUPPORTED_LANGUAGES.map((lang) => (
+      <button
+        key={lang}
+        className={`lang-option ${currentLang === lang ? 'active' : ''}`}
+        onClick={() => {
+          onLanguageChange(lang);
+          setIsLangMenuOpen(false);
+        }}
+      >
+        {t(`nav.lang_${lang}`)}
+      </button>
+    ));
+
+  const isActive = (path: string) =>
+    path.startsWith('/wedding') ? location.pathname.startsWith('/wedding') : location.pathname === path;
+
   const navLinks = [
     { name: t('nav.home'),    path: '/' },
-    { name: t('nav.wedding'), path: '/wedding' },
+    { name: t('nav.wedding'), path: '/wedding/algarve' },
     { name: t('nav.proposals'), path: '/proposals' },
     { name: t('nav.venues'),  path: '/venues' },
     { name: t('nav.events'),  path: '/events' },
@@ -42,7 +63,7 @@ const Navbar: React.FC = () => {
           <Link to="/" className="navbar-logo">
             <img
               src={logo}
-              alt="Marrakech Weddings"
+              alt="Weddings Planner Portugal"
               className={`navbar-logo-img ${isScrolled ? '' : 'navbar-logo-inverted'}`}
             />
           </Link>
@@ -52,7 +73,7 @@ const Navbar: React.FC = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`nav-link ${location.pathname === link.path ? 'active' : ''}`}
+                className={`nav-link ${isActive(link.path) ? 'active' : ''}`}
               >
                 {link.name}
               </Link>
@@ -60,6 +81,7 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="navbar-right">
+            {showLanguageSwitch && (
             <div className="navbar-lang-menu">
               <button
                 className="navbar-lang-btn"
@@ -70,27 +92,11 @@ const Navbar: React.FC = () => {
               </button>
               {isLangMenuOpen && (
                 <div className="navbar-lang-dropdown">
-                  <button
-                    className={`lang-option ${currentLang === 'en' ? 'active' : ''}`}
-                    onClick={() => {
-                      onLanguageChange('en');
-                      setIsLangMenuOpen(false);
-                    }}
-                  >
-                    {t('nav.lang_en')}
-                  </button>
-                  <button
-                    className={`lang-option ${currentLang === 'fr' ? 'active' : ''}`}
-                    onClick={() => {
-                      onLanguageChange('fr');
-                      setIsLangMenuOpen(false);
-                    }}
-                  >
-                    {t('nav.lang_fr')}
-                  </button>
+                  {renderLanguageOptions()}
                 </div>
               )}
             </div>
+            )}
             <Link to="/contact" className="navbar-cta navbar-cta-desktop btn-primary">
               {t('nav.contact')}
             </Link>
@@ -119,7 +125,7 @@ const Navbar: React.FC = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`mobile-nav-link ${location.pathname === link.path ? 'active' : ''}`}
+                className={`mobile-nav-link ${isActive(link.path) ? 'active' : ''}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
@@ -132,6 +138,7 @@ const Navbar: React.FC = () => {
             >
               {t('nav.contact')}
             </Link>
+            {showLanguageSwitch && (
             <div className="mobile-nav-lang-menu">
               <button
                 className="mobile-nav-lang-btn"
@@ -142,27 +149,11 @@ const Navbar: React.FC = () => {
               </button>
               {isLangMenuOpen && (
                 <div className="mobile-nav-lang-dropdown">
-                  <button
-                    className={`lang-option ${currentLang === 'en' ? 'active' : ''}`}
-                    onClick={() => {
-                      onLanguageChange('en');
-                      setIsLangMenuOpen(false);
-                    }}
-                  >
-                    {t('nav.lang_en')}
-                  </button>
-                  <button
-                    className={`lang-option ${currentLang === 'fr' ? 'active' : ''}`}
-                    onClick={() => {
-                      onLanguageChange('fr');
-                      setIsLangMenuOpen(false);
-                    }}
-                  >
-                    {t('nav.lang_fr')}
-                  </button>
+                  {renderLanguageOptions()}
                 </div>
               )}
             </div>
+            )}
           </nav>
         </div>
       )}

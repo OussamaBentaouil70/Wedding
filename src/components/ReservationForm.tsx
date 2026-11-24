@@ -35,7 +35,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({
   const navigate = useNavigate();
   const eventOptions = options ?? [
     { value: 'Wedding', label: t('reservation_form.option_wedding') },
-    { value: 'Traditional Moroccan Wedding', label: t('reservation_form.option_traditional_moroccan') },
+    { value: 'Traditional Portuguese Wedding', label: t('reservation_form.option_traditional_portuguese') },
     { value: 'Modern Luxury Wedding', label: t('reservation_form.option_modern_luxury') },
     { value: 'Intimate Elopement', label: t('reservation_form.option_intimate_elopement') },
     { value: 'Multi-Day Wedding Weekend', label: t('reservation_form.option_multi_day_weekend') },

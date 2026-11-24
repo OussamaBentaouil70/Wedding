@@ -7,54 +7,58 @@ import { useTranslation } from 'react-i18next';
 import { submitForm } from '../utils/formHandler';
 
 // ── Assets ────────────────────────────────────────────────
-import logo            from '../assets/images/logo2.png';
-import weddingHero     from '../assets/images/Weddings/8.jpg';
-import weddingModern   from '../assets/images/Weddings/11.jpg';
-import weddingBohemian from '../assets/images/wedding/bohemian.jpg';
-import weddingVideo    from '../assets/video/Wedding.mp4';
+import logo            from '../assets/images/logo-portugal.png';
+import weddingHero     from '../assets/images/portugal/home/who-we-are.jpg';
+import weddingModern   from '../assets/images/portugal/home/wedding-details-home-page.jpg';
+import weddingBohemian from '../assets/images/portugal/home/wedding-garden-home-page.jpg';
+import weddingVideo    from '../assets/video/portugal-hero.mp4';
+import lisbonWeddingImg from '../assets/images/portugal/home/lisbon-weddings.jpg';
+import coastalWeddingImg from '../assets/images/portugal/home/coastal-weddings.jpg';
+import coastalEstateImg from '../assets/images/portugal/home/coastal-estate-weddings.jpg';
+import welcomeDinnerImg from '../assets/images/portugal/home/welcome-dinner.jpg';
+import engagementImg from '../assets/images/portugal/home/engagement-celebrations.jpg';
 
-import privateEventsImg from '../assets/images/Corporate Events/13.jpg';
-import privatePartiesImg from '../assets/images/EVJF - Bachelor Party/8.jpg';
-import corporateEventsImg from '../assets/images/Corporate Events/50.jpg';
+import privatePartiesImg from '../assets/images/portugal/home/private-parties.jpg';
+import corporateEventsImg from '../assets/images/portugal/home/corporate-brand-events.jpg';
 
 const HERO_VIDEO = weddingVideo;
 
 // ── Data ──────────────────────────────────────────────────
 // Data moved inside component for i18n support
 
-const weddingPreviews = [
+const baseWeddingPreviews = [
   {
-    img: 'https://100lclive.s3.amazonaws.com/img/ideas/blog-full/211127.jpg',
+    img: lisbonWeddingImg,
     category: 'Signature Wedding',
-    title: 'Marrakech Weddings',
-    location: 'Riads, gardens, rooftops',
+    title: 'Lisbon Weddings',
+    location: 'Palaces, quintas, rooftops',
     detail:
-      'From hidden riads to palace gardens, Marrakech weddings are cinematic, intimate, and rich in atmosphere — designed with editorial polish and flawless coordination.',
-    highlights: ['Riad courtyards, rooftops, palaces', 'Design + styling direction', 'Guest journey + on-the-day orchestration'],
+      'From historic palaces and private quintas to palace gardens, Lisbon weddings are cinematic, intimate, and rich in atmosphere — designed with editorial polish and flawless coordination.',
+    highlights: ['Historic palaces, private quintas, courtyards & rooftops', 'Design + styling direction', 'Guest journey + on-the-day orchestration'],
   },
   {
-    img: 'https://erikatuestaphotography.com/wp-content/uploads/sites/19622/2024/08/morrocan-desert-wedding-marrakech-wedding-photographer-erika-tuesta-45.jpg',
+    img: coastalWeddingImg,
     category: 'Signature Wedding',
-    title: 'Desert Weddings',
-    location: 'Agafay & the Sahara',
+    title: 'Coastal Weddings',
+    location: 'The Algarve coast',
     detail:
-      'A sunset ceremony, lantern-lit dining, and music under the stars — desert weddings are immersive destination experiences with effortless luxury.',
+      'A sunset ceremony, lantern-lit dining, and music under the stars — coastal weddings are immersive destination experiences with effortless luxury.',
     highlights: ['Sunset ceremonies + stargazing dinners', 'Logistics + transport planning', 'Entertainment, lighting, and timing'],
   },
   {
-    img: 'https://beyondweddings.com/wp-content/uploads/2025/09/AdelaideJeroen-686-1-1024x683.jpg.webp',
+    img: coastalEstateImg,
     category: 'Signature Wedding',
     title: 'Coastal & Estate Weddings',
-    location: 'Essaouira & private estates',
+    location: 'Cascais & private estates',
     detail:
       'Coastal light, sea air, and relaxed sophistication — from seaside celebrations to private estates designed for multi-day hosting.',
     highlights: ['Coastal ceremonies + golden hour', 'Estate weekends + guest hosting', 'Vendor curation + hospitality'],
   },
 ] as const;
 
-const eventPreviews = [
+const baseEventPreviews = [
   {
-    img: privateEventsImg,
+    img: welcomeDinnerImg,
     title: 'Welcome Dinners',
     tag: 'Private Events',
     detail:
@@ -62,7 +66,7 @@ const eventPreviews = [
     highlights: ['Venue + chef/caterer curation', 'Tablescapes + lighting', 'Run-of-show + coordination'],
   },
   {
-    img: weddingModern,
+    img: engagementImg,
     title: 'Engagement Celebrations',
     tag: 'Pre-Wedding',
     detail:
@@ -87,10 +91,10 @@ const eventPreviews = [
   },
 ] as const;
 
-const testimonials = [
-  { text: "Working with the team felt like having an artistic director and a best friend rolled into one. Our Marrakech wedding was beyond anything we could have imagined.", author: 'Charlotte & Rémi', origin: 'Paris, France', img: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=150&q=80' },
+const baseTestimonials = [
+  { text: "Working with the team felt like having an artistic director and a best friend rolled into one. Our Lisbon wedding was beyond anything we could have imagined.", author: 'Charlotte & Rémi', origin: 'Paris, France', img: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=150&q=80' },
   { text: "Every single detail — from the jasmine archway at sunset to the midnight gnawa musicians — was exactly us. I've never felt so seen by a planner.", author: 'Priya & Daniel', origin: 'London, UK', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80' },
-  { text: "Our corporate retreat in the Atlas Mountains pushed every boundary of what I thought an event could be. Clients are still talking about it six months on.", author: 'Marcus Webb', origin: 'New York, USA', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80' },
+  { text: 'Mountain retreats offer a distinctive setting for team gatherings, private dinners and tailored group experiences.', author: 'Corporate Retreats', origin: 'Serra da Estrela, Portugal', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80' },
 ];
 
 interface InquiryForm { name: string; email: string; service: string; message: string; }
@@ -106,24 +110,32 @@ const Home: React.FC = () => {
   const [activeWeddingPreviewIdx, setActiveWeddingPreviewIdx] = useState<number | null>(null);
   const [activeEventPreviewIdx, setActiveEventPreviewIdx] = useState<number | null>(null);
 
-  const activeWeddingPreview = useMemo(
-    () => (activeWeddingPreviewIdx === null ? null : weddingPreviews[activeWeddingPreviewIdx]),
-    [activeWeddingPreviewIdx]
-  );
-  const activeEventPreview = useMemo(
-    () => (activeEventPreviewIdx === null ? null : eventPreviews[activeEventPreviewIdx]),
-    [activeEventPreviewIdx]
-  );
+  // Text comes from the locale files; images stay here.
+  const weddingPreviews = useMemo(() => {
+    const tr = t('home.weddingPreviews', { returnObjects: true, defaultValue: [] }) as any[];
+    return baseWeddingPreviews.map((w, i) => ({ ...w, ...((Array.isArray(tr) && tr[i]) || {}) }));
+  }, [t]);
+  const eventPreviews = useMemo(() => {
+    const tr = t('home.eventPreviews', { returnObjects: true, defaultValue: [] }) as any[];
+    return baseEventPreviews.map((e, i) => ({ ...e, ...((Array.isArray(tr) && tr[i]) || {}) }));
+  }, [t]);
+  const testimonials = useMemo(() => {
+    const tr = t('home.testimonialItems', { returnObjects: true, defaultValue: [] }) as any[];
+    return baseTestimonials.map((x, i) => ({ ...x, ...((Array.isArray(tr) && tr[i]) || {}) }));
+  }, [t]);
+
+  const activeWeddingPreview = activeWeddingPreviewIdx === null ? null : weddingPreviews[activeWeddingPreviewIdx];
+  const activeEventPreview = activeEventPreviewIdx === null ? null : eventPreviews[activeEventPreviewIdx];
 
   const trustStats = useMemo(() => [
-    { value: '200+', label: t('home.trust.weddings') },
-    { value: '18',   label: t('home.trust.years') },
-    { value: '40+',  label: t('home.trust.countries') },
-    { value: '100%', label: t('home.trust.satisfaction') },
+    { value: '✦', label: t('home.trust.item1') },
+    { value: '✦', label: t('home.trust.item2') },
+    { value: '✦', label: t('home.trust.item3') },
+    { value: '✦', label: t('home.trust.item4') },
   ], [t]);
 
   useEffect(() => {
-    const t = setInterval(() => setTestiIdx(i => (i + 1) % testimonials.length), 5500);
+    const t = setInterval(() => setTestiIdx(i => (i + 1) % baseTestimonials.length), 5500);
     return () => clearInterval(t);
   }, []);
 
@@ -195,7 +207,7 @@ const Home: React.FC = () => {
             >
               {t('home.hero.book')} <ArrowRight size={15} />
             </button>
-            <button className="btn-ghost" onClick={() => navigate('/wedding')}>
+            <button className="btn-ghost" onClick={() => navigate('/wedding/algarve')}>
               {t('home.hero.plan')}
             </button>
           </div>
@@ -231,13 +243,13 @@ const Home: React.FC = () => {
           <div className="home-about-grid">
             <div className="home-about-images reveal">
               <div className="about-img-main">
-                <img src={weddingHero} alt="Luxury Moroccan wedding ceremony" />
+                <img src={weddingHero} alt="Luxury wedding ceremony in Portugal" />
               </div>
               <div className="about-img-secondary reveal delay-200">
                 <img src={weddingModern} alt="Modern wedding styling" />
               </div>
               <div className="about-img-badge">
-                <img src={logo} alt="Marrakech Weddings" className="about-badge-logo" />
+                <img src={logo} alt="Weddings Planner Portugal" className="about-badge-logo" />
                 <span>Est. 2006</span>
               </div>
             </div>
@@ -257,7 +269,7 @@ const Home: React.FC = () => {
                 {t('home.about.p2')} <strong>{t('home.about.p2_strong')}</strong>.
               </p>
               <div className="about-actions">
-                <Link to="/wedding" className="btn-primary">{t('home.about.weddings_btn')} <ArrowRight size={15} /></Link>
+                <Link to="/wedding/algarve" className="btn-primary">{t('home.about.weddings_btn')} <ArrowRight size={15} /></Link>
                 <Link to="/events"  className="btn-outline">{t('home.about.events_btn')}</Link>
               </div>
             </div>
@@ -304,7 +316,7 @@ const Home: React.FC = () => {
               <span className="gold-line gold-line-left" />
               <h2>{t('home.weddings.title')}</h2>
             </div>
-            <Link to="/wedding" className="btn-outline section-header-cta">{t('home.weddings.btn')} <ArrowRight size={15} /></Link>
+            <Link to="/wedding/algarve" className="btn-outline section-header-cta">{t('home.weddings.btn')} <ArrowRight size={15} /></Link>
           </div>
 
           <div className="home-preview-grid home-preview-grid--weddings">
@@ -328,7 +340,7 @@ const Home: React.FC = () => {
                       <h3>{w.title}</h3>
                       <p>{w.location}</p>
                     </div>
-                    <span className="home-preview-hint">View details</span>
+                    <span className="home-preview-hint">{t('home.ui.view_details')}</span>
                   </div>
                 </div>
               </button>
@@ -336,7 +348,7 @@ const Home: React.FC = () => {
           </div>
 
           <div className="section-cta-row reveal">
-            <Link to="/wedding" className="btn-primary">{t('home.weddings.btn')} <ArrowRight size={15} /></Link>
+            <Link to="/wedding/algarve" className="btn-primary">{t('home.weddings.btn')} <ArrowRight size={15} /></Link>
           </div>
         </div>
       </section>
@@ -373,9 +385,9 @@ const Home: React.FC = () => {
                   <span className="home-preview-tag">{ev.tag}</span>
                   <div className="home-preview-info">
                     <h3>{ev.title}</h3>
-                    <p>Across Morocco</p>
+                    <p>{t('home.ui.across')}</p>
                   </div>
-                  <span className="home-preview-hint">View details</span>
+                  <span className="home-preview-hint">{t('home.ui.view_details')}</span>
                 </div>
               </div>
             </button>
@@ -397,7 +409,7 @@ const Home: React.FC = () => {
           className="home-modal-overlay"
           role="dialog"
           aria-modal="true"
-          aria-label={`${activeWeddingPreview.title} details`}
+          aria-label={activeWeddingPreview.title}
           onMouseDown={(e) => {
             if (e.target === e.currentTarget) setActiveWeddingPreviewIdx(null);
           }}
@@ -417,7 +429,7 @@ const Home: React.FC = () => {
                 <img src={activeWeddingPreview.img} alt={activeWeddingPreview.title} className="home-modal-img" />
                 <div className="home-modal-img-overlay" />
                 <div className="home-modal-img-title">
-                  <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>Featured Weddings</span>
+                  <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>{t('home.ui.featured_weddings')}</span>
                   <h3>{activeWeddingPreview.title}</h3>
                 </div>
               </div>
@@ -425,7 +437,7 @@ const Home: React.FC = () => {
               <div className="home-modal-body">
                 <p className="home-modal-desc">{activeWeddingPreview.detail}</p>
                 <ul className="home-modal-highlights">
-                  {activeWeddingPreview.highlights.map((h) => (
+                  {activeWeddingPreview.highlights.map((h: string) => (
                     <li key={h}>
                       <span className="home-modal-bullet">✦</span>
                       <span>{h}</span>
@@ -439,13 +451,13 @@ const Home: React.FC = () => {
                     className="btn-primary"
                     onClick={() => {
                       setActiveWeddingPreviewIdx(null);
-                      navigate('/wedding');
+                      navigate('/wedding/algarve');
                     }}
                   >
-                    Explore Weddings <ArrowRight size={15} />
+                    {t('home.ui.explore_weddings')} <ArrowRight size={15} />
                   </button>
                   <button type="button" className="btn-outline" onClick={() => setActiveWeddingPreviewIdx(null)}>
-                    Continue Browsing
+                    {t('home.ui.continue')}
                   </button>
                 </div>
               </div>
@@ -459,7 +471,7 @@ const Home: React.FC = () => {
           className="home-modal-overlay"
           role="dialog"
           aria-modal="true"
-          aria-label={`${activeEventPreview.title} details`}
+          aria-label={activeEventPreview.title}
           onMouseDown={(e) => {
             if (e.target === e.currentTarget) setActiveEventPreviewIdx(null);
           }}
@@ -479,7 +491,7 @@ const Home: React.FC = () => {
                 <img src={activeEventPreview.img} alt={activeEventPreview.title} className="home-modal-img" />
                 <div className="home-modal-img-overlay" />
                 <div className="home-modal-img-title">
-                  <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>Events Preview</span>
+                  <span className="section-label" style={{ color: 'rgba(212,185,138,0.95)' }}>{t('home.ui.events_preview')}</span>
                   <h3>{activeEventPreview.title}</h3>
                 </div>
               </div>
@@ -487,7 +499,7 @@ const Home: React.FC = () => {
               <div className="home-modal-body">
                 <p className="home-modal-desc">{activeEventPreview.detail}</p>
                 <ul className="home-modal-highlights">
-                  {activeEventPreview.highlights.map((h) => (
+                  {activeEventPreview.highlights.map((h: string) => (
                     <li key={h}>
                       <span className="home-modal-bullet">✦</span>
                       <span>{h}</span>
@@ -504,10 +516,10 @@ const Home: React.FC = () => {
                       navigate('/events');
                     }}
                   >
-                    Explore Events <ArrowRight size={15} />
+                    {t('home.ui.explore_events')} <ArrowRight size={15} />
                   </button>
                   <button type="button" className="btn-outline" onClick={() => setActiveEventPreviewIdx(null)}>
-                    Continue Browsing
+                    {t('home.ui.continue')}
                   </button>
                 </div>
               </div>
@@ -557,6 +569,8 @@ const Home: React.FC = () => {
             <span className="section-label" style={{ color: 'rgba(212,185,138,0.9)' }}>{t('home.testimonials.tagline')}</span>
             <span className="gold-line" style={{ background: 'rgba(184,154,106,0.5)' }} />
             <h2 style={{ color: '#fff', fontSize: 'clamp(2rem, 4vw, 3rem)' }}>{t('home.testimonials.title')}</h2>
+            <p style={{ color: 'rgba(255,255,255,0.75)', maxWidth: '760px', margin: '24px auto 0' }}>{t('home.testimonials.subtitle')}</p>
+            <p style={{ color: 'rgba(212,185,138,0.9)', fontStyle: 'italic', marginTop: '16px' }}>{t('home.testimonials.note')}</p>
           </div>
 
           <div className="testimonial-slider">
@@ -599,7 +613,7 @@ const Home: React.FC = () => {
           </p>
           <div className="home-final-cta-actions">
             <Link to="/contact" className="btn-primary">{t('home.cta.btn_plan')} <ArrowRight size={15} /></Link>
-            <a href="https://api.whatsapp.com/send/?phone=212699728058&text=Hello%2C+I%27d+like+to+inquire+about+your+services.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="btn-ghost">
+            <a href="https://api.whatsapp.com/send/?phone=34678798513&text=Hello%2C+I%27d+like+to+inquire+about+your+services.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="btn-ghost">
               <MessageCircle size={16} /> {t('home.cta.btn_wa')}
             </a>
           </div>

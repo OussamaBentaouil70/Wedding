@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /thank-you
 
-Sitemap: https://www.weddingsplannermorocco.com/sitemap.xml
+Sitemap: https://www.weddingsplannerportugal.com/sitemap.xml

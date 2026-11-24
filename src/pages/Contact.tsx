@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Flatpickr from 'react-flatpickr';
 import * as Flags from 'country-flag-icons/react/3x2';
-import weddingVideo from '../assets/video/Wedding.mp4';
+import weddingVideo from '../assets/video/portugal-hero.mp4';
 import weddingImage from '../assets/images/Weddings/8.jpg';
 
 // Form Integration
@@ -19,6 +19,7 @@ const COUNTRY_CODES = [
   { code: '+34',  country: 'ES', iso: 'ES', label: 'Spain' },
   { code: '+39',  country: 'IT', iso: 'IT', label: 'Italy' },
   { code: '+49',  country: 'DE', iso: 'DE', label: 'Germany' },
+  { code: '+351', country: 'PT', iso: 'PT', label: 'Portugal' },
   { code: '+212', country: 'MA', iso: 'MA', label: 'Morocco' },
   { code: '+966', country: 'SA', iso: 'SA', label: 'Saudi Arabia' },
   { code: '+971', country: 'AE', iso: 'AE', label: 'UAE' },
@@ -63,8 +64,8 @@ const Contact: React.FC = () => {
     contact_name: '',
     contact_email: '',
     contact_phone: '',
-    country_code: '+212',
-    country_key: 'MA',
+    country_code: '+351',
+    country_key: 'PT',
     service_type: '',
     arrival_date: '',
     departure_date: '',
@@ -123,8 +124,8 @@ const Contact: React.FC = () => {
         contact_name: '',
         contact_email: '',
         contact_phone: '',
-        country_code: '+212',
-        country_key: 'MA',
+        country_code: '+351',
+        country_key: 'PT',
         service_type: '',
         arrival_date: '',
         departure_date: '',
@@ -371,7 +372,7 @@ const Contact: React.FC = () => {
                         }));
                       }}
                       className="date-range-input"
-                      placeholder="Select arrival and departure dates"
+                      placeholder={t('contact_page.form.dates_placeholder')}
                     />
                   </div>
                 </div>
@@ -443,7 +444,6 @@ const Contact: React.FC = () => {
                         <option value="USD">USD ($)</option>
                         <option value="EUR">EUR (€)</option>
                         <option value="GBP">GBP (£)</option>
-                        <option value="MAD">MAD (د.م.)</option>
                       </select>
                     </div>
                   </div>
