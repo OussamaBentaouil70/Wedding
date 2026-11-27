@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowRight, Star, Check, MessageCircle } from 'lucide-react';
+import { ArrowRight, Star, Check, MessageCircle, ClipboardList, MapPin, Palette, HeartHandshake } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 // Form Integration
@@ -128,10 +128,10 @@ const Home: React.FC = () => {
   const activeEventPreview = activeEventPreviewIdx === null ? null : eventPreviews[activeEventPreviewIdx];
 
   const trustStats = useMemo(() => [
-    { value: '✦', label: t('home.trust.item1') },
-    { value: '✦', label: t('home.trust.item2') },
-    { value: '✦', label: t('home.trust.item3') },
-    { value: '✦', label: t('home.trust.item4') },
+    { Icon: ClipboardList, label: t('home.trust.item1') },  // Tailored Planning
+    { Icon: MapPin, label: t('home.trust.item2') },         // Destination Weddings in Portugal
+    { Icon: Palette, label: t('home.trust.item3') },        // Thoughtful Design
+    { Icon: HeartHandshake, label: t('home.trust.item4') }, // Personalised Guest Experiences
   ], [t]);
 
   useEffect(() => {
@@ -222,16 +222,20 @@ const Home: React.FC = () => {
       {/* ══════════════════════════════════════
           2. TRUST BAR
       ══════════════════════════════════════ */}
-      <section id="home-trust" className="trust-bar">
-        <div className="container">
-          <div className="trust-bar-inner">
-            {trustStats.map((stat, i) => (
-              <div key={i} className="trust-stat reveal" style={{ transitionDelay: `${i * 80}ms` }}>
-                <span className="trust-value">{stat.value}</span>
-                <span className="trust-label">{stat.label}</span>
-              </div>
-            ))}
-          </div>
+      <section id="home-trust" className="trust-marquee" aria-label={trustStats.map((s) => s.label).join(' · ')}>
+        {/* The items are repeated so the strip loops seamlessly; the copy is hidden from screen readers. */}
+        <div className="trust-marquee-track">
+          {[0, 1].map((copy) => (
+            <div key={copy} className="trust-marquee-group" aria-hidden={copy === 1}>
+              {[...trustStats, ...trustStats].map(({ Icon, label }, i) => (
+                <div key={i} className="trust-marquee-item">
+                  <span className="trust-marquee-icon"><Icon size={26} strokeWidth={1.4} /></span>
+                  <span className="trust-marquee-label">{label}</span>
+                  <span className="trust-marquee-sep" aria-hidden="true">✦</span>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </section>
 

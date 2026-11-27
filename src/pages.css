@@ -4666,3 +4666,85 @@
 @media (max-width: 600px) {
   .included-grid { grid-template-columns: 1fr; }
 }
+
+/* ═══════════════════════════════════════════════════════
+   HOME TRUST STRIP — continuous auto-scrolling marquee
+═══════════════════════════════════════════════════════ */
+.trust-marquee {
+  background: var(--color-charcoal);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.trust-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: trust-marquee-scroll 38s linear infinite;
+}
+
+.trust-marquee:hover .trust-marquee-track {
+  animation-play-state: paused;
+}
+
+.trust-marquee-group {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.trust-marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 28px;
+  white-space: nowrap;
+}
+
+.trust-marquee-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid rgba(184,154,106,0.35);
+  color: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.trust-marquee-label {
+  font-family: var(--font-subheading);
+  font-size: 0.72rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+}
+
+.trust-marquee-sep {
+  color: rgba(184,154,106,0.5);
+  font-size: 0.7rem;
+  margin-left: 28px;
+}
+
+/* Each group holds the list twice, and the track holds two groups: moving by one group loops seamlessly. */
+@keyframes trust-marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .trust-marquee { padding: 28px 0; }
+  .trust-marquee-track { animation-duration: 28s; }
+  .trust-marquee-item { gap: 12px; padding: 0 18px; }
+  .trust-marquee-icon { width: 44px; height: 44px; }
+  .trust-marquee-sep { margin-left: 18px; }
+}
+
+/* Respect users who turn off motion: show the items as a static, wrapped row. */
+@media (prefers-reduced-motion: reduce) {
+  .trust-marquee-track { animation: none; width: auto; justify-content: center; }
+  .trust-marquee-group { flex-wrap: wrap; justify-content: center; row-gap: 20px; }
+  .trust-marquee-group[aria-hidden="true"],
+  .trust-marquee-group .trust-marquee-item:nth-child(n+5),
+  .trust-marquee-sep { display: none; }
+}
