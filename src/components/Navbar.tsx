@@ -4,6 +4,17 @@ import { Menu, X, Globe } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import logo from '../assets/images/logo-portugal.png';
 import { SUPPORTED_LANGUAGES } from '../i18n';
+import { GB, FR, ES, DE, IT, NL } from 'country-flag-icons/react/3x2';
+
+// Flag shown next to each language in the switcher
+const LANGUAGE_FLAGS: Record<string, typeof GB> = {
+  en: GB,
+  fr: FR,
+  es: ES,
+  de: DE,
+  it: IT,
+  nl: NL,
+};
 
 const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -31,18 +42,22 @@ const Navbar: React.FC = () => {
   const showLanguageSwitch = true;
 
   const renderLanguageOptions = () =>
-    SUPPORTED_LANGUAGES.map((lang) => (
-      <button
-        key={lang}
-        className={`lang-option ${currentLang === lang ? 'active' : ''}`}
-        onClick={() => {
-          onLanguageChange(lang);
-          setIsLangMenuOpen(false);
-        }}
-      >
-        {t(`nav.lang_${lang}`)}
-      </button>
-    ));
+    SUPPORTED_LANGUAGES.map((lang) => {
+      const Flag = LANGUAGE_FLAGS[lang];
+      return (
+        <button
+          key={lang}
+          className={`lang-option ${currentLang === lang ? 'active' : ''}`}
+          onClick={() => {
+            onLanguageChange(lang);
+            setIsLangMenuOpen(false);
+          }}
+        >
+          {Flag ? <Flag className="lang-flag" aria-hidden="true" /> : null}
+          <span>{t(`nav.lang_${lang}`)}</span>
+        </button>
+      );
+    });
 
   const isActive = (path: string) =>
     path.startsWith('/wedding') ? location.pathname.startsWith('/wedding') : location.pathname === path;

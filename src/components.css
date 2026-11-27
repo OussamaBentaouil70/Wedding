@@ -48,7 +48,7 @@
 }
 
 .navbar.scrolled .navbar-logo-img {
-  height: 46px;
+  height: 52px;
 }
 
 /* Desktop links */
@@ -579,4 +579,25 @@
   text-transform: uppercase;
   font-family: var(--font-subheading);
   margin-bottom: 20px;
+}
+
+/* Language switcher: flag + language name */
+.navbar-lang-dropdown,
+.mobile-nav-lang-dropdown {
+  min-width: 170px;
+}
+
+.navbar-lang-dropdown .lang-option,
+.mobile-nav-lang-dropdown .lang-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang-flag {
+  width: 22px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
